@@ -94,7 +94,7 @@ if(vx==0 && vy==0){
 	sprite_index=asset_get_index("sprite_heroIdle"+dir);
 }
 
-if(keyboard_check_pressed(interactButton)){
+if(keyboard_check_pressed(interactButton) ||  mouse_check_button_pressed(mb_left)){
 	var xx, yy;
 	switch(dir){
 		case("F"):
@@ -114,8 +114,16 @@ if(keyboard_check_pressed(interactButton)){
 			yy=bbox_top-bbox_bottom;
 			break;
 	}
-	var inst=instance_place(x+xx,y+yy,obj_item);
-	if(inst!=noone){
-		addItem(inst);	
+	var inst=instance_place(x+xx,y+yy,obj_npc);
+	if(inst!=noone && !obj_dialogueManager.finished){
+		talkingTo=inst;
+		inst.talkingTo=self;
+		frozen=true;
+	}else if(inst!=noone){
+		talkingTo=noone;
+		inst.talkingTo=noone;
+		frozen=false;
+		obj_dialogueManager.finished=false;
+		show_debug_message("end");
 	}
 }

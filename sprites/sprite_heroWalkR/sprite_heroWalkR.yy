@@ -81,7 +81,7 @@
   ],
   "parent": {
     "name": "sprite_hero",
-    "path": "folders/Sprites/sprite_hero.yy",
+    "path": "folders/Sprites/sprite_characters/sprite_hero.yy",
   },
   "resourceVersion": "1.0",
   "name": "sprite_heroWalkR",

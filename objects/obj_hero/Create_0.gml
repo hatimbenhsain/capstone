@@ -17,3 +17,4 @@ interactButton=obj_tuning.interactButton;
 runButton=obj_tuning.runButton;
 
 shadowSprite=sprite_shadow;
+talkingTo=noone;

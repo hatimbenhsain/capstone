@@ -15,3 +15,5 @@ speedFactor=2;
 
 inventoryRows=3;
 inventoryColumns=4;
+
+textSpeed=0.5;
