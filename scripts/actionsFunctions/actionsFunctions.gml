@@ -3,3 +3,19 @@
 function destruction(){
 	instance_destroy(obj_hero);	
 }
+
+function changeHead(name){
+	head=parseDialogue(name+".csv");
+}
+
+function changeInitHead(name){
+	initialHead=parseDialogue(name+".csv");	
+}
+
+function useItem(obj){
+	if(ds_map_exists(interactableObjects,obj)){
+		show_debug_message(ds_map_find_value(interactableObjects,obj));
+		head=parseDialogue(ds_map_find_value(interactableObjects,obj)+".csv");
+	}
+	obj_inventory.lockedObject=-1;
+}

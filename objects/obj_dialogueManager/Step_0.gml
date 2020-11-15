@@ -6,9 +6,12 @@ if(inDialogue){
 		if(currentMessage.type=="a"){
 			currentMessage=currentMessage.parent;
 			currentMessage=currentMessage.children[|answerSelected].children[|0];
-			if(currentMessage==noone){
+			if(currentMessage==noone || currentMessage==undefined){
 				currentMessage=noone;
 				inDialogue=false;
+				//finished=true;
+				obj_hero.frozen=false;
+				interlocutor.head=interlocutor.initialHead;		
 				return;
 			}
 		}else if(currentMessage.children[|answerSelected]!=undefined){
@@ -17,11 +20,13 @@ if(inDialogue){
 			currentMessage=noone;
 			inDialogue=false;
 			finished=true;
+			obj_hero.frozen=false;
+			interlocutor.head=interlocutor.initialHead;			
 		}
 
-		if(currentMessage!=noone && currentMessage.action!=undefined){
+		if(currentMessage!=noone && currentMessage!=undefined && currentMessage.action!=undefined){
 			show_debug_message(script_get_name(destruction));
-			script_execute(asset_get_index(currentMessage.action));
+			script_execute(asset_get_index(currentMessage.action),interlocutor);
 		}
 		answerSelected=0;
 	}else if(keyboard_check_pressed(interactButton) ||  mouse_check_button_pressed(mb_left)){

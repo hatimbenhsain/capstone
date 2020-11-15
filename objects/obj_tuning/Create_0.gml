@@ -13,7 +13,18 @@ runButton=vk_shift;
 
 speedFactor=2;
 
-inventoryRows=3;
-inventoryColumns=4;
+inventoryRows=6;
+inventoryColumns=2;
+inventoryXPadding=50;
+inventoryYPadding=100;
+descriptionYPadding=40;
+descriptionXPadding=30;
+lockedItemSize=50;
+lockedItemX=window_get_width()-50;
+lockedItemY=window_get_height()-50;
+textSep=30;
+textPaddingX=30;
+textPaddingY=30;
 
 textSpeed=0.5;
+cameraSmoothing=5;

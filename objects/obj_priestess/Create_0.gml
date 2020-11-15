@@ -1,5 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
+name="priestess";
+
 event_inherited();
 
-head=parseDialogue("dialogueTest.csv");
+addInteractable(obj_egg);

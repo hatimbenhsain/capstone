@@ -1,0 +1,5 @@
+Line,Type,Parent,Action,Subject
+this is an item,,,,
+pick it up?,q,,,
+yes,a,3,addItem,
+no,a,3,,

@@ -58,7 +58,6 @@ global.Line=function(_message, _parent, _type, _action) constructor{
 	}else{
 		action=_action;
 	}
-	show_debug_message(action);
 	
 	children=ds_list_create();	
 	global.lastLine=self;

@@ -16,5 +16,6 @@ upButton=obj_tuning.upButton;
 interactButton=obj_tuning.interactButton;
 runButton=obj_tuning.runButton;
 
+cameraSmoothing=obj_tuning.cameraSmoothing;
 shadowSprite=sprite_shadow;
 talkingTo=noone;

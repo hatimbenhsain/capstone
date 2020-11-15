@@ -114,12 +114,19 @@ if(keyboard_check_pressed(interactButton) ||  mouse_check_button_pressed(mb_left
 			yy=bbox_top-bbox_bottom;
 			break;
 	}
-	var inst=instance_place(x+xx,y+yy,obj_npc);
-	if(inst!=noone && !obj_dialogueManager.finished){
+	var inst=instance_place(x+xx,y+yy,obj_interactable);
+	if(inst!=noone && !obj_dialogueManager.finished && !obj_inventory.open){
 		talkingTo=inst;
 		inst.talkingTo=self;
 		frozen=true;
-	}else if(inst!=noone){
+		if(obj_inventory.lockedObject!=-1){
+			with(inst){
+				show_debug_message(obj_inventory.lockedObject);
+				show_debug_message(obj_inventory.items[|obj_inventory.lockedObject]);
+				useItem(obj_inventory.items[|obj_inventory.lockedObject]);
+			}
+		}
+	}else if(inst!=noone && !obj_inventory.open){
 		talkingTo=noone;
 		inst.talkingTo=noone;
 		frozen=false;
@@ -127,3 +134,13 @@ if(keyboard_check_pressed(interactButton) ||  mouse_check_button_pressed(mb_left
 		show_debug_message("end");
 	}
 }
+
+var cwidth = camera_get_view_width(view_camera[0]);
+var cheight = camera_get_view_height(view_camera[0]);
+var cameraX=camera_get_view_x(view_camera[0])+cwidth/2;
+var cameraY=camera_get_view_y(view_camera[0])+cheight/2;
+
+var xToUse=x;
+var yToUse=y;
+
+camera_set_view_pos(view_camera[0],cameraX+(xToUse-cameraX)/cameraSmoothing-cwidth/2,cameraY+(yToUse-cameraY)/cameraSmoothing-cheight/2);

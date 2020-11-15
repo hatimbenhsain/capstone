@@ -13,6 +13,5 @@ if(talkingTo!=noone && !obj_dialogueManager.finished){
 		talkingTo.talkingTo=noone;
 		talkingTo.frozen=false;
 		talkingTo=noone;
-		
 	}
 }
