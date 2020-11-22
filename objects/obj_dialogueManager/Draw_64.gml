@@ -15,6 +15,8 @@ if(inDialogue && currentMessage!=noone){
 		var skipY=0;
 		for(var i=0;i<ds_list_size(currentMessage.parent.children);i++){
 			var mess=currentMessage.parent.children[|i];
+			if(mess.greyed) draw_set_color(c_gray);
+			else draw_set_color(c_white);
 			var text=string_copy(mess.text,0,currentChar);
 			if(i==answerSelected) var text="> "+text;
 			draw_text_ext(defaultX+textPaddingX,defaultY+textPaddingY+textSep*i,text,textSep,textWidth);

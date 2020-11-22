@@ -29,7 +29,7 @@ global.lastLine=noone;
 	children=ds_list_create();	
 	global.lastLine=self;
 }*/
-global.Line=function(_message, _parent, _type, _action) constructor{
+global.Line=function(_message, _parent, _type, _action, _subject) constructor{
 	text=_message;
 	isHead=false;
 	if(_parent==-1){
@@ -61,6 +61,9 @@ global.Line=function(_message, _parent, _type, _action) constructor{
 	
 	children=ds_list_create();	
 	global.lastLine=self;
+	greyed=false;
+	subject=_subject;
+	
 }
 
 function connect(_child,_parent){
@@ -92,12 +95,13 @@ function parseDialogue(fileName){
 			var parent=undefined;
 		}
 		var action=ds_grid_get(grid,3,i);
+		var subject=ds_grid_get(grid,4,i);
 		
 		if(head==undefined){
-			var l=new global.Line(text,-1,type,action);
+			var l=new global.Line(text,-1,type,action,subject);
 			head=l;
 		}else{
-			var l=new global.Line(text,parent,type,action);
+			var l=new global.Line(text,parent,type,action,subject);
 		}		
 		ds_list_add(messages,l);
 	}

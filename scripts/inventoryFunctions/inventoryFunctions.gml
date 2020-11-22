@@ -8,6 +8,7 @@ function addItem(item){
 		//obj_hero.frozen=false;
 		instance_deactivate_object(id);
 	}
+	obj_hero.pickedUp=true;
 }
 
 function combineObjects(){

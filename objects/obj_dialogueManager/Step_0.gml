@@ -1,18 +1,33 @@
 /// @description Insert description here
 // You can write your code in this editor
 if(inDialogue){
+	var action="";
+	var subject=interlocutor;
 	if((keyboard_check_pressed(interactButton) || mouse_check_button_pressed(mb_left)) && currentChar>=maxLength){
 		currentChar=0;
+		if(currentMessage.action!=undefined && currentMessage.type!="a"){
+				//script_execute(asset_get_index(currentMessage.parent.children[|answerSelected].action),interlocutor);
+				action=asset_get_index(currentMessage.parent.children[|answerSelected].action);
+				if(currentMessage.parent.children[|answerSelected].subject!="") subject=currentMessage.parent.children[|answerSelected].action;
+		}
+			
 		if(currentMessage.type=="a"){
 			currentMessage=currentMessage.parent;
-			currentMessage=currentMessage.children[|answerSelected].children[|0];
+			currentMessage=currentMessage.children[|answerSelected];
+			if(currentMessage.action!=undefined){
+				//script_execute(asset_get_index(currentMessage.action),interlocutor);
+				action=asset_get_index(currentMessage.action);
+				if(currentMessage.subject!="") subject=currentMessage.subject;
+			}
+			currentMessage.greyed=true;
+			currentMessage=currentMessage.children[|0];
 			if(currentMessage==noone || currentMessage==undefined){
 				currentMessage=noone;
 				inDialogue=false;
-				//finished=true;
+				finished=true;
 				obj_hero.frozen=false;
 				interlocutor.head=interlocutor.initialHead;		
-				return;
+				//return;
 			}
 		}else if(currentMessage.children[|answerSelected]!=undefined){
 			currentMessage=currentMessage.children[|answerSelected];
@@ -21,14 +36,15 @@ if(inDialogue){
 			inDialogue=false;
 			finished=true;
 			obj_hero.frozen=false;
-			interlocutor.head=interlocutor.initialHead;			
+			interlocutor.head=interlocutor.initialHead;
+			show_debug_message("stop");
 		}
 
-		if(currentMessage!=noone && currentMessage!=undefined && currentMessage.action!=undefined){
-			show_debug_message(script_get_name(destruction));
-			script_execute(asset_get_index(currentMessage.action),interlocutor);
-		}
+		
 		answerSelected=0;
+		if(action!=""){
+			script_execute(action,subject);	
+		}
 	}else if(keyboard_check_pressed(interactButton) ||  mouse_check_button_pressed(mb_left)){
 		currentChar=maxLength;	
 	}

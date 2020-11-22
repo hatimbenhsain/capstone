@@ -131,7 +131,11 @@ if(keyboard_check_pressed(interactButton) ||  mouse_check_button_pressed(mb_left
 		inst.talkingTo=noone;
 		frozen=false;
 		obj_dialogueManager.finished=false;
-		show_debug_message("end");
+	}else if(inst==noone && pickedUp){
+		talkingTo=noone;
+		frozen=false;
+		obj_dialogueManager.finished=false;
+		pickedUp=false;
 	}
 }
 

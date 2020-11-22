@@ -19,3 +19,5 @@ runButton=obj_tuning.runButton;
 cameraSmoothing=obj_tuning.cameraSmoothing;
 shadowSprite=sprite_shadow;
 talkingTo=noone;
+
+pickedUp=false;
