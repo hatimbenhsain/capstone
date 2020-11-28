@@ -1,5 +1,5 @@
-Line,Type,Parent,Action,Subject
-this is an item,,,,
-pick it up?,q,,,
-yes,a,3,addItem,
-no,a,3,,
+Line,Type,Parent,Action,Subject,Talker,Emotion
+this is an item this is an item this is an item this is an item,,,,,noone,
+should i pick it up?,q,,,,hero,neutral
+yes,a,3,addItem,,,
+no,a,3,,,,

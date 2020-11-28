@@ -1,5 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
+
 if(inDialogue){
 	var action="";
 	var subject=interlocutor;

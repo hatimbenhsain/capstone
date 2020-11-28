@@ -23,7 +23,7 @@ function combineObjects(){
 		selectedObject=ds_list_size(items)-1;
 		return;
 	}
-	obj_dialogueManager.currentMessage=new global.Line("these items cannot be combined!",-1);
+	obj_dialogueManager.currentMessage=new global.Line("i don't think i can combine these items...",-1,"l","","","hero","confused");
 	obj_dialogueManager.inDialogue=true;
 	lockedObject2=-1;
 }

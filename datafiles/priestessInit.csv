@@ -1,9 +1,14 @@
-Line,Type,Parent,Action
-hello,l,
-this is a question yes indeed a very long question yup ok ok oko let s go,q,
-answer a,a,3
-answer b,a,3
-answe c,a,3
-aah i see,l,4
-hmm interesting,l,5,destruction
-ok...,l,6
+Line,Type,Parent,Action,Subject,Talker,Emotion
+hello.,l,,,,priestess,neutral
+how are you doing today?,q,,,,,
+Uuh me?,,,,,hero,thinking
+Good.,a,4,,,hero,neutral
+Not so good.,a,4,,,,
+Normal.,a,4,,,,
+I'm great! How about you?,l,5,,,hero,happy
+not the best. i'm dead.,,,,,priestess,neutral
+Oh... Sorry.....,,,,,hero,cringe
+Eh. I've been better.,l,6,,,hero,sad
+vibe check.,,,destruction,,priestess,neutral
+Comme ci comme ca. How are you doing?,l,7,,,hero,cringe
+awful.,,,,,priestess,neutral

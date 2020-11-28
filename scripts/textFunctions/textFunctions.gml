@@ -29,7 +29,7 @@ global.lastLine=noone;
 	children=ds_list_create();	
 	global.lastLine=self;
 }*/
-global.Line=function(_message, _parent, _type, _action, _subject) constructor{
+global.Line=function(_message, _parent, _type, _action, _subject, _talker, _emotion) constructor{
 	text=_message;
 	isHead=false;
 	if(_parent==-1){
@@ -57,6 +57,25 @@ global.Line=function(_message, _parent, _type, _action, _subject) constructor{
 		action=undefined	
 	}else{
 		action=_action;
+	}
+	
+	if(_talker=="noone"){
+		global.lastTalker=noone;
+		global.lastEmotion="neutral";
+		emotion="neutral";
+		talker=noone;
+	}else if(_talker==undefined || _talker==""){
+		talker=global.lastTalker;
+		emotion=global.lastEmotion;
+	}else{
+		talker=_talker;	
+		global.lastTalker=_talker;
+		if(_emotion==undefined || _emotion==""){
+			emotion=global.lastEmotion;
+		}else{
+			global.lastEmotion=_emotion;
+			emotion=_emotion;
+		}
 	}
 	
 	children=ds_list_create();	
@@ -96,12 +115,14 @@ function parseDialogue(fileName){
 		}
 		var action=ds_grid_get(grid,3,i);
 		var subject=ds_grid_get(grid,4,i);
+		var talker=ds_grid_get(grid,5,i);
+		var emotion=ds_grid_get(grid,6,i);
 		
 		if(head==undefined){
-			var l=new global.Line(text,-1,type,action,subject);
+			var l=new global.Line(text,-1,type,action,subject,talker,emotion);
 			head=l;
 		}else{
-			var l=new global.Line(text,parent,type,action,subject);
+			var l=new global.Line(text,parent,type,action,subject,talker,emotion);
 		}		
 		ds_list_add(messages,l);
 	}

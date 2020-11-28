@@ -21,3 +21,14 @@ shadowSprite=sprite_shadow;
 talkingTo=noone;
 
 pickedUp=false;
+
+angrySprite=sprite_hero_angry;
+confusedSprite=sprite_hero_confused;
+cringeSprite=sprite_hero_cringe;
+excitedSprite=sprite_hero_excited;
+happySprite=sprite_hero_happy;
+neutralSprite=sprite_hero_neutral;
+sadSprite=sprite_hero_sad;
+shockedSprite=sprite_hero_shocked;
+suspiciousSprite=sprite_hero_suspicious;
+thinkingSprite=sprite_hero_thinking;
