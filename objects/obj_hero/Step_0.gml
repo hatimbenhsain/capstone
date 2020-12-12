@@ -95,28 +95,33 @@ if(vx==0 && vy==0){
 }
 
 if(keyboard_check_pressed(interactButton) ||  mouse_check_button_pressed(mb_left)){
-	var xx, yy;
+	var xx, yy, talkerDir;
 	switch(dir){
 		case("F"):
 			xx=0;
 			yy=bbox_bottom-bbox_top;
+			talkerDir="B";
 			break;
 		case("L"):
 			xx=bbox_left-bbox_right;
 			yy=0;
+			talkerDir="R";
 			break;
 		case("R"):
 			xx=bbox_right-bbox_left;
 			yy=0;
+			talkerDir="L";
 			break;
 		case("B"):
 			xx=0;
+			talkerDir="F";
 			yy=bbox_top-bbox_bottom;
 			break;
 	}
 	var inst=instance_place(x+xx,y+yy,obj_interactable);
 	if(inst!=noone && !obj_dialogueManager.finished && !obj_inventory.open){
 		talkingTo=inst;
+		talkingTo.dir=talkerDir;
 		inst.talkingTo=self;
 		frozen=true;
 		if(obj_inventory.lockedObject!=-1){
