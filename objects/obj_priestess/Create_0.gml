@@ -4,6 +4,7 @@ name="priestess";
 
 event_inherited();
 
+
 addInteractable(obj_egg);
 
 neutralSprite=sprite_priestess_neutral;

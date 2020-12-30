@@ -126,9 +126,9 @@ if(keyboard_check_pressed(interactButton) ||  mouse_check_button_pressed(mb_left
 		frozen=true;
 		if(obj_inventory.lockedObject!=-1){
 			with(inst){
-				show_debug_message(obj_inventory.lockedObject);
-				show_debug_message(obj_inventory.items[|obj_inventory.lockedObject]);
-				useItem(obj_inventory.items[|obj_inventory.lockedObject]);
+				//show_debug_message(obj_inventory.lockedObject);
+				//show_debug_message(obj_inventory.items[|obj_inventory.lockedObject]);
+				useItem(obj_inventory.items[|obj_inventory.lockedObject].object_index);
 			}
 		}
 	}else if(inst!=noone && !obj_inventory.open){

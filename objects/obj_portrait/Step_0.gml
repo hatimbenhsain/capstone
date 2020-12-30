@@ -6,7 +6,7 @@ if(obj_dialogueManager.currentMessage!=noone){
 		emotion=obj_dialogueManager.currentMessage.emotion;
 		talker=asset_get_index("obj_"+talker);
 		talker=instance_find(talker,0);
-		show_debug_message(emotion+"Sprite");
+		//show_debug_message(emotion+"Sprite");
 		sprite_index=variable_instance_get(talker,emotion+"Sprite");
 	}
 }else{
