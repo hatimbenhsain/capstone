@@ -1,5 +1,5 @@
 /// @description Insert description here
 // You can write your code in this editor
-depth=-1*(sprite_get_bbox_bottom(sprite_index)+y-sprite_height/2);
-dir=0;
-state=0;
+walking=false;
+vx=0;
+vy=0;

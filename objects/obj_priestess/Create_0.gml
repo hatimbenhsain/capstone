@@ -15,3 +15,7 @@ idleF=sprite_priestess_idleF;
 walkL=sprite_priestess_walkL;
 walkB=sprite_priestess_walkB;
 walkF=sprite_priestess_walkF;
+walking=true
+
+
+state=0;

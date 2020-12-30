@@ -59,7 +59,10 @@ function standardSave(rootList){
 	ds_map_add(map,"x",x);
 	ds_map_add(map,"y",y);
 	ds_map_add(map,"sprite_index",sprite_index);
-	if(object_is_ancestor(asset_get_index(obj),obj_collidable)) ds_map_add(map,"dir",dir);
+	if(object_is_ancestor(asset_get_index(obj),obj_collidable)){
+		ds_map_add(map,"dir",dir);
+		ds_map_add(map,"state",state);
+	}
 	return map;
 }
 
@@ -103,8 +106,10 @@ function standardLoad(map){
 		x=map[?"x"];
 		y=map[?"y"];
 		sprite_index=map[?"sprite_index"];
-		if(object_is_ancestor(asset_get_index(obj),obj_collidable)) dir=map[?"dir"];
-		else if(obj=="obj_inventory"){
+		if(object_is_ancestor(asset_get_index(obj),obj_collidable)){
+			dir=map[?"dir"];
+			state=map[?"state"];
+		}else if(obj=="obj_inventory"){
 			var objList=map[?"objList"];
 			for(var i=0;i<ds_list_size(objList);i++){
 				addItem(instance_create_layer(0,0,layer,asset_get_index(objList[|i])))
