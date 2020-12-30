@@ -8,7 +8,7 @@ rightButton=vk_right;
 downButton=vk_down;
 upButton=vk_up;
 interactButton=ord("Z");
-inventoryOpenButton=vk_escape;
+inventoryOpenButton=ord("I");
 runButton=vk_shift;
 
 speedFactor=2;
