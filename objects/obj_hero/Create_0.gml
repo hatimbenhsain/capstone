@@ -32,3 +32,5 @@ sadSprite=sprite_hero_sad;
 shockedSprite=sprite_hero_shocked;
 suspiciousSprite=sprite_hero_suspicious;
 thinkingSprite=sprite_hero_thinking;
+
+state=0;

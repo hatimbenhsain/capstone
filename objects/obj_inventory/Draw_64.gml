@@ -18,7 +18,8 @@ if(open){
 		draw_set_halign(fa_left);
 		draw_set_valign(fa_middle);
 		draw_sprite_ext(items[|i].sprite_index,image_index,ds_grid_get(positions,0,i-firstObject),ds_grid_get(positions,1,i-firstObject),scale,scale,0,c_white,1);
-		draw_text(ds_grid_get(positions,0,i-firstObject)+string_height("text"),ds_grid_get(positions,1,i-firstObject),items[|i].name);
+		draw_text(ds_grid_get(positions,0,i-firstObject)+string_height("text"),ds_grid_get(positions,1,i-firstObject)+5,items[|i].name);
+		show_debug_message(string_height("text"));
 	}
 	draw_sprite(sprite_descriptionBox,image_index,0,0);
 	draw_text(descriptionXPadding,descriptionYPadding,items[|selectedObject].description);

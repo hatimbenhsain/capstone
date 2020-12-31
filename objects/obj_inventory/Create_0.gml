@@ -38,3 +38,6 @@ lockedObject2=-1;
 lockedItemX=obj_tuning.lockedItemX;
 lockedItemY=obj_tuning.lockedItemY;
 lockedItemSize=obj_tuning.lockedItemSize;
+
+
+obj_hero.pickedUp=false;

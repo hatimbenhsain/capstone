@@ -28,6 +28,11 @@ function Save(){
 	with(obj_interactable){
 		var map=standardSave(rootList);
 		ds_map_add(map,"initialHead",initialHead);
+		var alarms=ds_list_create();
+		for(var i=0;i<=11;i++){
+			ds_list_add(alarms,alarm[i]);
+		}
+		ds_map_add_list(map,"alarms",alarms);
 	}
 	
 	with(obj_inventory){
@@ -113,6 +118,11 @@ function standardLoad(map){
 			var objList=map[?"objList"];
 			for(var i=0;i<ds_list_size(objList);i++){
 				addItem(instance_create_layer(0,0,layer,asset_get_index(objList[|i])))
+			}
+		}
+		if(object_is_ancestor(asset_get_index(obj),obj_interactable)){
+			for(var i=0;i<=11;i++){
+				alarm[i]=map[?"alarms"][|i];
 			}
 		}
 	}

@@ -60,12 +60,12 @@ var canmove=true;
 for(i=1;i<=abs(vx);i++){
 	canmove=true;
 	if(place_meeting(x+sign(vx),y,obj_collidable)) canmove=false;
-	//if(canmove) x+=sign(vx);
+	if(canmove) x+=sign(vx);
 }
 for(i=1;i<=abs(vy);i++){
 	canmove=true;
 	if(place_meeting(x,y+sign(vy),obj_collidable)) canmove=false;
-	//if(canmove) y+=sign(vy);
+	if(canmove) y+=sign(vy);
 }
 
 var xx, yy, talkerDir;
@@ -101,12 +101,7 @@ if(talkingTo==noone && standby!=-1 && dir!=standby){
 	standby=-1;
 }
 
-if(canmove){
-	x+=vx;
-	y+=vy;
-}
-
-if(inst!=noone){
+if(canmove==false || talkingTo!=noone || inst!=noone){
 	for(var i=0;i<=11;i++){
 		alarm[i]=alarm[i]+1;	
 	}
