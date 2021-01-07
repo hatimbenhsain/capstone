@@ -1,0 +1,166 @@
+{
+  "bboxMode": 0,
+  "collisionKind": 1,
+  "type": 0,
+  "origin": 4,
+  "preMultiplyAlpha": false,
+  "edgeFiltering": false,
+  "collisionTolerance": 0,
+  "swfPrecision": 2.525,
+  "bbox_left": 5,
+  "bbox_right": 62,
+  "bbox_top": 0,
+  "bbox_bottom": 59,
+  "HTile": false,
+  "VTile": false,
+  "For3D": false,
+  "width": 63,
+  "height": 60,
+  "textureGroupId": {
+    "name": "Default",
+    "path": "texturegroups/Default",
+  },
+  "swatchColours": null,
+  "gridX": 0,
+  "gridY": 0,
+  "frames": [
+    {"compositeImage":{"FrameId":{"name":"022ff7b3-5eda-4f2f-beeb-2ed31e1084ad","path":"sprites/sprite_priestess_happy/sprite_priestess_happy.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"022ff7b3-5eda-4f2f-beeb-2ed31e1084ad","path":"sprites/sprite_priestess_happy/sprite_priestess_happy.yy",},"LayerId":{"name":"86d5740c-8617-46c9-b9aa-5901a9083f27","path":"sprites/sprite_priestess_happy/sprite_priestess_happy.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"sprite_priestess_happy","path":"sprites/sprite_priestess_happy/sprite_priestess_happy.yy",},"resourceVersion":"1.0","name":"022ff7b3-5eda-4f2f-beeb-2ed31e1084ad","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"fed7df76-01ec-4d1a-a508-240c1aea8911","path":"sprites/sprite_priestess_happy/sprite_priestess_happy.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"fed7df76-01ec-4d1a-a508-240c1aea8911","path":"sprites/sprite_priestess_happy/sprite_priestess_happy.yy",},"LayerId":{"name":"86d5740c-8617-46c9-b9aa-5901a9083f27","path":"sprites/sprite_priestess_happy/sprite_priestess_happy.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"sprite_priestess_happy","path":"sprites/sprite_priestess_happy/sprite_priestess_happy.yy",},"resourceVersion":"1.0","name":"fed7df76-01ec-4d1a-a508-240c1aea8911","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"d3d064d1-8d87-4651-acc5-da732fdf302e","path":"sprites/sprite_priestess_happy/sprite_priestess_happy.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"d3d064d1-8d87-4651-acc5-da732fdf302e","path":"sprites/sprite_priestess_happy/sprite_priestess_happy.yy",},"LayerId":{"name":"86d5740c-8617-46c9-b9aa-5901a9083f27","path":"sprites/sprite_priestess_happy/sprite_priestess_happy.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"sprite_priestess_happy","path":"sprites/sprite_priestess_happy/sprite_priestess_happy.yy",},"resourceVersion":"1.0","name":"d3d064d1-8d87-4651-acc5-da732fdf302e","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"16f7f702-46b7-48fb-8896-9a341c1bbf41","path":"sprites/sprite_priestess_happy/sprite_priestess_happy.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"16f7f702-46b7-48fb-8896-9a341c1bbf41","path":"sprites/sprite_priestess_happy/sprite_priestess_happy.yy",},"LayerId":{"name":"86d5740c-8617-46c9-b9aa-5901a9083f27","path":"sprites/sprite_priestess_happy/sprite_priestess_happy.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"sprite_priestess_happy","path":"sprites/sprite_priestess_happy/sprite_priestess_happy.yy",},"resourceVersion":"1.0","name":"16f7f702-46b7-48fb-8896-9a341c1bbf41","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"a1dd8add-740f-42a5-936e-608d9cfa7284","path":"sprites/sprite_priestess_happy/sprite_priestess_happy.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"a1dd8add-740f-42a5-936e-608d9cfa7284","path":"sprites/sprite_priestess_happy/sprite_priestess_happy.yy",},"LayerId":{"name":"86d5740c-8617-46c9-b9aa-5901a9083f27","path":"sprites/sprite_priestess_happy/sprite_priestess_happy.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"sprite_priestess_happy","path":"sprites/sprite_priestess_happy/sprite_priestess_happy.yy",},"resourceVersion":"1.0","name":"a1dd8add-740f-42a5-936e-608d9cfa7284","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"4f735044-b937-4a76-a7d5-c93eb45e5c5a","path":"sprites/sprite_priestess_happy/sprite_priestess_happy.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"4f735044-b937-4a76-a7d5-c93eb45e5c5a","path":"sprites/sprite_priestess_happy/sprite_priestess_happy.yy",},"LayerId":{"name":"86d5740c-8617-46c9-b9aa-5901a9083f27","path":"sprites/sprite_priestess_happy/sprite_priestess_happy.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"sprite_priestess_happy","path":"sprites/sprite_priestess_happy/sprite_priestess_happy.yy",},"resourceVersion":"1.0","name":"4f735044-b937-4a76-a7d5-c93eb45e5c5a","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"4a65d1d4-4470-4458-84c1-38345119b321","path":"sprites/sprite_priestess_happy/sprite_priestess_happy.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"4a65d1d4-4470-4458-84c1-38345119b321","path":"sprites/sprite_priestess_happy/sprite_priestess_happy.yy",},"LayerId":{"name":"86d5740c-8617-46c9-b9aa-5901a9083f27","path":"sprites/sprite_priestess_happy/sprite_priestess_happy.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"sprite_priestess_happy","path":"sprites/sprite_priestess_happy/sprite_priestess_happy.yy",},"resourceVersion":"1.0","name":"4a65d1d4-4470-4458-84c1-38345119b321","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"b7d988c2-84b5-4dc6-8cdf-26ab5f008b77","path":"sprites/sprite_priestess_happy/sprite_priestess_happy.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"b7d988c2-84b5-4dc6-8cdf-26ab5f008b77","path":"sprites/sprite_priestess_happy/sprite_priestess_happy.yy",},"LayerId":{"name":"86d5740c-8617-46c9-b9aa-5901a9083f27","path":"sprites/sprite_priestess_happy/sprite_priestess_happy.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"sprite_priestess_happy","path":"sprites/sprite_priestess_happy/sprite_priestess_happy.yy",},"resourceVersion":"1.0","name":"b7d988c2-84b5-4dc6-8cdf-26ab5f008b77","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"38344451-d9c3-48b9-a027-72c2d9d95f40","path":"sprites/sprite_priestess_happy/sprite_priestess_happy.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"38344451-d9c3-48b9-a027-72c2d9d95f40","path":"sprites/sprite_priestess_happy/sprite_priestess_happy.yy",},"LayerId":{"name":"86d5740c-8617-46c9-b9aa-5901a9083f27","path":"sprites/sprite_priestess_happy/sprite_priestess_happy.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"sprite_priestess_happy","path":"sprites/sprite_priestess_happy/sprite_priestess_happy.yy",},"resourceVersion":"1.0","name":"38344451-d9c3-48b9-a027-72c2d9d95f40","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"f64489c7-1b7a-4578-9356-e4052e638ad0","path":"sprites/sprite_priestess_happy/sprite_priestess_happy.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"f64489c7-1b7a-4578-9356-e4052e638ad0","path":"sprites/sprite_priestess_happy/sprite_priestess_happy.yy",},"LayerId":{"name":"86d5740c-8617-46c9-b9aa-5901a9083f27","path":"sprites/sprite_priestess_happy/sprite_priestess_happy.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"sprite_priestess_happy","path":"sprites/sprite_priestess_happy/sprite_priestess_happy.yy",},"resourceVersion":"1.0","name":"f64489c7-1b7a-4578-9356-e4052e638ad0","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"6f9cb840-c67e-4c8d-8b4e-0889f80dee3e","path":"sprites/sprite_priestess_happy/sprite_priestess_happy.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"6f9cb840-c67e-4c8d-8b4e-0889f80dee3e","path":"sprites/sprite_priestess_happy/sprite_priestess_happy.yy",},"LayerId":{"name":"86d5740c-8617-46c9-b9aa-5901a9083f27","path":"sprites/sprite_priestess_happy/sprite_priestess_happy.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"sprite_priestess_happy","path":"sprites/sprite_priestess_happy/sprite_priestess_happy.yy",},"resourceVersion":"1.0","name":"6f9cb840-c67e-4c8d-8b4e-0889f80dee3e","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"98c0dad0-08ac-43b0-b1b6-b61412fa776e","path":"sprites/sprite_priestess_happy/sprite_priestess_happy.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"98c0dad0-08ac-43b0-b1b6-b61412fa776e","path":"sprites/sprite_priestess_happy/sprite_priestess_happy.yy",},"LayerId":{"name":"86d5740c-8617-46c9-b9aa-5901a9083f27","path":"sprites/sprite_priestess_happy/sprite_priestess_happy.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"sprite_priestess_happy","path":"sprites/sprite_priestess_happy/sprite_priestess_happy.yy",},"resourceVersion":"1.0","name":"98c0dad0-08ac-43b0-b1b6-b61412fa776e","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"3ded6341-e406-4ffb-ba5d-758b09f8659d","path":"sprites/sprite_priestess_happy/sprite_priestess_happy.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"3ded6341-e406-4ffb-ba5d-758b09f8659d","path":"sprites/sprite_priestess_happy/sprite_priestess_happy.yy",},"LayerId":{"name":"86d5740c-8617-46c9-b9aa-5901a9083f27","path":"sprites/sprite_priestess_happy/sprite_priestess_happy.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"sprite_priestess_happy","path":"sprites/sprite_priestess_happy/sprite_priestess_happy.yy",},"resourceVersion":"1.0","name":"3ded6341-e406-4ffb-ba5d-758b09f8659d","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"eec35fa8-c163-4fde-ab2d-aede8b6641fb","path":"sprites/sprite_priestess_happy/sprite_priestess_happy.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"eec35fa8-c163-4fde-ab2d-aede8b6641fb","path":"sprites/sprite_priestess_happy/sprite_priestess_happy.yy",},"LayerId":{"name":"86d5740c-8617-46c9-b9aa-5901a9083f27","path":"sprites/sprite_priestess_happy/sprite_priestess_happy.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"sprite_priestess_happy","path":"sprites/sprite_priestess_happy/sprite_priestess_happy.yy",},"resourceVersion":"1.0","name":"eec35fa8-c163-4fde-ab2d-aede8b6641fb","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"2e932343-1a82-4a91-b9e3-2b85278a449e","path":"sprites/sprite_priestess_happy/sprite_priestess_happy.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"2e932343-1a82-4a91-b9e3-2b85278a449e","path":"sprites/sprite_priestess_happy/sprite_priestess_happy.yy",},"LayerId":{"name":"86d5740c-8617-46c9-b9aa-5901a9083f27","path":"sprites/sprite_priestess_happy/sprite_priestess_happy.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"sprite_priestess_happy","path":"sprites/sprite_priestess_happy/sprite_priestess_happy.yy",},"resourceVersion":"1.0","name":"2e932343-1a82-4a91-b9e3-2b85278a449e","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"3364dfc6-19e4-4667-b1b9-1aadb646b5ae","path":"sprites/sprite_priestess_happy/sprite_priestess_happy.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"3364dfc6-19e4-4667-b1b9-1aadb646b5ae","path":"sprites/sprite_priestess_happy/sprite_priestess_happy.yy",},"LayerId":{"name":"86d5740c-8617-46c9-b9aa-5901a9083f27","path":"sprites/sprite_priestess_happy/sprite_priestess_happy.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"sprite_priestess_happy","path":"sprites/sprite_priestess_happy/sprite_priestess_happy.yy",},"resourceVersion":"1.0","name":"3364dfc6-19e4-4667-b1b9-1aadb646b5ae","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"023c6cec-84b9-4cfb-92d6-ff81ec4e7da8","path":"sprites/sprite_priestess_happy/sprite_priestess_happy.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"023c6cec-84b9-4cfb-92d6-ff81ec4e7da8","path":"sprites/sprite_priestess_happy/sprite_priestess_happy.yy",},"LayerId":{"name":"86d5740c-8617-46c9-b9aa-5901a9083f27","path":"sprites/sprite_priestess_happy/sprite_priestess_happy.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"sprite_priestess_happy","path":"sprites/sprite_priestess_happy/sprite_priestess_happy.yy",},"resourceVersion":"1.0","name":"023c6cec-84b9-4cfb-92d6-ff81ec4e7da8","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"d013a345-1a1c-4c26-a600-f0468d4b5846","path":"sprites/sprite_priestess_happy/sprite_priestess_happy.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"d013a345-1a1c-4c26-a600-f0468d4b5846","path":"sprites/sprite_priestess_happy/sprite_priestess_happy.yy",},"LayerId":{"name":"86d5740c-8617-46c9-b9aa-5901a9083f27","path":"sprites/sprite_priestess_happy/sprite_priestess_happy.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"sprite_priestess_happy","path":"sprites/sprite_priestess_happy/sprite_priestess_happy.yy",},"resourceVersion":"1.0","name":"d013a345-1a1c-4c26-a600-f0468d4b5846","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"e241ca80-b5d2-493b-858a-36c58d4fbd84","path":"sprites/sprite_priestess_happy/sprite_priestess_happy.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"e241ca80-b5d2-493b-858a-36c58d4fbd84","path":"sprites/sprite_priestess_happy/sprite_priestess_happy.yy",},"LayerId":{"name":"86d5740c-8617-46c9-b9aa-5901a9083f27","path":"sprites/sprite_priestess_happy/sprite_priestess_happy.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"sprite_priestess_happy","path":"sprites/sprite_priestess_happy/sprite_priestess_happy.yy",},"resourceVersion":"1.0","name":"e241ca80-b5d2-493b-858a-36c58d4fbd84","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"80806468-79e1-4e1c-bbef-1a830963d07d","path":"sprites/sprite_priestess_happy/sprite_priestess_happy.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"80806468-79e1-4e1c-bbef-1a830963d07d","path":"sprites/sprite_priestess_happy/sprite_priestess_happy.yy",},"LayerId":{"name":"86d5740c-8617-46c9-b9aa-5901a9083f27","path":"sprites/sprite_priestess_happy/sprite_priestess_happy.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"sprite_priestess_happy","path":"sprites/sprite_priestess_happy/sprite_priestess_happy.yy",},"resourceVersion":"1.0","name":"80806468-79e1-4e1c-bbef-1a830963d07d","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"5a250583-565e-4083-a5cb-0d3fbd206fc7","path":"sprites/sprite_priestess_happy/sprite_priestess_happy.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"5a250583-565e-4083-a5cb-0d3fbd206fc7","path":"sprites/sprite_priestess_happy/sprite_priestess_happy.yy",},"LayerId":{"name":"86d5740c-8617-46c9-b9aa-5901a9083f27","path":"sprites/sprite_priestess_happy/sprite_priestess_happy.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"sprite_priestess_happy","path":"sprites/sprite_priestess_happy/sprite_priestess_happy.yy",},"resourceVersion":"1.0","name":"5a250583-565e-4083-a5cb-0d3fbd206fc7","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"9eccb8d1-43cc-447b-8478-f4d88b6ffd99","path":"sprites/sprite_priestess_happy/sprite_priestess_happy.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"9eccb8d1-43cc-447b-8478-f4d88b6ffd99","path":"sprites/sprite_priestess_happy/sprite_priestess_happy.yy",},"LayerId":{"name":"86d5740c-8617-46c9-b9aa-5901a9083f27","path":"sprites/sprite_priestess_happy/sprite_priestess_happy.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"sprite_priestess_happy","path":"sprites/sprite_priestess_happy/sprite_priestess_happy.yy",},"resourceVersion":"1.0","name":"9eccb8d1-43cc-447b-8478-f4d88b6ffd99","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"30740c8e-7015-4860-9238-dc03b6a3b21f","path":"sprites/sprite_priestess_happy/sprite_priestess_happy.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"30740c8e-7015-4860-9238-dc03b6a3b21f","path":"sprites/sprite_priestess_happy/sprite_priestess_happy.yy",},"LayerId":{"name":"86d5740c-8617-46c9-b9aa-5901a9083f27","path":"sprites/sprite_priestess_happy/sprite_priestess_happy.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"sprite_priestess_happy","path":"sprites/sprite_priestess_happy/sprite_priestess_happy.yy",},"resourceVersion":"1.0","name":"30740c8e-7015-4860-9238-dc03b6a3b21f","tags":[],"resourceType":"GMSpriteFrame",},
+  ],
+  "sequence": {
+    "spriteId": {"name":"sprite_priestess_happy","path":"sprites/sprite_priestess_happy/sprite_priestess_happy.yy",},
+    "timeUnits": 1,
+    "playback": 1,
+    "playbackSpeed": 30.0,
+    "playbackSpeedType": 0,
+    "autoRecord": true,
+    "volume": 1.0,
+    "length": 23.0,
+    "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
+    "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
+    "tracks": [
+      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+            {"id":"fe3fa97c-db7d-4f3d-ae52-58f36adcaf5f","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"022ff7b3-5eda-4f2f-beeb-2ed31e1084ad","path":"sprites/sprite_priestess_happy/sprite_priestess_happy.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"2567536c-5d9c-4e1d-8e65-b68c48e93576","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"fed7df76-01ec-4d1a-a508-240c1aea8911","path":"sprites/sprite_priestess_happy/sprite_priestess_happy.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"656d2168-6883-458c-9e92-75e0814c491d","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"d3d064d1-8d87-4651-acc5-da732fdf302e","path":"sprites/sprite_priestess_happy/sprite_priestess_happy.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"6778bfe6-1901-4546-9e8f-027f4fac68cd","Key":3.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"16f7f702-46b7-48fb-8896-9a341c1bbf41","path":"sprites/sprite_priestess_happy/sprite_priestess_happy.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"5327b8b0-acdb-40f9-ae95-b22dd0e26d64","Key":4.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"a1dd8add-740f-42a5-936e-608d9cfa7284","path":"sprites/sprite_priestess_happy/sprite_priestess_happy.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"56710617-1935-4288-8694-34012b87da6f","Key":5.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"4f735044-b937-4a76-a7d5-c93eb45e5c5a","path":"sprites/sprite_priestess_happy/sprite_priestess_happy.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"30d6930c-1da8-42aa-834a-7f45fd6fb29a","Key":6.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"4a65d1d4-4470-4458-84c1-38345119b321","path":"sprites/sprite_priestess_happy/sprite_priestess_happy.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"35275f81-816b-4f94-92d2-12cc55dc94a9","Key":7.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"b7d988c2-84b5-4dc6-8cdf-26ab5f008b77","path":"sprites/sprite_priestess_happy/sprite_priestess_happy.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"fe8916e0-f19b-480d-8b03-c373fad403e5","Key":8.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"38344451-d9c3-48b9-a027-72c2d9d95f40","path":"sprites/sprite_priestess_happy/sprite_priestess_happy.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"b871d212-e8b8-4386-8232-68039fd445a9","Key":9.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"f64489c7-1b7a-4578-9356-e4052e638ad0","path":"sprites/sprite_priestess_happy/sprite_priestess_happy.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"a7422aa2-fa8b-4efd-a7b6-f34124b5e1ab","Key":10.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"6f9cb840-c67e-4c8d-8b4e-0889f80dee3e","path":"sprites/sprite_priestess_happy/sprite_priestess_happy.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"9e2a356c-b1c4-48a5-932a-1b8a87b9d888","Key":11.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"98c0dad0-08ac-43b0-b1b6-b61412fa776e","path":"sprites/sprite_priestess_happy/sprite_priestess_happy.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"152701af-63fc-4384-afee-ae5da56306f4","Key":12.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"3ded6341-e406-4ffb-ba5d-758b09f8659d","path":"sprites/sprite_priestess_happy/sprite_priestess_happy.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"c55c8593-00fd-4b54-ba32-c6165629086c","Key":13.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"eec35fa8-c163-4fde-ab2d-aede8b6641fb","path":"sprites/sprite_priestess_happy/sprite_priestess_happy.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"26b06a0a-4071-4b86-82b0-ff5313490808","Key":14.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"2e932343-1a82-4a91-b9e3-2b85278a449e","path":"sprites/sprite_priestess_happy/sprite_priestess_happy.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"32d892a1-7457-4f71-b11c-af29b4e8da16","Key":15.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"3364dfc6-19e4-4667-b1b9-1aadb646b5ae","path":"sprites/sprite_priestess_happy/sprite_priestess_happy.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"564b8bac-9570-4652-ba10-49b7ccf624dc","Key":16.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"023c6cec-84b9-4cfb-92d6-ff81ec4e7da8","path":"sprites/sprite_priestess_happy/sprite_priestess_happy.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"2b96725f-f774-4fc2-8d84-546ab3c5bbdb","Key":17.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"d013a345-1a1c-4c26-a600-f0468d4b5846","path":"sprites/sprite_priestess_happy/sprite_priestess_happy.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"dc124fdc-7c64-41da-9101-d8f31c1a0f2d","Key":18.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"e241ca80-b5d2-493b-858a-36c58d4fbd84","path":"sprites/sprite_priestess_happy/sprite_priestess_happy.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"46a16454-7f16-4ef8-9ef2-52d3c8e26581","Key":19.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"80806468-79e1-4e1c-bbef-1a830963d07d","path":"sprites/sprite_priestess_happy/sprite_priestess_happy.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"b0ef916a-2e8e-486e-9047-1816cc034b83","Key":20.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"5a250583-565e-4083-a5cb-0d3fbd206fc7","path":"sprites/sprite_priestess_happy/sprite_priestess_happy.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"f6570fab-cdd0-4347-a12f-0d5026fb57c3","Key":21.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"9eccb8d1-43cc-447b-8478-f4d88b6ffd99","path":"sprites/sprite_priestess_happy/sprite_priestess_happy.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"67579cde-7a26-4dab-8fa0-02c6b3c2fedc","Key":22.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"30740c8e-7015-4860-9238-dc03b6a3b21f","path":"sprites/sprite_priestess_happy/sprite_priestess_happy.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"modifiers":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack",},
+    ],
+    "visibleRange": null,
+    "lockOrigin": false,
+    "showBackdrop": true,
+    "showBackdropImage": false,
+    "backdropImagePath": "",
+    "backdropImageOpacity": 0.5,
+    "backdropWidth": 1366,
+    "backdropHeight": 768,
+    "backdropXOffset": 0.0,
+    "backdropYOffset": 0.0,
+    "xorigin": 31,
+    "yorigin": 30,
+    "eventToFunction": {},
+    "eventStubScript": null,
+    "parent": {"name":"sprite_priestess_happy","path":"sprites/sprite_priestess_happy/sprite_priestess_happy.yy",},
+    "resourceVersion": "1.3",
+    "name": "sprite_priestess_happy",
+    "tags": [],
+    "resourceType": "GMSequence",
+  },
+  "layers": [
+    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"86d5740c-8617-46c9-b9aa-5901a9083f27","tags":[],"resourceType":"GMImageLayer",},
+  ],
+  "parent": {
+    "name": "priestess",
+    "path": "folders/Sprites/sprites_portraits/priestess.yy",
+  },
+  "resourceVersion": "1.0",
+  "name": "sprite_priestess_happy",
+  "tags": [],
+  "resourceType": "GMSprite",
+}

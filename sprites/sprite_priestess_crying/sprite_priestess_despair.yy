@@ -1,0 +1,166 @@
+{
+  "bboxMode": 0,
+  "collisionKind": 1,
+  "type": 0,
+  "origin": 4,
+  "preMultiplyAlpha": false,
+  "edgeFiltering": false,
+  "collisionTolerance": 0,
+  "swfPrecision": 2.525,
+  "bbox_left": 5,
+  "bbox_right": 62,
+  "bbox_top": 0,
+  "bbox_bottom": 59,
+  "HTile": false,
+  "VTile": false,
+  "For3D": false,
+  "width": 63,
+  "height": 60,
+  "textureGroupId": {
+    "name": "Default",
+    "path": "texturegroups/Default",
+  },
+  "swatchColours": null,
+  "gridX": 0,
+  "gridY": 0,
+  "frames": [
+    {"compositeImage":{"FrameId":{"name":"022ff7b3-5eda-4f2f-beeb-2ed31e1084ad","path":"sprites/sprite_priestess_despair/sprite_priestess_despair.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"022ff7b3-5eda-4f2f-beeb-2ed31e1084ad","path":"sprites/sprite_priestess_despair/sprite_priestess_despair.yy",},"LayerId":{"name":"86d5740c-8617-46c9-b9aa-5901a9083f27","path":"sprites/sprite_priestess_despair/sprite_priestess_despair.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"sprite_priestess_despair","path":"sprites/sprite_priestess_despair/sprite_priestess_despair.yy",},"resourceVersion":"1.0","name":"022ff7b3-5eda-4f2f-beeb-2ed31e1084ad","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"fed7df76-01ec-4d1a-a508-240c1aea8911","path":"sprites/sprite_priestess_despair/sprite_priestess_despair.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"fed7df76-01ec-4d1a-a508-240c1aea8911","path":"sprites/sprite_priestess_despair/sprite_priestess_despair.yy",},"LayerId":{"name":"86d5740c-8617-46c9-b9aa-5901a9083f27","path":"sprites/sprite_priestess_despair/sprite_priestess_despair.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"sprite_priestess_despair","path":"sprites/sprite_priestess_despair/sprite_priestess_despair.yy",},"resourceVersion":"1.0","name":"fed7df76-01ec-4d1a-a508-240c1aea8911","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"d3d064d1-8d87-4651-acc5-da732fdf302e","path":"sprites/sprite_priestess_despair/sprite_priestess_despair.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"d3d064d1-8d87-4651-acc5-da732fdf302e","path":"sprites/sprite_priestess_despair/sprite_priestess_despair.yy",},"LayerId":{"name":"86d5740c-8617-46c9-b9aa-5901a9083f27","path":"sprites/sprite_priestess_despair/sprite_priestess_despair.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"sprite_priestess_despair","path":"sprites/sprite_priestess_despair/sprite_priestess_despair.yy",},"resourceVersion":"1.0","name":"d3d064d1-8d87-4651-acc5-da732fdf302e","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"16f7f702-46b7-48fb-8896-9a341c1bbf41","path":"sprites/sprite_priestess_despair/sprite_priestess_despair.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"16f7f702-46b7-48fb-8896-9a341c1bbf41","path":"sprites/sprite_priestess_despair/sprite_priestess_despair.yy",},"LayerId":{"name":"86d5740c-8617-46c9-b9aa-5901a9083f27","path":"sprites/sprite_priestess_despair/sprite_priestess_despair.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"sprite_priestess_despair","path":"sprites/sprite_priestess_despair/sprite_priestess_despair.yy",},"resourceVersion":"1.0","name":"16f7f702-46b7-48fb-8896-9a341c1bbf41","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"a1dd8add-740f-42a5-936e-608d9cfa7284","path":"sprites/sprite_priestess_despair/sprite_priestess_despair.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"a1dd8add-740f-42a5-936e-608d9cfa7284","path":"sprites/sprite_priestess_despair/sprite_priestess_despair.yy",},"LayerId":{"name":"86d5740c-8617-46c9-b9aa-5901a9083f27","path":"sprites/sprite_priestess_despair/sprite_priestess_despair.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"sprite_priestess_despair","path":"sprites/sprite_priestess_despair/sprite_priestess_despair.yy",},"resourceVersion":"1.0","name":"a1dd8add-740f-42a5-936e-608d9cfa7284","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"4f735044-b937-4a76-a7d5-c93eb45e5c5a","path":"sprites/sprite_priestess_despair/sprite_priestess_despair.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"4f735044-b937-4a76-a7d5-c93eb45e5c5a","path":"sprites/sprite_priestess_despair/sprite_priestess_despair.yy",},"LayerId":{"name":"86d5740c-8617-46c9-b9aa-5901a9083f27","path":"sprites/sprite_priestess_despair/sprite_priestess_despair.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"sprite_priestess_despair","path":"sprites/sprite_priestess_despair/sprite_priestess_despair.yy",},"resourceVersion":"1.0","name":"4f735044-b937-4a76-a7d5-c93eb45e5c5a","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"4a65d1d4-4470-4458-84c1-38345119b321","path":"sprites/sprite_priestess_despair/sprite_priestess_despair.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"4a65d1d4-4470-4458-84c1-38345119b321","path":"sprites/sprite_priestess_despair/sprite_priestess_despair.yy",},"LayerId":{"name":"86d5740c-8617-46c9-b9aa-5901a9083f27","path":"sprites/sprite_priestess_despair/sprite_priestess_despair.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"sprite_priestess_despair","path":"sprites/sprite_priestess_despair/sprite_priestess_despair.yy",},"resourceVersion":"1.0","name":"4a65d1d4-4470-4458-84c1-38345119b321","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"b7d988c2-84b5-4dc6-8cdf-26ab5f008b77","path":"sprites/sprite_priestess_despair/sprite_priestess_despair.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"b7d988c2-84b5-4dc6-8cdf-26ab5f008b77","path":"sprites/sprite_priestess_despair/sprite_priestess_despair.yy",},"LayerId":{"name":"86d5740c-8617-46c9-b9aa-5901a9083f27","path":"sprites/sprite_priestess_despair/sprite_priestess_despair.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"sprite_priestess_despair","path":"sprites/sprite_priestess_despair/sprite_priestess_despair.yy",},"resourceVersion":"1.0","name":"b7d988c2-84b5-4dc6-8cdf-26ab5f008b77","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"38344451-d9c3-48b9-a027-72c2d9d95f40","path":"sprites/sprite_priestess_despair/sprite_priestess_despair.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"38344451-d9c3-48b9-a027-72c2d9d95f40","path":"sprites/sprite_priestess_despair/sprite_priestess_despair.yy",},"LayerId":{"name":"86d5740c-8617-46c9-b9aa-5901a9083f27","path":"sprites/sprite_priestess_despair/sprite_priestess_despair.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"sprite_priestess_despair","path":"sprites/sprite_priestess_despair/sprite_priestess_despair.yy",},"resourceVersion":"1.0","name":"38344451-d9c3-48b9-a027-72c2d9d95f40","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"f64489c7-1b7a-4578-9356-e4052e638ad0","path":"sprites/sprite_priestess_despair/sprite_priestess_despair.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"f64489c7-1b7a-4578-9356-e4052e638ad0","path":"sprites/sprite_priestess_despair/sprite_priestess_despair.yy",},"LayerId":{"name":"86d5740c-8617-46c9-b9aa-5901a9083f27","path":"sprites/sprite_priestess_despair/sprite_priestess_despair.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"sprite_priestess_despair","path":"sprites/sprite_priestess_despair/sprite_priestess_despair.yy",},"resourceVersion":"1.0","name":"f64489c7-1b7a-4578-9356-e4052e638ad0","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"6f9cb840-c67e-4c8d-8b4e-0889f80dee3e","path":"sprites/sprite_priestess_despair/sprite_priestess_despair.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"6f9cb840-c67e-4c8d-8b4e-0889f80dee3e","path":"sprites/sprite_priestess_despair/sprite_priestess_despair.yy",},"LayerId":{"name":"86d5740c-8617-46c9-b9aa-5901a9083f27","path":"sprites/sprite_priestess_despair/sprite_priestess_despair.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"sprite_priestess_despair","path":"sprites/sprite_priestess_despair/sprite_priestess_despair.yy",},"resourceVersion":"1.0","name":"6f9cb840-c67e-4c8d-8b4e-0889f80dee3e","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"98c0dad0-08ac-43b0-b1b6-b61412fa776e","path":"sprites/sprite_priestess_despair/sprite_priestess_despair.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"98c0dad0-08ac-43b0-b1b6-b61412fa776e","path":"sprites/sprite_priestess_despair/sprite_priestess_despair.yy",},"LayerId":{"name":"86d5740c-8617-46c9-b9aa-5901a9083f27","path":"sprites/sprite_priestess_despair/sprite_priestess_despair.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"sprite_priestess_despair","path":"sprites/sprite_priestess_despair/sprite_priestess_despair.yy",},"resourceVersion":"1.0","name":"98c0dad0-08ac-43b0-b1b6-b61412fa776e","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"3ded6341-e406-4ffb-ba5d-758b09f8659d","path":"sprites/sprite_priestess_despair/sprite_priestess_despair.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"3ded6341-e406-4ffb-ba5d-758b09f8659d","path":"sprites/sprite_priestess_despair/sprite_priestess_despair.yy",},"LayerId":{"name":"86d5740c-8617-46c9-b9aa-5901a9083f27","path":"sprites/sprite_priestess_despair/sprite_priestess_despair.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"sprite_priestess_despair","path":"sprites/sprite_priestess_despair/sprite_priestess_despair.yy",},"resourceVersion":"1.0","name":"3ded6341-e406-4ffb-ba5d-758b09f8659d","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"eec35fa8-c163-4fde-ab2d-aede8b6641fb","path":"sprites/sprite_priestess_despair/sprite_priestess_despair.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"eec35fa8-c163-4fde-ab2d-aede8b6641fb","path":"sprites/sprite_priestess_despair/sprite_priestess_despair.yy",},"LayerId":{"name":"86d5740c-8617-46c9-b9aa-5901a9083f27","path":"sprites/sprite_priestess_despair/sprite_priestess_despair.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"sprite_priestess_despair","path":"sprites/sprite_priestess_despair/sprite_priestess_despair.yy",},"resourceVersion":"1.0","name":"eec35fa8-c163-4fde-ab2d-aede8b6641fb","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"2e932343-1a82-4a91-b9e3-2b85278a449e","path":"sprites/sprite_priestess_despair/sprite_priestess_despair.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"2e932343-1a82-4a91-b9e3-2b85278a449e","path":"sprites/sprite_priestess_despair/sprite_priestess_despair.yy",},"LayerId":{"name":"86d5740c-8617-46c9-b9aa-5901a9083f27","path":"sprites/sprite_priestess_despair/sprite_priestess_despair.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"sprite_priestess_despair","path":"sprites/sprite_priestess_despair/sprite_priestess_despair.yy",},"resourceVersion":"1.0","name":"2e932343-1a82-4a91-b9e3-2b85278a449e","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"3364dfc6-19e4-4667-b1b9-1aadb646b5ae","path":"sprites/sprite_priestess_despair/sprite_priestess_despair.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"3364dfc6-19e4-4667-b1b9-1aadb646b5ae","path":"sprites/sprite_priestess_despair/sprite_priestess_despair.yy",},"LayerId":{"name":"86d5740c-8617-46c9-b9aa-5901a9083f27","path":"sprites/sprite_priestess_despair/sprite_priestess_despair.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"sprite_priestess_despair","path":"sprites/sprite_priestess_despair/sprite_priestess_despair.yy",},"resourceVersion":"1.0","name":"3364dfc6-19e4-4667-b1b9-1aadb646b5ae","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"023c6cec-84b9-4cfb-92d6-ff81ec4e7da8","path":"sprites/sprite_priestess_despair/sprite_priestess_despair.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"023c6cec-84b9-4cfb-92d6-ff81ec4e7da8","path":"sprites/sprite_priestess_despair/sprite_priestess_despair.yy",},"LayerId":{"name":"86d5740c-8617-46c9-b9aa-5901a9083f27","path":"sprites/sprite_priestess_despair/sprite_priestess_despair.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"sprite_priestess_despair","path":"sprites/sprite_priestess_despair/sprite_priestess_despair.yy",},"resourceVersion":"1.0","name":"023c6cec-84b9-4cfb-92d6-ff81ec4e7da8","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"d013a345-1a1c-4c26-a600-f0468d4b5846","path":"sprites/sprite_priestess_despair/sprite_priestess_despair.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"d013a345-1a1c-4c26-a600-f0468d4b5846","path":"sprites/sprite_priestess_despair/sprite_priestess_despair.yy",},"LayerId":{"name":"86d5740c-8617-46c9-b9aa-5901a9083f27","path":"sprites/sprite_priestess_despair/sprite_priestess_despair.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"sprite_priestess_despair","path":"sprites/sprite_priestess_despair/sprite_priestess_despair.yy",},"resourceVersion":"1.0","name":"d013a345-1a1c-4c26-a600-f0468d4b5846","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"e241ca80-b5d2-493b-858a-36c58d4fbd84","path":"sprites/sprite_priestess_despair/sprite_priestess_despair.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"e241ca80-b5d2-493b-858a-36c58d4fbd84","path":"sprites/sprite_priestess_despair/sprite_priestess_despair.yy",},"LayerId":{"name":"86d5740c-8617-46c9-b9aa-5901a9083f27","path":"sprites/sprite_priestess_despair/sprite_priestess_despair.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"sprite_priestess_despair","path":"sprites/sprite_priestess_despair/sprite_priestess_despair.yy",},"resourceVersion":"1.0","name":"e241ca80-b5d2-493b-858a-36c58d4fbd84","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"80806468-79e1-4e1c-bbef-1a830963d07d","path":"sprites/sprite_priestess_despair/sprite_priestess_despair.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"80806468-79e1-4e1c-bbef-1a830963d07d","path":"sprites/sprite_priestess_despair/sprite_priestess_despair.yy",},"LayerId":{"name":"86d5740c-8617-46c9-b9aa-5901a9083f27","path":"sprites/sprite_priestess_despair/sprite_priestess_despair.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"sprite_priestess_despair","path":"sprites/sprite_priestess_despair/sprite_priestess_despair.yy",},"resourceVersion":"1.0","name":"80806468-79e1-4e1c-bbef-1a830963d07d","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"5a250583-565e-4083-a5cb-0d3fbd206fc7","path":"sprites/sprite_priestess_despair/sprite_priestess_despair.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"5a250583-565e-4083-a5cb-0d3fbd206fc7","path":"sprites/sprite_priestess_despair/sprite_priestess_despair.yy",},"LayerId":{"name":"86d5740c-8617-46c9-b9aa-5901a9083f27","path":"sprites/sprite_priestess_despair/sprite_priestess_despair.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"sprite_priestess_despair","path":"sprites/sprite_priestess_despair/sprite_priestess_despair.yy",},"resourceVersion":"1.0","name":"5a250583-565e-4083-a5cb-0d3fbd206fc7","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"9eccb8d1-43cc-447b-8478-f4d88b6ffd99","path":"sprites/sprite_priestess_despair/sprite_priestess_despair.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"9eccb8d1-43cc-447b-8478-f4d88b6ffd99","path":"sprites/sprite_priestess_despair/sprite_priestess_despair.yy",},"LayerId":{"name":"86d5740c-8617-46c9-b9aa-5901a9083f27","path":"sprites/sprite_priestess_despair/sprite_priestess_despair.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"sprite_priestess_despair","path":"sprites/sprite_priestess_despair/sprite_priestess_despair.yy",},"resourceVersion":"1.0","name":"9eccb8d1-43cc-447b-8478-f4d88b6ffd99","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"30740c8e-7015-4860-9238-dc03b6a3b21f","path":"sprites/sprite_priestess_despair/sprite_priestess_despair.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"30740c8e-7015-4860-9238-dc03b6a3b21f","path":"sprites/sprite_priestess_despair/sprite_priestess_despair.yy",},"LayerId":{"name":"86d5740c-8617-46c9-b9aa-5901a9083f27","path":"sprites/sprite_priestess_despair/sprite_priestess_despair.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"sprite_priestess_despair","path":"sprites/sprite_priestess_despair/sprite_priestess_despair.yy",},"resourceVersion":"1.0","name":"30740c8e-7015-4860-9238-dc03b6a3b21f","tags":[],"resourceType":"GMSpriteFrame",},
+  ],
+  "sequence": {
+    "spriteId": {"name":"sprite_priestess_despair","path":"sprites/sprite_priestess_despair/sprite_priestess_despair.yy",},
+    "timeUnits": 1,
+    "playback": 1,
+    "playbackSpeed": 30.0,
+    "playbackSpeedType": 0,
+    "autoRecord": true,
+    "volume": 1.0,
+    "length": 23.0,
+    "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
+    "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
+    "tracks": [
+      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+            {"id":"a9c00dbc-77fb-48de-9bda-b3e5525d928d","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"022ff7b3-5eda-4f2f-beeb-2ed31e1084ad","path":"sprites/sprite_priestess_despair/sprite_priestess_despair.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"cbc2feb7-e7ee-4ce0-ad77-c3b4941f07d6","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"fed7df76-01ec-4d1a-a508-240c1aea8911","path":"sprites/sprite_priestess_despair/sprite_priestess_despair.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"6261e05b-8b80-49ba-a589-915b5d2c8309","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"d3d064d1-8d87-4651-acc5-da732fdf302e","path":"sprites/sprite_priestess_despair/sprite_priestess_despair.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"2b2c7a14-1748-4e22-9076-3618c93726fc","Key":3.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"16f7f702-46b7-48fb-8896-9a341c1bbf41","path":"sprites/sprite_priestess_despair/sprite_priestess_despair.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"9909d20e-1cbd-41c7-b90b-a7392a66fd8b","Key":4.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"a1dd8add-740f-42a5-936e-608d9cfa7284","path":"sprites/sprite_priestess_despair/sprite_priestess_despair.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"b6768871-bdcf-4259-ad82-647d81af9d11","Key":5.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"4f735044-b937-4a76-a7d5-c93eb45e5c5a","path":"sprites/sprite_priestess_despair/sprite_priestess_despair.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"fd886a5e-6985-4298-8088-4b3285ace62e","Key":6.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"4a65d1d4-4470-4458-84c1-38345119b321","path":"sprites/sprite_priestess_despair/sprite_priestess_despair.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"59d7b221-59d1-47f2-ac55-2db16d3e11df","Key":7.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"b7d988c2-84b5-4dc6-8cdf-26ab5f008b77","path":"sprites/sprite_priestess_despair/sprite_priestess_despair.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"63c4c287-fb2a-4046-a0c4-afa875159f47","Key":8.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"38344451-d9c3-48b9-a027-72c2d9d95f40","path":"sprites/sprite_priestess_despair/sprite_priestess_despair.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"73cf1492-316d-441a-8771-26bde94e04e2","Key":9.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"f64489c7-1b7a-4578-9356-e4052e638ad0","path":"sprites/sprite_priestess_despair/sprite_priestess_despair.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"6fab0149-eb65-4408-b9f6-6959c50e0753","Key":10.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"6f9cb840-c67e-4c8d-8b4e-0889f80dee3e","path":"sprites/sprite_priestess_despair/sprite_priestess_despair.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"30c11dc8-5213-4ae2-8ad9-09b4ab8d2549","Key":11.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"98c0dad0-08ac-43b0-b1b6-b61412fa776e","path":"sprites/sprite_priestess_despair/sprite_priestess_despair.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"7cb8f1a7-a71b-4afe-bc80-f06721e4f22b","Key":12.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"3ded6341-e406-4ffb-ba5d-758b09f8659d","path":"sprites/sprite_priestess_despair/sprite_priestess_despair.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"909ba83d-be11-40f1-a548-a4650d280f0f","Key":13.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"eec35fa8-c163-4fde-ab2d-aede8b6641fb","path":"sprites/sprite_priestess_despair/sprite_priestess_despair.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"60761a29-bd9a-40f9-8485-eacc350989ec","Key":14.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"2e932343-1a82-4a91-b9e3-2b85278a449e","path":"sprites/sprite_priestess_despair/sprite_priestess_despair.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"01616997-9ae0-4a27-bfae-cc6876876f92","Key":15.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"3364dfc6-19e4-4667-b1b9-1aadb646b5ae","path":"sprites/sprite_priestess_despair/sprite_priestess_despair.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"e3e59ff7-f355-409c-b0cb-e34cc006435a","Key":16.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"023c6cec-84b9-4cfb-92d6-ff81ec4e7da8","path":"sprites/sprite_priestess_despair/sprite_priestess_despair.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"c45b8610-e564-4258-abe6-d57f970c7b8e","Key":17.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"d013a345-1a1c-4c26-a600-f0468d4b5846","path":"sprites/sprite_priestess_despair/sprite_priestess_despair.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"5647f1c7-8121-4b16-83f9-a94f6918ed39","Key":18.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"e241ca80-b5d2-493b-858a-36c58d4fbd84","path":"sprites/sprite_priestess_despair/sprite_priestess_despair.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"7420e869-2f57-43f7-9eff-9afaf087e0bb","Key":19.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"80806468-79e1-4e1c-bbef-1a830963d07d","path":"sprites/sprite_priestess_despair/sprite_priestess_despair.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"5cf80701-e094-442a-a40b-b27c97fac62c","Key":20.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"5a250583-565e-4083-a5cb-0d3fbd206fc7","path":"sprites/sprite_priestess_despair/sprite_priestess_despair.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"fa4af3a7-b9e1-42bd-b5bf-e19d87531c29","Key":21.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"9eccb8d1-43cc-447b-8478-f4d88b6ffd99","path":"sprites/sprite_priestess_despair/sprite_priestess_despair.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"be107dbf-fb8b-4ae3-a7a2-c42028586a37","Key":22.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"30740c8e-7015-4860-9238-dc03b6a3b21f","path":"sprites/sprite_priestess_despair/sprite_priestess_despair.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"modifiers":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack",},
+    ],
+    "visibleRange": null,
+    "lockOrigin": false,
+    "showBackdrop": true,
+    "showBackdropImage": false,
+    "backdropImagePath": "",
+    "backdropImageOpacity": 0.5,
+    "backdropWidth": 1366,
+    "backdropHeight": 768,
+    "backdropXOffset": 0.0,
+    "backdropYOffset": 0.0,
+    "xorigin": 31,
+    "yorigin": 30,
+    "eventToFunction": {},
+    "eventStubScript": null,
+    "parent": {"name":"sprite_priestess_despair","path":"sprites/sprite_priestess_despair/sprite_priestess_despair.yy",},
+    "resourceVersion": "1.3",
+    "name": "sprite_priestess_despair",
+    "tags": [],
+    "resourceType": "GMSequence",
+  },
+  "layers": [
+    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"86d5740c-8617-46c9-b9aa-5901a9083f27","tags":[],"resourceType":"GMImageLayer",},
+  ],
+  "parent": {
+    "name": "priestess",
+    "path": "folders/Sprites/sprites_portraits/priestess.yy",
+  },
+  "resourceVersion": "1.0",
+  "name": "sprite_priestess_despair",
+  "tags": [],
+  "resourceType": "GMSprite",
+}
