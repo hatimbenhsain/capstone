@@ -73,7 +73,7 @@
   ],
   "parent": {
     "name": "sprite_column",
-    "path": "folders/Sprites/sprite_objects/priestessLevel/sprite_column.yy",
+    "path": "folders/Paths/Sprites/sprite_objects/priestessLevel/sprite_column.yy",
   },
   "resourceVersion": "1.0",
   "name": "sprite_ruin11",

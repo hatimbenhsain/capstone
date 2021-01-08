@@ -69,7 +69,7 @@
   ],
   "parent": {
     "name": "sprite_gate",
-    "path": "folders/Sprites/sprite_objects/priestessLevel/sprite_gate.yy",
+    "path": "folders/Paths/Sprites/sprite_objects/priestessLevel/sprite_gate.yy",
   },
   "resourceVersion": "1.0",
   "name": "sprite_gate_closed",

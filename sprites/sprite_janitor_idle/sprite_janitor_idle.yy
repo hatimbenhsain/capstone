@@ -81,7 +81,7 @@
   ],
   "parent": {
     "name": "sprite_janitor",
-    "path": "folders/Sprites/sprite_characters/sprite_janitor.yy",
+    "path": "folders/Paths/Sprites/sprite_characters/sprite_janitor.yy",
   },
   "resourceVersion": "1.0",
   "name": "sprite_janitor_idle",

@@ -69,7 +69,7 @@
   ],
   "parent": {
     "name": "sprite_ow_weapons",
-    "path": "folders/Sprites/sprite_objects/priestessLevel/sprite_ow_weapons.yy",
+    "path": "folders/Paths/Sprites/sprite_objects/priestessLevel/sprite_ow_weapons.yy",
   },
   "resourceVersion": "1.0",
   "name": "sprite_ow_weapon2",

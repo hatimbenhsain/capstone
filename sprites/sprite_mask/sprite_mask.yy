@@ -69,7 +69,7 @@
   ],
   "parent": {
     "name": "sprite_items",
-    "path": "folders/Sprites/sprite_items.yy",
+    "path": "folders/Paths/Sprites/sprite_items.yy",
   },
   "resourceVersion": "1.0",
   "name": "sprite_mask",

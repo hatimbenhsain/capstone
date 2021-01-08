@@ -85,7 +85,7 @@
   ],
   "parent": {
     "name": "sprite_characters",
-    "path": "folders/Sprites/sprite_characters.yy",
+    "path": "folders/Paths/Sprites/sprite_characters.yy",
   },
   "resourceVersion": "1.0",
   "name": "sprite_hiddenGoddess",

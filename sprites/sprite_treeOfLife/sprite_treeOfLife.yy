@@ -93,7 +93,7 @@
   ],
   "parent": {
     "name": "sprite_objects",
-    "path": "folders/Sprites/sprite_objects.yy",
+    "path": "folders/Paths/Sprites/sprite_objects.yy",
   },
   "resourceVersion": "1.0",
   "name": "sprite_treeOfLife",

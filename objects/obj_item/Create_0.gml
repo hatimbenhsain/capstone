@@ -10,3 +10,5 @@ event_inherited();
 if(!variable_instance_exists(id,"name")) name="item name";
 description="sample item description";
 pocketed=false;
+
+icon=sprite_index;

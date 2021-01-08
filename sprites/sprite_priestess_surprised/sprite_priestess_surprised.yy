@@ -89,7 +89,7 @@
   ],
   "parent": {
     "name": "priestess",
-    "path": "folders/Sprites/sprites_portraits/priestess.yy",
+    "path": "folders/Paths/Sprites/sprites_portraits/priestess.yy",
   },
   "resourceVersion": "1.0",
   "name": "sprite_priestess_surprised",

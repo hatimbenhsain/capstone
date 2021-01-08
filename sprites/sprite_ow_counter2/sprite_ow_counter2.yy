@@ -69,7 +69,7 @@
   ],
   "parent": {
     "name": "sprite_ow_kitchenStuff",
-    "path": "folders/Sprites/sprite_objects/priestessLevel/sprite_ow_kitchenStuff.yy",
+    "path": "folders/Paths/Sprites/sprite_objects/priestessLevel/sprite_ow_kitchenStuff.yy",
   },
   "resourceVersion": "1.0",
   "name": "sprite_ow_counter2",

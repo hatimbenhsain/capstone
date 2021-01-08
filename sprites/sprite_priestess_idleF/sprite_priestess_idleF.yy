@@ -69,7 +69,7 @@
   ],
   "parent": {
     "name": "sprite_priestess",
-    "path": "folders/Sprites/sprite_characters/sprite_priestess.yy",
+    "path": "folders/Paths/Sprites/sprite_characters/sprite_priestess.yy",
   },
   "resourceVersion": "1.0",
   "name": "sprite_priestess_idleF",

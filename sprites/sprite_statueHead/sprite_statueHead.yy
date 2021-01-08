@@ -69,7 +69,7 @@
   ],
   "parent": {
     "name": "sprite_icons",
-    "path": "folders/Sprites/sprite_icons.yy",
+    "path": "folders/Paths/Sprites/sprite_icons.yy",
   },
   "resourceVersion": "1.0",
   "name": "sprite_statueHead",

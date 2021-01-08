@@ -69,7 +69,7 @@
   ],
   "parent": {
     "name": "sprite_flavor",
-    "path": "folders/Sprites/sprite_misc/sprite_flavor.yy",
+    "path": "folders/Paths/Sprites/sprite_misc/sprite_flavor.yy",
   },
   "resourceVersion": "1.0",
   "name": "sprite_bloodandash",

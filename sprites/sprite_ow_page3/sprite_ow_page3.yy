@@ -38,7 +38,7 @@
     "spriteId": {"name":"sprite_ow_page3","path":"sprites/sprite_ow_page3/sprite_ow_page3.yy",},
     "timeUnits": 1,
     "playback": 1,
-    "playbackSpeed": 30.0,
+    "playbackSpeed": 2.0,
     "playbackSpeedType": 0,
     "autoRecord": true,
     "volume": 1.0,
@@ -77,7 +77,7 @@
   ],
   "parent": {
     "name": "sprite_ow_page",
-    "path": "folders/Sprites/sprite_objects/priestessLevel/sprite_ow_page.yy",
+    "path": "folders/Paths/Sprites/sprite_objects/priestessLevel/sprite_ow_page.yy",
   },
   "resourceVersion": "1.0",
   "name": "sprite_ow_page3",

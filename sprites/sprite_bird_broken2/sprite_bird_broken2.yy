@@ -69,7 +69,7 @@
   ],
   "parent": {
     "name": "sprite_birdStatue",
-    "path": "folders/Sprites/sprite_objects/priestessLevel/sprite_birdStatue.yy",
+    "path": "folders/Paths/Sprites/sprite_objects/priestessLevel/sprite_birdStatue.yy",
   },
   "resourceVersion": "1.0",
   "name": "sprite_bird_broken2",

@@ -89,7 +89,7 @@
   ],
   "parent": {
     "name": "hero",
-    "path": "folders/Sprites/sprites_portraits/hero.yy",
+    "path": "folders/Paths/Sprites/sprites_portraits/hero.yy",
   },
   "resourceVersion": "1.0",
   "name": "sprite_hero_confused",
