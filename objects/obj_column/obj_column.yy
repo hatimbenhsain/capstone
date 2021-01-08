@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "sprite_column1",
-    "path": "sprites/sprite_column1/sprite_column1.yy",
+    "name": "sprite_candleColumn1",
+    "path": "sprites/sprite_candleColumn1/sprite_candleColumn1.yy",
   },
   "solid": false,
   "visible": true,
