@@ -85,7 +85,7 @@
   ],
   "parent": {
     "name": "sprites_portraits",
-    "path": "folders/Paths/Sprites/sprites_portraits.yy",
+    "path": "folders/Sprites/sprites_portraits.yy",
   },
   "resourceVersion": "1.0",
   "name": "sprite_portrait_frame",

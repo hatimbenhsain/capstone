@@ -97,7 +97,7 @@
   ],
   "parent": {
     "name": "sprite_randomStuff",
-    "path": "folders/Paths/Sprites/sprite_randomStuff.yy",
+    "path": "folders/Sprites/sprite_randomStuff.yy",
   },
   "resourceVersion": "1.0",
   "name": "objectsNStuff",

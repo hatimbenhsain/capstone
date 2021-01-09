@@ -69,7 +69,7 @@
   ],
   "parent": {
     "name": "sprite_misc",
-    "path": "folders/Paths/Sprites/sprite_misc.yy",
+    "path": "folders/Sprites/sprite_misc.yy",
   },
   "resourceVersion": "1.0",
   "name": "sprite_mallset",
