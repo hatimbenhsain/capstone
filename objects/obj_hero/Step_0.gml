@@ -134,11 +134,11 @@ if(keyboard_check_pressed(interactButton) ||  mouse_check_button_pressed(mb_left
 	}else if(inst!=noone && !obj_inventory.open){
 		talkingTo=noone;
 		inst.talkingTo=noone;
-		frozen=false;
+		if(alarm[0]==-1) alarm[0]=1; //unfreezing
 		obj_dialogueManager.finished=false;
 	}else if(inst==noone && pickedUp){
 		talkingTo=noone;
-		frozen=false;
+		if(alarm[0]==-1) alarm[0]=1;
 		obj_dialogueManager.finished=false;
 		pickedUp=false;
 	}

@@ -73,7 +73,7 @@
   ],
   "parent": {
     "name": "sprite_babyBird",
-    "path": "folders/Paths/Sprites/sprite_objects/priestessLevel/sprite_babyBird.yy",
+    "path": "folders/sprite_objects/priestessLevel/sprite_babyBird.yy",
   },
   "resourceVersion": "1.0",
   "name": "sprite_babyBird_open",

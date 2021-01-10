@@ -8,3 +8,11 @@ function addInteractable(obj){
 	str1 = string_insert(str2,str1,1)
 	ds_map_add(interactableObjects,obj.object_index,name+str1);
 }
+
+function SitOnBench(){
+	obj_hero.frozen=true;
+	FadeToBlack(2,3);
+	obj_hero.alarm[0]=room_speed*(2*2+3); //unfreezing
+	obj_bench.alarm[0]=room_speed*2; //moving the hero
+	show_debug_message("sitting");
+}

@@ -68,8 +68,8 @@
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"25017da5-940c-4e7a-97a6-593d95203c77","tags":[],"resourceType":"GMImageLayer",},
   ],
   "parent": {
-    "name": "sprite_column",
-    "path": "folders/Paths/Sprites/sprite_objects/priestessLevel/sprite_column.yy",
+    "name": "sprite_ruinsEtc",
+    "path": "folders/Sprites/sprite_objects/priestessLevel/sprite_ruinsEtc.yy",
   },
   "resourceVersion": "1.0",
   "name": "sprite_candleColumn1",

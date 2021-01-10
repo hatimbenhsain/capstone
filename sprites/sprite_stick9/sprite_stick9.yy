@@ -69,7 +69,7 @@
   ],
   "parent": {
     "name": "sprite_sticks",
-    "path": "folders/Paths/Sprites/sprite_objects/priestessLevel/sprite_sticks.yy",
+    "path": "folders/sprite_objects/priestessLevel/sprite_sticks.yy",
   },
   "resourceVersion": "1.0",
   "name": "sprite_stick9",

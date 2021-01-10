@@ -100,31 +100,34 @@ function connect(_child,_parent){
 }
 
 function parseDialogue(fileName){
-	grid=load_csv(fileName)
-	var w=ds_grid_width(grid);
-	var h=ds_grid_height(grid);
-	head=undefined;
-	var messages=ds_list_create();	//create ds list and put the messages there thenm use it to find parent
-	for(var i=1;i<h;i++){
-		var text=ds_grid_get(grid,0,i);
-		var type=ds_grid_get(grid,1,i);
-		if(ds_grid_get(grid,2,i)!=""){
-			var parent=messages[|real(ds_grid_get(grid,2,i))-2];
-		}else{
-			var parent=undefined;
-		}
-		var action=ds_grid_get(grid,3,i);
-		var subject=ds_grid_get(grid,4,i);
-		var talker=ds_grid_get(grid,5,i);
-		var emotion=ds_grid_get(grid,6,i);
+	if(file_exists(fileName)){
+		grid=load_csv(fileName)
+		var w=ds_grid_width(grid);
+		var h=ds_grid_height(grid);
+		head=undefined;
+		var messages=ds_list_create();	//create ds list and put the messages there thenm use it to find parent
+		for(var i=1;i<h;i++){
+			var text=ds_grid_get(grid,0,i);
+			var type=ds_grid_get(grid,1,i);
+			if(ds_grid_get(grid,2,i)!=""){
+				var parent=messages[|real(ds_grid_get(grid,2,i))-2];
+			}else{
+				var parent=undefined;
+			}
+			var action=ds_grid_get(grid,3,i);
+			var subject=ds_grid_get(grid,4,i);
+			var talker=ds_grid_get(grid,5,i);
+			var emotion=ds_grid_get(grid,6,i);
 		
-		if(head==undefined){
-			var l=new global.Line(text,-1,type,action,subject,talker,emotion);
-			head=l;
-		}else{
-			var l=new global.Line(text,parent,type,action,subject,talker,emotion);
-		}		
-		ds_list_add(messages,l);
+			if(head==undefined){
+				var l=new global.Line(text,-1,type,action,subject,talker,emotion);
+				head=l;
+			}else{
+				var l=new global.Line(text,parent,type,action,subject,talker,emotion);
+			}		
+			ds_list_add(messages,l);
+		}
+		return head;
 	}
-	return head;
+	else return undefined;
 }

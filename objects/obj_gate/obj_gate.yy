@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "sprite_gate_floating",
-    "path": "sprites/sprite_gate_floating/sprite_gate_floating.yy",
+    "name": "sprite_gate_magic",
+    "path": "sprites/sprite_gate_magic/sprite_gate_magic.yy",
   },
   "solid": false,
   "visible": true,

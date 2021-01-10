@@ -1,0 +1,6 @@
+Line,Type,Parent,Action,Subject,Talker,Emotion
+A tattered piece of clothing lies on the ground.,,,,,noone,
+It is speckled with red stains.,,,,,,
+.....,q,,,,hero,sad
+Pick it up.,a,4,addItem,,,
+Leave it.,a,4,,,,

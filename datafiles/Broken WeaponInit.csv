@@ -1,0 +1,6 @@
+Line,Type,Parent,Action,Subject,Talker,Emotion
+A broken spear lies on the ground.,,,,,noone,
+You pick it up and try to swing it.,,,,,,
+This is barely holding together... Must be really old.,q,,,,hero,neutral
+Take it with you.,a,4,addItem,,,
+Put it down.,a,4,,,,

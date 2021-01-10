@@ -41,7 +41,7 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"778ea4c8-6adc-42b1-b6f1-78af138320de","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"8cd18ec3-9995-40c7-a525-8cf716b6fbf1","path":"sprites/sprite_bird_broken1/sprite_bird_broken1.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"dc475f17-5d91-4672-82ff-45ca2439bb99","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"8cd18ec3-9995-40c7-a525-8cf716b6fbf1","path":"sprites/sprite_bird_broken1/sprite_bird_broken1.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"modifiers":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack",},
     ],
     "visibleRange": null,
@@ -69,7 +69,7 @@
   ],
   "parent": {
     "name": "sprite_birdStatue",
-    "path": "folders/Paths/Sprites/sprite_objects/priestessLevel/sprite_birdStatue.yy",
+    "path": "folders/sprite_objects/priestessLevel/sprite_birdStatue.yy",
   },
   "resourceVersion": "1.0",
   "name": "sprite_bird_broken1",

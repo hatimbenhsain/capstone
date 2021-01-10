@@ -69,7 +69,7 @@
   ],
   "parent": {
     "name": "sprite_tree",
-    "path": "folders/Paths/Sprites/sprite_objects/priestessLevel/sprite_tree.yy",
+    "path": "folders/sprite_objects/priestessLevel/sprite_tree.yy",
   },
   "resourceVersion": "1.0",
   "name": "sprite_tree9",
