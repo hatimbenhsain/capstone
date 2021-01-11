@@ -9,7 +9,7 @@ if(inDialogue){
 		if(currentMessage.action!=undefined && currentMessage.type!="a"){
 				//script_execute(asset_get_index(currentMessage.parent.children[|answerSelected].action),interlocutor);
 				action=asset_get_index(currentMessage.parent.children[|answerSelected].action);
-				if(currentMessage.parent.children[|answerSelected].subject!="") subject=currentMessage.parent.children[|answerSelected].action;
+				if(currentMessage.parent.children[|answerSelected].subject!="") subject=currentMessage.parent.children[|answerSelected].subject;
 		}
 			
 		if(currentMessage.type=="a"){

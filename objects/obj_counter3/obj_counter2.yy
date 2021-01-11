@@ -1,15 +1,15 @@
 {
   "spriteId": {
-    "name": "sprite_ow_counter1knifeless",
-    "path": "sprites/sprite_ow_counter1knifeless/sprite_ow_counter1knifeless.yy",
+    "name": "sprite_ow_counter2",
+    "path": "sprites/sprite_ow_counter2/sprite_ow_counter2.yy",
   },
   "solid": false,
   "visible": true,
   "spriteMaskId": null,
   "persistent": false,
   "parentObjectId": {
-    "name": "obj_interactable",
-    "path": "objects/obj_interactable/obj_interactable.yy",
+    "name": "obj_collidable",
+    "path": "objects/obj_collidable/obj_collidable.yy",
   },
   "physicsObject": false,
   "physicsSensor": false,
@@ -23,9 +23,7 @@
   "physicsStartAwake": true,
   "physicsKinematic": false,
   "physicsShapePoints": [],
-  "eventList": [
-    {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"parent":{"name":"obj_counter2","path":"objects/obj_counter2/obj_counter2.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
-  ],
+  "eventList": [],
   "properties": [],
   "overriddenProperties": [],
   "parent": {

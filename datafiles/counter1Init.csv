@@ -1,0 +1,9 @@
+Line,Type,Parent,Action,Subject,Talker,Emotion
+The kitchen counter is cluttered with bits of old utensils.,,,,,noone,
+A rusty knife catches your attention.,,,,,,
+This could be useful!,q,,,,hero,neutral
+Pick up the knife.,a,4,,,noone,
+Leave it.,a,4,,,,
+.....,,5,,,hero,neutral
+Ow!,,,ChangeState,1,hero,shocked
+"Yup, still has an edge.",,,addItem,obj_knife,hero,cringe

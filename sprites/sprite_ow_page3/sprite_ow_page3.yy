@@ -77,7 +77,7 @@
   ],
   "parent": {
     "name": "sprite_ow_page",
-    "path": "folders/sprite_objects/priestessLevel/sprite_ow_page.yy",
+    "path": "folders/Sprites/sprite_objects/priestessLevel/sprite_ow_page.yy",
   },
   "resourceVersion": "1.0",
   "name": "sprite_ow_page3",

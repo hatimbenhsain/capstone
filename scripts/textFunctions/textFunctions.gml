@@ -82,7 +82,10 @@ global.Line=function(_message, _parent, _type, _action, _subject, _talker, _emot
 	global.lastLine=self;
 	greyed=false;
 	subject=_subject;
-	
+	if (subject!=""){
+		if(string_digits(subject)!=subject)	subject=asset_get_index(subject); 
+		else subject=real(subject);
+	}
 }
 
 function connect(_child,_parent){

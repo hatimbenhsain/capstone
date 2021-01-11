@@ -4,7 +4,7 @@
     "path": "sprites/sprite_ow_knife/sprite_ow_knife.yy",
   },
   "solid": false,
-  "visible": true,
+  "visible": false,
   "spriteMaskId": null,
   "persistent": false,
   "parentObjectId": {

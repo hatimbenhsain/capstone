@@ -69,7 +69,7 @@
   ],
   "parent": {
     "name": "sprite_ow_bed",
-    "path": "folders/sprite_objects/priestessLevel/sprite_ow_bed.yy",
+    "path": "folders/Sprites/sprite_objects/priestessLevel/sprite_ow_bed.yy",
   },
   "resourceVersion": "1.0",
   "name": "sprite_ow_bed2",

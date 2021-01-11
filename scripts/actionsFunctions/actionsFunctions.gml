@@ -4,11 +4,11 @@ function destruction(){
 	instance_destroy(obj_hero);	
 }
 
-function changeHead(name){
+function ChangeHead(name){
 	head=parseDialogue(name+".csv");
 }
 
-function changeInitHead(name){
+function ChangeInitHead(name){
 	initialHead=parseDialogue(name+".csv");	
 }
 
@@ -23,3 +23,4 @@ function useItem(obj){
 	}
 	obj_inventory.lockedObject=-1;
 }
+

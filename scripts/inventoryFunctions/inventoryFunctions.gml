@@ -3,7 +3,18 @@
 function addItem(item){
 	show_debug_message(item);
 	with(item){
-		show_debug_message(object_index);
+		//show_debug_message(object_index);
+		ds_list_add(obj_inventory.items,id);
+		//obj_hero.frozen=false;
+		instance_deactivate_object(id);
+	}
+	obj_hero.pickedUp=true;
+}
+
+function AddItem(item){
+	show_debug_message(item);
+	with(item){
+		//show_debug_message(object_index);
 		ds_list_add(obj_inventory.items,id);
 		//obj_hero.frozen=false;
 		instance_deactivate_object(id);

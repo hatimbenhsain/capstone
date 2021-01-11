@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "sprite_ow_counter1knifeless",
-    "path": "sprites/sprite_ow_counter1knifeless/sprite_ow_counter1knifeless.yy",
+    "name": "sprite_ow_counter2",
+    "path": "sprites/sprite_ow_counter2/sprite_ow_counter2.yy",
   },
   "solid": false,
   "visible": true,
@@ -24,7 +24,7 @@
   "physicsKinematic": false,
   "physicsShapePoints": [],
   "eventList": [
-    {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"parent":{"name":"obj_counter2","path":"objects/obj_counter2/obj_counter2.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"parent":{"name":"obj_counter3","path":"objects/obj_counter3/obj_counter3.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
   "properties": [],
   "overriddenProperties": [],
@@ -33,7 +33,7 @@
     "path": "folders/Objects/obj_overworld/priestessLevel/obj_kitchen.yy",
   },
   "resourceVersion": "1.0",
-  "name": "obj_counter2",
+  "name": "obj_counter3",
   "tags": [],
   "resourceType": "GMObject",
 }

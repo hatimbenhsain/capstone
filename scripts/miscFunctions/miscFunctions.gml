@@ -16,3 +16,9 @@ function SitOnBench(){
 	obj_bench.alarm[0]=room_speed*2; //moving the hero
 	show_debug_message("sitting");
 }
+
+function ChangeState(newstate){
+	with(interlocutor){
+		state=newstate;	
+	}
+}

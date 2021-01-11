@@ -4,7 +4,7 @@
     "path": "sprites/sprite_bird_food/sprite_bird_food.yy",
   },
   "solid": false,
-  "visible": true,
+  "visible": false,
   "spriteMaskId": null,
   "persistent": false,
   "parentObjectId": {
