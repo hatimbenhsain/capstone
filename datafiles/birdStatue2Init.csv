@@ -1,0 +1,4 @@
+Line,Type,Parent,Action,Subject,Talker,Emotion
+Hmm...,,,,,hero,thinking
+A chicken leg?,,,,,hero,thinking
+Not a chicken.,,,TurnOn,addQuestion,priestess,neutral

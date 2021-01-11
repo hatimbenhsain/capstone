@@ -3,8 +3,5 @@
 
 name="counter1";
 
-//change state altogether?
-//change head
-//change sprite
 
 event_inherited();

@@ -5,7 +5,7 @@ name="priestess";
 event_inherited();
 
 
-addInteractable(obj_egg);
+
 
 neutralSprite=sprite_priestess_neutral;
 
@@ -18,4 +18,6 @@ walkF=sprite_priestess_walkF;
 walking=false;
 
 
-state=-1;
+state=3;
+
+addBird=false;

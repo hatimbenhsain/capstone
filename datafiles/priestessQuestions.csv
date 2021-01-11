@@ -1,0 +1,8 @@
+Line,Type,Parent,Action,Subject,Talker,Emotion
+What do you want to learn about?,q,,,,priestess,neutral
+This place.,a,2,,,noone,
+You.,a,2,,,,
+This is a temple.,l,3,,,priestess,neutral
+That's all.,,,,,,
+Me..? There isn't a lot to tell.,l,4,,,priestess,neutral
+I'm just a priestess.,,,,,,

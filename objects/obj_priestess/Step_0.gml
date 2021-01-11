@@ -14,6 +14,10 @@ if(state=="0"){
 		alarm[0]=4*room_speed;
 	}
 }
+if(state==3){
+	initialHead=parseDialogue("priestessQuestions.csv");
+	state=2
+}
 
 event_inherited();
 depth=-1*(y+sprite_height/2-12);

@@ -22,3 +22,22 @@ function ChangeState(newstate){
 		state=newstate;	
 	}
 }
+
+function TurnOn(_valueName){
+	with(interlocutor){
+		variable_instance_set(id,_valueName,true);
+		show_debug_message(_valueName);
+	}
+}
+
+function TurnOff(_valueName){
+	with(interlocutor){
+		variable_instance_set(id,_valueName,false);
+	}
+}
+
+function Toggle(_valueName){
+	with(interlocutor){
+		variable_instance_set(id,_valueName,!variable_instance_get(id,_valueName));
+	}
+}

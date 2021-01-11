@@ -82,8 +82,10 @@ global.Line=function(_message, _parent, _type, _action, _subject, _talker, _emot
 	global.lastLine=self;
 	greyed=false;
 	subject=_subject;
-	if (subject!=""){
-		if(string_digits(subject)!=subject)	subject=asset_get_index(subject); 
+	if(subject!=""){
+		if(string_digits(subject)!=subject){
+			if(asset_get_index(subject)!=-1) subject=asset_get_index(subject); 
+		}
 		else subject=real(subject);
 	}
 }
@@ -91,13 +93,14 @@ global.Line=function(_message, _parent, _type, _action, _subject, _talker, _emot
 function connect(_child,_parent){
 	var childExists=false;
 	for(var i=0;i<ds_list_size(_parent.children);i++){
-		if(_parent.children[|i]==_child){
+		if(_parent.children[|i].text==_child.text){
 			childExists=true
 			break
 		}
 	}
 	if(!childExists){
 		_child.parent=_parent;	//not sure about this
+		_child.isHead=false;
 		ds_list_add(_parent.children,_child);
 	}
 }
@@ -133,4 +136,20 @@ function parseDialogue(fileName){
 		return head;
 	}
 	else return undefined;
+}
+
+function AddAnswer(node,_question,_answer){
+	show_debug_message(node.text);
+	if(node.text==_question){
+		connect(parseDialogue(_answer),node);
+		show_debug_message(_answer+" added");
+		head=initialHead;
+		return true;
+	}else{
+		for(var i=0;i<ds_list_size(node.children);i++){
+			AddAnswer(node.children[|i],_question,_answer);	
+		}
+	}
+	//show_debug_message("question not found");
+	return false;
 }

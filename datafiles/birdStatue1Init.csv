@@ -1,0 +1,8 @@
+Line,Type,Parent,Action,Subject,Talker,Emotion
+It looks like a smashed statue of some sort of bird.,,,,,noone,
+A rotten smell wafts from the broken beak.,,,,,noone,
+Oh gods... How long has this been here?,q,,,,hero,cringe
+Pick up the dubious food.,a,4,AddItem,obj_birdStatueFood,noone,
+Leave it.,a,4,,,,
+Beggars can't be choosers.... right?,,5,ChangeState,1,hero,cringe
+......Better not disturb the spirit maggots.,,6,,,hero,cringe
