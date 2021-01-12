@@ -1,0 +1,18 @@
+Line,Type,Parent,Action,Subject,Talker,Emotion
+The baby bird statue stares intently at you.,,,,,noone,
+What will you do?,q,,,,,
+Pet the bird.,a,3,,,,
+Keep on looking at it.,a,3,,,,
+Leave it alone.,a,3,,,,
+Try to pry it open.,a,3,,,,
+....,l,4,,,hero,neutral
+It doesn't seem to care for your pets.,,,,,noone,
+....,l,5,,,hero,angry
+Ah... damn it.,,,,,hero,cringe
+You fail to match the statue's unwavering gaze.,,,,,noone,
+"The statue seems to say: ""good.""",l,6,,,noone,
+....,l,7,,,hero,angry
+I don't think I can do it bare-handed. It's been sealed shut...,,,,,hero,neutral
+Maybe if I use a tool...,,,,,hero,thinking
+The statue stares smugly back at you.,,,,,noone,
+....,,,,,hero,angry

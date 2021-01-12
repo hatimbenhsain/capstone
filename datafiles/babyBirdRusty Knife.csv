@@ -1,0 +1,5 @@
+Line,Type,Parent,Action,Subject,Talker,Emotion
+Use the knife to pry the statue's beak open?,q,,,,noone,
+Yes.,a,2,ChangeState,2,,
+No.,a,2,,,,
+It's open!,,3,,,hero,excited

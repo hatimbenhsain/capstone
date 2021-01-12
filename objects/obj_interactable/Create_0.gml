@@ -1,7 +1,8 @@
 /// @description Insert description here
 // You can write your code in this editor
-state=-1;
+
 event_inherited();
+state=-1;
 dir=0;
 talkingTo=noone;
 if(variable_instance_exists(id,"name") && !variable_instance_exists(id,"initialHead")){

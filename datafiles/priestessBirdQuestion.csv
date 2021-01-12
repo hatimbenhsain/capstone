@@ -1,5 +1,7 @@
 Line,Type,Parent,Action,Subject,Talker,Emotion
+The statues.,,,,,noone,
 Can you tell me about the chicken statues?,l,,,,hero,neutral
 "Again, they're not chickens.",,,,,priestess,neutral
-"They represent the sacred bird of the Goddess of the Hidden, one of the forms that she can take when visiting the mortal world.",,,,,priestess,neutral
-"Of course, most of them were destroyed when the humans came.",,,,,,angry
+They represent the sacred bird of the Goddess of the Hidden.,,,,,priestess,neutral
+"They roamed the Earth in ancient times, but Man's hubris led them to extinction.",,,,,priestess,sad
+"As if that wasn't enough, the humans also destroyed the statues here.",,,,,priestess,angry
