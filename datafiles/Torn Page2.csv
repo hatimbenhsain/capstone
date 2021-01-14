@@ -1,0 +1,4 @@
+Line,Type,Parent,Action,Subject,Talker,Emotion
+Another discarded page.,q,,,,hero,neutral
+Pick it up.,a,2,AddItem,,noone,
+Leave it.,a,2,,,noone,

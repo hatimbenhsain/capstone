@@ -1,0 +1,7 @@
+Line,Type,Parent,Action,Subject,Talker,Emotion
+A piece of paper lies ahead of you.,,,,,noone,
+This must've come from one of the destroyed books.,,,,,hero,neutral
+The language is foreign to me though...,,,,,hero,sad
+Maybe the priestess can help!,q,,,,hero,thinking
+Pick it up.,a,5,AddItem,,noone,
+Leave it.,a,5,,,noone,
