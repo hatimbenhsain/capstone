@@ -21,3 +21,13 @@ walking=false;
 state=3;
 
 addBird=false;
+
+angrySprite=sprite_priestess_angry;
+happySprite=sprite_priestess_happy;
+neutralSprite=sprite_priestess_neutral;
+sadSprite=sprite_priestess_sad;
+shockedSprite=sprite_priestess_shocked;
+suspiciousSprite=sprite_hero_suspicious;
+thinkingSprite=sprite_priestess_thinking;
+cryingSprite=sprite_priestess_crying;
+sereneSprite=sprite_priestess_serene;
