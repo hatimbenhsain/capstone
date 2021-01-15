@@ -9,6 +9,9 @@ switch(state){
 		break;
 	case 1:
 		addInteractable(obj_pendant);
+		with(obj_interactable){
+			if(name=="deadTree") addInteractable(obj_pendant);	
+		}
 		state=2;
 		break;
 	case 2:
@@ -23,7 +26,19 @@ switch(state){
 	case 4:
 		if(image_index>=sprite_get_number(sprite_treeGrowth)-1){
 			sprite_index=sprite_treeOfLife2;
+			ChangeInitHead("treeOfLife2");
 			state=5;
 		}
 		break;
+	case 6:
+		ChangeInitHead("treeOfLife3");
+		with(obj_statueHands) state=0;
+		state=7;
+		break;
+	case 8:
+		ChangeInitHead("treeOfLife4");
+		with(obj_fruit) state=0;
+		state=9;
+		break;
+	
 }

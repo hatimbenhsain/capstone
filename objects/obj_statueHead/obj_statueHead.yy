@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "sprite_goddessPart2",
-    "path": "sprites/sprite_goddessPart2/sprite_goddessPart2.yy",
+    "name": "sprite_goddessPart1",
+    "path": "sprites/sprite_goddessPart1/sprite_goddessPart1.yy",
   },
   "solid": false,
   "visible": true,
@@ -24,16 +24,16 @@
   "physicsKinematic": false,
   "physicsShapePoints": [],
   "eventList": [
-    {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"parent":{"name":"obj_goddessPart2","path":"objects/obj_goddessPart2/obj_goddessPart2.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"parent":{"name":"obj_statueHead","path":"objects/obj_statueHead/obj_statueHead.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "obj_statueParts",
+    "path": "folders/Objects/obj_overworld/obj_statueParts.yy",
   },
   "resourceVersion": "1.0",
-  "name": "obj_goddessPart2",
+  "name": "obj_statueHead",
   "tags": [],
   "resourceType": "GMObject",
 }

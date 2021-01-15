@@ -1,0 +1,7 @@
+Line,Type,Parent,Action,Subject,Talker,Emotion
+I... didn't expect hands to fall from this tree.,,,,,hero,cringe
+"The stone hands pulsate with energy. They seem to speak to you: ""Pick us up! Pick us up!""",,,,,noone,
+"(Of course, it's probably all in your head.)",q,,,,,
+Accept the kind request.,a,4,AddItem,,,
+Pick up the hands.,a,4,AddItem,,,
+Take the generous offer.,a,4,AddItem,,,

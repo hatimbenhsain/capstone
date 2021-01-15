@@ -1,0 +1,4 @@
+Line,Type,Parent,Action,Subject,Talker,Emotion
+Pick up the fruit?,q,,,,noone,
+Yes.,a,2,AddItem,,,
+No.,a,2,,,,

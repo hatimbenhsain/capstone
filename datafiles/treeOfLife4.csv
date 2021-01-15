@@ -1,0 +1,9 @@
+Line,Type,Parent,Action,Subject,Talker,Emotion
+The glowing fruits of the tree sway gently with the wind.,q,,,,noone,
+Search the roots.,a,2,,,,
+Shake the tree again.,a,2,,,,
+Leave it.,a,2,,,,
+The pendant... it's gone. The earth swallowed it.,l,3,,,hero,sad
+I hope this was worth it.,,,,,hero,pensive
+I... probably should stop bothering this tree.,l,4,,,hero,cringe
+The tree branches bow in agreement.,,,,,noone,

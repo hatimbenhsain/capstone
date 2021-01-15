@@ -2,6 +2,7 @@
 // You can write your code in this editor
 heroAcc=0.2;
 heroMaxSpeed=1;
+fallingSpeed=4;
 
 leftButton=vk_left;
 rightButton=vk_right;

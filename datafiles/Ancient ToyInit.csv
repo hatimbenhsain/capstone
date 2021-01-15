@@ -1,0 +1,8 @@
+Line,Type,Parent,Action,Subject,Talker,Emotion
+A peculiar object lies on the ground.,,,,,noone,
+This looks like... a pig.,,,,,hero,suspicious
+With a string attached and... on a skateboard...?,,,,,hero,suspicious
+Is this... some sort of a toy?,,,,,hero,thinking
+What's it doing here?,q,,,,hero,thinking
+Pick it up.,a,6,AddItem,,noone,
+Leave it.,a,6,,,,
