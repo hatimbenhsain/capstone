@@ -1,0 +1,6 @@
+Line,Type,Parent,Action,Subject,Talker,Emotion
+This lantern isn't broken!,,,,,hero,shocked
+For... the most part.,,,,,hero,cringe
+I should probably keep it.,q,,,,hero,thinking
+Pick up the lantern.,a,4,AddItem,,noone,
+Leave it.,a,4,,,,

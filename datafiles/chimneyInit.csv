@@ -1,0 +1,6 @@
+Line,Type,Parent,Action,Subject,Talker,Emotion
+A brick fireplace lies ahead of you with a rusty pot inside.,q,,,,noone,
+Try to open the pot.,a,2,,,,
+Leave it,a,2,,,,
+Hngh...,l,3,,,hero,suspicious
+It's sealed shut. I need some sort of a tool to open it.,,,,,hero,thinking

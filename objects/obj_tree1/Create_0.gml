@@ -1,11 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
-
+name="treeOfLife";
 // Inherit the parent event
-name="babyBird";
-
-
 event_inherited();
 
-state=-1;
-
+state=1;

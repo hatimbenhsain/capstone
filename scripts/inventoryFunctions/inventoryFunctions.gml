@@ -57,7 +57,7 @@ function deleteItem(itm){
 
 function deleteInstanceOf(obj){
 	for(var i=0;i<ds_list_size(items);i++){
-		if(items[|i].object_id==obj){
+		if(items[|i].object_index==obj){
 			ds_list_delete(items,i);
 			lockedObject=-1;
 			lockedObject2=-1;

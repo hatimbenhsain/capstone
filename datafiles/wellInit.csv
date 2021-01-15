@@ -1,0 +1,15 @@
+Line,Type,Parent,Action,Subject,Talker,Emotion
+A brick well lies ahead of you.,q,,,,noone,
+Stare down the well.,a,2,,,,
+Shout into the well.,a,2,,,,
+Make a prayer.,a,2,,,,
+Leave it alone.,a,2,,,,
+Nothing but darkness.,,3,,,,
+I wonder how far down this goes...,,,,,hero,thinking
+It kind of smells like rotten meat...,,,,,hero,cringe
+ANYONE DOWN HERE?,,4,,,hero,excited
+The darkness remains silent.,,,,,noone,
+Rude...,,,,,hero,angry
+"Goddess of the Deep, please continue watching over me and offer me guidance.",,5,,,hero,pensive
+....,,,,,,
+Help me make this right.,,,,,,

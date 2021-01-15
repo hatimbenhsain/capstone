@@ -1,0 +1,18 @@
+Line,Type,Parent,Action,Subject,Talker,Emotion
+The pot is softly rustling.,q,,,,noone,
+Look into it.,a,2,,,,
+Leave it,a,2,,,,
+Oh!,l,3,,,hero,shocked
+Hi there!,,,,,hero,happy
+A tiny rodent seems to have made the pot its home.,q,,,,noone,
+Pet the rodent.,a,7,,,,
+Respectfully stare.,a,7,,,,
+Leave it alone.,a,7,,,,
+The rodent recoils from your touch.,,8,,,,
+Ah... Sorry for startling you.,,,,,hero,sad
+....,a,9,,,hero,suspicious
+The rodent stares back at you.,,,,,noone,
+....,,,,,hero,suspicious
+"The rodent seems to say: ""This is awakward for the both of us. Please leave me alone.""",,,,,noone,
+Ok...,,,,,hero,sad
+The rodent goes back to grooming itself.,,,,,noone,

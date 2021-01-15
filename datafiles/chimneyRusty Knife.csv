@@ -1,0 +1,6 @@
+Line,Type,Parent,Action,Subject,Talker,Emotion
+You open the pot with the rusty knife.,,,,,noone,
+Aaaah!,,,,,hero,shocked
+Two eyes stare back at you from inside the pot.,,,,,noone,
+Oh... It's just a statue.,,,,,hero,cringe
+You aquired the statue head!,,,ChangeState,1,noone,

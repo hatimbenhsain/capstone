@@ -1,0 +1,7 @@
+Line,Type,Parent,Action,Subject,Talker,Emotion
+It has to be this tree.,,,,,hero,suspicious
+You bury your pendant at the roots of the tree.,,,,,noone,
+....,,,,,hero,suspicious
+Or maybe no -,,,ChangeState,3,hero,cringe
+Oh.,,,,,hero,shocked
+The pendant was removed from your inventory.,,,,,noone,
