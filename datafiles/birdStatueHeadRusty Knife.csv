@@ -1,0 +1,15 @@
+Line,Type,Parent,Action,Subject,Talker,Emotion
+Use the knife to pry the beak open?,q,,,,noone,
+"Yes,",a,2,,,,
+No.,a,2,,,,
+It's open!,,3,ChangeState,2,,
+Is this...,,,,,hero,shocked
+What is this?,,,,,hero,shocked
+Two cone-shaped sculpted pieces of stone with uneven ends lie in the bird's mouth.,,,,,noone,
+"They're spread out towards you, as if trying to embrace you.",,,,,,
+These are arms... right?,,,,,hero,thinking
+"""Yes,"" the arms seem to respond, ""enfold us within your grasp.""",,,,,noone,
+What will you do?,q,,,,,
+Accept.,a,12,ChangeState,4,,
+Grab.,a,12,ChangeState,4,,
+Take.,a,12,ChangeState,4,,

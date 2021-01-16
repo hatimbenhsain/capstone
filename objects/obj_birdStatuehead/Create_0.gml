@@ -1,8 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
+name="birdStatueHead";
+// Inherit the parent event
 event_inherited();
-
-if(state=="1"){
-	ChangeInitHead("birdStatue1Empty");	
-	state=2;
-}
+state=0;
+addInteractable(obj_knife);

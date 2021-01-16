@@ -1,8 +1,10 @@
 /// @description Insert description here
 // You can write your code in this editor
-event_inherited();
+name="Statue Hooves"
 
-if(state=="1"){
-	ChangeInitHead("birdStatue1Empty");	
-	state=2;
-}
+event_inherited();
+description="Part of a broken statue";
+icon=sprite_statueHooves;
+state=-1;
+
+

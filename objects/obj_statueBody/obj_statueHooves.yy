@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "sprite_ow_statueHand",
-    "path": "sprites/sprite_ow_statueHand/sprite_ow_statueHand.yy",
+    "name": "sprite_ow_statueHooves",
+    "path": "sprites/sprite_ow_statueHooves/sprite_ow_statueHooves.yy",
   },
   "solid": false,
   "visible": true,
@@ -24,8 +24,8 @@
   "physicsKinematic": false,
   "physicsShapePoints": [],
   "eventList": [
-    {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"parent":{"name":"obj_statueHands","path":"objects/obj_statueHands/obj_statueHands.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
-    {"isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,"parent":{"name":"obj_statueHands","path":"objects/obj_statueHands/obj_statueHands.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"parent":{"name":"obj_statueHooves","path":"objects/obj_statueHooves/obj_statueHooves.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,"parent":{"name":"obj_statueHooves","path":"objects/obj_statueHooves/obj_statueHooves.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
   "properties": [],
   "overriddenProperties": [],
@@ -34,7 +34,7 @@
     "path": "folders/Objects/obj_overworld/priestessLevel/obj_statueParts.yy",
   },
   "resourceVersion": "1.0",
-  "name": "obj_statueHands",
+  "name": "obj_statueHooves",
   "tags": [],
   "resourceType": "GMObject",
 }

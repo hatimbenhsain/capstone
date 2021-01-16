@@ -1,0 +1,7 @@
+Line,Type,Parent,Action,Subject,Talker,Emotion
+Stone Hooves.,,,,,noone,
+"They look eager to run off, but they're not attached to anything.",,,,,noone,
+Will you reunite them with their owner?,q,,,,,
+"""Yes.""",a,4,AddItem,,hero,suspicious
+"""Sure!""",a,4,AddItem,,,
+"""...Fine.""",a,4,AddItem,,,

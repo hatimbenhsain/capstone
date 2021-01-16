@@ -1,0 +1,8 @@
+Line,Type,Parent,Action,Subject,Talker,Emotion
+Ah!,,,,,hero,shocked
+I tripped on something... what is this?,,,,,hero,sad
+"An oddly shaped piece of stone stands before you. Somehow, you can tell that it's important.",,,,,noone,
+I think... I need this for my journey.,q,,,,hero,shocked
+Take the stone piece.,a,5,AddItem,,noone,
+Take the piece of stone.,a,5,AddItem,,,
+Take the stone.,a,5,AddItem,,,

@@ -1,8 +1,5 @@
 {
-  "spriteId": {
-    "name": "sprite_ow_statueHand",
-    "path": "sprites/sprite_ow_statueHand/sprite_ow_statueHand.yy",
-  },
+  "spriteId": null,
   "solid": false,
   "visible": true,
   "spriteMaskId": null,
@@ -24,8 +21,7 @@
   "physicsKinematic": false,
   "physicsShapePoints": [],
   "eventList": [
-    {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"parent":{"name":"obj_statueHands","path":"objects/obj_statueHands/obj_statueHands.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
-    {"isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,"parent":{"name":"obj_statueHands","path":"objects/obj_statueHands/obj_statueHands.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"parent":{"name":"obj_statueArms","path":"objects/obj_statueArms/obj_statueArms.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
   "properties": [],
   "overriddenProperties": [],
@@ -34,7 +30,7 @@
     "path": "folders/Objects/obj_overworld/priestessLevel/obj_statueParts.yy",
   },
   "resourceVersion": "1.0",
-  "name": "obj_statueHands",
+  "name": "obj_statueArms",
   "tags": [],
   "resourceType": "GMObject",
 }

@@ -1,5 +1,8 @@
 {
-  "spriteId": null,
+  "spriteId": {
+    "name": "sprite_egg",
+    "path": "sprites/sprite_egg/sprite_egg.yy",
+  },
   "solid": false,
   "visible": true,
   "spriteMaskId": null,
@@ -21,16 +24,16 @@
   "physicsKinematic": false,
   "physicsShapePoints": [],
   "eventList": [
-    {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"parent":{"name":"obj_statueHead","path":"objects/obj_statueHead/obj_statueHead.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"parent":{"name":"obj_egg","path":"objects/obj_egg/obj_egg.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "obj_statueParts",
-    "path": "folders/Objects/obj_overworld/priestessLevel/obj_statueParts.yy",
+    "name": "Objects",
+    "path": "folders/Objects.yy",
   },
   "resourceVersion": "1.0",
-  "name": "obj_statueHead",
+  "name": "obj_egg",
   "tags": [],
   "resourceType": "GMObject",
 }
