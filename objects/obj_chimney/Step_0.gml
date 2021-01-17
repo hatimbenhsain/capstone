@@ -15,7 +15,7 @@ switch(state){
 		sprite_index=sprite_ow_chimneyOpen;
 		ChangeInitHead("chimney2");
 		ds_map_clear(interactableObjects);
-		addItem(obj_goddessPart1);
+		addItem(obj_statueHead);
 		state=2;
 		break;
 	case 2:
