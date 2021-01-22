@@ -1,0 +1,12 @@
+Line,Type,Parent,Action,Subject,Talker,Emotion
+What happened here?,a,10,,,hero,
+So... what exactly happened here?,l,,,,hero,confused
+......,,,,,priestess,neutral
+"This is where you.... passed away, right?",,,,,hero,cringe
+What... happened to you?,,,,,hero,neutral
+Humans happened.,,,,,priestess,neutral
+...!,,,,,hero,shocked
+Humans? What about them?,,,,,hero,shocked
+I mean... What about us?,,,,,hero,confused
+......,,,ChangeState,5,priestess,neutral
+......,,,,,hero,confused

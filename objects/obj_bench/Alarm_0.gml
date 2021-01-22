@@ -4,7 +4,7 @@ obj_hero.x=x-5;
 obj_hero.y=y-5;
 obj_hero.dir="F";
 
-obj_priestess.state="bench";
+obj_priestess.state=2;
 obj_priestess.x=x+16;
 obj_priestess.y=y-5;
 obj_priestess.dir="F";

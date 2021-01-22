@@ -17,3 +17,4 @@ if(talkingTo!=noone && !obj_dialogueManager.finished){
 		talkingTo=noone;
 	}
 }
+

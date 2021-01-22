@@ -1,14 +1,50 @@
 Line,Type,Parent,Action,Subject,Talker,Emotion
-hello.,l,,,,priestess,neutral
-how are you doing today?,q,,,,,
-Uuh me?,,,,,hero,thinking
-Good.,a,4,,,hero,neutral
-Not so good.,a,4,,,,
-Normal.,a,4,,,,
-I'm great! How about you?,l,5,,,hero,happy
-not the best. i'm dead.,,,,,priestess,neutral
-Oh... Sorry.....,,,,,hero,cringe
-Eh. I've been better.,l,6,,,hero,sad
-vibe check.,,,destruction,,priestess,neutral
-Comme ci comme ca. How are you doing?,l,7,,,hero,cringe
-awful.,,,,,priestess,neutral
+......,,,,,hero,shocked
+Um....,,,,,hero,shocked
+Hello?,,,,,,
+......,q,,,,priestess,neutral
+Introduce yourself.,a,5,,,noone,
+Apologize.,a,5,,,,
+Ask something.,a,5,,,,
+Leave.,a,5,,,,
+What will you ask?,q,8,,,noone,
+Who are you?,a,10,,,hero,neutral
+Where are we?,a,10,,,hero,
+"Hi, I'm... Uh...",l,6,,,hero,shocked
+Your... spiritual guide?,,,,,hero,thinking
+"Wait, that sounded weird.",,,,,hero,cringe
+"Sorry, what I meant to say is, uh...",,,,,hero,neutral
+I've been sent... here... to help you move on...,,,,,hero,thinking
+......,,,,,priestess,neutral
+......,,,,,hero,neutral
+Can you.... hear me?,,,,,hero,neutral
+......,,,,,priestess,neutral
+O...kay....,,,,,hero,cringe
+"Listen, about earlier, I'm sorry...",l,7,,,hero,cringe
+"I understand that I, uh, upset you, when I tried to touch the gate?",,,,,hero,confused
+I really didn't uh... mean any harm.,,,,,hero,cringe
+It's fine.,,,,,priestess,neutral
+...!,,,,,hero,shocked
+I mistook your intentions.,,,,,priestess,neutral
+"Oh, hey, it's ok, I -",,,,,hero,cringe
+But I would still like you to leave these grounds.,,,,,priestess,neutral
+......,,,,,hero,neutral
+I'm... sorry but I don't think I can.,,,,,hero,sad
+Suit yourself.,,,,,priestess,neutral
+......,,,,,hero,sad
+Can you tell me... who you are?,l,11,,,hero,thinking
+......,,,,,priestess,neutral
+"I was sent here to help you so, it would be nice if uh, you introduced yourself...?",,,,,hero,cringe
+......,,,,,priestess,neutral
+Or... maybe not.,,,,,hero,cringe
+What is this place?,l,12,,,hero,thinking
+......,,,,,priestess,neutral
+"I mean, I know we're in limbo, but like, where exactly? What's that gate over there for?",,,,,hero,neutral
+This used to be... This is the temple of my goddess.,,,,,priestess,neutral
+The Goddess of the Hidden.,,,,,priestess,neutral
+"Oh! My mom told me about her once! She's one of the old gods, right?",,,,,hero,excited
+I don't remember much though... ,,,,,hero,thinking
+"She said that people stopped worshipping her a long time ago, so not much is known about her.",,,,,,
+"I guess they call her the Goddess of the Hidden for a reason, haha!",,,,,hero,happy
+......,,,,,priestess,neutral
+Uhm... Yeah...,,,ChangeState,3,hero,cringe

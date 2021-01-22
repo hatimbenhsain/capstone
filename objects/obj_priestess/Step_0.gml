@@ -1,24 +1,49 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-if(state=="0"){
-	if(alarm[11]==-1){
-		alarm[11]=room_speed*16;
-		show_debug_message("cycle");
-		alarm[1]=1;
-		alarm[0]=2*room_speed;
-		alarm[3]=room_speed*4;
-		alarm[2]=room_speed*8;
-		alarm[4]=room_speed*12;
-	}else if(alarm[0]==-1){
-		alarm[0]=4*room_speed;
-	}
-}
-if(state==3){
-	initialHead=parseDialogue("priestessQuestions.csv");
-	state=2
-}
+//if(state=="0"){
+//	if(alarm[11]==-1){
+//		alarm[11]=room_speed*16;
+//		show_debug_message("cycle");
+//		alarm[1]=1;
+//		alarm[0]=2*room_speed;
+//		alarm[3]=room_speed*4;
+//		alarm[2]=room_speed*8;
+//		alarm[4]=room_speed*12;
+//	}else if(alarm[0]==-1){
+//		alarm[0]=4*room_speed;
+//	}
+//}
+//if(state==3){
+//	initialHead=parseDialogue("priestessQuestions.csv");
+//	state=2
+//}
 
 event_inherited();
 depth=-1*(y+sprite_height/2-12);
 
+switch(state){
+	case 2:
+		dir="F";
+		sprite_index=sprite_priestess_idleF;
+		break;
+	case 3:
+		if(prevState==4){
+			state=4;	
+		}else if (!add1){
+			add1=AddAnswer(initialHead,"What will you ask?","priestessQuestion1.csv");
+			state=2;
+		}
+		break;
+	case 4:
+		dir="B";
+		sprite_index=sprite_priestess_idleB;
+		break;
+	case 5:
+		state=4;
+		ChangeInitHead("priestess2");
+		break;
+	
+}
+
+prevState=state;

@@ -1,0 +1,24 @@
+Line,Type,Parent,Action,Subject,Talker,Emotion
+A wooden gate stands before you...,,,,,noone,
+...But it's blocked by some sort of tape.,,,,,,
+What will you do?,q,,,,noone,
+Examine the tape.,a,4,,,,
+Call out for help.,a,4,,,,
+Leave it alone.,a,4,,,,
+The tape is stained red and covered with concentric square symbols. It smells like sulfur and wet dirt.,l,5,,,noone,
+I wonder if I can tear this down somehow...,q,,,,hero,thinking
+Tear it down.,a,9,,,noone,
+Leave it.,a,9,,,,
+....,l,10,,,hero,suspicious
+There's this.... weird energy resisting m-,,,,,,
+"""LEAVE LEAVE LEAVE LEAVE LEAVE LEAVE LEAVE LEAVE LEAVE LEAVE LEAVE LEAVE LEAVE LEAVE LEAVE LEAVE LEAVE LEAVE LEAVE LEAVE LEAVE LEAVE LEAVE LEAVE",,,,,noone,
+Aaah!,,,,,hero,shocked
+...,,,,,,shocked
+Who said that?,,,,,,shocked
+It was like... a voice inside my head.,,,,,,excited
+"You look around for somebody, but all you can see is the endless void of limbo.",,,,,noone,
+That must've been the spirit I'm supposed to help... right?,,,,,hero,suspicious
+I should probably try not to anger them further.,,,ChangeState,1,hero,sad
+Hello?,,6,,,hero,thinking
+Any spirit around?,,,,,,
+No one replies.,,,,,noone,

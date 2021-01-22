@@ -14,6 +14,7 @@ function SitOnBench(){
 	FadeToBlack(2,3);
 	obj_hero.alarm[0]=room_speed*(2*2+3); //unfreezing
 	obj_bench.alarm[0]=room_speed*2; //moving the hero
+	obj_bench.state=2;
 	show_debug_message("sitting");
 }
 

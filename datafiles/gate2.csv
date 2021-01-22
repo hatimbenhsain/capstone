@@ -1,0 +1,13 @@
+Line,Type,Parent,Action,Subject,Talker,Emotion
+A wooden gate stands before you...,,,,,noone,
+...But it's blocked by some sort of tape.,,,,,,
+What will you do?,q,,,,noone,
+Examine the tape.,a,4,,,,
+Call out for help.,a,4,,,,
+Leave it alone.,a,4,,,,
+The tape is stained red and covered with concentric square symbols. It smells like sulfur and wet dirt.,l,5,,,noone,
+I don't think I should try to touch it again.,,,,,hero,excited
+I don't wanna anger the spirit further.,,,,,hero,suspicious
+Hello?,,6,,,hero,thinking
+Any spirit around?,,,,,,
+No one replies.,,,,,noone,

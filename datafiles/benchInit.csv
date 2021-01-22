@@ -1,6 +1,3 @@
 Line,Type,Parent,Action,Subject,Talker,Emotion
 A solitary stone bench lies in front of you.,,,,,noone,
-The weight of your spiritual journey suddenly settles in and a profound weariness overtakes you.,,,,,,
-"""Maybe I should... take a break.""",q,,,,hero,sad
-Sit on the bench.,a,4,SitOnBench,,noone,
-Keep standing.,a,4,,,noone,
+I don't have time to rest right now.,,,,,hero,suspicious
