@@ -1,0 +1,7 @@
+Line,Type,Parent,Action,Subject,Talker,Emotion
+"Hey, I found this on the ground.",,,,,hero,sad
+It's a spear... and it looks like the old ones the soldiers at my village used to wield.,,,,,hero,sad
+And there's more pieces strewn around.,,,,,hero,sad
+.....,,,,,priestess,neutral
+"You... wanted me to see this, right?",,,,,hero,confused
+.....,,,ChangeState,7,priestess,neutral

@@ -1,0 +1,70 @@
+Line,Type,Parent,Action,Subject,Talker,Emotion
+I think I... understand now what happened here.,,,,,hero,neutral
+People.... humans came here some long time ago.,,,,,hero,confused
+They came with these weapons and they... killed you.,,,,,hero,sad
+"Not just you, but the others who lived here too. ",,,,,hero,sad
+And I'm guessing they killed you because...,q,,,,hero,confused
+You attacked first.,a,6,,,hero,neutral
+Of Your religion.,a,6,,,,
+You stole something.,a,6,,,,
+What?,,7,,,priestess,neutral
+"Sorry, that came out wrong!",,,,,hero,shocked
+Uuh.. Let me try again.,,,,,hero,cringe
+What?,,9,,,priestess,neutral
+"Sorry, that came out wrong!",,,,,hero,shocked
+Uuh.. Let me try again.,,,,,hero,cringe
+Because you worshipped the Goddess of the Hidden.,,8,,,hero,neutral
+"The other people killed wore clothes like yours, so they must've been priests too.",,,,,hero,thinking
+And you're still here because you...,q,,,,hero,neutral
+Are angry.,a,18,,,hero,neutral
+Have unfinished business.,a,18,,,,
+Miss living.,a,18,,,,
+I care not for my life.,,21,,,priestess,neutral
+"Sorry, that came out wrong!",,,,,hero,shocked
+Uuh.. Let me try again.,,,,,hero,cringe
+I care not for this world.,,20,,,priestess,neutral
+"Sorry, that came out wrong!",,,,,hero,shocked
+Uuh.. Let me try again.,,,,,hero,cringe
+You're angry.,,19,,,hero,neutral
+"Not only did they kill you, but they wanted to erase your religion.",,,,,hero,sad
+And they pretty much succeeded. ,,,,,hero,sad
+That's why there isn't much we know about the Goddess of the Hidden nowadays.,,,,,hero,neutral
+So you're angry. You're angry at the humans - at us. And you can't leave this place.,,,,,hero,neutral
+.....,,,,,hero,neutral
+"I may be dead, but I am still the guardian of this temple.",,,,,priestess,pensive
+Everyone else has moved on except me.,,,,,priestess,pensive
+And I made sure that no one else has entered the temple grounds since the attack.,,,,,priestess,pensive
+I cannot allow it to get even more desecrated than it has already.,,,,,priestess,pensive
+Even if I have to remain here till the end of time.,,,,,priestess,neutral
+.....,,,,,hero,cringe
+I'm sorry.,,,,,hero,cringe
+"They really have forgotten us, haven't they?",,,,,priestess,sad
+Uh...,,,,,hero,confused
+"Y-yeah... When I asked my mom why I couldn't learn more about your goddess, she just said it was lost in history.",,,,,hero,suspicious
+I never heard about the massacre.,,,,,hero,pensive
+.....,,,,,priestess,thinking
+Um...,,,,,hero,suspicious
+Oh!,,,,,hero,shocked
+I have an idea!,,,,,hero,happy
+Yes?,,,,,priestess,neutral
+"You're upset that no one cares about your goddess anymore, right?",,,,,hero,happy
+"You're afraid that you're the only one left with the knowledge, and you can't even share it since you're dead.",,,,,hero,happy
+What are you...,,,,,priestess,angry
+Why don't you teach me?,,,,,hero,happy
+Huh?,,,,,priestess,shocked
+"You could tell me about her! Her story, why you worshipped her, how you did it... That kind of stuff!",,,,,hero,happy
+Wouldn't it be nice to share it with someone again? Your knowledge could live on through me!,,,,,,
+But you're also...,,,,,priestess,shocked
+"A human? I mean, yeah, but...",,,,,hero,cringe
+"No, that's not what I meant. ",,,,,priestess,neutral
+I have nothing against your race. We even had human priests.,,,,,priestess,pensive
+.....,,,,,,
+I guess it wouldn't hurt.,,,,,priestess,neutral
+...!,,,,,hero,happy
+Fine. I'll let you in.,,,,,priestess,pensive
+But if you even try to break or steal something...,,,,,priestess,angry
+..!,,,,,hero,cringe
+"Ah, it doesn't really matter. Even if you wanted to, you can't",,,,,priestess,neutral
+Haha.... yeah....,,,ChangeState,9,hero,cringe
+I'll open the gate for you. You can explore the temple yourself and report back to me. I'll answer your questions.,,,,,priestess,neutral
+Ah... thank you.,,,,,hero,shocked

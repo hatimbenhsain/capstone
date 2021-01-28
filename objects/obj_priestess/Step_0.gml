@@ -42,8 +42,35 @@ switch(state){
 	case 5:
 		state=4;
 		ChangeInitHead("priestess2");
+		AddInteractable(obj_weapon1);
+		AddInteractable(obj_cloth1);
+		if(clothShown && weaponShown){
+			ds_map_clear(interactableObjects);
+			state=8;
+			ChangeInitHead("priestess8");
+		}
 		break;
-	
+	case 6:
+		clothShown=true;
+		break;
+	case 7:
+		weaponShown=true;
+		break;
+	case 8:
+		ChangeInitHead("priestess8");
+		state=-1;
+		break;
+	case 9:
+		image_alpha-=0.005;
+		if(image_alpha<=0){
+			y=y-100;
+			state=10;
+			image_alpha=10;
+			with(obj_gate){
+				sprite_index=sprite_gate_floating;	
+			}
+		}
+		break;
 }
 
 prevState=state;

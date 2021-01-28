@@ -1,0 +1,9 @@
+Line,Type,Parent,Action,Subject,Talker,Emotion
+This cloth... it looks like what you're wearing.,,,,,hero,thinking
+It's not mine.,,,,,priestess,neutral
+Ah!,,,,,hero,shocked
+Is whoever owned this also... gone?,,,,,hero,confused
+....,,,,,priestess,neutral
+They're all dead.,,,,,priestess,pensive
+....,,,,,hero,sad
+I'm sorry.,,,ChangeState,6,,

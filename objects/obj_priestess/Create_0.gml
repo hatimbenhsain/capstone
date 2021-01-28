@@ -18,7 +18,7 @@ walkF=sprite_priestess_walkF;
 walking=false;
 
 
-state=-1;
+state=8;
 
 add1=false;
 addBird=false;
@@ -33,3 +33,6 @@ thinkingSprite=sprite_priestess_thinking;
 cryingSprite=sprite_priestess_crying;
 sereneSprite=sprite_priestess_serene;
 pensiveSprite=sprite_priestess_pensive;
+
+clothShown=false;
+weaponShown=false;
