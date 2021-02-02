@@ -40,20 +40,22 @@ Even if I have to remain here till the end of time.,,,,,priestess,neutral
 I'm sorry.,,,,,hero,cringe
 "They really have forgotten us, haven't they?",,,,,priestess,sad
 Uh...,,,,,hero,confused
-"Y-yeah... When I asked my mom why I couldn't learn more about your goddess, she just said it was lost in history.",,,,,hero,suspicious
-I never heard about the massacre.,,,,,hero,pensive
+Y-yeah... I asked my mom why I couldn't learn more about your goddess.,,,,,hero,suspicious
+"She said it was ""lost in history"".",,,,,hero,neutral
+I never heard about a massacre.,,,,,hero,pensive
 .....,,,,,priestess,thinking
 Um...,,,,,hero,suspicious
 Oh!,,,,,hero,shocked
 I have an idea!,,,,,hero,happy
 Yes?,,,,,priestess,neutral
 "You're upset that no one cares about your goddess anymore, right?",,,,,hero,happy
-"You're afraid that you're the only one left with the knowledge, and you can't even share it since you're dead.",,,,,hero,happy
+"You're afraid that you're the only one left with the knowledge, and...",,,,,hero,happy
+You can't even share it since you're dead!,,,,,hero,happy
 What are you...,,,,,priestess,angry
 Why don't you teach me?,,,,,hero,happy
 Huh?,,,,,priestess,shocked
-"You could tell me about her! Her story, why you worshipped her, how you did it... That kind of stuff!",,,,,hero,happy
-Wouldn't it be nice to share it with someone again? Your knowledge could live on through me!,,,,,,
+"You could tell me about her! Her story, why you worshipped her.. That kind of stuff!",,,,,hero,happy
+Wouldn't it be nice? Your knowledge could live on through me!,,,,,,
 But you're also...,,,,,priestess,shocked
 "A human? I mean, yeah, but...",,,,,hero,cringe
 "No, that's not what I meant. ",,,,,priestess,neutral
@@ -62,9 +64,11 @@ I have nothing against your race. We even had human priests.,,,,,priestess,pensi
 I guess it wouldn't hurt.,,,,,priestess,neutral
 ...!,,,,,hero,happy
 Fine. I'll let you in.,,,,,priestess,pensive
+I'll open the gate for you. You may explore the temple at your own leisure.,,,,,priestess,neutral
+Ah...,,,,,hero,shocked
 But if you even try to break or steal something...,,,,,priestess,angry
 ..!,,,,,hero,cringe
 "Ah, it doesn't really matter. Even if you wanted to, you can't",,,,,priestess,neutral
-Haha.... yeah....,,,ChangeState,9,hero,cringe
-I'll open the gate for you. You can explore the temple yourself and report back to me. I'll answer your questions.,,,,,priestess,neutral
-Ah... thank you.,,,,,hero,shocked
+Haha.... yeah....,,,,,hero,cringe
+Let me know if you have any question. You can find me inside.,,,ChangeState,9,priestess,pensive
+Thank you.,,,,,hero,neutral

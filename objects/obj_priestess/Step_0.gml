@@ -62,6 +62,7 @@ switch(state){
 		break;
 	case 9:
 		image_alpha-=0.005;
+		initialHead=undefined;
 		if(image_alpha<=0){
 			y=y-100;
 			state=10;
