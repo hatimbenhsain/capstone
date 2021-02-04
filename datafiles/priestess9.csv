@@ -1,0 +1,10 @@
+Line,Type,Parent,Action,Subject,Talker,Emotion
+"Well, tell me about the temple!",,,,,hero,happy
+Ah...,,,,,priestess,shocked
+"To be honest, the memories are fuzzy. It happened such a long time ago.",,,,,priestess,neutral
+And I don't even know where to start. The humans took so much from us.,,,,,priestess,pensive
+Well what if...,,,,,hero,thinking
+What if I just look for objects I find interesting...,,,,,hero,thinking
+"...I show them to you, and you tell me about them. Would that be helpful?",,,,,hero,happy
+....,,,,,priestess,pensive
+That sounds acceptable.,,,,,priestess,neutral

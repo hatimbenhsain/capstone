@@ -1,0 +1,14 @@
+Line,Type,Parent,Action,Subject,Talker,Emotion
+"This is a lantern, right?",,,,,hero,neutral
+"It used to be, yes.",,,,,priestess,neutral
+What kind of light source did you use? Oil?,,,,,hero,thinking
+Fruit.,,,,,priestess,neutral
+Fruit?,,,,,hero,shocked
+Fruit.,,,,,priestess,neutral
+You... burnt fruit?,,,,,hero,shocked
+"No. Our sacred tree gave us fruit that emitted light, which we put in the lanterns.",,,,,priestess,pensive
+A glowing fruit tree?,,,,,hero,shocked
+Yes. And there's only one of its kind.,,,,,priestess,neutral
+Ah... I'm sorry it got destroyed.,,,,,hero,pensive
+It didn't.,,,,,priestess,neutral
+Huh?,,,ChangeState,14,hero,shocked

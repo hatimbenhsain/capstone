@@ -52,13 +52,18 @@ switch(state){
 		break;
 	case 6:
 		clothShown=true;
+		state=8;
 		break;
 	case 7:
 		weaponShown=true;
+		state=8
 		break;
 	case 8:
-		ChangeInitHead("priestess8");
-		state=-1;
+		if(clothShown && weaponShown){
+			ds_map_clear(interactableObjects);
+			ChangeInitHead("priestess8");
+			state=-1;
+		}
 		break;
 	case 9:
 		image_alpha-=0.005;

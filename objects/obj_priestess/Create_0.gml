@@ -18,7 +18,7 @@ walkF=sprite_priestess_walkF;
 walking=false;
 
 
-state=8;
+state=-1;
 
 add1=false;
 addBird=false;
