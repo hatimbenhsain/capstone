@@ -1,9 +1,9 @@
 /// @description Insert description here
 // You can write your code in this editor
-name="Torn Page";
+name="Faded Page";
 
 event_inherited();
 
-description="It has diagrams and strange writings.";
+description="The writing is unintelligible.";
 
-icon=sprite_informativePage;
+icon=sprite_fadedPage;

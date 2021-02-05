@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "sprite_ow_page3",
-    "path": "sprites/sprite_ow_page3/sprite_ow_page3.yy",
+    "name": "sprite_ow_page2",
+    "path": "sprites/sprite_ow_page2/sprite_ow_page2.yy",
   },
   "solid": false,
   "visible": true,

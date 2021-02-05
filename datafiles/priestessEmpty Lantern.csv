@@ -11,4 +11,4 @@ A glowing fruit tree?,,,,,hero,shocked
 Yes. And there's only one of its kind.,,,,,priestess,neutral
 Ah... I'm sorry it got destroyed.,,,,,hero,pensive
 It didn't.,,,,,priestess,neutral
-Huh?,,,ChangeState,14,hero,shocked
+Huh?,,,ChangeState,14,hero,

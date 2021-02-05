@@ -1,0 +1,36 @@
+Line,Type,Parent,Action,Subject,Talker,Emotion
+Can you tell me what this says?,,,,,hero,neutral
+Let me see...,,,,,priestess,neutral
+Ah.,,,,,priestess,pensive
+This is a diagram for our pantheon.,,,,,priestess,neutral
+It summarizes the relationships of our gods to each other.,,,,,priestess,neutral
+We use it to teach newcomers about the basics of our worship.,,,,,priestess,neutral
+"I can tell you what exactly it says, but it might take a while.",,,,,priestess,neutral
+Do you want to hear it?,q,,,,priestess,neutral
+Yeah.,a,9,,,hero,neutral
+Actually nevermind.,a,9,,,hero,neutral
+"First, there's the Spinstress Goddess.",,,,,priestess,neutral
+She wove a web between the debris of the world that came before this one...,,,,,priestess,neutral
+which become the world we live in now.,,,,,priestess,neutral
+Her children are the Goddess of the Depths...,,,,,priestess,neutral
+...who created the creatures that dwell in the oceans and the caverns.,,,,,priestess,neutral
+The Goddess of Growth...,,,,,priestess,neutral
+"...who made the creatures evolve and grow new, longer limbs.",,,,,priestess,neutral
+The Goddess of the Hidden.,,,,,priestess,neutral
+The Goddess of Change...,,,,,priestess,neutral
+"Wait, what about the Goddess of the Hidden?",,,,,hero,neutral
+What about her?,,,,,priestess,neutral
+What's her... deal exactly? What did she do that's important?,,,,,hero,thinking
+She guards the hidden.,,,,,priestess,neutral
+O...kay.,,,,,hero,shocked
+Anyway.,,,,,priestess,neutral
+"There's the Goddess of Change, who forboded the coming change.",,,,,priestess,neutral
+"...and the God of Death, who made sure there weren't too many creatures on Earth.",,,,,priestess,neutral
+What about the God of Passage?,,,,,hero,thinking
+Who?,,,,,priestess,neutral
+The God of Passage. He's the one who charged me with helping you move on.,,,,,hero,thinking
+You... met a god?,,,,,priestess,shocked
+Uh... Yes? Did I not mention that before?,,,,,hero,thinking
+Hm. It matters not. I don't know the god you speak of.,,,,,priestess,pensive
+But there are many things I don't know.,,,,,priestess,neutral
+I see. Thank you.,,,,,hero,pensive

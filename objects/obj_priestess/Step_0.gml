@@ -77,6 +77,12 @@ switch(state){
 			}
 		}
 		break;
+	case 13:
+		//ancient toy
+		break;
+	case 14:
+		//empty lantern
+		break;
 }
 
 prevState=state;

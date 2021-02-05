@@ -1,6 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
-name="Torn page";
+name="Discarded page";
 
 event_inherited();
 
