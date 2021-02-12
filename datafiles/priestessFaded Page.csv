@@ -1,0 +1,36 @@
+Line,Type,Parent,Action,Subject,Talker,Emotion
+Can you tell me what this says?,,,,,hero,neutral
+Let me see...,,,,,priestess,neutral
+Are you... sure you can't read this?,,,,,priestess,shocked
+Yes? I'm not familiar with your language.,,,,,hero,thinking
+Correct me if I'm wrong but I'm almost certain this is human script.,,,,,priestess,neutral
+Huh?,,,,,hero,shocked
+Wait a minute...,,,,,hero,suspicious
+Huh!,,,,,hero,shocked
+The handwriting is so rushed that I couldn't even tell the difference...,,,,,hero,cringe
+What does it say?,,,,,priestess,neutral
+It says...,,,,,hero,suspicious
+"""It's 2 am. The words keep spinning in my head. They said tomorrow.""",,,,,hero,suspicious
+"""It's 2 am. I can't stop thinking about the words of the men around the fire.""",,,,,hero,suspicious
+"""Was it really them? For the goddess's sake, even my brother was there! Could he..?""",,,,,hero,suspicious
+"""The words keep spinning in my head. They said tomorrow.""",,,,,hero,suspicious
+Is this some sort of horror fiction? Did the priests carry that kind of writings here?,,,,,hero,thinking
+Keep reading.,,,,,priestess,neutral
+Uh... sure.,,,,,hero,confused
+"""What can I do? No one is going to believe me, and even if I tell -""",,,,,hero,suspicious
+This doesn't look like a word I know. Maybe it's a name? Asawo? Asano?,,,,,hero,confused
+Asana.,,,,,priestess,pensive
+You know this person?,,,,,hero,shocked
+Yes. She was one of the priestesses here.,,,,,priestess,pensive
+Then that means...,,,,,hero,shocked
+That means this was someone's diary. And we should stop reading it.,,,,,priestess,neutral
+But it could hold information that -,,,,,hero,shocked
+Information that should've remained private. And I'm taking this back.,,,,,priestess,neutral
+Hey! Wait!,,,,,hero,shocked
+You lost the faded page.,,,,,noone,
+Give it back! What if it -,,,,,hero,angry
+"We, worshippers of the goddess, respect the secret of the dead.",,,,,priestess,pensive
+And I hope you do as well. Or else.,,,,,priestess,angry
+....,,,,,hero,shocked
+Fine. I'm sorry for prying.,,,,,hero,confused
+Apology accepted.,,,ChangeState,15,priestess,pensive

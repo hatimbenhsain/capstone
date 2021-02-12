@@ -83,6 +83,15 @@ switch(state){
 	case 14:
 		//empty lantern
 		break;
+	case 15:
+		//faded page
+		break;
+	case 16:
+		//discarded page
+		break;
+	case 17:
+		//statue piece
+		break;
 }
 
 prevState=state;

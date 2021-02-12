@@ -1,0 +1,16 @@
+Line,Type,Parent,Action,Subject,Talker,Emotion
+Can you tell me what this says?,,,,,hero,neutral
+Let me see...,,,,,priestess,neutral
+Ah. This is from a longer guide on ways to worship the goddess.,,,,,priestess,neutral
+Ways to worship her?,,,,,hero,neutral
+"Yes. Of course, everyone's worship is personal and may differ from follower to another...",,,,,priestess,pensive
+...But this guide is useful if you want a method that is sure to reach the goddess.,,,,,priestess,neutral
+How can you be sure?,,,,,hero,thinking
+What do you mean?,,,,,priestess,neutral
+I mean... Does she usually respond?,,,,,hero,thinking
+She has in the past.,,,,,priestess,pensive
+And more recently?,,,,,hero,thinking
+The goddess... acts in subtle ways.,,,,,priestess,pensive
+I see.,,,,,hero,neutral
+I can tell you more about the methods when you have time.,,,,,priestess,neutral
+"Sure, I'll let you know.",,,ChangeState,16,hero,happy
