@@ -1,5 +1,8 @@
 {
-  "spriteId": null,
+  "spriteId": {
+    "name": "sprite_lilypad1",
+    "path": "sprites/sprite_lilypad1/sprite_lilypad1.yy",
+  },
   "solid": false,
   "visible": true,
   "spriteMaskId": null,
@@ -17,7 +20,10 @@
   "physicsStartAwake": true,
   "physicsKinematic": false,
   "physicsShapePoints": [],
-  "eventList": [],
+  "eventList": [
+    {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"parent":{"name":"obj_lilypad2","path":"objects/obj_lilypad2/obj_lilypad2.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,"parent":{"name":"obj_lilypad2","path":"objects/obj_lilypad2/obj_lilypad2.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+  ],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
@@ -25,7 +31,7 @@
     "path": "folders/Objects/obj_overworld/limbo/obj_lilypads.yy",
   },
   "resourceVersion": "1.0",
-  "name": "obj_lilypad1",
+  "name": "obj_lilypad2",
   "tags": [],
   "resourceType": "GMObject",
 }
