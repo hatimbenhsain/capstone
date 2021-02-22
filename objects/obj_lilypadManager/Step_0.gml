@@ -41,3 +41,9 @@ switch(state){
 		}
 		break
 }
+
+yy+=0.3;
+yy=yy%sprite_get_height(ditherBG);
+x=camera_get_view_x(view_camera[view_current])+camera_get_view_width(view_camera[view_current])/2;
+y=camera_get_view_y(view_camera[view_current])+yy;
+show_debug_message(yy);
