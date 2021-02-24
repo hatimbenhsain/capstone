@@ -3,4 +3,9 @@
 openSprite=sprite_lilypad1_opening;
 idleSprite=sprite_lilypad1;
 
+a=1;
+
+orgOffsetX=sprite_xoffset;
+orgOffsetY=sprite_yoffset;
+
 sprite_index=openSprite;

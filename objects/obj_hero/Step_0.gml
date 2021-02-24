@@ -60,6 +60,11 @@ if(walking){
 			vy-=acc;
 			break;
 	}
+	if(alarm[1]==-1){
+		alarm[1]=(1/sprite_get_speed(sprite_index))*room_speed;
+	}
+}else{
+	alarm[1]=-1;
 }
 
 vx=clamp(vx,-maxSpeed,maxSpeed);
