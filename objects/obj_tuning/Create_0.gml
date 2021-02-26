@@ -29,3 +29,6 @@ textPaddingY=30;
 
 textSpeed=0.5;
 cameraSmoothing=5;
+
+cameraWidth=320;
+cameraHeight=240;

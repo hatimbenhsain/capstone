@@ -5,6 +5,7 @@ vx=0;
 vy=0;
 dir="F";
 walking=false;
+state="falling";
 acc=obj_tuning.heroAcc;
 maxSpeed=obj_tuning.heroMaxSpeed;
 speedFactor=obj_tuning.speedFactor;
@@ -33,5 +34,3 @@ shockedSprite=sprite_hero_shocked;
 suspiciousSprite=sprite_hero_suspicious;
 thinkingSprite=sprite_hero_thinking;
 pensiveSprite=sprite_hero_pensive;
-
-state=0;
