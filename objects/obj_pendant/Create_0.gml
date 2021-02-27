@@ -4,4 +4,5 @@ name="Pendant"
 
 event_inherited();
 description="A pendant gifted by my mother.";
+icon=sprite_pendant;
 

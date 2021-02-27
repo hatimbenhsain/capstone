@@ -12,8 +12,8 @@ var cheight = camera_get_view_height(view_camera[0]);
 var cameraX=camera_get_view_x(view_camera[0])+cwidth/2;
 var cameraY=camera_get_view_y(view_camera[0])+cheight/2;
 
-var xToUse=x;
-var yToUse=y;
+var xToUse=cameraSubject.x/2+x/2;
+var yToUse=cameraSubject.y/2+y/2;
 
 switch(state){
 	case "falling":
@@ -24,7 +24,6 @@ switch(state){
 		}
 		if(alarm[2]!=-1){
 			y=lerp(y,startingY+25,1/(room_speed));
-			show_debug_message(y);
 		}else{
 			yToUse=y-27;
 		}
@@ -48,13 +47,16 @@ switch(state){
 			sprite_set_offset(sprite_index,lerp(sprite_xoffset,orgOffsetX,1/2),lerp(sprite_yoffset,orgOffsetY,1/2));
 		}
 		if(startCounter>=room_speed*1.5){
-			state="grounded";
+			state="acting";
 			sprite_set_offset(sprite_index,orgOffsetX,orgOffsetY);
-			obj_gui.state="ingame";
+			obj_gui.state="cutscene";
 			obj_gui.blinkingText="";
+			obj_lilypadManager.scene+=1;
 		}
 		break;
 	case "grounded":
+		cameraSubject=self;
+	
 		if((keyboard_check_pressed(leftButton) || (keyboard_check(leftButton) && buttonsUp)) && !keyboard_check(rightButton) && !frozen){
 			if(vx>0) vx=0;
 			vx=vx-acc;
@@ -145,6 +147,8 @@ switch(state){
 			sprite_index=asset_get_index("sprite_heroIdle"+dir);
 		}
 		break;
+	case "acting":
+		break;
 }
 
 depth=-1*(y+sprite_height/2-12);
@@ -204,6 +208,10 @@ if(keyboard_check_pressed(interactButton) ||  mouse_check_button_pressed(mb_left
 	}
 }
 
-
+if(state=="acting"){
+	var cameraSmoothing=cameraSmoothingActing;
+}else{
+	cameraSmoothing=cameraSmoothingIngame;	
+}
 
 camera_set_view_pos(view_camera[0],cameraX+(xToUse-cameraX)/cameraSmoothing-cwidth/2,cameraY+(yToUse-cameraY)/cameraSmoothing-cheight/2);

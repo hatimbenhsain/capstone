@@ -124,6 +124,7 @@ function parseDialogue(fileName){
 			var subject=ds_grid_get(grid,4,i);
 			var talker=ds_grid_get(grid,5,i);
 			var emotion=ds_grid_get(grid,6,i);
+			
 		
 			if(head==undefined){
 				var l=new global.Line(text,-1,type,action,subject,talker,emotion);

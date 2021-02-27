@@ -18,7 +18,8 @@ upButton=obj_tuning.upButton;
 interactButton=obj_tuning.interactButton;
 runButton=obj_tuning.runButton;
 
-cameraSmoothing=obj_tuning.cameraSmoothing;
+cameraSmoothingIngame=obj_tuning.cameraSmoothing;
+cameraSmoothingActing=obj_tuning.cameraSmoothing*4;
 shadowSprite=sprite_shadow;
 talkingTo=noone;
 
@@ -38,5 +39,7 @@ pensiveSprite=sprite_hero_pensive;
 
 orgOffsetX=sprite_xoffset;
 orgOffsetY=sprite_yoffset;
+
+cameraSubject=self;
 
 rightStep=true;

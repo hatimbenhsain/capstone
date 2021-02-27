@@ -17,6 +17,9 @@ switch(state){
 		}
 		zoom=lerp(zoom,1,1/(room_speed));
 		break;
+	case "cutscene":
+		zoom=1;
+		break;
 }
 	
 camera_set_view_size(view_camera[0],obj_tuning.cameraWidth/zoom,obj_tuning.cameraHeight/zoom);

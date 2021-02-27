@@ -9,3 +9,4 @@ draw_rectangle(xx,yy,xx+camera_get_view_width(view_camera[view_current])*2,yy+ca
 draw_sprite(ditherBG,0,x,y); 
 draw_sprite_ext(ditherBG,0,x,y+sprite_get_height(ditherBG)*2,1,-1,0,c_white,1); 
 draw_sprite_ext(ditherBG,0,x,y+sprite_get_height(ditherBG)*2,1,1,0,c_white,1); 
+

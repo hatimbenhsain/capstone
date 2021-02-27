@@ -24,3 +24,10 @@ function useItem(obj){
 	obj_inventory.lockedObject=-1;
 }
 
+function startDialogue(dialogueName){
+	var dialogue=parseDialogue(dialogueName+".csv");
+	obj_dialogueManager.inDialogue=true;
+	obj_dialogueManager.head=dialogue;
+	obj_dialogueManager.currentMessage=dialogue;
+	obj_dialogueManager.interlocutor="";
+}

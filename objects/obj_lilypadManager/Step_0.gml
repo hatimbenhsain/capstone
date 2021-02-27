@@ -70,3 +70,50 @@ y=camera_get_view_y(view_camera[view_current])+yy;
 
 background_color=merge_color($6E218A,c_black,cos(get_timer()/2500000)/2+0.5);
 
+switch(scene){
+	case 1:	
+		obj_hero.sprite_index=sprite_heroIdleF;
+		if(alarm[0]==-1) alarm[0]=room_speed;
+		break;
+	case 2:
+		if(!obj_dialogueManager.inDialogue){
+			obj_hero.dir="L";
+			obj_hero.sprite_index=sprite_heroIdleL;
+			scene+=1;
+			startDialogue("limboDialogue2");
+		}
+		break;
+	case 3:
+		if(!obj_dialogueManager.inDialogue){
+			obj_hero.dir="R";
+			obj_hero.sprite_index=sprite_heroIdleR;
+			scene+=1;
+			obj_hero.state="grounded";
+		}
+		break;
+	case 4:
+		with(obj_hero){
+			if(distance_to_object(obj_gop)<50){
+				state="acting";
+				cameraSubject=obj_gop;
+				sprite_index=asset_get_index("sprite_heroIdle"+dir);
+				startDialogue("limboDialogue3");
+				obj_lilypadManager.scene+=1;
+			}
+		}
+		break;
+	case 5:
+		if(!obj_dialogueManager.inDialogue){
+			obj_gop.dir="F";
+			if(alarm[1]==-1) alarm[1]=room_speed;
+		}
+		break;
+	case 6:
+		if(!obj_dialogueManager.inDialogue){
+			with(obj_hero){
+				cameraSubject=self;	
+			}
+			if(alarm[2]==-1) alarm[2]=room_speed/2;
+		}
+		break;
+}

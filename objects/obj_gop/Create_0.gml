@@ -19,3 +19,5 @@ neutralSprite=sprite_gop_neutral;
 
 
 state=-1;
+
+dir="B";

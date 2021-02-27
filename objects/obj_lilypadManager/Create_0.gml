@@ -8,3 +8,5 @@ yy=0;
 ditherBG=sprite_ditherBG2;
 
 depth=199;
+
+scene=0;

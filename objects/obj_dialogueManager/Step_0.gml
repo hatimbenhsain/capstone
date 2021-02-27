@@ -37,8 +37,9 @@ if(inDialogue){
 			inDialogue=false;
 			finished=true;
 			obj_hero.frozen=false;
-			interlocutor.head=interlocutor.initialHead;
-			show_debug_message("stop");
+			if(interlocutor!=""){
+				interlocutor.head=interlocutor.initialHead;
+			}
 		}
 
 		

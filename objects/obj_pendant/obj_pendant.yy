@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "sprite_pendant",
-    "path": "sprites/sprite_pendant/sprite_pendant.yy",
+    "name": "sprite_star",
+    "path": "sprites/sprite_star/sprite_star.yy",
   },
   "solid": false,
   "visible": true,
@@ -29,8 +29,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "obj_items",
-    "path": "folders/Objects/obj_items.yy",
+    "name": "limbo",
+    "path": "folders/Objects/obj_overworld/limbo.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_pendant",

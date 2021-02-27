@@ -4,5 +4,8 @@ switch(state){
 	case "grounded":
 		draw_sprite(shadowSprite,0,x,y);
 		break;
+	case "acting":
+		draw_sprite(shadowSprite,0,x,y);
+		break;
 }
 draw_self();
