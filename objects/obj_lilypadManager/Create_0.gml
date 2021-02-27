@@ -7,4 +7,4 @@ y=camera_get_view_y(view_camera[view_current]);
 yy=0;
 ditherBG=sprite_ditherBG2;
 
-depth=499
+depth=199;

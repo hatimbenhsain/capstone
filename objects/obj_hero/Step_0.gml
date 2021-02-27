@@ -7,6 +7,14 @@ if(keyboard_check_released(leftButton) || keyboard_check_released(downButton) ||
 }
 
 
+var cwidth = camera_get_view_width(view_camera[0]);
+var cheight = camera_get_view_height(view_camera[0]);
+var cameraX=camera_get_view_x(view_camera[0])+cwidth/2;
+var cameraY=camera_get_view_y(view_camera[0])+cheight/2;
+
+var xToUse=x;
+var yToUse=y;
+
 switch(state){
 	case "falling":
 		sprite_index=sprite_heroFall;
@@ -14,9 +22,37 @@ switch(state){
 			alarm[2]=3*room_speed;
 			obj_gui.state="landing";
 		}
+		if(alarm[2]!=-1){
+			y=lerp(y,startingY+25,1/(room_speed));
+			show_debug_message(y);
+		}else{
+			yToUse=y-27;
+		}
 		break;
 	case "fallen":
 		sprite_index=sprite_heroFallen;
+		if(keyboard_check(leftButton) || keyboard_check(rightButton) || keyboard_check(upButton) || keyboard_check(downButton)){
+			startCounter+=1;	
+			var maxVal=startCounter/(room_speed*1.5);
+			if(startCounter%2==0){
+				var newX=random_range(-1,1)+orgOffsetX;
+				var newY=random_range(-1,1)+orgOffsetY;	
+			}else{
+				var newX=sprite_xoffset;
+				var newY=sprite_yoffset;
+			}			
+			sprite_set_offset(sprite_index,lerp(sprite_xoffset,newX,maxVal),lerp(sprite_yoffset,newY,maxVal));
+		}else{
+			startCounter-=2;
+			startCounter=clamp(startCounter,0,room_speed*1.5)
+			sprite_set_offset(sprite_index,lerp(sprite_xoffset,orgOffsetX,1/2),lerp(sprite_yoffset,orgOffsetY,1/2));
+		}
+		if(startCounter>=room_speed*1.5){
+			state="grounded";
+			sprite_set_offset(sprite_index,orgOffsetX,orgOffsetY);
+			obj_gui.state="ingame";
+			obj_gui.blinkingText="";
+		}
 		break;
 	case "grounded":
 		if((keyboard_check_pressed(leftButton) || (keyboard_check(leftButton) && buttonsUp)) && !keyboard_check(rightButton) && !frozen){
@@ -25,6 +61,7 @@ switch(state){
 			walking=true;
 			vy=0;
 			sprite_index=sprite_heroWalkL;
+			image_index=0;
 			dir="L";
 		}else if((keyboard_check_pressed(rightButton) || (keyboard_check(rightButton) && buttonsUp)) && !keyboard_check(leftButton) && !frozen){
 			if(vx<0) vx=0;
@@ -32,6 +69,7 @@ switch(state){
 			walking=true;
 			vy=0;
 			sprite_index=sprite_heroWalkR;
+			image_index=0;
 			dir="R";
 		}else if((keyboard_check_pressed(downButton) || (keyboard_check(downButton) && buttonsUp)) && !keyboard_check(upButton) && !frozen){
 			if(vy<0) vy=0;
@@ -39,6 +77,7 @@ switch(state){
 			walking=true;
 			vx=0;
 			sprite_index=sprite_heroWalkF;
+			image_index=0;
 			dir="F";
 		}else if((keyboard_check_pressed(upButton) || (keyboard_check(upButton) && buttonsUp)) && !keyboard_check(downButton) && !frozen){
 			if(vy>0) vy=0;
@@ -46,6 +85,7 @@ switch(state){
 			walking=true;
 			vx=0;
 			sprite_index=sprite_heroWalkB;
+			image_index=0;
 			dir="B";
 		}
 		if(keyboard_check(runButton) && image_speed==1){
@@ -72,7 +112,8 @@ switch(state){
 					break;
 			}
 			if(alarm[1]==-1){
-				alarm[1]=(1/sprite_get_speed(sprite_index))*room_speed;
+				rightStep=true;
+				alarm[1]=(1-image_index%1)*room_speed/(sprite_get_speed(sprite_index)*image_speed);
 			}
 		}else{
 			alarm[1]=-1;
@@ -163,12 +204,6 @@ if(keyboard_check_pressed(interactButton) ||  mouse_check_button_pressed(mb_left
 	}
 }
 
-var cwidth = camera_get_view_width(view_camera[0]);
-var cheight = camera_get_view_height(view_camera[0]);
-var cameraX=camera_get_view_x(view_camera[0])+cwidth/2;
-var cameraY=camera_get_view_y(view_camera[0])+cheight/2;
 
-var xToUse=x;
-var yToUse=y;
 
 camera_set_view_pos(view_camera[0],cameraX+(xToUse-cameraX)/cameraSmoothing-cwidth/2,cameraY+(yToUse-cameraY)/cameraSmoothing-cheight/2);

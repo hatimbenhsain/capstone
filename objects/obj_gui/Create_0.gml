@@ -18,3 +18,5 @@ textFadeIn=true;
 textFadeOut=false;
 
 state="opening";
+
+timeMark=0;

@@ -15,5 +15,7 @@ totalTime=0;
 capeOpacity=1;
 walking=false;
 
+neutralSprite=sprite_gop_neutral;
+
 
 state=-1;
