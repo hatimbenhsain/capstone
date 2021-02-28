@@ -114,6 +114,38 @@ switch(scene){
 				cameraSubject=self;	
 			}
 			if(alarm[2]==-1) alarm[2]=room_speed/2;
+			
 		}
 		break;
+	case 7:
+		if(ObjectInInventory(obj_pendant)){
+			show_debug_message("changing head");
+			with(obj_gop){
+				ChangeInitHead("gop2");
+				
+			}
+			scene++;
+		}
+		break;
+	case 9:
+		with(obj_hero){
+			state="acting"	
+		}
+		with(obj_gop){
+			if(!walking){
+				if(obj_hero.bbox_bottom>bbox_bottom){
+					alarm[2]=1;
+				}else{
+					alarm[1]=1;
+				}
+			}
+			if(bbox_bottom<camera_get_view_y(view_camera[0]) || y>camera_get_view_y(view_camera[0])+camera_get_view_height(view_camera[0])+20){
+				obj_hero.state="grounded";
+				obj_lilypadManager.scene++;
+				instance_deactivate_object(obj_gop);	
+			}
+		}
+		break;
+	
+		
 }

@@ -40,6 +40,11 @@ if(capeSprite==sprite_gop_cape_idle && capeImage<0.5){
 switch(state){
 	case 0:
 		break;
+	case 1:
+		ds_list_clear(interactableObjects);
+		obj_lilypadManager.scene=9;
+		state++;
+		break;
 }
 
 prevState=state;

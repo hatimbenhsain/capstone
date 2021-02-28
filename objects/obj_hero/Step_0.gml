@@ -158,7 +158,7 @@ depth=-1*(y+sprite_height/2-12);
 
 
 
-if(keyboard_check_pressed(interactButton) ||  mouse_check_button_pressed(mb_left)){
+if(keyboard_check_pressed(interactButton)){
 	var xx, yy, talkerDir;
 	switch(dir){
 		case("F"):
@@ -183,7 +183,7 @@ if(keyboard_check_pressed(interactButton) ||  mouse_check_button_pressed(mb_left
 			break;
 	}
 	var inst=instance_place(x+xx,y+yy,obj_interactable);
-	if(inst!=noone && !obj_dialogueManager.finished && !obj_inventory.open){
+	if(inst!=noone && !obj_dialogueManager.finished && !obj_inventory.open && state=="grounded"){
 		talkingTo=inst;
 		talkingTo.dir=talkerDir;
 		inst.talkingTo=self;
@@ -214,4 +214,6 @@ if(state=="acting"){
 	cameraSmoothing=cameraSmoothingIngame;	
 }
 
-camera_set_view_pos(view_camera[0],cameraX+(xToUse-cameraX)/cameraSmoothing-cwidth/2,cameraY+(yToUse-cameraY)/cameraSmoothing-cheight/2);
+if(!global.cameraOverride){
+	camera_set_view_pos(view_camera[0],cameraX+(xToUse-cameraX)/cameraSmoothing-cwidth/2,cameraY+(yToUse-cameraY)/cameraSmoothing-cheight/2);
+}

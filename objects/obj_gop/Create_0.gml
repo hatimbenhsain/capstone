@@ -7,6 +7,8 @@ event_inherited();
 
 idleB=sprite_gop_idleB;
 idleF=sprite_gop_idleF;
+idleL=sprite_gop_idleF;
+idleR=sprite_gop_idleF;
 walkB=sprite_gop_walkB;
 walkF=sprite_gop_walkF;
 capeSprite=sprite_gop_cape_idle;

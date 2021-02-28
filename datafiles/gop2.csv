@@ -1,0 +1,20 @@
+Line,Type,Parent,Action,Subject,Talker,Emotion
+Have you found it?,q,,,,gop,neutral
+Yes!,a,2,,,hero,neutral
+No...,a,2,,,,
+Not really.,,4,,,hero,sad
+Then why are you still here?,,,,,gop,neutral
+I did!,,3,,,hero,happy
+Good. Do you remember anything now?,,,,,gop,neutral
+Uhm.. I'm not sure.,,,,,hero,cringe
+That's fine. Here's something that might help:,,,,,gop,neutral
+"When you're done talking to me, open your inventory with the button I.",,,,,gop,neutral
+"Then, select the object with the arrow keys and Z, and close your inventory with I.",,,,,gop,neutral
+"With the object still selected, talk to me again to show it to me.",,,,,gop,neutral
+Do you need me to explain again?,q,,,,gop,neutral
+Yes.,a,14,,,hero,neutral
+No.,a,14,,,hero,neutral
+"When you're done talking to me, open your inventory with the button I.",,15,,,gop,neutral
+"Then, select the object with the arrow keys and Z, and close your inventory with I.",,,,,gop,neutral
+"With the object still selected, talk to me again to show it to me.",,,,,gop,neutral
+Good.,,16,,,gop,neutral

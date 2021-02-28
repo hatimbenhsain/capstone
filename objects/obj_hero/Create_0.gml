@@ -11,6 +11,7 @@ acc=obj_tuning.heroAcc;
 maxSpeed=obj_tuning.heroMaxSpeed;
 speedFactor=obj_tuning.speedFactor;
 
+
 leftButton=obj_tuning.leftButton;
 rightButton=obj_tuning.rightButton;
 downButton=obj_tuning.downButton;

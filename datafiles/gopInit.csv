@@ -1,5 +1,15 @@
 Line,Type,Parent,Action,Subject,Talker,Emotion
-Can I help you?,,,,,gop,neutral
-...,,,,,hero,shocked
-Um... yeah? Do you know where we are?,,,,,hero,shocked
-What is the last thing you remember?,,,,,gop,neutral
+Have you found it?,q,,,,gop,neutral
+Yes!,a,2,,,hero,neutral
+No...,a,2,,,,
+Found what?,a,2,,,,
+I did!,,3,,,hero,happy
+...Did you now?,,,,,gop,neutral
+No....,,,,,hero,cringe
+Come back when you do.,,,,,gop,neutral
+Not really.,,4,,,hero,sad
+Then why are you still here?,,,,,gop,neutral
+What am I supposed to find again..?,,5,,,hero,cringe
+The object you lost.,,,,,gop,neutral
+It's somewhere to the South. Go find it.,,,,,gop,neutral
+Sorry. Will do.,,,,,hero,pensive

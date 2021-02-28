@@ -1,9 +1,9 @@
 Line,Type,Parent,Action,Subject,Talker,Emotion
 So you've found it.,,,,,gop,neutral
 Yes.,,,,,hero,neutral
-Do you know what this is?,,,,,hero,neutral
-Yeah... My mom gave this to me from protection.,,,,,gop,pensive
-Protection from what?,,,,,hero,neutral
+Do you know what this is?,,,,,gop,neutral
+Yeah... My mom gave this to me from protection.,,,,,hero,pensive
+Protection from what?,,,,,gop,neutral
 From the... Oh gods. I remember now.,,,,,hero,shocked
 I have to go back! They need me!,,,,,hero,shocked
 Do you know how I can get out of here? I can't waste more time!,,,,,hero,shocked
@@ -80,3 +80,4 @@ Okay. Yeah. I can do this. Where do I go?,,,,,hero,happy
 The waters will take you where you need to go.,,,,,gop,neutral
 Got it. I'll see you soon!,,,,,hero,happy
 ....,,,,,gop,neutral
+Alright. I shall go attend to other spirits too. Goodbye for now.,,,ChangeState,1,gop,neutral
