@@ -25,7 +25,7 @@ depth=-1*(y+sprite_height/2-12);
 switch(state){
 	case 2:
 		dir="F";
-		sprite_index=sprite_priestess_idleF;
+		sprite_index=sittingSprite;
 		break;
 	case 3:
 		if(prevState==4){

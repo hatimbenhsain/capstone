@@ -23,5 +23,6 @@ if(blinkingText!=""){
 	draw_set_alpha(textAlpha);
 	draw_text(display_get_gui_width()/2,display_get_gui_height()*7/8,blinkingText);
 	draw_set_font(font_codersCrux);
+	draw_set_alpha(1);
 }
 

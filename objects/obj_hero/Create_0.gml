@@ -44,3 +44,9 @@ orgOffsetY=sprite_yoffset;
 cameraSubject=self;
 
 rightStep=true;
+
+timeToGetUp=1.5;
+
+sceneManager=obj_lilypadManager;
+
+sittingSprite=sprite_heroSat;

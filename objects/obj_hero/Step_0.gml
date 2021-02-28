@@ -15,6 +15,8 @@ var cameraY=camera_get_view_y(view_camera[0])+cheight/2;
 var xToUse=cameraSubject.x/2+x/2;
 var yToUse=cameraSubject.y/2+y/2;
 
+depth=-1*(y+sprite_height/2-12);
+
 switch(state){
 	case "falling":
 		sprite_index=sprite_heroFall;
@@ -27,6 +29,7 @@ switch(state){
 		}else{
 			yToUse=y-27;
 		}
+		depth=-1*(startingY+sprite_height/2-12);
 		break;
 	case "fallen":
 		sprite_index=sprite_heroFallen;
@@ -43,15 +46,22 @@ switch(state){
 			sprite_set_offset(sprite_index,lerp(sprite_xoffset,newX,maxVal),lerp(sprite_yoffset,newY,maxVal));
 		}else{
 			startCounter-=2;
-			startCounter=clamp(startCounter,0,room_speed*1.5)
+			startCounter=clamp(startCounter,0,room_speed*timeToGetUp)
 			sprite_set_offset(sprite_index,lerp(sprite_xoffset,orgOffsetX,1/2),lerp(sprite_yoffset,orgOffsetY,1/2));
 		}
-		if(startCounter>=room_speed*1.5){
+		if(startCounter>=room_speed*timeToGetUp){
 			state="acting";
 			sprite_set_offset(sprite_index,orgOffsetX,orgOffsetY);
 			obj_gui.state="cutscene";
 			obj_gui.blinkingText="";
-			obj_lilypadManager.scene+=1;
+			sceneManager.scene=3;
+		}
+		break;
+	case "sitting":
+		sprite_index=sittingSprite;
+		if(keyboard_check(downButton) && !frozen){
+			state="grounded";
+			y+=5;
 		}
 		break;
 	case "grounded":
@@ -151,7 +161,7 @@ switch(state){
 		break;
 }
 
-depth=-1*(y+sprite_height/2-12);
+
 
 
 

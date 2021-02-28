@@ -37,6 +37,10 @@ function AddInteractable(obj){
 
 function SitOnBench(){
 	obj_hero.frozen=true;
+	obj_hero.x=obj_bench.x;
+	obj_hero.y=obj_bench.y-10;
+	obj_hero.dir="F";
+	obj_hero.state="sitting";
 	FadeToBlack(2,3);
 	obj_hero.alarm[0]=room_speed*(2*2+3); //unfreezing
 	obj_bench.alarm[0]=room_speed*2; //moving the hero
