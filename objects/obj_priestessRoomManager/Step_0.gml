@@ -9,7 +9,7 @@ switch(scene){
 		
 		scene++;
 		break;
-	case 3:
+	case 2:
 		obj_hero.dir="F";
 		obj_hero.sprite_index=sprite_heroIdleF;
 		scene+=1;

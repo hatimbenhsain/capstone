@@ -3,9 +3,11 @@
 if(keyboard_check_pressed(openButton) && !obj_hero.frozen && !open && ds_list_size(items)>0){
 	open=true;
 	obj_hero.frozen=true;
+	playSFX(sound_inventoryOpen);
 }else if(keyboard_check_pressed(openButton) && open && ds_list_size(items)>0){
 	open=false;
 	obj_hero.frozen=false;
+	playSFX(sound_inventoryClose);
 }
 
 if(!obj_dialogueManager.inDialogue && !obj_dialogueManager.finished && items!=undefined && open){

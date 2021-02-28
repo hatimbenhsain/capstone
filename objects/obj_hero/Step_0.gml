@@ -54,7 +54,7 @@ switch(state){
 			sprite_set_offset(sprite_index,orgOffsetX,orgOffsetY);
 			obj_gui.state="cutscene";
 			obj_gui.blinkingText="";
-			sceneManager.scene=3;
+			sceneManager.scene++;
 		}
 		break;
 	case "sitting":

@@ -79,7 +79,7 @@ switch(state){
 		image_alpha-=0.005;
 		initialHead=undefined;
 		if(image_alpha<=0){
-			y=y-100;
+			y=y-300;
 			state=10;
 			image_alpha=10;
 			for(var i=0;i<instance_number(obj_blackFog1);i++){

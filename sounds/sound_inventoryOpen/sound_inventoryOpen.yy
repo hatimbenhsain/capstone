@@ -10,14 +10,14 @@
     "name": "audiogroup_default",
     "path": "audiogroups/audiogroup_default",
   },
-  "soundFile": "itemPickup.wav",
-  "duration": 1.340147,
+  "soundFile": "sound_inventoryOpen.wav",
+  "duration": 1.235658,
   "parent": {
     "name": "Sounds",
     "path": "folders/Sounds.yy",
   },
   "resourceVersion": "1.0",
-  "name": "itemPickup",
+  "name": "sound_inventoryOpen",
   "tags": [],
   "resourceType": "GMSound",
 }

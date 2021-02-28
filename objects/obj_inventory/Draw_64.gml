@@ -13,8 +13,9 @@ if(open){
 	draw_set_color(c_white);
 	draw_sprite(sprite_index,image_index,0,0);
 	for(var i=firstObject;i<min(firstObject+rows*columns,ds_list_size(items));i++){
-		if(i==selectedObject) draw_sprite_ext(sprite_selectedItemBox,0,ds_grid_get(positions,0,i-firstObject)-string_height("text")*0.7,ds_grid_get(positions,1,i-firstObject),1,1,0,c_white,0.5);
-		if(i==lockedObject) draw_sprite_ext(sprite_selectedItemBox,0,ds_grid_get(positions,0,i-firstObject)-string_height("text")*0.7,ds_grid_get(positions,1,i-firstObject),1,1,0,c_white,1);
+		if(i==selectedObject) draw_sprite_ext(sprite_selectedItemBox2,0,ds_grid_get(positions,0,i-firstObject)-string_height("text")*0.7,ds_grid_get(positions,1,i-firstObject),1,1,0,c_white,0.5);
+		if(i==lockedObject) draw_sprite_ext(sprite_selectedItemBox2,0,ds_grid_get(positions,0,i-firstObject)-string_height("text")*0.7,ds_grid_get(positions,1,i-firstObject),1,1,0,c_white,1);
+		show_debug_message(items[|i]);
 		var scale=min(string_height("text")/sprite_get_width(items[|i].icon),string_height("text")/sprite_get_height(items[|i].icon));
 		draw_set_halign(fa_left);
 		draw_set_valign(fa_middle);
@@ -22,7 +23,7 @@ if(open){
 		draw_text(ds_grid_get(positions,0,i-firstObject)+string_height("text"),ds_grid_get(positions,1,i-firstObject)+5,items[|i].name);
 		show_debug_message(string_height("text"));
 	}
-	draw_sprite(sprite_descriptionBox,image_index,0,0);
+	draw_sprite(sprite_descriptionBox2,image_index,0,0);
 	draw_text(descriptionXPadding,descriptionYPadding,items[|selectedObject].description);
 	obj_hero.frozen=true;
 }else if (!open && !obj_dialogueManager.inDialogue && lockedObject!=-1){

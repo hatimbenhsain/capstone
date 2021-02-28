@@ -1,12 +1,12 @@
 {
   "spriteId": {
-    "name": "sprite_inventoryBox",
-    "path": "sprites/sprite_inventoryBox/sprite_inventoryBox.yy",
+    "name": "sprite_inventoryBox2",
+    "path": "sprites/sprite_inventoryBox2/sprite_inventoryBox2.yy",
   },
   "solid": false,
   "visible": true,
   "spriteMaskId": null,
-  "persistent": true,
+  "persistent": false,
   "parentObjectId": null,
   "physicsObject": false,
   "physicsSensor": false,

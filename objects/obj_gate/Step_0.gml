@@ -16,7 +16,7 @@ switch(state){
 		state++;
 		break;
 	case 4:
-		if(sprite_index>=sprite_get_number(sprite_index)-1){
+		if(image_index>=sprite_get_number(sprite_index)-1){
 			sprite_index=sprite_gate_floating;
 			image_index=0;
 			state=5;

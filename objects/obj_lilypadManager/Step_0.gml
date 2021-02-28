@@ -68,7 +68,7 @@ yy=yy%(sprite_get_height(ditherBG)*2);
 x=camera_get_view_x(view_camera[view_current])+camera_get_view_width(view_camera[view_current])/2;
 y=camera_get_view_y(view_camera[view_current])+yy;
 
-background_color=merge_color($6E218A,c_black,cos(get_timer()/2500000)/2+0.5);
+background_color=merge_color($6E218A,c_black,cos(get_timer()/2500000)*0.4+0.4);
 
 switch(scene){
 	case 1:	

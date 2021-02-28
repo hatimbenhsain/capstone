@@ -6,3 +6,7 @@ tempGain=1;
 bgMusic=audio_manabgm;
 
 bgGain=1;
+
+sfxPlaying=-1;
+tempBg=-1;
+sfxGain=1;

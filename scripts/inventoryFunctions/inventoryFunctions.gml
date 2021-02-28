@@ -9,6 +9,7 @@ function addItem(item){
 		instance_deactivate_object(id);
 	}
 	obj_hero.pickedUp=true;
+	playSFX(sound_itemPickup);
 }
 
 function AddItem(item){
@@ -20,6 +21,7 @@ function AddItem(item){
 		instance_deactivate_object(id);
 	}
 	obj_hero.pickedUp=true;
+	playSFX(sound_itemPickup);
 }
 
 function combineObjects(){

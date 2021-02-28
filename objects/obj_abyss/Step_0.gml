@@ -1,6 +1,10 @@
 /// @description Insert description here
 // You can write your code in this editor
 
+//if(keyboard_check_pressed(ord("Y"))){
+//	alarm[0]=1;
+//}
+
 switch(state){
 	case 1:
 		show_debug_message(distance_to_point(obj_hero.x,obj_hero.bbox_bottom));

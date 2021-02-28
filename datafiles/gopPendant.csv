@@ -2,7 +2,7 @@ Line,Type,Parent,Action,Subject,Talker,Emotion
 So you've found it.,,,,,gop,neutral
 Yes.,,,,,hero,neutral
 Do you know what this is?,,,,,gop,neutral
-Yeah... My mom gave this to me from protection.,,,,,hero,pensive
+Yeah... My mom gave this to me for protection.,,,,,hero,pensive
 Protection from what?,,,,,gop,neutral
 From the... Oh gods. I remember now.,,,,,hero,shocked
 I have to go back! They need me!,,,,,hero,shocked
@@ -76,7 +76,7 @@ Well...,,,,,gop,neutral
 We'll see about that.,,,,,gop,neutral
 "Of course, of course. You don't wanna give me a number too early in the game.",,,,,hero,pensive
 Okay. Yeah. I can do this. Where do I go?,,,,,hero,happy
-"Go north, to the pond where you found your pendant. ",,,,,gop,neutral
+Go to the pond where you found your pendant. ,,,,,gop,neutral
 The waters will take you where you need to go.,,,,,gop,neutral
 Got it. I'll see you soon!,,,,,hero,happy
 ....,,,,,gop,neutral
