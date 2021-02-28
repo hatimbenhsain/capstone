@@ -9,11 +9,19 @@ if(blackFadeIn && blackAlpha<1){
 	blackFadeOut=false;	
 }
 
+if(whiteFadeIn && whiteAlpha<1){
+	whiteAlpha+=1/blackFadeRate;
+	obj_soundManager.bgGain-=1/blackFadeRate;
+}
+
 draw_set_alpha(blackAlpha);
 draw_set_colour(c_black);
 draw_rectangle(0,0,room_width,room_height,-1);
 draw_set_alpha(1);
 draw_set_colour(c_white);
+draw_set_alpha(whiteAlpha);
+draw_rectangle(0,0,room_width,room_height,-1);
+draw_set_alpha(1);
 
 if(blinkingText!=""){
 	

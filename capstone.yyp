@@ -514,8 +514,8 @@
     "children": [],
   },
   "RoomOrder": [
-    {"name":"room_limbo","path":"rooms/room_limbo/room_limbo.yy",},
     {"name":"room_priestess","path":"rooms/room_priestess/room_priestess.yy",},
+    {"name":"room_limbo","path":"rooms/room_limbo/room_limbo.yy",},
   ],
   "Folders": [
     {"folderPath":"folders/Sprites.yy","order":13,"resourceVersion":"1.0","name":"Sprites","tags":[],"resourceType":"GMFolder",},

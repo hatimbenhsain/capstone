@@ -44,6 +44,16 @@ switch(state){
 		ChangeInitHead("priestess2");
 		AddInteractable(obj_weapon1);
 		AddInteractable(obj_cloth1);
+		for(var i=0;i<instance_number(obj_blackFog1);i++){
+			var fog=instance_find(obj_blackFog1,i);
+			if (fog.fogLayer==1){
+				if(fog.x<630){
+					fog.vx=-1;	
+				}else{
+					fog.vx=1;	
+				}
+			}
+		}
 		if(clothShown && weaponShown){
 			ds_map_clear(interactableObjects);
 			state=8;
@@ -72,8 +82,14 @@ switch(state){
 			y=y-100;
 			state=10;
 			image_alpha=10;
+			for(var i=0;i<instance_number(obj_blackFog1);i++){
+				var fog=instance_find(obj_blackFog1,i);
+				if (fog.fogLayer==2){
+					fog.vy=-1;
+				}
+			}
 			with(obj_gate){
-				sprite_index=sprite_gate_floating;	
+				state=3;
 			}
 		}
 		break;

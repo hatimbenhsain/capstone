@@ -8,8 +8,8 @@
   "spriteMaskId": null,
   "persistent": false,
   "parentObjectId": {
-    "name": "obj_collidable",
-    "path": "objects/obj_collidable/obj_collidable.yy",
+    "name": "obj_blackFog1",
+    "path": "objects/obj_blackFog1/obj_blackFog1.yy",
   },
   "physicsObject": false,
   "physicsSensor": false,

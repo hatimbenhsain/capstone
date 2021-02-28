@@ -2,9 +2,12 @@
 // You can write your code in this editor
 
 blackAlpha=0;
+whiteAlpha=0;
 
 blackFadeIn=false;
 blackFadeOut=false;
+
+whiteFadeIn=false;
 
 blackFadeRate=room_speed;
 

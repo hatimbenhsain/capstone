@@ -142,7 +142,9 @@ switch(scene){
 			if(bbox_bottom<camera_get_view_y(view_camera[0]) || y>camera_get_view_y(view_camera[0])+camera_get_view_height(view_camera[0])+20){
 				obj_hero.state="grounded";
 				obj_lilypadManager.scene++;
+				obj_abyss.state++;
 				instance_deactivate_object(obj_gop);	
+				
 			}
 		}
 		break;
