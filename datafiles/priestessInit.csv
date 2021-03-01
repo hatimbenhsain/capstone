@@ -1,16 +1,13 @@
 Line,Type,Parent,Action,Subject,Talker,Emotion
-......,,,,,hero,shocked
-Um....,,,,,hero,shocked
-Hello?,,,,,,
-......,q,,,,priestess,neutral
-Introduce yourself.,a,5,,,noone,
-Apologize.,a,5,,,,
-Ask something.,a,5,,,,
-Leave.,a,5,,,,
-What will you ask?,q,8,,,noone,
-Who are you?,a,10,,,hero,neutral
-Where are we?,a,10,,,hero,
-"Hi, I'm... Uh...",l,6,,,hero,shocked
+......,q,,,,hero,shocked
+Introduce yourself.,a,2,,,noone,
+Apologize.,a,2,,,,
+Ask something.,a,2,,,,
+Leave.,a,2,,,,
+What will you ask?,q,5,,,noone,
+Who are you?,a,7,,,hero,neutral
+Where are we?,a,7,,,hero,
+"Hi, I'm... Uh...",l,3,,,hero,shocked
 Your... spiritual guide?,,,,,hero,thinking
 "Wait, that sounded weird.",,,,,hero,cringe
 "Sorry, what I meant to say is, uh...",,,,,hero,neutral
@@ -20,7 +17,7 @@ I've been sent... here... to help you move on...,,,,,hero,thinking
 Can you.... hear me?,,,,,hero,neutral
 ......,,,,,priestess,neutral
 O...kay....,,,,,hero,cringe
-"Listen, about earlier, I'm sorry...",l,7,,,hero,cringe
+"Listen, about earlier, I'm sorry...",l,4,,,hero,cringe
 "I understand that I, uh, upset you, when I tried to touch the gate?",,,,,hero,confused
 I really didn't uh... mean any harm.,,,,,hero,cringe
 It's fine.,,,,,priestess,neutral
@@ -32,12 +29,12 @@ But I would still like you to leave these grounds.,,,,,priestess,neutral
 I'm... sorry but I don't think I can.,,,,,hero,sad
 Suit yourself.,,,,,priestess,neutral
 ......,,,,,hero,sad
-Can you tell me... who you are?,l,11,,,hero,thinking
+Can you tell me... who you are?,l,8,,,hero,thinking
 ......,,,,,priestess,neutral
 "I was sent here to help you so, it would be nice if uh, you introduced yourself...?",,,,,hero,cringe
 ......,,,,,priestess,neutral
 Or... maybe not.,,,,,hero,cringe
-What is this place?,l,12,,,hero,thinking
+What is this place?,l,9,,,hero,thinking
 ......,,,,,priestess,neutral
 "I mean, I know we're in limbo, but like, where exactly? What's that gate over there for?",,,,,hero,neutral
 This used to be... This is the temple of my goddess.,,,,,priestess,neutral

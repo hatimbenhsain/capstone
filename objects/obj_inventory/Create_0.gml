@@ -23,7 +23,7 @@ descriptionYPadding=obj_tuning.descriptionYPadding;
 descriptionXPadding=obj_tuning.descriptionXPadding;
 
 for(var i=0;i<rows*columns;i++){
-	var xx=xPadding+(i%2)*(window_get_width()/2-xPadding/2);
+	var xx=xPadding+(i%2)*(display_get_gui_width()/2-xPadding/2);
 	var yy=yPadding+floor(i/2)*(obj_tuning.textSep/2+string_height("text"));
 	ds_grid_add(positions,0,i,xx);
 	ds_grid_add(positions,1,i,yy);

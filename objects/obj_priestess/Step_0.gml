@@ -40,6 +40,9 @@ switch(state){
 		dir="B";
 		sprite_index=sprite_priestess_idleB;
 		lockedSprite=true;
+		if(ObjectInInventory(obj_weapon1) && ObjectInInventory(obj_cloth1)){
+			ChangeInitHead("priestess3");
+		}
 		break;
 	case 5:
 		state=4;

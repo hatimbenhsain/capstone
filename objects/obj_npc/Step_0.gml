@@ -8,47 +8,49 @@ event_inherited();
 
 //if(talkingTo!=noone) walking=false;
 
-switch(dir){
-	case("F"):
-		image_xscale=1;
-		if(!walking) sprite_index=idleF;
-		else{
-			sprite_index=walkF;
-			if (vy<0) vy=0;
-			vy+=acc;
-			vx=0;
-		}
-		break;
-	case("B"):
-		image_xscale=1;
-		if(!walking) sprite_index=idleB;
-		else{
-			sprite_index=walkB;
-			if (vy>0) vy=0;
-			vy-=acc;
-			vx=0;
-		}
-		break;
-	case("R"):
-		image_xscale=-1;
-		if(!walking) sprite_index=idleL;
-		else{
-			sprite_index=walkL;
-			if (vx<0) vx=0;
-			vx+=acc;
-			vy=0;
-		}
-		break;	
-	case("L"):
-		image_xscale=1;
-		if(!walking) sprite_index=idleL;
-		else{
-			sprite_index=walkL;
-			if (vx>0) vx=0;
-			vx-=acc;
-			vy=0;
-		}
-		break;
+if(!lockedSprite){
+	switch(dir){
+		case("F"):
+			image_xscale=1;
+			if(!walking) sprite_index=idleF;
+			else{
+				sprite_index=walkF;
+				if (vy<0) vy=0;
+				vy+=acc;
+				vx=0;
+			}
+			break;
+		case("B"):
+			image_xscale=1;
+			if(!walking) sprite_index=idleB;
+			else{
+				sprite_index=walkB;
+				if (vy>0) vy=0;
+				vy-=acc;
+				vx=0;
+			}
+			break;
+		case("R"):
+			image_xscale=-1;
+			if(!walking) sprite_index=idleL;
+			else{
+				sprite_index=walkL;
+				if (vx<0) vx=0;
+				vx+=acc;
+				vy=0;
+			}
+			break;	
+		case("L"):
+			image_xscale=1;
+			if(!walking) sprite_index=idleL;
+			else{
+				sprite_index=walkL;
+				if (vx>0) vx=0;
+				vx-=acc;
+				vy=0;
+			}
+			break;
+	}
 }
 
 vx=clamp(vx,-maxSpeed,maxSpeed);
