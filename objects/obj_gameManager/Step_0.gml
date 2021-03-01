@@ -12,3 +12,15 @@ if(keyboard_check_pressed(ord("L"))){
 //	var pendant=instance_create_layer(x,y,layer,obj_pendant);
 //	addItem(pendant);
 //}
+
+if(keyboard_check(vk_alt) && keyboard_check(ord("D")) && keyboard_check_pressed(ord("B"))){
+	debugMode=!debugMode;	
+}
+
+if(debugMode && keyboard_check_pressed(ord("Y"))){
+	if(room==room_limbo){
+		room_goto(room_priestess);	
+	}else if(room==room_priestess){
+		room_goto(room_limbo);
+	}	
+}

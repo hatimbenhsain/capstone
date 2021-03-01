@@ -4,7 +4,7 @@
 if(inDialogue){
 	var action="";
 	var subject=interlocutor;
-	if((keyboard_check_pressed(interactButton) && currentChar>=maxLength)){
+	if(((keyboard_check_pressed(interactButton) || (skipMode && keyboard_check(interactButton))) && currentChar>=maxLength)){
 		currentChar=0;
 		if(currentMessage.action!=undefined && currentMessage.type!="a"){
 				//script_execute(asset_get_index(currentMessage.parent.children[|answerSelected].action),interlocutor);
@@ -12,9 +12,16 @@ if(inDialogue){
 				if(currentMessage.parent.children[|answerSelected].subject!="") subject=currentMessage.parent.children[|answerSelected].subject;
 		}
 			
+		if(currentMessage.type=="q"){
+			skipMode=false;
+			skipCounter=0;
+		}
+			
 		if(currentMessage.type=="a"){
 			currentMessage=currentMessage.parent;
 			currentMessage=currentMessage.children[|answerSelected];
+			skipMode=false;
+			skipCounter=0;
 			if(currentMessage.action!=undefined){
 				//script_execute(asset_get_index(currentMessage.action),interlocutor);
 				action=asset_get_index(currentMessage.action);
@@ -49,7 +56,7 @@ if(inDialogue){
 		if(action!=""){
 			script_execute(action,subject);	
 		}
-	}else if(keyboard_check_pressed(interactButton)){
+	}else if(keyboard_check_pressed(interactButton) || (skipMode && keyboard_check(interactButton))){
 		currentChar=maxLength;	
 	}
 
@@ -61,4 +68,15 @@ if(inDialogue){
 		answerSelected=(answerSelected+1) mod ds_list_size(currentMessage.parent.children);
 		show_debug_message("answer "+string(answerSelected)+" selected");
 	}
+	
+	if(keyboard_check(interactButton)){
+		skipCounter++;	
+		if(skipCounter>room_speed){
+			skipMode=true;	
+		}
+	}else{
+		skipCounter=0;
+		skipMode=false;
+	}
+	
 }

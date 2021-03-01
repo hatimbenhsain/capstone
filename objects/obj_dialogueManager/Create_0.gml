@@ -67,3 +67,7 @@ textPaddingY=obj_tuning.textPaddingY;
 interlocutor=noone;
 finished=false;
 maxLength=0;
+
+skipCounter=0;
+
+skipMode=false;

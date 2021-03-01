@@ -104,7 +104,7 @@ switch(state){
 			image_speed=image_speed*speedFactor;
 			maxSpeed=maxSpeed*speedFactor;
 		}else if(!keyboard_check(runButton) && image_speed==speedFactor){
-			image_speed=image_speed/speedFactor;	
+			image_speed=image_speed/speedFactor;
 			maxSpeed=maxSpeed/speedFactor;
 		}
 
@@ -137,12 +137,12 @@ switch(state){
 		var canmove;
 		for(i=1;i<=abs(vx);i++){
 			canmove=true;
-			if(place_meeting(x+sign(vx),y,obj_collidable)) canmove=false;
+			if(place_meeting(x+sign(vx),y,obj_collidable) && !obj_gameManager.debugMode) canmove=false;
 			if(canmove) x+=sign(vx);
 		}
 		for(i=1;i<=abs(vy);i++){
 			canmove=true;
-			if(place_meeting(x,y+sign(vy),obj_collidable)) canmove=false;
+			if(place_meeting(x,y+sign(vy),obj_collidable) && !obj_gameManager.debugMode) canmove=false;
 			if(canmove) y+=sign(vy);
 		}
 
@@ -168,7 +168,7 @@ switch(state){
 
 
 
-if(keyboard_check_pressed(interactButton)){
+if(keyboard_check_pressed(interactButton) || (obj_dialogueManager.skipMode && keyboard_check(interactButton))){
 	var xx, yy, talkerDir;
 	switch(dir){
 		case("F"):
@@ -210,11 +210,15 @@ if(keyboard_check_pressed(interactButton)){
 		inst.talkingTo=noone;
 		if(alarm[0]==-1) alarm[0]=1; //unfreezing
 		obj_dialogueManager.finished=false;
+		obj_dialogueManager.skipMode=false;
+		obj_dialogueManager.skipCounter=0;
 	}else if(inst==noone && pickedUp){
 		talkingTo=noone;
 		if(alarm[0]==-1) alarm[0]=1;
 		obj_dialogueManager.finished=false;
 		pickedUp=false;
+		obj_dialogueManager.skipMode=false;
+		obj_dialogueManager.skipCounter=0;
 	}
 }
 

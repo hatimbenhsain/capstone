@@ -764,6 +764,12 @@
     {"CopyToMask":-1,"filePath":"datafiles/godOfPassage","resourceVersion":"1.0","name":"idleF.png","resourceType":"GMIncludedFile",},
     {"CopyToMask":-1,"filePath":"datafiles/godOfPassage","resourceVersion":"1.0","name":"capeIdle.png","resourceType":"GMIncludedFile",},
     {"CopyToMask":-1,"filePath":"datafiles/godOfPassage","resourceVersion":"1.0","name":"walkB.png","resourceType":"GMIncludedFile",},
+    {"CopyToMask":-1,"filePath":"datafiles/godOfPassage","resourceVersion":"1.0","name":"capeBlink.png","resourceType":"GMIncludedFile",},
+    {"CopyToMask":-1,"filePath":"datafiles/godOfPassage","resourceVersion":"1.0","name":"capeIdle.png","resourceType":"GMIncludedFile",},
+    {"CopyToMask":-1,"filePath":"datafiles/godOfPassage","resourceVersion":"1.0","name":"idleB.png","resourceType":"GMIncludedFile",},
+    {"CopyToMask":-1,"filePath":"datafiles/godOfPassage","resourceVersion":"1.0","name":"idleF.png","resourceType":"GMIncludedFile",},
+    {"CopyToMask":-1,"filePath":"datafiles/godOfPassage","resourceVersion":"1.0","name":"walkF.png","resourceType":"GMIncludedFile",},
+    {"CopyToMask":-1,"filePath":"datafiles/godOfPassage","resourceVersion":"1.0","name":"walkB.png","resourceType":"GMIncludedFile",},
   ],
   "MetaData": {
     "IDEVersion": "2.3.0.529",
