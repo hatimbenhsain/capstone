@@ -21,6 +21,8 @@ walking=false;
 
 state=-1;
 
+
+
 add1=false;
 addBird=false;
 

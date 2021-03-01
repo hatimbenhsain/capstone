@@ -24,3 +24,5 @@ standby=-1;
 standbyState=-1;
 lastDir="F";
 shadowSprite=sprite_shadow;
+
+lockedSprite=false;

@@ -195,7 +195,7 @@ if(keyboard_check_pressed(interactButton)){
 	var inst=instance_place(x+xx,y+yy,obj_interactable);
 	if(inst!=noone && !obj_dialogueManager.finished && !obj_inventory.open && state=="grounded"){
 		talkingTo=inst;
-		talkingTo.dir=talkerDir;
+		if(!talkingTo.lockedSprite) talkingTo.dir=talkerDir;
 		inst.talkingTo=self;
 		frozen=true;
 		if(obj_inventory.lockedObject!=-1){

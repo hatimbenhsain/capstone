@@ -4,7 +4,7 @@
 if(inDialogue){
 	var action="";
 	var subject=interlocutor;
-	if((keyboard_check_pressed(interactButton) || mouse_check_button_pressed(mb_left)) && currentChar>=maxLength){
+	if((keyboard_check_pressed(interactButton) && currentChar>=maxLength)){
 		currentChar=0;
 		if(currentMessage.action!=undefined && currentMessage.type!="a"){
 				//script_execute(asset_get_index(currentMessage.parent.children[|answerSelected].action),interlocutor);
@@ -20,7 +20,9 @@ if(inDialogue){
 				action=asset_get_index(currentMessage.action);
 				if(currentMessage.subject!="") subject=currentMessage.subject;
 			}
-			currentMessage.greyed=true;
+			if(currentMessage.text!="Ask something." && currentMessage.text!=">Ask something."){
+				currentMessage.greyed=true;
+			}
 			currentMessage=currentMessage.children[|0];
 			if(currentMessage==noone || currentMessage==undefined){
 				currentMessage=noone;
@@ -47,7 +49,7 @@ if(inDialogue){
 		if(action!=""){
 			script_execute(action,subject);	
 		}
-	}else if(keyboard_check_pressed(interactButton) ||  mouse_check_button_pressed(mb_left)){
+	}else if(keyboard_check_pressed(interactButton)){
 		currentChar=maxLength;	
 	}
 

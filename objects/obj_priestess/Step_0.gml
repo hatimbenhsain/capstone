@@ -26,6 +26,7 @@ switch(state){
 	case 2:
 		dir="F";
 		sprite_index=sittingSprite;
+		lockedSprite=true;
 		break;
 	case 3:
 		if(prevState==4){
@@ -38,9 +39,11 @@ switch(state){
 	case 4:
 		dir="B";
 		sprite_index=sprite_priestess_idleB;
+		lockedSprite=true;
 		break;
 	case 5:
 		state=4;
+		
 		ChangeInitHead("priestess2");
 		AddInteractable(obj_weapon1);
 		AddInteractable(obj_cloth1);
@@ -57,6 +60,7 @@ switch(state){
 		if(clothShown && weaponShown){
 			ds_map_clear(interactableObjects);
 			state=8;
+			lockedSprite=false;
 			ChangeInitHead("priestess8");
 		}
 		break;
@@ -69,6 +73,7 @@ switch(state){
 		state=8
 		break;
 	case 8:
+		lockedSprite=false;
 		if(clothShown && weaponShown){
 			ds_map_clear(interactableObjects);
 			ChangeInitHead("priestess8");
