@@ -23,3 +23,8 @@ textFadeOut=false;
 state="opening";
 
 timeMark=0;
+
+pausedOptions=["Resume","Save","Settings","Exit Game"];
+pAlpha=0;
+pX=display_get_gui_width()/2
+pY=-display_get_gui_height()/2

@@ -1,5 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
+event_inherited();
+
 openSprite=sprite_lilypad5_opening;
 idleSprite=sprite_lilypad5;
 

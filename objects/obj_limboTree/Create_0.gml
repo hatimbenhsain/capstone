@@ -9,3 +9,5 @@ idleSprite=sprite_limboTree1;
 
 
 sprite_index=openSprite;
+
+state=0;

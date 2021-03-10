@@ -20,6 +20,27 @@ switch(state){
 	case "cutscene":
 		zoom=1;
 		break;
+	case "ingame":
+		zoom=1;
+		if (pAlpha>0) pAlpha=lerp(pAlpha,0,0.5);
+		if(pY>-display_get_gui_height()/2 && pY<display_get_gui_height()*1.5) pY=lerp(pY,display_get_gui_height()*1.5,0.3);
+		if(obj_gameManager.paused){
+			state="paused";
+			pY=-display_get_gui_height()/2;
+		}
+		break;
+	case "paused":
+		if (pAlpha<1){
+			pAlpha=lerp(pAlpha,1,1/2);
+		}
+		if(pY<display_get_gui_height()/2){
+			pY=lerp(pY,display_get_gui_height()/2,0.3);
+		}
+		if(!obj_gameManager.paused){
+			state="ingame";
+		}
+		break;
 }
+
 	
 camera_set_view_size(view_camera[0],obj_tuning.cameraWidth/zoom,obj_tuning.cameraHeight/zoom);

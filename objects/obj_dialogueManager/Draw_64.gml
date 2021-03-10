@@ -29,7 +29,7 @@ if(inDialogue && currentMessage!=noone){
 	currentChar+=textSpeed;
 	currentChar=clamp(currentChar,0,maxLength+1);
 	if(currentChar>=maxLength || currentMessage.type=="a"){
-		obj_portrait.talking=false;	
+		obj_portrait.talking=false;
 	}else{
 		obj_portrait.talking=true;
 	}

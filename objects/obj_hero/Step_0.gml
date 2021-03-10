@@ -65,13 +65,25 @@ switch(state){
 		}
 		break;
 	case "grounded":
+		if(!frozen){
+			obj_gui.state="ingame"
+		}
 		cameraSubject=self;
+	
+		if((keyboard_check_released(leftButton) || keyboard_check_released(rightButton))){
+			vx=0;
+			walking=false;
+		}
+		if((keyboard_check_released(upButton) || keyboard_check_released(downButton))){
+			vy=0;
+			walking=false;
+		}
 	
 		if((keyboard_check_pressed(leftButton) || (keyboard_check(leftButton) && buttonsUp)) && !keyboard_check(rightButton) && !frozen){
 			if(vx>0) vx=0;
 			vx=vx-acc;
 			walking=true;
-			vy=0;
+			//vy=0;
 			sprite_index=sprite_heroWalkL;
 			image_index=0;
 			dir="L";
@@ -79,15 +91,16 @@ switch(state){
 			if(vx<0) vx=0;
 			vx=vx+acc;
 			walking=true;
-			vy=0;
+			//vy=0;
 			sprite_index=sprite_heroWalkR;
 			image_index=0;
 			dir="R";
-		}else if((keyboard_check_pressed(downButton) || (keyboard_check(downButton) && buttonsUp)) && !keyboard_check(upButton) && !frozen){
+		}
+		if((keyboard_check_pressed(downButton) || (keyboard_check(downButton) && buttonsUp)) && !keyboard_check(upButton) && !frozen){
 			if(vy<0) vy=0;
 			vy=vy+acc;
 			walking=true;
-			vx=0;
+			//vx=0;
 			sprite_index=sprite_heroWalkF;
 			image_index=0;
 			dir="F";
@@ -95,7 +108,7 @@ switch(state){
 			if(vy>0) vy=0;
 			vy=vy-acc;
 			walking=true;
-			vx=0;
+			//vx=0;
 			sprite_index=sprite_heroWalkB;
 			image_index=0;
 			dir="B";
@@ -134,16 +147,21 @@ switch(state){
 		vx=clamp(vx,-maxSpeed,maxSpeed);
 		vy=clamp(vy,-maxSpeed,maxSpeed);
 
+		if(vx!=0 && vy!=0){
+			vx=clamp(vx,-maxSpeed*cos(pi/4),maxSpeed*cos(pi/4));
+			vy=clamp(vy,-maxSpeed*sin(pi/4),maxSpeed*sin(pi/4));
+		}
+
 		var canmove;
-		for(i=1;i<=abs(vx);i++){
+		for(i=0.1;i<=abs(vx);i+=0.1){
 			canmove=true;
 			if(place_meeting(x+sign(vx),y,obj_collidable) && !obj_gameManager.debugMode) canmove=false;
-			if(canmove) x+=sign(vx);
+			if(canmove) x+=sign(vx)*0.1;
 		}
-		for(i=1;i<=abs(vy);i++){
+		for(i=0.1;i<=abs(vy);i+=0.1){
 			canmove=true;
 			if(place_meeting(x,y+sign(vy),obj_collidable) && !obj_gameManager.debugMode) canmove=false;
-			if(canmove) y+=sign(vy);
+			if(canmove) y+=sign(vy)*0.1;
 		}
 
 
@@ -151,6 +169,7 @@ switch(state){
 			vx=0;
 			vy=0;
 			walking=false;
+			//show_debug_message("block");
 		}
 
 		if(vx==0 && vy==0){

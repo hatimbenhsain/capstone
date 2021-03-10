@@ -10,6 +10,7 @@ downButton=vk_down;
 upButton=vk_up;
 interactButton=ord("Z");
 inventoryOpenButton=ord("I");
+pauseButton=vk_escape;
 runButton=vk_shift;
 
 speedFactor=2;

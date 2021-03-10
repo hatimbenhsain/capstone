@@ -68,7 +68,7 @@ yy=yy%(sprite_get_height(ditherBG)*2);
 x=camera_get_view_x(view_camera[view_current])+camera_get_view_width(view_camera[view_current])/2;
 y=camera_get_view_y(view_camera[view_current])+yy;
 
-background_color=merge_color($6E218A,c_black,cos(get_timer()/2500000)*0.4+0.4);
+background_color=merge_color($6E218A,$461D61,cos(get_timer()/2500000)*0.4+0.4);
 
 switch(scene){
 	case 1:	
@@ -89,12 +89,14 @@ switch(scene){
 			obj_hero.sprite_index=sprite_heroIdleR;
 			scene+=1;
 			obj_hero.state="grounded";
+			obj_gui.state="ingame";
 		}
 		break;
 	case 4:
 		with(obj_hero){
 			if(distance_to_object(obj_gop)<50){
 				state="acting";
+				obj_gui.state="cutscene";
 				cameraSubject=obj_gop;
 				sprite_index=asset_get_index("sprite_heroIdle"+dir);
 				startDialogue("limboDialogue3");
