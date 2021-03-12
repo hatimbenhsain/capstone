@@ -1,5 +1,12 @@
 /// @description Insert description here
 // You can write your code in this editor
+leftButton=obj_tuning.leftButton;
+rightButton=obj_tuning.rightButton;
+downButton=obj_tuning.downButton;
+upButton=obj_tuning.upButton;
+interactButton=obj_tuning.interactButton;
+runButton=obj_tuning.runButton;
+
 var buttonsUp=false;
 
 if(keyboard_check_released(leftButton) || keyboard_check_released(downButton) || keyboard_check_released(upButton) || keyboard_check_released(rightButton)){

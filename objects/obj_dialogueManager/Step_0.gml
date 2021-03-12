@@ -1,5 +1,9 @@
 /// @description Insert description here
 // You can write your code in this editor
+interactButton=obj_tuning.interactButton;
+downButton=obj_tuning.downButton;
+upButton=obj_tuning.upButton;
+
 
 if(inDialogue){
 	var action="";

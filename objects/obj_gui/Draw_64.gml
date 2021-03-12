@@ -60,7 +60,11 @@ if(obj_gameManager.options!=obj_gameManager.soundOptions && obj_gameManager.opti
 	}
 	
 	for(var i=0;i<array_length(pausedOptions);i++){
-		entries[i]=string(entries[i]);
+		if(obj_gameManager.options==obj_gameManager.controlOptions){
+			entries[i]=obj_gameManager.keys[?entries[i]];	
+		}else{
+			entries[i]=string(entries[i]);
+		}
 	}
 	
 	if(obj_gameManager.soundControl && obj_gameManager.paused){
@@ -74,14 +78,19 @@ if(obj_gameManager.options!=obj_gameManager.soundOptions && obj_gameManager.opti
 			t="  "+t+" >";	
 		}	
 		entries[obj_gameManager.optionSelected]=t;
+	}else if(obj_gameManager.keysControl && obj_gameManager.paused){
+		var t=string(entries[obj_gameManager.optionSelected]);
+		t="> "+t+" <";
+		entries[obj_gameManager.optionSelected]=t;
 	}
 	entriestxt=entries[0];
 	for(var i=1;i<array_length(pausedOptions);i++){
 		dots=dots+"\n:";
 		entriestxt=entriestxt+"\n"+entries[i];
 	}
+	entriestxt="\n"+entriestxt+"\n\n";
 	
-	//draw_set_halign(fa_left);
+	draw_set_valign(fa_center);
 	draw_set_halign(fa_center);
 	draw_text_ext(display_get_gui_width()*0.4,pY,txt,display_get_gui_height()/10,display_get_gui_width()*0.75);
 	draw_set_halign(fa_center);

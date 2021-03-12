@@ -1,5 +1,12 @@
 /// @description Insert description here
 // You can write your code in this editor
+openButton=obj_tuning.inventoryOpenButton;
+leftButton=obj_tuning.leftButton;
+rightButton=obj_tuning.rightButton;
+upButton=obj_tuning.upButton;
+downButton=obj_tuning.downButton;
+interactButton=obj_tuning.interactButton;
+
 if(keyboard_check_pressed(openButton) && !obj_hero.frozen && !open && ds_list_size(items)>0){
 	open=true;
 	obj_hero.frozen=true;
