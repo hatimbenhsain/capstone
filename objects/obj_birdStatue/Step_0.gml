@@ -19,7 +19,7 @@ if(addQuestion){
 		addQuestion=false;
 	}else{
 		with(obj_priestess){
-			addedQuestion=AddAnswer(initialHead,"What do you want to learn about?","priestessBirdQuestion.csv");
+			addedQuestion=AddAnswer(GetHead(initialHead),"What do you want to learn about?","priestessBirdQuestion.csv");
 		}
 		addQuestion=false;
 	}

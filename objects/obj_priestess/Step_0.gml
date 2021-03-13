@@ -32,7 +32,7 @@ switch(state){
 		if(prevState==4){
 			state=4;	
 		}else if (!add1){
-			add1=AddAnswer(initialHead,"What will you ask?","priestessQuestion1.csv");
+			add1=AddAnswer(GetHead(initialHead),"What will you ask?","priestessQuestion1.csv");
 			state=2;
 		}
 		break;
@@ -65,6 +65,7 @@ switch(state){
 			state=8;
 			lockedSprite=false;
 			ChangeInitHead("priestess8");
+			ChangeHead("priestess8");
 		}
 		break;
 	case 6:
@@ -80,6 +81,7 @@ switch(state){
 		if(clothShown && weaponShown){
 			ds_map_clear(interactableObjects);
 			ChangeInitHead("priestess8");
+			ChangeHead("priestess8");
 			state=-1;
 		}
 		break;

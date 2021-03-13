@@ -19,6 +19,7 @@ if(inDialogue){
 		if(currentMessage.type=="q"){
 			skipMode=false;
 			skipCounter=0;
+			CheckGrey(currentMessage,0);
 		}
 			
 		if(currentMessage.type=="a"){
@@ -31,9 +32,9 @@ if(inDialogue){
 				action=asset_get_index(currentMessage.action);
 				if(currentMessage.subject!="") subject=currentMessage.subject;
 			}
-			if(currentMessage.text!="Ask something." && currentMessage.text!=">Ask something."){
-				currentMessage.greyed=true;
-			}
+			//if(currentMessage.text!="Ask something." && currentMessage.text!=">Ask something."){
+			currentMessage.greyed=true;
+			//}
 			currentMessage=currentMessage.children[|0];
 			if(currentMessage==noone || currentMessage==undefined){
 				currentMessage=noone;

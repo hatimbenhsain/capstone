@@ -10,6 +10,7 @@ function ChangeHead(name){
 
 function ChangeInitHead(name){
 	initialHead=name;	
+	ChangeHead(name);
 }
 
 function useItem(obj){

@@ -12,9 +12,6 @@ That's fine. Here's something that might help:,,,,,gop,neutral
 "Then, select the object with the arrow keys and Z, and close your inventory with I.",,,,,gop,neutral
 "With the object still selected, talk to me again to show it to me.",,,,,gop,neutral
 Do you need me to explain again?,q,,,,gop,neutral
-Yes.,a,14,,,hero,neutral
+Yes.,a,14,LoopBack,11,hero,neutral
 No.,a,14,,,hero,neutral
-"When you're done talking to me, open your inventory with the button I.",,15,,,gop,neutral
-"Then, select the object with the arrow keys and Z, and close your inventory with I.",,,,,gop,neutral
-"With the object still selected, talk to me again to show it to me.",,,,,gop,neutral
 Good.,,16,,,gop,neutral

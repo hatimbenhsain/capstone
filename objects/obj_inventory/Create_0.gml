@@ -41,3 +41,5 @@ lockedItemSize=obj_tuning.lockedItemSize;
 
 
 obj_hero.pickedUp=false;
+
+depth=0;

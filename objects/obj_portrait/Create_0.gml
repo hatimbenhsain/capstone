@@ -8,3 +8,5 @@ talking=true;
 
 talker=noone;
 emotion=noone;
+
+depth=-1

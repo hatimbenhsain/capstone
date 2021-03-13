@@ -1,6 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 
+
 switch(state){
 	case "opening":
 		pAlpha=0;
@@ -25,6 +26,7 @@ switch(state){
 		break;
 	case "ingame":
 		zoom=1;
+		if (textAlpha>0) textAlpha=lerp(textAlpha,0,1/room_speed);
 		if (pAlpha>0) pAlpha=lerp(pAlpha,0,0.5);
 		if(pY>-display_get_gui_height()/2 && pY<display_get_gui_height()*1.5) pY=lerp(pY,display_get_gui_height()*1.5,0.3);
 		if(obj_gameManager.paused){

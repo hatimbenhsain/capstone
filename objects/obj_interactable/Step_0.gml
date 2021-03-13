@@ -4,7 +4,7 @@ event_inherited();
 if(talkingTo!=noone && !obj_dialogueManager.finished){
 	if(head!=""){
 		if(!obj_dialogueManager.inDialogue){
-			show_debug_message("dialogue start");
+			show_debug_message(head);
 			show_debug_message(obj_dialogueManager.finished);
 			obj_dialogueManager.inDialogue=true;
 			obj_dialogueManager.head=GetHead(head);
@@ -18,6 +18,6 @@ if(talkingTo!=noone && !obj_dialogueManager.finished){
 	}
 }
 
-if(head==""){
+if(head=="" || head==undefined){
 	head=initialHead;	
 }

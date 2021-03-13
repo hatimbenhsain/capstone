@@ -1,0 +1,10 @@
+Line,Type,Parent,Action,Subject,Talker,Emotion
+Several Questions,q,,,,noone,
+Yes!,a,2,,,hero,neutral
+No...,a,2,,,,
+Maybe,a,2,,,,
+Let me think about it,a,2,,,,
+Hmm,a,2,,,,
+Well..,a,2,,,,
+answer for yes,l,3,,,noone,
+answer for hmmm,l,7,,,noone,

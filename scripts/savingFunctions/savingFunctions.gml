@@ -300,9 +300,8 @@ function standardLoad(map){
 			heads=LoadHeads(map[?"heads"]);
 			show_debug_message("the heads "+name);
 			
-			initialHead=map[?"initialHead"];
-			if(initialHead!=""){
-				
+			if(map[?"initialHead"]!=undefined && map[?"initialHead"]!=""){
+				initialHead=map[?"initialHead"];
 			}
 			//show_debug_message(map[?"initialHead"]);
 		}

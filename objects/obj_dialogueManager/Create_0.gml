@@ -71,3 +71,7 @@ maxLength=0;
 skipCounter=0;
 
 skipMode=false;
+
+depth=0;
+
+firstAnswer=0;

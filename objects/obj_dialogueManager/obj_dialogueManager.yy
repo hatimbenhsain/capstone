@@ -1,5 +1,8 @@
 {
-  "spriteId": null,
+  "spriteId": {
+    "name": "sprite_textBox2",
+    "path": "sprites/sprite_textBox2/sprite_textBox2.yy",
+  },
   "solid": false,
   "visible": true,
   "spriteMaskId": null,
@@ -21,6 +24,7 @@
     {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"parent":{"name":"obj_dialogueManager","path":"objects/obj_dialogueManager/obj_dialogueManager.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
     {"isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,"parent":{"name":"obj_dialogueManager","path":"objects/obj_dialogueManager/obj_dialogueManager.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
     {"isDnD":false,"eventNum":64,"eventType":8,"collisionObjectId":null,"parent":{"name":"obj_dialogueManager","path":"objects/obj_dialogueManager/obj_dialogueManager.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":0,"eventType":8,"collisionObjectId":null,"parent":{"name":"obj_dialogueManager","path":"objects/obj_dialogueManager/obj_dialogueManager.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
   "properties": [],
   "overriddenProperties": [],

@@ -8,7 +8,10 @@ switch(state){
 	case 1:
 		state=2;
 		ChangeInitHead("gate2");
-		with(obj_bench) ChangeInitHead("bench2");
+		with(obj_bench){
+			ChangeInitHead("bench2");
+			ChangeHead("bench2");
+		}
 		break;
 	case 3:
 		image_index=0;

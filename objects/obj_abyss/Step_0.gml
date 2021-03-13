@@ -6,6 +6,11 @@
 //}
 
 switch(state){
+	case 0:
+		if(!instance_exists(obj_gop)){
+			state++;	
+		}
+		break;
 	case 1:
 		show_debug_message(distance_to_point(obj_hero.x,obj_hero.bbox_bottom));
 		if(point_distance(obj_hero.x,obj_hero.bbox_bottom,x,y)<5){

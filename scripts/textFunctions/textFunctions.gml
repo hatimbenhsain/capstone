@@ -145,6 +145,10 @@ function parseDialogue(fileName){
 			}else{
 				var l=new global.Line(text,parent,type,action,subject,talker,emotion);
 			}
+			if(l.action=="LoopBack"){
+				ds_list_add(l.children,messages[|l.subject-2]);
+				l.action=undefined;
+			}
 			ds_list_add(messages,l);
 		}
 		return head;
@@ -155,7 +159,11 @@ function parseDialogue(fileName){
 function AddAnswer(node,_question,_answer){
 	show_debug_message(node.text);
 	if(node.text==_question){
-		connect(parseDialogue(_answer),node);
+		var c1=node.children[|ds_list_size(node.children)-1];
+		var c2=parseDialogue(_answer);
+		connect(c2,node);
+		ds_list_replace(node.children,ds_list_size(node.children)-1,c1);
+		ds_list_replace(node.children,ds_list_size(node.children)-2,c2);
 		show_debug_message(_answer+" added");
 		head=initialHead;
 		return true;
@@ -166,4 +174,18 @@ function AddAnswer(node,_question,_answer){
 	}
 	//show_debug_message("question not found");
 	return false;
+}
+
+function CheckGrey(mess,k){
+	for(var	i=0;i<ds_list_size(mess.children);i++){
+		k++;
+		var m=mess.children[|i];
+		if(m.type=="a" && k<100){
+			m.greyed=(m.greyed && CheckGrey(m,k));
+		}
+		else if(k<100 && m.type!="a"){
+			return CheckGrey(m,k);	
+		}
+	}
+	if(ds_list_size(mess.children)==0)	return true;
 }
