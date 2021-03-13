@@ -5,3 +5,5 @@
 depth=198.9;
 
 state=0;
+
+heads=ds_map_create();

@@ -42,7 +42,7 @@ switch(state){
 		sprite_index=sprite_heroFallen;
 		if(keyboard_check(leftButton) || keyboard_check(rightButton) || keyboard_check(upButton) || keyboard_check(downButton)){
 			startCounter+=1;	
-			var maxVal=startCounter/(room_speed*1.5);
+			var maxVal=startCounter*2/(room_speed*1.5);
 			if(startCounter%2==0){
 				var newX=random_range(-1,1)+orgOffsetX;
 				var newY=random_range(-1,1)+orgOffsetY;	

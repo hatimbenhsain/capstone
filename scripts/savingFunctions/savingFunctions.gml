@@ -27,12 +27,21 @@ function Save(){
 	
 	with(obj_interactable){
 		var map=standardSave(rootList);
-		ds_map_add(map,"initialHead",initialHead);
+		var key=ds_map_find_first(heads);
+		for(var i=0;i<ds_map_size(heads);i++){
+			show_debug_message("checking key "+key);
+			if(key==initialHead){
+				ds_map_add(map,"initialHead",key);
+				break;
+			}
+			key=ds_map_find_next(heads,key);
+		}
 		var alarms=ds_list_create();
 		for(var i=0;i<=11;i++){
 			ds_list_add(alarms,alarm[i]);
 		}
 		ds_map_add_list(map,"alarms",alarms);
+		SaveHeads(map);
 	}
 	
 	with(obj_inventory){
@@ -67,13 +76,77 @@ function standardSave(rootList){
 	ds_map_add(map,"obj",obj);
 	ds_map_add(map,"x",x);
 	ds_map_add(map,"y",y);
-	ds_map_add(map,"sprite_index",sprite_index);
+	ds_map_add(map,"sprite_index",sprite_get_name(sprite_index));
 	if(object_is_ancestor(asset_get_index(obj),obj_collidable)){
 		ds_map_add(map,"dir",dir);
 		ds_map_add(map,"state",state);
 	}
 	return map;
 }
+
+function SaveHeads(map){
+	show_debug_message("saving heads");
+	var headsMap=ds_map_create();
+	ds_map_add_map(map,"heads",headsMap);
+	var key=ds_map_find_first(heads);
+	for(var i=0;i<ds_map_size(heads);i++){
+		var dialoguesToAdd=ds_list_create();
+		var messagesList=ds_list_create();
+		var m=heads[?key];
+		show_debug_message(ds_map_exists(heads,key));
+		messagesList=MessageList(messagesList,m);
+		show_debug_message("after ml");
+		show_debug_message("the key is "+key);
+		ds_map_add_list(headsMap,key,dialoguesToAdd);
+		for(var k=0;k<ds_list_size(messagesList);k++){
+			
+			var list=ds_list_create();
+			var mess=messagesList[|k];
+			show_debug_message(mess.text);
+			ds_list_add(dialoguesToAdd,list);
+			ds_list_mark_as_list(dialoguesToAdd,ds_list_size(dialoguesToAdd)-1);
+			ds_list_add(list,mess.text);
+			ds_list_add(list,ds_list_find_index(messagesList,mess.parent));
+			ds_list_add(list,mess.type);
+			ds_list_add(list,mess.action);
+			ds_list_add(list,mess.subject);
+			ds_list_add(list,mess.talker);
+			ds_list_add(list,mess.emotion);
+			ds_list_add(list,mess.isHead);
+			//if(mess.isHead) show_debug_message("HEAD "+mess.text+" "+ds_list_size(list));
+			ds_list_add(list,mess.greyed);
+			//if(mess.greyed) show_debug_message("greyed "+mess.text+" "+ds_list_size(list));
+			var children=ds_list_create();
+			ds_list_add(list,children);
+			ds_list_mark_as_list(list,ds_list_size(list)-1);
+			for(var p=0;p<ds_list_size(mess.children);p++){
+				ds_list_add(children,ds_list_find_index(messagesList,mess.children[|p]));
+			}
+		}
+		//show_debug_message("done with "+key);
+		key=ds_map_find_next(heads,key);
+		
+		
+	}
+}
+
+function MessageList(messagesList,mess){
+	if(ds_list_find_index(messagesList,mess)==-1){
+		//show_debug_message(mess.text);
+		ds_list_add(messagesList,mess);
+	}
+	for(var k=0;k<ds_list_size(mess.children);k++){
+		MessageList(messagesList,mess.children[|k]);	
+	}
+	return messagesList;
+}
+
+//function SaveMessage(dialoguesToAdd,mess){
+//	var line=ds_list_create();
+//	ds_list_add(line,mess.text);
+//	ds_list_add(line,mess.text);
+//	ds_list_add(dialoguesToAdd,
+//}
 
 function SaveControls(rootList){
 	var map=ds_map_create();
@@ -130,9 +203,10 @@ function Load(){
 		
 		
 		
-		show_debug_message(ds_list_size(list));
+		//show_debug_message(ds_list_size(list));
 		for(var i=0;i<ds_list_size(list)-1;i++){
 			standardLoad(list[|i]);
+			
 		}
 		
 		obj_hero.pickedUp=false;
@@ -166,12 +240,50 @@ function LoadControls(){
 	}
 }
 
+function LoadHeads(headMap){
+	hs=ds_map_create();
+	var key=ds_map_find_first(headMap);
+	for(var i=0;i<ds_map_size(headMap);i++){
+		//show_debug_message(headMap);
+		var h=headMap[?key];
+		var lines=ds_list_create();
+		for(var k=0;k<ds_list_size(h);k++){
+			var node=h[|k];
+			show_debug_message(node[|0]);
+			l=new global.Line(node[|0],-1,node[|2],node[|3],node[|4],node[|5],node[|6]);
+			//(_message, _parent, _type, _action, _subject, _talker, _emotion)
+			l.isHead=node[|7];
+			l.greyed=node[|8];
+			if(l.greyed) show_debug_message(l.text);
+			l.children=ds_list_create();
+			for(var p=0;p<ds_list_size(node[|9]);p++){
+				ds_list_add(l.children,node[|9][|p]);
+			}
+			lines[|k]=l;
+		}
+		
+		for(var k=0;k<ds_list_size(lines);k++){
+			var node=lines[|k];
+			node.parent=lines[|h[|k][|1]];
+			for(var p=0;p<ds_list_size(node.children);p++){
+				node.children[|p]=lines[|node.children[|p]];
+			}
+		}
+		
+		ds_map_add(hs,key,lines[|0]);
+		//hs[?key]=lines[|0];
+		
+		key=ds_map_find_next(headMap,key);
+	}
+	return hs;
+}
+
 function standardLoad(map){
 	var obj=map[?"obj"];
 	with(instance_create_layer(0,0,layer,asset_get_index(obj))){
 		x=map[?"x"];
 		y=map[?"y"];
-		sprite_index=map[?"sprite_index"];
+		sprite_index=asset_get_index(map[?"sprite_index"]);
 		if(object_is_ancestor(asset_get_index(obj),obj_collidable)){
 			dir=map[?"dir"];
 			state=map[?"state"];
@@ -185,9 +297,14 @@ function standardLoad(map){
 			for(var i=0;i<=11;i++){
 				alarm[i]=map[?"alarms"][|i];
 			}
-		}
-		if(object_index==obj_hero){
-			show_debug_message("loaded hero state "+state);	
+			heads=LoadHeads(map[?"heads"]);
+			show_debug_message("the heads "+name);
+			
+			initialHead=map[?"initialHead"];
+			if(initialHead!=""){
+				
+			}
+			//show_debug_message(map[?"initialHead"]);
 		}
 	}
 }

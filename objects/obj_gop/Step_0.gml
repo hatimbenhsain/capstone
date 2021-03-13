@@ -19,7 +19,10 @@
 //	state=2
 //}
 
+
 event_inherited();
+
+
 
 totalTime+=delta_time/1000000;
 capeOpacity=0.8+sin(totalTime)*0.2;

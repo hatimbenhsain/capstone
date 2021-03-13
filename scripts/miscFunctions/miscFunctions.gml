@@ -8,12 +8,18 @@ function addInteractable(obj){
 	str1 = string_delete(str1,1,1); 
 	str1 = string_insert(str2,str1,1);
 	ds_map_add(interactableObjects,obj.object_index,name+str1);
+	if(!ds_map_exists(heads,name+str1)){
+		ds_map_add(heads,name+str1,parseDialogue(name+str1+".csv"));
+	}
 }
 
 function AddInteractableByName(obj,name){
 	var inst=instance_create_layer(x,y,layer,obj);
 	if(ds_map_exists(interactableObjects,inst.object_index)) ds_map_delete(interactableObjects,inst.object_index);
 	ds_map_add(interactableObjects,inst.object_index,name);
+	if(!ds_map_exists(heads,name)){
+		ds_map_add(heads,name,parseDialogue(name+".csv"));
+	}
 	instance_destroy(inst);
 }
 
@@ -32,6 +38,10 @@ function AddInteractable(obj){
 	str1 = string_delete(str1,1,1); 
 	str1 = string_insert(str2,str1,1);
 	ds_map_add(interactableObjects,index,name+str1);
+	if(!ds_map_exists(heads,name+str1)){
+		show_debug_message(name+str1);
+		ds_map_add(heads,name+str1,parseDialogue(name+str1+".csv"));
+	}
 	instance_destroy(inst);
 }
 

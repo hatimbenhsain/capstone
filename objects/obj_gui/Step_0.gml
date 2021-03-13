@@ -3,7 +3,10 @@
 
 switch(state){
 	case "opening":
+		pAlpha=0;
+		pY=-display_get_gui_height()/2;
 		textAlpha=sin(get_timer()/1000000)/2+0.5;
+		zoom=1.5;
 		break;
 	case "landing":
 		textAlpha=lerp(textAlpha,0,1/room_speed);

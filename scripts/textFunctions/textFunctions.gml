@@ -105,7 +105,20 @@ function connect(_child,_parent){
 	}
 }
 
+function GetHead(fileName){
+	if(ds_map_exists(heads,fileName)){
+		show_debug_message("already exist "+fileName+" "+heads[?fileName].text);
+		return heads[?fileName];
+	}else{
+		show_debug_message("not exist "+fileName);
+		var h=parseDialogue(fileName+".csv");
+		ds_map_add(heads,fileName,h);
+		return heads[?fileName];
+	}
+}
+
 function parseDialogue(fileName){
+	fileName="dialogueFiles/"+fileName;
 	if(file_exists(fileName)){
 		grid=load_csv(fileName)
 		var w=ds_grid_width(grid);
@@ -131,7 +144,7 @@ function parseDialogue(fileName){
 				head=l;
 			}else{
 				var l=new global.Line(text,parent,type,action,subject,talker,emotion);
-			}		
+			}
 			ds_list_add(messages,l);
 		}
 		return head;

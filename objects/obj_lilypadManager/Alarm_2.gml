@@ -3,6 +3,7 @@
 scene++;
 obj_hero.state="grounded";
 with(obj_gop){
-	ChangeInitHead("gopInit");	
 	AddInteractable(obj_pendant);
+	ChangeInitHead("gopInit");
+	ChangeHead("gopInit");
 }

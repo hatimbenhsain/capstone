@@ -10,3 +10,4 @@ ditherBG=sprite_ditherBG4;
 depth=199;
 
 scene=0;
+heads=ds_map_create();

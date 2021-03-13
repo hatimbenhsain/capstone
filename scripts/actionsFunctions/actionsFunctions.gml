@@ -5,27 +5,25 @@ function destruction(){
 }
 
 function ChangeHead(name){
-	head=parseDialogue(name+".csv");
+	head=name;
 }
 
 function ChangeInitHead(name){
-	initialHead=parseDialogue(name+".csv");	
+	initialHead=name;	
 }
 
 function useItem(obj){
 	show_debug_message(object_get_name(object_index));
 	if(ds_map_exists(interactableObjects,obj)){
-		show_debug_message(ds_map_find_value(interactableObjects,obj));
-		head=parseDialogue(ds_map_find_value(interactableObjects,obj)+".csv");
-		show_debug_message(ds_map_find_value(interactableObjects,obj));
+		head=ds_map_find_value(interactableObjects,obj);
 	}else{
-		if(file_exists(name+"Confusion"+".csv")) head=parseDialogue(name+"Confusion"+".csv");	
+		if(file_exists("dialogueFiles/"+name+"Confusion"+".csv")) head=name+"Confusion";	
 	}
 	obj_inventory.lockedObject=-1;
 }
 
 function startDialogue(dialogueName){
-	var dialogue=parseDialogue(dialogueName+".csv");
+	var dialogue=GetHead(dialogueName);
 	obj_dialogueManager.inDialogue=true;
 	obj_dialogueManager.head=dialogue;
 	obj_dialogueManager.currentMessage=dialogue;

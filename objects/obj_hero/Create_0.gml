@@ -48,7 +48,9 @@ cameraSubject=self;
 
 rightStep=true;
 
-timeToGetUp=1.5;
+timeToGetUp=0.5;
+
+heads=ds_map_create();
 
 sceneManager=obj_lilypadManager;
 

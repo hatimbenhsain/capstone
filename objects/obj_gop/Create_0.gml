@@ -4,6 +4,7 @@ name="gop";
 
 event_inherited();
 
+show_debug_message("gop creation code");
 
 idleB=sprite_gop_idleB;
 idleF=sprite_gop_idleF;

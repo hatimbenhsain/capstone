@@ -9,8 +9,8 @@ combinable=ds_map_create();
 
 event_inherited();
 
-if(!variable_instance_exists(id,"initialHead") || initialHead==undefined){
-	initialHead=parseDialogue("itemTest.csv");	
+if(!variable_instance_exists(id,"initialHead") || initialHead==""){
+	initialHead="itemTest";	
 }
 
 if(!variable_instance_exists(id,"name")) name="item name";

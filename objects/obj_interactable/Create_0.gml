@@ -6,10 +6,13 @@ state=-1;
 prevState=-1;
 dir=0;
 talkingTo=noone;
+if(!variable_instance_exists(id,"heads")){
+	heads=ds_map_create();
+}
 if(variable_instance_exists(id,"name") && !variable_instance_exists(id,"initialHead")){
-	initialHead=parseDialogue(name+"Init"+".csv");
+	initialHead=name+"Init";
 }else if(!variable_instance_exists(id,"initialHead")){
-	initialHead=undefined;	
+	initialHead="";	
 }
 head=initialHead;
 interactableObjects=ds_map_create();

@@ -6,7 +6,7 @@ event_inherited();
 
 switch(state){
 	case 2:
-		head=undefined;
-		initialHead=undefined;
+		head="";
+		initialHead="";
 		break; 
 }
