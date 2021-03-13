@@ -20,7 +20,7 @@ textAlpha=0;
 textFadeIn=true;
 textFadeOut=false;
 
-state="opening";
+state="paused";
 
 timeMark=0;
 

@@ -12,4 +12,3 @@ sprite_index=openSprite;
 
 depth=197-y/10000;
 
-state=0;

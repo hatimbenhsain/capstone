@@ -44,6 +44,10 @@ function Save(){
 		ds_map_add_list(map,"objList",objList);
 	}
 	
+	with(obj_tuning){
+		var map=SaveControls(rootList);
+	}
+	
 	var wrapper=ds_map_create();
 	ds_map_add_list(wrapper,"ROOT",rootList);
 	
@@ -71,11 +75,49 @@ function standardSave(rootList){
 	return map;
 }
 
+function SaveControls(rootList){
+	var map=ds_map_create();
+	ds_list_add(rootList,map);
+	ds_list_mark_as_map(rootList,ds_list_size(rootList)-1);
+	var keys=ds_map_create();
+	keys[?"upButton"]=upButton;
+	keys[?"interactButton"]=interactButton;
+	keys[?"downButton"]=downButton;
+	keys[?"leftButton"]=leftButton;
+	keys[?"rightButton"]=rightButton;
+	keys[?"runButton"]=runButton;
+	keys[?"inventoryOpenButton"]=inventoryOpenButton;
+	ds_map_add_map(map,"keys",keys);
+	map[?"room"]=room;
+}
+
+function LoadRoom(){
+	if(file_exists("save.sav")){
+		var wrapper=LoadJsonFromFile("save.sav");
+		var list=wrapper[?"ROOT"];
+		var rm=list[|ds_list_size(list)-1][?"room"];
+		room_goto(rm);		
+		ds_map_destroy(wrapper);
+		show_debug_message("game loaded");
+		
+		audio_stop_all();
+		obj_gameManager.paused=false
+		alarm[0]=1;
+	}
+	else{
+		show_debug_message("failed to load");	
+	}
+}
+
 function Load(){
 
 	if(file_exists("save.sav")){
+		var wrapper=LoadJsonFromFile("save.sav");
+		var list=wrapper[?"ROOT"];
+		var rm=list[|ds_list_size(list)-1][?"room"];
 		with(obj_hero){
 			instance_destroy();	
+			show_debug_message("hero destroyed");
 		}
 		
 		with(obj_interactable){
@@ -86,11 +128,10 @@ function Load(){
 			instance_destroy();	
 		}
 		
-		var wrapper=LoadJsonFromFile("save.sav");
-		var list=wrapper[?"ROOT"];
+		
 		
 		show_debug_message(ds_list_size(list));
-		for(var i=0;i<ds_list_size(list);i++){
+		for(var i=0;i<ds_list_size(list)-1;i++){
 			standardLoad(list[|i]);
 		}
 		
@@ -98,10 +139,30 @@ function Load(){
 		
 		ds_map_destroy(wrapper);
 		show_debug_message("game loaded");
+	
+		obj_gameManager.paused=false
+		
 		
 	}
 	else{
 		show_debug_message("failed to load");	
+	}
+}
+
+function LoadControls(){
+	if(file_exists("save.sav")){
+		var wrapper=LoadJsonFromFile("save.sav");
+		var list=wrapper[?"ROOT"];
+		var map=list[|ds_list_size(list)-1];
+		var keys=map[?"keys"];
+		upButton=keys[?"upButton"];
+		interactButton=keys[?"interactButton"];
+		downButton=keys[?"downButton"];
+		leftButton=keys[?"leftButton"];
+		rightButton=keys[?"rightButton"];
+		runButton=keys[?"runButton"];
+		upButton=keys[?"upButton"];
+		ds_map_destroy(wrapper);
 	}
 }
 
@@ -124,6 +185,9 @@ function standardLoad(map){
 			for(var i=0;i<=11;i++){
 				alarm[i]=map[?"alarms"][|i];
 			}
+		}
+		if(object_index==obj_hero){
+			show_debug_message("loaded hero state "+state);	
 		}
 	}
 }

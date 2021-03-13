@@ -4,7 +4,9 @@ global.cameraOverride=false;
 
 debugMode=false;
 
-paused=false;
+paused=true;
+
+
 
 optionSelected=0;
 
@@ -35,6 +37,11 @@ settingsOptions=["Sound Settings","Controls"];
 exitOptions=["Yes","No"];
 soundOptions=["Master Volume","Background Music","Sound Effects"];
 controlOptions=["Move Forward","Move Backward","Move Left","Move Right","Interact","Inventory","Run"];
-options=pausedOptions;
+if(file_exists("save.sav")){
+	startOptions=["Load Game","New Game","Settings","Exit Game"];	
+}else{
+	startOptions=["New Game","Settings","Exit Game"];
+}
+options=startOptions;
 soundControl=false;
 keysControl=false;

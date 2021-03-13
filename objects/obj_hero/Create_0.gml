@@ -5,7 +5,10 @@ vx=0;
 vy=0;
 dir="F";
 walking=false;
-state="falling";
+if(!variable_instance_exists(id,"state")){
+	state=-1;
+	show_debug_message("setting state");
+}
 startCounter=0;
 acc=obj_tuning.heroAcc;
 maxSpeed=obj_tuning.heroMaxSpeed;

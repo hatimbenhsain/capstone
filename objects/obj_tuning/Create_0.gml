@@ -33,3 +33,5 @@ cameraSmoothing=5;
 
 cameraWidth=320;
 cameraHeight=240;
+
+LoadControls();

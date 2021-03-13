@@ -18,7 +18,11 @@ if(keyboard_check_pressed(obj_tuning.pauseButton) && (paused || (obj_hero.state=
 			paused=!paused;
 			obj_hero.frozen=!obj_hero.frozen;
 		}else if(options=settingsOptions || options==exitOptions){
-			options=pausedOptions;	
+			if(room!=room_start){
+				options=pausedOptions;	
+			}else{
+				options=startOptions;
+			}
 		}else if(soundControl || keysControl){
 			soundControl=false;
 			keysControl=false;
@@ -112,6 +116,12 @@ if(paused && keyboard_check_pressed(downButton)){
 		soundControl=!soundControl;
 	}else if(options==controlOptions && !keysControl){
 		keysControl=true;
+	}else if(options[optionSelected]=="Load Game"){
+		LoadRoom();	
+	}else if(options[optionSelected]=="New Game"){
+		audio_stop_all();
+		paused=false;
+		room_goto(room_limbo);
 	}
 	
 	//obj_gui.pausedOptions=options;
@@ -168,8 +178,10 @@ if(keyboard_check(vk_alt) && keyboard_check(ord("D")) && keyboard_check_pressed(
 
 if(debugMode && keyboard_check_pressed(ord("Y"))){
 	if(room==room_limbo){
+		audio_stop_all();
 		room_goto(room_priestess);	
 	}else if(room==room_priestess){
+		audio_stop_all();
 		room_goto(room_limbo);
 	}	
 }

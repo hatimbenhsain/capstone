@@ -466,6 +466,7 @@
     {"id":{"name":"sprite_ow_books2","path":"sprites/sprite_ow_books2/sprite_ow_books2.yy",},"order":1,},
     {"id":{"name":"sprite_toy","path":"sprites/sprite_toy/sprite_toy.yy",},"order":24,},
     {"id":{"name":"sprite_stick13","path":"sprites/sprite_stick13/sprite_stick13.yy",},"order":13,},
+    {"id":{"name":"room_start","path":"rooms/room_start/room_start.yy",},"order":3,},
     {"id":{"name":"obj_rubble12","path":"objects/obj_rubble12/obj_rubble12.yy",},"order":3,},
     {"id":{"name":"audio_limboBgm","path":"sounds/audio_limboBgm/audio_limboBgm.yy",},"order":6,},
     {"id":{"name":"typing","path":"sounds/typing/typing.yy",},"order":1,},
@@ -521,6 +522,7 @@
     "children": [],
   },
   "RoomOrder": [
+    {"name":"room_start","path":"rooms/room_start/room_start.yy",},
     {"name":"room_limbo","path":"rooms/room_limbo/room_limbo.yy",},
     {"name":"room_priestess","path":"rooms/room_priestess/room_priestess.yy",},
     {"name":"room_debug","path":"rooms/room_debug/room_debug.yy",},
@@ -797,6 +799,12 @@
     {"CopyToMask":-1,"filePath":"datafiles/godOfPassage","resourceVersion":"1.0","name":"walkB.png","resourceType":"GMIncludedFile",},
     {"CopyToMask":-1,"filePath":"datafiles/godOfPassage","resourceVersion":"1.0","name":"capeBlink.png","resourceType":"GMIncludedFile",},
     {"CopyToMask":-1,"filePath":"datafiles/godOfPassage","resourceVersion":"1.0","name":"walkF.png","resourceType":"GMIncludedFile",},
+    {"CopyToMask":-1,"filePath":"datafiles/godOfPassage","resourceVersion":"1.0","name":"capeIdle.png","resourceType":"GMIncludedFile",},
+    {"CopyToMask":-1,"filePath":"datafiles/godOfPassage","resourceVersion":"1.0","name":"walkB.png","resourceType":"GMIncludedFile",},
+    {"CopyToMask":-1,"filePath":"datafiles/godOfPassage","resourceVersion":"1.0","name":"walkF.png","resourceType":"GMIncludedFile",},
+    {"CopyToMask":-1,"filePath":"datafiles/godOfPassage","resourceVersion":"1.0","name":"idleF.png","resourceType":"GMIncludedFile",},
+    {"CopyToMask":-1,"filePath":"datafiles/godOfPassage","resourceVersion":"1.0","name":"capeBlink.png","resourceType":"GMIncludedFile",},
+    {"CopyToMask":-1,"filePath":"datafiles/godOfPassage","resourceVersion":"1.0","name":"idleB.png","resourceType":"GMIncludedFile",},
   ],
   "MetaData": {
     "IDEVersion": "2.3.0.529",

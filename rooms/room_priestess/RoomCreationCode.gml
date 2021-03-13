@@ -3,3 +3,8 @@ obj_hero.startingX=592;
 obj_hero.startingY=715;
 obj_hero.timeToGetUp=0.2;
 obj_hero.sceneManager=obj_priestessRoomManager;
+with(obj_soundManager){
+	bgm=audio_manabgm;
+	audio_play_sound(bgm,1,true);
+	audio_sound_gain(bgm,bgGain*masterGain,0);
+}

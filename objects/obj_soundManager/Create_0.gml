@@ -10,3 +10,7 @@ bgGain=1;
 sfxPlaying=-1;
 tempBg=-1;
 sfxGain=1;
+
+prevBgGain=bgGain;
+prevSfxGain=sfxGain;
+prevMasterGain=masterGain;
