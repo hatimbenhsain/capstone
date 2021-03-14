@@ -47,12 +47,14 @@ if(inDialogue && currentMessage!=noone){
 		}else if(answerSelected<firstAnswer){
 			firstAnswer-=1;	
 		}
-		if(firstAnswer==0 && k<=ds_list_size(currentMessage.parent.children)){
+		if(firstAnswer==0 && k<ds_list_size(currentMessage.parent.children)-1){
 			image_index=1;	
 		}else if(k<ds_list_size(currentMessage.parent.children)-1){
 			image_index=3;	
 		}else if(firstAnswer>0){
 			image_index=2;	
+		}else{
+			image_index=0;	
 		}
 		
 	}

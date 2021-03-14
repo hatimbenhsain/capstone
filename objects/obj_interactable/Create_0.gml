@@ -9,7 +9,7 @@ talkingTo=noone;
 if(!variable_instance_exists(id,"heads")){
 	heads=ds_map_create();
 }
-if(variable_instance_exists(id,"name") && !variable_instance_exists(id,"initialHead")){
+if(variable_instance_exists(id,"name") && !variable_instance_exists(id,"initialHead") && file_exists("dialogueFiles/"+name+"Init.csv")){
 	initialHead=name+"Init";
 }else if(!variable_instance_exists(id,"initialHead")){
 	initialHead="";	

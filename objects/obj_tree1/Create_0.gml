@@ -4,4 +4,4 @@ name="treeOfLife";
 // Inherit the parent event
 event_inherited();
 
-state=1;
+state=0;
