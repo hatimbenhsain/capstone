@@ -10,7 +10,7 @@ if(obj_hero.state==-1){
 obj_hero.sceneManager=obj_priestessRoomManager;
 
 with(obj_soundManager){
-	bgm=audio_manabgm;
-	audio_play_sound(bgm,1,true);
-	audio_sound_gain(bgm,bgGain*masterGain,0);
+	bgMusic=audio_manabgm;
+	audio_play_sound(bgMusic,1,true);
+	audio_sound_gain(bgMusic,bgGain*masterGain,0);
 }

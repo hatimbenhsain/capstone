@@ -62,10 +62,17 @@ if(inDialogue && currentMessage!=noone){
 	currentChar=clamp(currentChar,0,maxLength+1);
 	if(currentChar>=maxLength || currentMessage.type=="a"){
 		obj_portrait.talking=false;
+		if(shake){
+			shake=false;	
+		}
 	}else{
 		obj_portrait.talking=true;
+		if(shake){
+			obj_gui.shakeCounter=1;	
+		}
 	}
 	obj_portrait.drawn=true;
 }else{
 	obj_portrait.drawn=false;	
+	shake=false;
 }

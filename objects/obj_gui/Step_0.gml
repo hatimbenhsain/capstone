@@ -47,5 +47,11 @@ switch(state){
 		break;
 }
 
+if(shakeCounter>0){
+	shakeCounter--;
+	var xx=random_range(-obj_tuning.shakeRate,obj_tuning.shakeRate)+camera_get_view_x(view_camera[0]);
+	var yy=random_range(-obj_tuning.shakeRate,obj_tuning.shakeRate)+camera_get_view_y(view_camera[0]);
+	camera_set_view_pos(view_camera[0],xx,yy);
+}
 	
 camera_set_view_size(view_camera[0],obj_tuning.cameraWidth/zoom,obj_tuning.cameraHeight/zoom);

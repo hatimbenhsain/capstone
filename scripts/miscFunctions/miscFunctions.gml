@@ -82,3 +82,4 @@ function Toggle(_valueName){
 		variable_instance_set(id,_valueName,!variable_instance_get(id,_valueName));
 	}
 }
+

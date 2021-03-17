@@ -7,3 +7,22 @@ function playSFX(audio){
 		audio_play_sound(sfxPlaying,1,false);
 	}
 }
+
+function FadeOutMusic(t){
+	if(is_undefined(t)){
+		t=1000	
+	}
+	with(obj_soundManager){
+		audio_sound_gain(bgMusic,0,t);	
+	}
+}
+
+function FadeInMusic(t){
+	if(is_undefined(t)){
+		t=1000	
+	}
+	with(obj_soundManager){
+		audio_sound_gain(bgMusic,bgGain*masterGain,t);	
+	}
+}
+

@@ -47,6 +47,7 @@ var l7=new Line("statement a",l4);
 var l8=new Line("statement b",l5);
 var l9=new Line("statement c",l6);*/
 
+shake=false;
 
 currentMessage=noone;
 interactButton=obj_tuning.interactButton;

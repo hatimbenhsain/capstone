@@ -26,7 +26,7 @@ No.,,,,,gop,neutral
 So are you here to help me? Are you gonna give me a riddle maybe? Or a challenge of some sort?,,,,,hero,excited
 No.,,,,,gop,neutral
 "To be honest, I'd really appreciate if we made this quick. They need me back out there and -",,,,,hero,thinking
-You are not being tested.,,,,,gop,neutral
+You are not being tested.,,,FadeOutMusic,1000,gop,neutral
 Then... why am I here?,,,,,hero,suspicious
 You're dead.,,,,,gop,neutral
 No I'm not.,,,,,hero,neutral
@@ -51,7 +51,7 @@ Yes. And while you get the eternal rest - or whatever it is you believe in - som
 ... I see.,,,,,hero,pensive
 I get it.,,,,,hero,neutral
 You do?,,,,,gop,neutral
-Yeah. I know why I'm here.,,,,,hero,neutral
+Yeah. I know why I'm here.,,,FadeInMusic,1000,hero,neutral
 I'm here to help you!,,,,,hero,happy
 ...,,,,,gop,neutral
 "The rot has taken a lot from us. And it's sad, more than I could ever imagine.",,,,,hero,sad

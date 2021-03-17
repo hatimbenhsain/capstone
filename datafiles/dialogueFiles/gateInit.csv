@@ -9,15 +9,15 @@ The tape is stained red and covered with concentric square symbols. It smells li
 I wonder if I can tear this down somehow...,q,,,,hero,thinking
 Tear it down.,a,9,,,noone,
 Leave it.,a,9,,,,
-....,l,10,,,hero,suspicious
-There's this.... weird energy resisting m-,,,,,,
+....,l,10,FadeOutMusic,3000,hero,suspicious
+There's this.... weird energy resisting m-,,,ShakeText,,,
 """LEAVE LEAVE LEAVE LEAVE LEAVE LEAVE LEAVE LEAVE LEAVE LEAVE LEAVE LEAVE LEAVE LEAVE LEAVE LEAVE LEAVE LEAVE LEAVE LEAVE LEAVE LEAVE LEAVE LEAVE",,,,,noone,
 Aaah!,,,,,hero,shocked
 ...,,,,,,shocked
 Who said that?,,,,,,shocked
 It was like... a voice inside my head.,,,,,,excited
 "You look around for somebody, but all you can see is the endless void of limbo.",,,,,noone,
-That must've been the spirit I'm supposed to help... right?,,,,,hero,suspicious
+That must've been the spirit I'm supposed to help... right?,,,FadeInMusic,3000,hero,suspicious
 I should probably try not to anger them further.,,,ChangeState,1,hero,sad
 Hello?,,6,,,hero,thinking
 Any spirit around?,,,,,,
