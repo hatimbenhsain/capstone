@@ -10,6 +10,7 @@ if(inDialogue){
 	var subject=interlocutor;
 	if(((keyboard_check_pressed(interactButton) || (skipMode && keyboard_check(interactButton))) && currentChar>=maxLength)){
 		currentChar=0;
+		//playSFX(sound_textAdvance,0.15);
 		if(currentMessage.action!=undefined && currentMessage.type!="a"){
 				//script_execute(asset_get_index(currentMessage.parent.children[|answerSelected].action),interlocutor);
 				action=asset_get_index(currentMessage.parent.children[|answerSelected].action);
@@ -67,10 +68,12 @@ if(inDialogue){
 
 	if(keyboard_check_pressed(upButton) && currentMessage.type=="a"){
 		answerSelected=(answerSelected-1+ds_list_size(currentMessage.parent.children)) mod ds_list_size(currentMessage.parent.children);
+		playSFX(sound_optionChange,0.9);
 		show_debug_message("answer "+string(answerSelected)+" selected");
 	}
 	if(keyboard_check_pressed(downButton) && currentMessage.type=="a"){
 		answerSelected=(answerSelected+1) mod ds_list_size(currentMessage.parent.children);
+		playSFX(sound_optionChange,0.9);
 		show_debug_message("answer "+string(answerSelected)+" selected");
 	}
 	

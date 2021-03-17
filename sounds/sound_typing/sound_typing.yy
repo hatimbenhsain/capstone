@@ -10,14 +10,14 @@
     "name": "audiogroup_default",
     "path": "audiogroups/audiogroup_default",
   },
-  "soundFile": "typing.wav",
+  "soundFile": "sound_typing.wav",
   "duration": 7.412166,
   "parent": {
     "name": "Sounds",
     "path": "folders/Sounds.yy",
   },
   "resourceVersion": "1.0",
-  "name": "typing",
+  "name": "sound_typing",
   "tags": [],
   "resourceType": "GMSound",
 }

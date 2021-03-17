@@ -59,9 +59,17 @@ if(inDialogue && currentMessage!=noone){
 		
 	}
 	currentChar+=textSpeed;
+	if(currentMessage.talker=="priestess"){
+		PlayText(1.1);
+	}else if(currentMessage.talker=="gop"){
+		PlayText(0.8);
+	}else{
+		PlayText(1);	
+	}
 	currentChar=clamp(currentChar,0,maxLength+1);
 	if(currentChar>=maxLength || currentMessage.type=="a"){
 		obj_portrait.talking=false;
+		if(currentChar>=maxLength) StopText();
 		if(shake){
 			shake=false;	
 		}
@@ -75,4 +83,5 @@ if(inDialogue && currentMessage!=noone){
 }else{
 	obj_portrait.drawn=false;	
 	shake=false;
+	StopText();
 }

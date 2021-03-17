@@ -10,7 +10,11 @@ function addItem(item){
 		instance_deactivate_object(id);
 	}
 	obj_hero.pickedUp=true;
-	playSFX(sound_itemPickup);
+	with(obj_soundManager){
+		audio_sound_gain(bgMusic,0.05*bgGain*masterGain,50);
+		playSFX(sound_itemPickup4,1);
+		alarm[1]=audio_sound_length(sound_itemPickup4)*room_speed-room_speed*0.5;
+	}
 }
 
 function AddItem(item){
@@ -24,7 +28,12 @@ function AddItem(item){
 		
 	}
 	obj_hero.pickedUp=true;
-	playSFX(sound_itemPickup);
+	with(obj_soundManager){
+		audio_sound_gain(bgMusic,0.05*bgGain*masterGain,50);
+		playSFX(sound_itemPickup4,1);
+		alarm[1]=audio_sound_length(sound_itemPickup4)*room_speed-room_speed*0.5;
+	}
+		
 }
 
 function combineObjects(){
