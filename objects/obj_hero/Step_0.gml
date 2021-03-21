@@ -147,8 +147,12 @@ switch(state){
 				rightStep=true;
 				alarm[1]=(1-image_index%1)*room_speed/(sprite_get_speed(sprite_index)*image_speed);
 			}
+			if(alarm[3]==-1){
+				alarm[3]=1;	
+			}
 		}else{
 			alarm[1]=-1;
+			alarm[3]=-1;
 		}
 
 		vx=clamp(vx,-maxSpeed,maxSpeed);
@@ -184,6 +188,7 @@ switch(state){
 		}
 		break;
 	case "acting":
+		alarm[3]=-1;
 		break;
 }
 
@@ -194,7 +199,7 @@ switch(state){
 
 
 
-if(keyboard_check_pressed(interactButton) || (obj_dialogueManager.skipMode && keyboard_check(interactButton))){
+if(!obj_gameManager.paused && (keyboard_check_pressed(interactButton) || (obj_dialogueManager.skipMode && keyboard_check(interactButton)))){
 	var xx, yy, talkerDir;
 	switch(dir){
 		case("F"):

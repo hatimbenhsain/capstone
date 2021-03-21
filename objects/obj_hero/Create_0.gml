@@ -55,3 +55,5 @@ heads=ds_map_create();
 sceneManager=obj_lilypadManager;
 
 sittingSprite=sprite_heroSat;
+
+lastFootStep=sound_footStep;

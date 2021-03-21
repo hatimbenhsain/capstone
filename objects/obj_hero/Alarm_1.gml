@@ -3,6 +3,7 @@
 // footsteps
 
 var fs=instance_create_depth(x,y,198,obj_footstep);
+
 switch(dir){
 	case "F":
 		with(fs){

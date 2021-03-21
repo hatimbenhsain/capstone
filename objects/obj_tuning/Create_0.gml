@@ -36,4 +36,6 @@ cameraHeight=240;
 
 shakeRate=2;
 
+footStepTime=0.5;
+
 LoadControls();
