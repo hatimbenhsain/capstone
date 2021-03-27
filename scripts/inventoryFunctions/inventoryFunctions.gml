@@ -86,7 +86,7 @@ function deleteInstanceOf(obj){
 function ObjectInInventory(obj){
 	with(obj_inventory){
 		for(var i=0;i<ds_list_size(items);i++){
-			show_debug_message("checking item "+string(i));
+			//show_debug_message("checking item "+string(i));
 			if(items[|i].object_index==obj){
 				show_debug_message("same id");
 				return true;
