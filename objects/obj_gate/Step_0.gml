@@ -27,9 +27,9 @@ switch(state){
 		break;
 	case 5:
 		sprite_index=sprite_gate_floating;
-		if(obj_hero.bbox_bottom<bbox_bottom && obj_hero.state=="grounded"){
-			obj_gui.whiteFadeIn=true;	
-		}
+		//if(obj_hero.bbox_bottom<bbox_bottom && obj_hero.state=="grounded"){
+		//	obj_gui.whiteFadeIn=true;	
+		//}
 		break;
 	
 }

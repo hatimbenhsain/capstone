@@ -19,7 +19,7 @@ sittingSprite=sprite_priestess_sat;
 walking=false;
 
 
-state=5;
+state=9;
 
 
 

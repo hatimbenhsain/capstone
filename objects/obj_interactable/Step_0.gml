@@ -18,6 +18,6 @@ if(talkingTo!=noone && !obj_dialogueManager.finished){
 	}
 }
 
-if(head=="" || head==undefined){
+if((head=="" || head==undefined) && !obj_dialogueManager.inDialogue){
 	head=initialHead;	
 }
