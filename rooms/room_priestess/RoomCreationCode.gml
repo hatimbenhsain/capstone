@@ -18,8 +18,8 @@ with(obj_soundManager){
 var lId=layer_tilemap_get_id(layer_get_id("tileLayer_grassTest"));
 
 
-for(var i=0;i<room_width;i+=8){
-	for(var j=0;j<room_height;j+=8){
+for(var i=0;i<room_width;i+=16){
+	for(var j=0;j<room_height;j+=16){
 		var data=tilemap_get(layer_tilemap_get_id(layer_get_id("tileLayer_grass")),i/16,j/16);
 		var inst;
 		//show_debug_message(i);
@@ -34,10 +34,12 @@ for(var i=0;i<room_width;i+=8){
 		}else{
 			for(var k=0;k<12;k++){
 				var n=0;
-				var d=tilemap_get(lId,k,n);
+				var d=tilemap_get(lId,n,k);
 				while(!tile_get_empty(d)){
 					if(tile_get_index(data)==tile_get_index(d)){
 						inst=instance_create_layer(i,j,"layer_walls",obj_invisibleWall);
+						inst.x+=8;
+						inst.y+=8;
 						if(k<=7){
 							switch(k){
 								case 0:
@@ -65,12 +67,11 @@ for(var i=0;i<room_width;i+=8){
 									inst.sprite_index=sprite_invisibleWall8;
 									break;
 							}
-							inst.image_xscale=2;
-							inst.image_yscale=2;
-							inst.x+=8;
-							inst.y+=8;
+							//inst.image_xscale=2;
+							//inst.image_yscale=2;
+							
 						}else{
-							inst=instance_create_layer(i,j,"layer_walls",obj_invisibleWall);
+							
 							var inst2=instance_create_layer(i,j,"layer_walls",obj_invisibleWall);
 							switch(k){
 								case 8:
@@ -90,12 +91,7 @@ for(var i=0;i<room_width;i+=8){
 									inst2.sprite_index=sprite_invisibleWall8;
 									break;
 							}
-							inst.image_xscale=2;
-							inst.image_yscale=2;
-							inst.x+=8;
-							inst.y+=8;
-							inst2.image_xscale=2;
-							inst2.image_yscale=2;
+
 							inst2.x+=8;
 							inst2.y+=8;
 						}
@@ -103,7 +99,7 @@ for(var i=0;i<room_width;i+=8){
 						break;
 					}else{
 						n+=1;
-						d=tilemap_get(lId,k,n);
+						d=tilemap_get(lId,n,k);
 					}
 				}
 			}
