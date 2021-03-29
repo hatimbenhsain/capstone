@@ -118,6 +118,9 @@ switch(state){
 	case 17:
 		//statue piece
 		break;
+	case 18:
+		//the fair folk
+		break;
 }
 
 prevState=state;

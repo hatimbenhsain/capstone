@@ -1,8 +1,41 @@
 Line,Type,Parent,Action,Subject,Talker,Emotion
 What do you want to learn about?,q,,,,priestess,neutral
-This place.,a,2,,,noone,
-You.,a,2,,,,
-This is a temple.,l,3,,,priestess,neutral
-That's all.,,,,,,
-Me..? There isn't a lot to tell.,l,4,,,priestess,neutral
-I'm just a priestess.,,,,,,
+The priestess.,a,2,,,noone,
+The temple.,a,2,,,,
+There isn't much to say about me.,l,3,,,priestess,pensive
+Tell me about your life! Were you always a priestess?,,,,,hero,happy
+..Yes and no?,,,,,priestess,shocked
+"I've been here as long as I remember, but...",,,,,priestess,pensive
+"...I decided to devote my life to the goddess when I came of age, at eighty years old.",,,,,priestess,neutral
+You mean... eighteen?,,,,,hero,shocked
+Eighteen? I was barely a babe. I said eighty.,,,,,priestess,neutral
+That's...,,,,,hero,shocked
+"Oh, I forget. Humans have much shorter lifespans.",,,,,priestess,pensive
+Yet they always seem to think they know so much about the world...,,,,,priestess,angry
+Do we? I wouldn't say I know that much.,,,,,hero,thinking
+That is quite the understatement.,,,,,priestess,neutral
+If... you say so?,,,,,hero,confused
+"Anyway, if you're not human, what... are you exactly?",,,,,hero,thinking
+I am of the fair folk.,,,ChangeState,18,priestess,neutral
+"So this is the temple of the Goddess of the Hidden, right?",l,4,,,hero,neutral
+"Do you.. worship any other gods, or is it just like, her?",,,,,hero,thinking
+We do believe in the other gods. And... we have great reverence for them.,,,,,priestess,neutral
+But...?,,,,,hero,thinking
+"But if you want to worship another god, you should probably go elsewhere.",,,,,priestess,pensive
+Oh.,,,,,hero,shocked
+Does the Goddess of the Hidden have... beef with the other gods?,,,,,hero,confused
+The gods don't eat...?,,,,,priestess,shocked
+"That's not what I - wait, they don't?",,,,,hero,thinking
+"Well, technically, the Spinstress Goddess did eat her mate. Several times.",,,,,priestess,pensive
+"Yeah, and I also heard that the Goddess of the Deep eats humans that venture into the sea!",,,,,hero,thinking
+Or... maybe she just makes them sink? I'm not sure if she actually EATS them.,,,,,hero,suspicious
+Hmm... I should look into that.,,,,,priestess,pensive
+"Regardless. Whether or not the gods do eat food, I don't think it would be beef.",,,,,priestess,neutral
+"Right, uh, what were we talking about again?",,,,,hero,cringe
+The temple.,,,,,priestess,neutral
+Yeah! Sorry. How long has the temple been here?,,,,,hero,shocked
+"We're not sure, but we know it has been several centuries.",,,,,priestess,pensive
+"We actually believe that this is the hatchplace of the Goddess, so this place has been sacred for a fairly long time.",,,,,priestess,neutral
+The hatchplace?,,,,,hero,thinking
+Yes. The place where she hatched from her egg.,,,,,priestess,neutral
+Oh. I see.,,,,,hero,pensive
