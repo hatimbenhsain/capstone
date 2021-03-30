@@ -121,6 +121,9 @@ switch(state){
 	case 18:
 		//the fair folk
 		break;
+	case 19:
+		//how it happened
+		break;
 }
 
 prevState=state;
