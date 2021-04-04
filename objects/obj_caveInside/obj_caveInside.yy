@@ -28,8 +28,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "priestessLevel",
-    "path": "folders/Objects/obj_overworld/priestessLevel.yy",
+    "name": "obj_cave",
+    "path": "folders/Objects/obj_overworld/priestessLevel/obj_cave.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_caveInside",

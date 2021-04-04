@@ -5,7 +5,7 @@
     "path": "folders/Shaders.yy",
   },
   "resourceVersion": "1.0",
-  "name": "shader_caveDarkness",
+  "name": "shader_lantern",
   "tags": [],
   "resourceType": "GMShader",
 }

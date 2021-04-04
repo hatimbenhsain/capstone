@@ -1,15 +1,15 @@
 {
   "spriteId": {
-    "name": "sprite_caveOutside",
-    "path": "sprites/sprite_caveOutside/sprite_caveOutside.yy",
+    "name": "sprite_ow_brasier",
+    "path": "sprites/sprite_ow_brasier/sprite_ow_brasier.yy",
   },
   "solid": false,
   "visible": true,
   "spriteMaskId": null,
   "persistent": false,
   "parentObjectId": {
-    "name": "obj_collidable",
-    "path": "objects/obj_collidable/obj_collidable.yy",
+    "name": "obj_interactable",
+    "path": "objects/obj_interactable/obj_interactable.yy",
   },
   "physicsObject": false,
   "physicsSensor": false,
@@ -24,8 +24,8 @@
   "physicsKinematic": false,
   "physicsShapePoints": [],
   "eventList": [
-    {"isDnD":false,"eventNum":0,"eventType":8,"collisionObjectId":null,"parent":{"name":"obj_cave","path":"objects/obj_cave/obj_cave.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
-    {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"parent":{"name":"obj_cave","path":"objects/obj_cave/obj_cave.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,"parent":{"name":"obj_brasier","path":"objects/obj_brasier/obj_brasier.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"parent":{"name":"obj_brasier","path":"objects/obj_brasier/obj_brasier.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
   "properties": [],
   "overriddenProperties": [],
@@ -34,7 +34,7 @@
     "path": "folders/Objects/obj_overworld/priestessLevel/obj_cave.yy",
   },
   "resourceVersion": "1.0",
-  "name": "obj_cave",
+  "name": "obj_brasier",
   "tags": [],
   "resourceType": "GMObject",
 }
