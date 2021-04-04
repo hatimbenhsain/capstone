@@ -29,11 +29,13 @@ if(obj_brasier.state==-1){
 }
 else if(obj_brasier.state==1){
 	shader_set(shader_lantern);
-	//shader_set_uniform_f(brasierX,(obj_brasier.x-obj_caveInside.x+sprite_get_xoffset(sprite_caveMask2))/sprite_get_width(sprite_caveMask2));
-	//shader_set_uniform_f(brasierY,(obj_brasier.y-obj_caveInside.y+sprite_get_yoffset(sprite_caveMask2))/sprite_get_height(sprite_caveMask2));
-	shader_set_uniform_f(brasierX,0.5)
-	shader_set_uniform_f(brasierY,0.5)
-	draw_sprite_ext(sprite_caveMask2,0,obj_caveInside.x,obj_caveInside.y,image_xscale,image_yscale,0,c_white,0.6*(darkA));
+	var uv = sprite_get_uvs(sprite_caveMask2, 0);
+    shader_set_uniform_f(_uniUV, uv[0],uv[1], uv[2],uv[3]);
+	shader_set_uniform_f(brasierX,(obj_brasier.x-obj_caveInside.x+sprite_get_xoffset(sprite_caveMask2))/sprite_get_width(sprite_caveMask2));
+	shader_set_uniform_f(brasierY,(obj_brasier.y-obj_caveInside.y+sprite_get_yoffset(sprite_caveMask2))/sprite_get_height(sprite_caveMask2));
+	//shader_set_uniform_f(brasierX,0.5)
+	//shader_set_uniform_f(brasierY,4/5)
+	draw_sprite_ext(sprite_caveMask2,0,obj_caveInside.x,obj_caveInside.y,image_xscale,image_yscale,0,c_white,darkA);
 	shader_reset();
 }
 //draw_sprite_ext(sprite_caveBlack,0,obj_caveInside.x,obj_caveInside.y,1,1,0,c_white,outsideA);
