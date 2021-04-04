@@ -298,7 +298,7 @@ function standardLoad(map){
 				alarm[i]=map[?"alarms"][|i];
 			}
 			heads=LoadHeads(map[?"heads"]);
-			show_debug_message("the heads "+name);
+			//show_debug_message("the heads "+name);
 			
 			if(map[?"initialHead"]!=undefined && map[?"initialHead"]!=""){
 				initialHead=map[?"initialHead"];
