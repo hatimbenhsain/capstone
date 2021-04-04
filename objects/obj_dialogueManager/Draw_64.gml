@@ -1,6 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 //draw_self();
+
 if(inDialogue && currentMessage!=noone){
 	//if(ds_list_size(items)<rows*columns){
 	//	image_index=0;	

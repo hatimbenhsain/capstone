@@ -9,4 +9,4 @@ talking=true;
 talker=noone;
 emotion=noone;
 
-depth=-1
+depth=-2

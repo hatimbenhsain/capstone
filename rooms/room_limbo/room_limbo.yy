@@ -525,9 +525,9 @@
   "inheritCode": false,
   "instanceCreationOrder": [
     {"name":"inst_13D3C07B","path":"rooms/room_limbo/room_limbo.yy",},
-    {"name":"inst_217CB530","path":"rooms/room_limbo/room_limbo.yy",},
     {"name":"inst_2650F171","path":"rooms/room_limbo/room_limbo.yy",},
     {"name":"inst_61126EA9","path":"rooms/room_limbo/room_limbo.yy",},
+    {"name":"inst_217CB530","path":"rooms/room_limbo/room_limbo.yy",},
     {"name":"inst_13ADB8DE","path":"rooms/room_limbo/room_limbo.yy",},
     {"name":"inst_6AF61FED","path":"rooms/room_limbo/room_limbo.yy",},
     {"name":"inst_7F767BE9","path":"rooms/room_limbo/room_limbo.yy",},

@@ -8,6 +8,7 @@ with(obj_hero){
 		inside=true;
 		outsideA=0;
 		darkA=1;
+		SwitchBgm(audio_investigationBgm);
 	}else if(place_meeting(x,y-5,obj_caveInside)){
 		outsideA=bbox_top-obj_caveInside.bbox_bottom;
 		outsideA=outsideA/5;

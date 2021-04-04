@@ -73,6 +73,6 @@ skipCounter=0;
 
 skipMode=false;
 
-depth=0;
+depth=-1;
 
 firstAnswer=0;

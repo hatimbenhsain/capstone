@@ -30,3 +30,5 @@ pX=display_get_gui_width()/2
 pY=-display_get_gui_height()/2
 
 shakeCounter=0;
+
+depth=1;

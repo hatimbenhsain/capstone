@@ -22,7 +22,8 @@
 event_inherited();
 
 switch(state){
-
+	case -1:
+		break;
 }
 
 prevState=state;

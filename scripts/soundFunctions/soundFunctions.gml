@@ -27,6 +27,17 @@ function FadeInMusic(t){
 	}
 }
 
+function SwitchBgm(nextTrack){
+	var t=1000;
+	with(obj_soundManager){
+		if(nextBgm!=nextTrack){
+			audio_sound_gain(bgMusic,bgGain*masterGain*0,t);
+			alarm[2]=t*room_speed/1000;
+			nextBgm=nextTrack;
+		}
+	}
+}
+
 function PlayText(p){
 	if(is_undefined(p)) p=1;
 	with(obj_soundManager){

@@ -4,6 +4,7 @@ masterGain=1;
 tempGain=1;
 
 bgMusic=audio_manabgm;
+nextBgm=bgMusic;
 
 bgGain=1;
 
