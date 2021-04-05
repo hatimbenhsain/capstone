@@ -2,3 +2,13 @@ Line,Type,Parent,Action,Subject,Talker,Emotion
 Can you tell me what this says?,,,,,hero,neutral
 No. Too much of it has been torn off.,,,,,priestess,neutral
 I might be able to help if you find the other half.,,,,,priestess,neutral
+"By the way, do you know how to combine objects?",q,,,,priestess,neutral
+Yes.,a,5,,,noone,
+No.,a,5,,,,
+Uuh I could use a refresher..?,,7,,,hero,thinking
+"It's really simple. First, you open your inventory and you select an object as if you want to show it to me.",,,,,priestess,neutral
+"But instead of closing the inventory, you then select the other object you want to combine it with.",,,,,priestess,neutral
+"If they're compatible, the two objects will become one in your inventory.",,,,,priestess,neutral
+Do you need me to say that again?,q,,,,priestess,neutral
+"No, I'm good.",a,12,,,hero,neutral
+Yes please!,a,12,LoopBack,9,hero,neutral
