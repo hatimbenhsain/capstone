@@ -46,7 +46,7 @@ function combineObjects(){
 		deleteIndex(itm2);
 		deleteIndex(itm1);
 		selectedObject=ds_list_size(items)-1;
-		playSfx(sound_itemsCombined);
+		playSFX(sound_itemsCombined);
 		return;
 	}
 	obj_dialogueManager.currentMessage=new global.Line("I don't think i can combine these items...",-1,"l","","","hero","confused");

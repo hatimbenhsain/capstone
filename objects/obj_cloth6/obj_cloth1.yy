@@ -1,15 +1,12 @@
 {
-  "spriteId": {
-    "name": "sprite_ow_pot2",
-    "path": "sprites/sprite_ow_pot2/sprite_ow_pot2.yy",
-  },
+  "spriteId": null,
   "solid": false,
   "visible": true,
   "spriteMaskId": null,
   "persistent": false,
   "parentObjectId": {
-    "name": "obj_interactable",
-    "path": "objects/obj_interactable/obj_interactable.yy",
+    "name": "obj_item",
+    "path": "objects/obj_item/obj_item.yy",
   },
   "physicsObject": false,
   "physicsSensor": false,
@@ -23,17 +20,15 @@
   "physicsStartAwake": true,
   "physicsKinematic": false,
   "physicsShapePoints": [],
-  "eventList": [
-    {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"parent":{"name":"obj_pot1","path":"objects/obj_pot1/obj_pot1.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
-  ],
+  "eventList": [],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "obj_kitchen",
-    "path": "folders/Objects/obj_overworld/priestessLevel/obj_kitchen.yy",
+    "name": "obj_clothes",
+    "path": "folders/Objects/obj_overworld/priestessLevel/obj_clothes.yy",
   },
   "resourceVersion": "1.0",
-  "name": "obj_pot1",
+  "name": "obj_cloth1",
   "tags": [],
   "resourceType": "GMObject",
 }

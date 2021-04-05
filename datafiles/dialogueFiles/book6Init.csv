@@ -1,0 +1,14 @@
+Line,Type,Parent,Action,Subject,Talker,Emotion
+"""I always forget where the tree is, so priestess Kapla gave me instructions to find it.""",,,,,hero,neutral
+"""In case I forget them again, I'm noting them down here. """,,,,,hero,neutral
+"""If you're a bad person, stop reading this!!""",,,,,hero,shocked
+"I'm a good person, so I should keep reading, right?",q,,,,hero,thinking
+Keep reading.,a,5,,,noone,
+Leave.,a,5,,,,
+"""From the bird that faces the forest, walk east.""",,6,,,hero,neutral
+"""Keep walking until you pass two trees, then turn to your right.""",,,,,hero,neutral
+"""After you pass three more trees, turn right again.""",,,,,hero,neutral
+"""The next tree you find is the important one!!""",,,,,hero,neutral
+"""Important"" is underlined three times.",,,,,hero,suspicious
+Guess it must be so.,,,,,hero,thinking
+Maybe I can prove I'm a good person by resisting the temptation to read this.,,7,,,hero,thinking

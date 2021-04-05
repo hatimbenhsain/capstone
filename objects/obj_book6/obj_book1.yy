@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "sprite_ow_pot2",
-    "path": "sprites/sprite_ow_pot2/sprite_ow_pot2.yy",
+    "name": "sprite_ow_books1",
+    "path": "sprites/sprite_ow_books1/sprite_ow_books1.yy",
   },
   "solid": false,
   "visible": true,
@@ -24,16 +24,16 @@
   "physicsKinematic": false,
   "physicsShapePoints": [],
   "eventList": [
-    {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"parent":{"name":"obj_pot1","path":"objects/obj_pot1/obj_pot1.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"parent":{"name":"obj_book1","path":"objects/obj_book1/obj_book1.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "obj_kitchen",
-    "path": "folders/Objects/obj_overworld/priestessLevel/obj_kitchen.yy",
+    "name": "obj_books",
+    "path": "folders/Objects/obj_overworld/priestessLevel/obj_books.yy",
   },
   "resourceVersion": "1.0",
-  "name": "obj_pot1",
+  "name": "obj_book1",
   "tags": [],
   "resourceType": "GMObject",
 }

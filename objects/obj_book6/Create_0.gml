@@ -1,7 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
-name="birdStatueHead";
+
 // Inherit the parent event
+name="book6";
 event_inherited();
-state=0;
-AddInteractable(obj_knife);
+

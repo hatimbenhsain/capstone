@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "sprite_ow_pot2",
-    "path": "sprites/sprite_ow_pot2/sprite_ow_pot2.yy",
+    "name": "sprite_ow_pot1",
+    "path": "sprites/sprite_ow_pot1/sprite_ow_pot1.yy",
   },
   "solid": false,
   "visible": true,
