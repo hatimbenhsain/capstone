@@ -1,0 +1,25 @@
+Line,Type,Parent,Action,Subject,Talker,Emotion
+The tree.,a,,,,,
+Can you tell me more about this glowing fruit tree?,,,,,hero,thinking
+"You said there's only one of its kind, right? I'm surprised the invaders didn't attack it.",,,,,hero,confused
+"It's because they couldn't find it, even if they were looking for it.",,,,,priestess,serene
+Uh... Wouldn't a glowing tree be pretty obvious?,,,,,hero,suspicious
+"Not if we put a spell on it, no.",,,,,priestess,serene
+Oooh. How does it work?,,,,,hero,happy
+The tree only shows itself in its true form to those who have proven their devotion to the Goddess.,,,,,priestess,serene
+"Otherwise, it appears merely as another tree.",,,,,priestess,pensive
+I see. So... did the other trees always look like this?,,,,,hero,thinking
+"No. Those, the humans burned.",,,,,priestess,neutral
+"But the spell works so that the tree's appearance blends with its surroundings. So before, it looked like a normal forest tree.",,,,,priestess,neutral
+"Thankfully it's still somewhat intact. It doesn't burn as easily as any other tree, and the humans couldn't have known better.",,,,,priestess,pensive
+Okay... Which one is it then?,,,,,hero,thinking
+Well I am... not sure.,,,FadeOutMusic,3000,priestess,neutral
+"I wasn't tasked with collecting the fruit, so I never had to prove myself to the tree.",,,,,priestess,neutral
+But aren't you devoted to your goddess?,,,,,hero,thinking
+Of course I am!,,,Shake,200,priestess,angry
+It's... more complicated than that.,,,,,priestess,neutral
+...Care to elaborate?,,,,,hero,shocked
+No. My faith is not for you to question.,,,,,priestess,angry
+"I know, I know! I... didn't mean to be rude.",,,,,hero,shocked
+...,,,,,priestess,pensive
+(This must be a touchy subject for her... Maybe I can find information on the tree on my own?),,,ChangeState,20,hero,confused

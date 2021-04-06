@@ -124,6 +124,13 @@ switch(state){
 	case 19:
 		//how it happened
 		break;
+	case 20:
+		//after tree discussion
+		FadeInMusic(3000);
+		break;
+	case 21:
+		//after cave discussion
+		break;
 }
 
 prevState=state;

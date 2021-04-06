@@ -1,3 +1,6 @@
 Line,Type,Parent,Action,Subject,Talker,Emotion
-Please abstain from playing with the tree.,,,,,priestess,pensive
-"Uhm... yeah, sorry.",,,,,hero,shocked
+Oh. You... found the tree.,,,,,priestess,shocked
+I did!,,,,,hero,happy
+...,,,,,priestess,pensive
+Please abstain from playing with it.,,,,,priestess,pensive
+Uhm... yeah. I won't. I just wanted to check a fruit out haha... ha.,,,,,hero,cringe

@@ -1,0 +1,16 @@
+Line,Type,Parent,Action,Subject,Talker,Emotion
+The cave.,q,,,,,
+What's up with the cave over there?,,,,,hero,thinking
+I went inside and I saw there was... writing? On the walls?,,,,,hero,suspicious
+I couldn't make up any of it though since it's so dark. I also stumbled on some... rock.,,,,,hero,confused
+That is the cave of secrets.,,,,,priestess,neutral
+It is a tradition that we have...,,,,,priestess,pensive
+"If you have a secret that you cannot tell anyone else, you may go in there to and inscribe it on the walls.",,,,,priestess,neutral
+And the thing you stumbled upon must've been the brazier.,,,,,priestess,neutral
+Ah! How do I light it up?,,,,,hero,happy
+You do not.,,,,,priestess,neutral
+The brazier's purpose is symbolic. It is unlit and will remain that way because the confessions are for no one but the goddess's eye to see.,,,,,priestess,neutral
+To bring light inside the cave would be extremely disrespectful.,,,Shake,200,priestess,angry
+But what if...,,,,,hero,thinking
+Extremely. Disrespectful.,,,Shake,400,priestess,neutral
+.......Got it.,,,ChangeState,21,hero,confused
