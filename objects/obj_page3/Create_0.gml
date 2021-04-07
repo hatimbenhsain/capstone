@@ -7,3 +7,5 @@ event_inherited();
 description="It has diagrams and strange writings.";
 
 icon=sprite_informativePage;
+
+ChangeInitHead("Torn PageInit");

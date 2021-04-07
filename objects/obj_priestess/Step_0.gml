@@ -89,7 +89,8 @@ switch(state){
 		image_alpha-=0.005;
 		initialHead="";
 		if(image_alpha<=0){
-			y=y-300;
+			y=80;
+			x=640;
 			state=10;
 			AddInteractable(obj_page1);
 			AddInteractable(obj_page11);

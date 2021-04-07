@@ -27,7 +27,7 @@ Does the Goddess of the Hidden have... beef with the other gods?,,,,,hero,confus
 The gods don't eat...?,,,,,priestess,shocked
 "That's not what I - wait, they don't?",,,,,hero,thinking
 "Well, technically, the Spinstress Goddess did eat her mate. Several times.",,,,,priestess,pensive
-"Yeah, and I also heard that the Goddess of the Deep eats humans that venture into the sea!",,,,,hero,thinking
+"Yeah, and I also heard that the Goddess of the Deep eats humans that venture into the sea!",,,,,hero,excited
 Or... maybe she just makes them sink? I'm not sure if she actually EATS them.,,,,,hero,suspicious
 Hmm... I should look into that.,,,,,priestess,pensive
 "Regardless. Whether or not the gods do eat food, I don't think it would be beef.",,,,,priestess,neutral
@@ -35,7 +35,9 @@ Hmm... I should look into that.,,,,,priestess,pensive
 The temple.,,,,,priestess,neutral
 Yeah! Sorry. How long has the temple been here?,,,,,hero,shocked
 "We're not sure, but we know it has been several centuries.",,,,,priestess,pensive
-"We actually believe that this is the hatchplace of the Goddess, so this place has been sacred for a fairly long time.",,,,,priestess,neutral
+"We actually believe that this is the hatchplace of the Goddess, so...",,,,,priestess,neutral
+This place has been sacred for a fairly long time.,,,,,priestess,neutral
 The hatchplace?,,,,,hero,thinking
 Yes. The place where she hatched from her egg.,,,,,priestess,neutral
 Oh. I see.,,,,,hero,pensive
+Nevermind.,a,2,,,,

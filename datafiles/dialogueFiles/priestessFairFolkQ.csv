@@ -1,0 +1,19 @@
+Line,Type,Parent,Action,Subject,Talker,Emotion
+The Fair Folk.,q,,,,,
+"You know, I've heard the term ""fair folk"" mentioned a couple of times, but I'm not sure what it means.",,,,,hero,thinking
+The Fair Folk is what I am. ,,,,,priestess,neutral
+"We're... like you in some ways, and unlike you in others.",,,,,priestess,pensive
+"We've never mingled well with humans, so we tend to stay away from your cities.",,,,,priestess,neutral
+"And the Goddess of the Hidden... she is also the Goddess of the outcasts, so a lot of us come here.",,,,,priestess,neutral
+Or... used to.,,,,,priestess,sad
+Are most of the priests fair folk then?,,,,,hero,thinking
+"No, we all come from different backgrounds. The fair folk rarely stick around.",,,,,priestess,pensive
+But you did? ,,,,,hero,neutral
+"Yes. The Goddess has been kind to me, and I haven't known anywhere outside the temple.",,,,,priestess,neutral
+So... you were born here?,,,,,hero,thinking
+Born?,,,,,priestess,shocked
+"I suppose. You could say that, yes.",,,,,priestess,pensive
+Can you tell me anything else you about the Fair Folk?,,,FadeOutMusic,1000,hero,thinking
+No.,,,,,priestess,neutral
+Oh. Okay.,,,,,hero,cringe
+...,,,FadeInMusic,2000,priestess,neutral

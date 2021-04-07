@@ -6,10 +6,11 @@ switch(state){
 		state=1;
 		break;
 	case 0:
-		if(initHead!="brazierInit") ChangeInitHead("brazierInit");
+		if(initialHead!="brasierInit") ChangeInitHead("brasierInit");
+		break;
 	case 1:
 		//sprite_index=sprite_ow_lantern_lit;
-		if(initHead!="brasier2"){
+		if(initialHead!="brasier2"){
 			with(obj_caveWall1){
 				ChangeInitHead("cave2")	
 			}
@@ -26,7 +27,7 @@ switch(state){
 		}
 		break;
 	case 3:
-		ChangeInitHead("brazier3");
+		ChangeInitHead("brasier3");
 		sprite_index=sprite_ow_lantern_lit;
 		state=4;
 		with(obj_caveWall1){

@@ -2613,7 +2613,6 @@
     {"CopyToMask":-1,"filePath":"datafiles/dialogueFiles","resourceVersion":"1.0","name":"priestessQuestion1.csv","resourceType":"GMIncludedFile",},
     {"CopyToMask":-1,"filePath":"datafiles/dialogueFiles","resourceVersion":"1.0","name":"testInit.csv","resourceType":"GMIncludedFile",},
     {"CopyToMask":-1,"filePath":"datafiles/dialogueFiles","resourceVersion":"1.0","name":"priestessRotten Food.csv","resourceType":"GMIncludedFile",},
-    {"CopyToMask":-1,"filePath":"datafiles/dialogueFiles","resourceVersion":"1.0","name":"priestessQuestions.csv","resourceType":"GMIncludedFile",},
     {"CopyToMask":-1,"filePath":"datafiles/dialogueFiles","resourceVersion":"1.0","name":"treeOfLife2.csv","resourceType":"GMIncludedFile",},
     {"CopyToMask":-1,"filePath":"datafiles/dialogueFiles","resourceVersion":"1.0","name":"priestessRusty Knife.csv","resourceType":"GMIncludedFile",},
     {"CopyToMask":-1,"filePath":"datafiles/dialogueFiles","resourceVersion":"1.0","name":"treeOfLife3.csv","resourceType":"GMIncludedFile",},
@@ -2654,6 +2653,9 @@
     {"CopyToMask":-1,"filePath":"datafiles/dialogueFiles","resourceVersion":"1.0","name":"caveSecret2.csv","resourceType":"GMIncludedFile",},
     {"CopyToMask":-1,"filePath":"datafiles/dialogueFiles","resourceVersion":"1.0","name":"caveSecret1.csv","resourceType":"GMIncludedFile",},
     {"CopyToMask":-1,"filePath":"datafiles/dialogueFiles","resourceVersion":"1.0","name":"caveSecret8.csv","resourceType":"GMIncludedFile",},
+    {"CopyToMask":-1,"filePath":"datafiles/dialogueFiles","resourceVersion":"1.0","name":"priestessHowItHappenedQ.csv","resourceType":"GMIncludedFile",},
+    {"CopyToMask":-1,"filePath":"datafiles/dialogueFiles","resourceVersion":"1.0","name":"priestessFairFolkQ.csv","resourceType":"GMIncludedFile",},
+    {"CopyToMask":-1,"filePath":"datafiles/dialogueFiles","resourceVersion":"1.0","name":"priestessQuestions.csv","resourceType":"GMIncludedFile",},
   ],
   "MetaData": {
     "IDEVersion": "2.3.0.529",

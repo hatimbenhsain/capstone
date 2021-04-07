@@ -14,12 +14,13 @@ function addInteractable(obj){
 }
 
 function AddInteractableByName(obj,n){
-	var inst=instance_create_layer(x,y,layer,obj);
-	if(ds_map_exists(interactableObjects,inst.object_index)) ds_map_delete(interactableObjects,inst.object_index);
+	var inst=instance_create_depth(x,y,depth,obj);
 	var name2;
 	with(inst){
 		name2=name;	
 	}
+	if(ds_map_exists(interactableObjects,name2)) ds_map_delete(interactableObjects,name2);
+	
 	ds_map_add(interactableObjects,name2,n);
 	//if(!ds_map_exists(heads,name)){
 	//	ds_map_add(heads,name,parseDialogue(name+".csv"));
