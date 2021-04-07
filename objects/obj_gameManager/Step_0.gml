@@ -185,3 +185,9 @@ if(debugMode && keyboard_check_pressed(ord("Y"))){
 		room_goto(room_limbo);
 	}	
 }
+
+if(debugMode && keyboard_check_pressed(ord("P"))){
+	with(obj_item){
+		AddItem(object_index);	
+	}
+}

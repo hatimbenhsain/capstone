@@ -216,6 +216,10 @@ switch(state){
 		}
 		state=prevState;
 		break;
+	case 23:
+		var q=AddAnswer(GetHead(initialHead),"What do you want to learn about?","priestessCaveQ.csv");
+		state=prevState;
+		break;
 	case 30:
 		if(alarm[5]==-1){
 			startDialogue("priestessTired");

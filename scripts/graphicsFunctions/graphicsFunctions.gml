@@ -12,7 +12,7 @@ function Shake(f){
 		f=room_speed;	
 	}
 	with(obj_gui){
-		shakeCounter=f*room_speed;
+		shakeCounter=f*room_speed/1000;
 	}
 }
 

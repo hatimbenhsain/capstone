@@ -11,7 +11,7 @@ switch(state){
 		AddInteractable(obj_pendant);
 		ChangeInitHead("deadTree1");
 		with(obj_interactable){
-			if(name=="deadTree"){
+			if(!is_undefined(name) && name=="deadTree"){
 				AddInteractable(obj_pendant);	
 				ChangeInitHead("deadTree1");
 			}

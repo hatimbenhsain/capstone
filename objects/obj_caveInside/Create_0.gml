@@ -3,3 +3,4 @@
 depth=499;
 blackA=0;
 insideA=0;
+state=0;
