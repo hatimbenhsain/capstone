@@ -161,6 +161,11 @@ function AddAnswer(node,_question,_answer){
 	if(node.text==_question){
 		var c1=node.children[|ds_list_size(node.children)-1];
 		var c2=parseDialogue(_answer);
+		for(var i=0;i<ds_list_size(node.children);i++){
+			if(c2.text==node.children[|i]){
+				return true;	
+			}
+		}
 		connect(c2,node);
 		ds_list_replace(node.children,ds_list_size(node.children)-1,c1);
 		ds_list_replace(node.children,ds_list_size(node.children)-2,c2);

@@ -1,0 +1,5 @@
+Line,Type,Parent,Action,Subject,Talker,Emotion
+It's pitch black in here but...,,,,,hero,suspicious
+Is that writing on the walls? It's too dark to read any of it though.,,,,,hero,confused
+What kind of place is this...?,,,,,hero,thinking
+I should ask the priestess about it.,,,ChangeState,2,hero,thinking

@@ -25,10 +25,10 @@ with(obj_caveInside){
 	blackA=outsideA;	
 	insideA=darkA;
 }
-if(obj_brasier.state==-1){
-	draw_sprite_ext(sprite_caveMask2,0,obj_caveInside.x,obj_caveInside.y,image_xscale,image_yscale,0,c_white,0.6*(darkA));
+if(obj_brasier.state!=4){
+	draw_sprite_ext(sprite_caveMask2,0,obj_caveInside.x,obj_caveInside.y,image_xscale,image_yscale,0,c_white,0.8*(darkA));
 }
-else if(obj_brasier.state==1){
+else if(obj_brasier.state==4){
 	shader_set(shader_lantern);
 	var uv = sprite_get_uvs(sprite_caveMask2, 0);
     shader_set_uniform_f(_uniUV, uv[0],uv[1], uv[2],uv[3]);

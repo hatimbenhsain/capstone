@@ -1,0 +1,6 @@
+Line,Type,Parent,Action,Subject,Talker,Emotion
+The priestess said it would be disrespectful to light up the room but...,,,,,hero,sad
+I can't think of any other lead right now.,,,,,hero,sad
+So... I... might as well do this.,,,,,hero,sad
+"Goddess, if you're listening, forgive me.",,,ChangeState,3,hero,pensive
+Oh!,,,,,hero,shocked

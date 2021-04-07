@@ -8,9 +8,13 @@ switch(state){
 	case 0:
 		break;
 	case 1:
-		addInteractable(obj_pendant);
+		AddInteractable(obj_pendant);
+		ChangeInitHead("deadTree1");
 		with(obj_interactable){
-			if(name=="deadTree") addInteractable(obj_pendant);	
+			if(name=="deadTree"){
+				AddInteractable(obj_pendant);	
+				ChangeInitHead("deadTree1");
+			}
 		}
 		state=2;
 		break;

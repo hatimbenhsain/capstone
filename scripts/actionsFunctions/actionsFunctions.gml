@@ -14,9 +14,14 @@ function ChangeInitHead(name){
 }
 
 function useItem(obj){
-	show_debug_message(object_get_name(object_index));
-	if(ds_map_exists(interactableObjects,obj)){
-		head=ds_map_find_value(interactableObjects,obj);
+	//show_debug_message(object_get_name(object_index));
+	var inst=instance_create_depth(x,y,depth,obj);
+	var name2;
+	with(inst){
+		name2=name;	
+	}
+	if(ds_map_exists(interactableObjects,name2)){
+		head=ds_map_find_value(interactableObjects,name2);
 	}else{
 		if(file_exists("dialogueFiles/"+name+"Confusion"+".csv")) head=name+"Confusion";	
 	}
