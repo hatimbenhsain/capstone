@@ -2,11 +2,14 @@
 // You can write your code in this editor
 font=font_prophecy;
 text_colour=$006491;
+var b;
 with(obj_soundManager){
 	bgMusic=audio_prophecy;
-	audio_sound_gain(audio_prophecy,bgGain*masterGain,0);
-	audio_play_sound(bgMusic,1,false);
+	audio_sound_gain(bgMusic,bgGain*masterGain,0);
+	b=audio_play_sound(bgMusic,1,false);
 }
+
+bgMusic=b;
 
 prophecy=["Before humans lived under the tyranny of gods, was Humanity's first great enemy: the Rot.",
 "A brave hero with a sword sealed the evil, but not before a long battle where countless lives were lost.",
@@ -30,7 +33,7 @@ textWidthFull=display_get_gui_width()-defaultX*1.8;
 
 textSpeed=obj_tuning.textSpeed;
 
-frameTime=22/3;
+frameTime=21/3;
 
 alarm[0]=room_speed*frameTime;
 

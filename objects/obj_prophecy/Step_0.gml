@@ -36,8 +36,18 @@ if(displacement==false){
 	}
 }
 
-if(current_time>24000){
+var pos;
+pos=audio_sound_get_track_position(bgMusic);
+show_debug_message(pos);
+
+if(pos>25.5){
 	image_index=0;
 	displacement=false;
 	crt=false;
+}else if(currentLine==3 && pos<23.8){
+	currentChar=clamp(currentChar,0,maxLength-4);
+}
+
+if(pos>30){
+	room_goto(room_start);	
 }
