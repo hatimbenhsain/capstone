@@ -1,7 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-if(bwMode) shader_set(shader_bw);
+shader_set(shader_bw);
 
 draw_set_font(font);
 draw_set_halign(fa_left);
@@ -16,6 +16,6 @@ currentChar+=textSpeed;
 PlayText(1);	
 currentChar=clamp(currentChar,0,maxLength+1);
 
-if(bwMode) shader_reset();
+shader_reset();
 
-//draw_sprite_ext(sprite_crtLines,image_index,room_width,room_height,2,2,0,c_white,0.5);
+if (crt) draw_sprite_ext(sprite_crtLines,image_index,room_width,room_height,2,2,0,c_white,1);

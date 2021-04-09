@@ -34,7 +34,28 @@ frameTime=22/3;
 
 alarm[0]=room_speed*frameTime;
 
+
 bwFreq=7;
 bwTimes=[7,0.1,5,0.1,0.5,0.1,3,0.1,0.3,0.1,2,0.1,4,0.1,1,0.1,0.2,0.1,0.6]
 bwIndex=0;
 alarm[1]=room_speed*bwTimes[bwIndex];
+
+_uniUV=shader_get_uniform(shader_bw, "u_uv");
+
+
+displacementFrequency=0.0001;
+displacementRate=0.02;
+displacementMaxF=0.01;
+displacedLines=[];
+for(var i=0;i<240;i++){
+	displacedLines[i]=0;	
+}
+displacement=false;
+maxDisplacement=10;
+
+_offset=shader_get_uniform(shader_bw, "offset");
+_displaced=shader_get_uniform(shader_bw, "displaced");
+_bw=shader_get_uniform(shader_bw, "bw");
+_unitexel=shader_get_uniform(shader_bw, "unitexel");
+
+crt=false;

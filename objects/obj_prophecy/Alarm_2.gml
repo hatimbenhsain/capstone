@@ -1,5 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-bwMode=false;
-alarm[1]=room_speed*random(bwFreq);
+displacement=false;
+for(var i=0;i<array_length(displacedLines);i++){
+	displacedLines[i]=0;
+}
