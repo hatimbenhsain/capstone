@@ -9,6 +9,9 @@ with(obj_soundManager){
 	b=audio_play_sound(bgMusic,1,false);
 }
 
+panel1=false;
+panel2=false;
+
 bgMusic=b;
 
 prophecy=["Before humans lived under the tyranny of gods, was Humanity's first great enemy: the Rot.",
@@ -33,13 +36,13 @@ textWidthFull=display_get_gui_width()-defaultX*1.8;
 
 textSpeed=obj_tuning.textSpeed;
 
-frameTime=21/3;
+frameTime=22/4;
 
 alarm[0]=room_speed*frameTime;
 
 
 bwFreq=7;
-bwTimes=[7,0.1,5,0.1,0.5,0.1,3,0.1,0.3,0.1,2,0.1,4,0.1,1,0.1,0.2,0.1,0.6]
+bwTimes=[7,0.1,5,0.1,0.5,0.1,3,0.1,0.3,0.1,2,0.1,3,0.1,0.1,0.1,0.2]
 bwIndex=0;
 alarm[1]=room_speed*bwTimes[bwIndex];
 

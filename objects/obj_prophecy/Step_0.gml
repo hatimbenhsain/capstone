@@ -44,10 +44,24 @@ if(pos>25.5){
 	image_index=0;
 	displacement=false;
 	crt=false;
-}else if(currentLine==3 && pos<23.8){
+}else if(currentLine==3 && pos<24){
 	currentChar=clamp(currentChar,0,maxLength-4);
+	image_index=0;
 }
+
+if(!window_has_focus()){
+	audio_pause_all();	
+	currentChar-=textSpeed;
+	for(var i=0;i<4;i++){
+		alarm[i]=alarm[i]+1;	
+	}
+}else{
+	audio_resume_all();
+}
+
 
 if(pos>30){
 	room_goto(room_start);	
 }
+
+
