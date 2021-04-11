@@ -1,0 +1,8 @@
+Line,Type,Parent,Action,Subject,Talker,Emotion
+A sculpted piece of rock lies ahead of you.,,,,,noone,
+It looks like... a stand of sorts.,,,,,hero,suspicious
+Try to lift it?,q,,,,noone,
+Yes.,a,4,,,,
+No.,a,4,,,,
+Hnnnnnnnnnnnnnnnngh.,,5,,,hero,suspicious
+Your attempt was unsuccessful.,,,,,noone,

@@ -1,0 +1,5 @@
+Line,Type,Parent,Action,Subject,Talker,Emotion
+Alright. Let's do this.,,,DialogueFade,200,hero,excited
+Hmm... If this goes here... Then this should go here...,,,ChangeState,3,hero,suspicious
+Aha!,,,DialogueFade,200,hero,excited
+I hope it doesn't fall over.,,,,,hero,cringe

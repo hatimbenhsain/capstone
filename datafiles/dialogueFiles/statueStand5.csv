@@ -1,0 +1,11 @@
+Line,Type,Parent,Action,Subject,Talker,Emotion
+...,,,FadeOutQuestion,3000,hero,sad
+I wanted to save my question to ask about my fate but...,,,,,hero,sad
+I'm not going anywhere if I don't help the priestess.,,,,,hero,sad
+And if she refuses to talk to me... There's nothing else I can do.,,,,,hero,pensive
+So.,,,,,hero,neutral
+How do I do this...?,,,,,hero,cringe
+"Goddess? Are you, uh, listening?",,,,,hero,thinking
+Wait - did that count as a question?,,,,,hero,shocked
+"Um, sorry, I take that back! Uh...",,,ShakeText,,hero,shocked
+Wh...What's going on?!,,,ChangeState,5,hero,shocked

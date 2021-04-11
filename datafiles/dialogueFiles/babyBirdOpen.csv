@@ -1,5 +1,5 @@
 Line,Type,Parent,Action,Subject,Talker,Emotion
 "Glistening candy fills the statue's beak, as if untouched by time.",,,,,noone,
-This has to be it!,,,,,hero,excited
+That's... it.,,,,,hero,shocked
 I should show this to the priestess.,,,,,hero,excited
 You aquire some of the candy.,,,ChangeState,4,noone,

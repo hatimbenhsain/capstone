@@ -244,6 +244,9 @@ switch(state){
 			}
 		}
 		break;
+	case 32:
+		//candy
+		break;
 }
 
 prevState=state;

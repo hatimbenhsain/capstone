@@ -21,3 +21,7 @@ function ShakeText(){
 		shake=true;	
 	}
 }
+
+function DialogueFade(t){
+	
+}

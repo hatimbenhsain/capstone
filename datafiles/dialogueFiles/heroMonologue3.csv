@@ -1,0 +1,5 @@
+Line,Type,Parent,Action,Subject,Talker,Emotion
+Wait a minute.,,,,,hero,suspicious
+"If I tell the priestess, she'll get angry at me for bringing light to the cave.",,,,,hero,confused
+"Besides, I don't wanna tell her without knowing for sure if the person actually went through with it.",,,,,hero,pensive
+Hmm... Can I find another way to verify that the children did run away?,,,,,hero,thinking

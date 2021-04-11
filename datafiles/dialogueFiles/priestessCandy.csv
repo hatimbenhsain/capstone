@@ -1,0 +1,36 @@
+Line,Type,Parent,Action,Subject,Talker,Emotion
+Priestess...,,,,,hero,neutral
+Do you recognize this?,,,,,hero,neutral
+Of course I do.,,,,,priestess,neutral
+This is the candy we made for the children.,,,,,priestess,pensive
+Do you know where I found it?,,,,,hero,thinking
+In... one of the statues?,,,,,priestess,shocked
+I'm surprised it still seems decent.,,,FadeOutMusic,3000,priestess,shocked
+Yes. I pried one of them open and the food was... untouched.,,,,,hero,pensive
+Do you know what that means?,,,,,hero,thinking
+....,,,,,priestess,shocked
+"You said that you didn't see the children that morning, right?",,,,,hero,thinking
+"If the candy was still there, it means that they had ran away!",,,,,hero,happy
+But... this is just candy. It doesn't mean anything...,,,,,priestess,shocked
+Maybe they just... didn't eat from that statue. Or they forgot to.,,,,,priestess,shocked
+Do you remember the diary page I showed you earlier?,,,,,hero,neutral
+Yes..?,,,,,priestess,shocked
+"It was that priest! They knew that the humans were coming, so they took the children away!",,,,,hero,happy
+Those are... merely conjectures. Nothing from what you read implied that they would do this...,,,,,priestess,shocked
+I...,,,SwitchBgm,,hero,confused
+"I lit a lantern in the cave, and I found something they wrote.",,,,,hero,confused
+They wrote that they were going to leave with the kids at dawn.,,,Shake,100,hero,pensive
+You did what?!,,,Shake,100,priestess,angry
+I specifically told you NOT to do that!,,,,,priestess,angry
+But... but think about what it means! Your people are still probably out there! ,,,,,hero,shocked
+Doesn't it bring you.. comfort?,,,,,hero,confused
+Comfort?,,,Shake,100,priestess,angry
+Comfort that one of our own betrayed us and left us all to die?,,,,,priestess,angry
+"They... they said that if they told the rest of you, you would have -",,,Shake,100,hero,confused
+They said? What do you know about what they did or didn't say? You never even met them.,,,,,priestess,angry
+"Of course not, but -",,,,,hero,angry
+No. This is it. I will not entertain your... foolishness any longer.,,,ChangeState,32,priestess,pensive
+"You're the one who should move on, human.",,,,,priestess,neutral
+Wait!!,,,,,hero,shocked
+....,,,,,hero,sad
+Damn it.,,,,,hero,sad

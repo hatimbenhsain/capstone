@@ -60,8 +60,9 @@ if(!window_has_focus()){
 }
 
 
-if(pos>30){
+if(pos>30 || keyboard_check_pressed(obj_tuning.interactButton) || keyboard_check_pressed(vk_space) || keyboard_check_pressed(vk_enter)){
 	room_goto(room_start);	
+	audio_stop_all();
 }
 
 
