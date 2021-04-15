@@ -14,7 +14,7 @@ panel2=false;
 
 bgMusic=b;
 
-prophecy=["Before humans lived under the tyranny of gods, was Humanity's first great enemy: the Rot.",
+prophecy=["Before humans lived under the tyranny of gods, they faced their first great enemy: the Rot.",
 "A brave hero with a sword sealed the evil, but not before a long battle where countless lives were lost.",
 "It is foretold that one day, the Rot is to return. Then, a new hero shall rise to face it.",
 "And this hero... could be you!"]

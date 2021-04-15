@@ -24,4 +24,4 @@ angrySprite=sprite_goh_angry;
 neutralSprite=sprite_goh_neutral;
 shockedSprite=sprite_goh_shocked;
 sereneSprite=sprite_goh_serene;
-
+pensiveSprite=sprite_goh_pensive
