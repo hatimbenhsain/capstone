@@ -280,30 +280,32 @@ function LoadHeads(headMap){
 
 function standardLoad(map){
 	var obj=map[?"obj"];
-	with(instance_create_layer(0,0,layer,asset_get_index(obj))){
-		x=map[?"x"];
-		y=map[?"y"];
-		sprite_index=asset_get_index(map[?"sprite_index"]);
-		if(object_is_ancestor(asset_get_index(obj),obj_collidable)){
-			dir=map[?"dir"];
-			state=map[?"state"];
-		}else if(obj=="obj_inventory"){
-			var objList=map[?"objList"];
-			for(var i=0;i<ds_list_size(objList);i++){
-				addItem(instance_create_layer(0,0,layer,asset_get_index(objList[|i])))
+	if(obj!=undefined && asset_get_index(obj)>-1){
+		with(instance_create_layer(0,0,layer,asset_get_index(obj))){
+			x=map[?"x"];
+			y=map[?"y"];
+			sprite_index=asset_get_index(map[?"sprite_index"]);
+			if(object_is_ancestor(asset_get_index(obj),obj_collidable)){
+				dir=map[?"dir"];
+				state=map[?"state"];
+			}else if(obj=="obj_inventory"){
+				var objList=map[?"objList"];
+				for(var i=0;i<ds_list_size(objList);i++){
+					addItem(instance_create_layer(0,0,layer,asset_get_index(objList[|i])))
+				}
 			}
-		}
-		if(object_is_ancestor(asset_get_index(obj),obj_interactable)){
-			for(var i=0;i<=11;i++){
-				alarm[i]=map[?"alarms"][|i];
-			}
-			heads=LoadHeads(map[?"heads"]);
-			//show_debug_message("the heads "+name);
+			if(object_is_ancestor(asset_get_index(obj),obj_interactable)){
+				for(var i=0;i<=11;i++){
+					alarm[i]=map[?"alarms"][|i];
+				}
+				heads=LoadHeads(map[?"heads"]);
+				//show_debug_message("the heads "+name);
 			
-			if(map[?"initialHead"]!=undefined && map[?"initialHead"]!=""){
-				initialHead=map[?"initialHead"];
+				if(map[?"initialHead"]!=undefined && map[?"initialHead"]!=""){
+					initialHead=map[?"initialHead"];
+				}
+				//show_debug_message(map[?"initialHead"]);
 			}
-			//show_debug_message(map[?"initialHead"]);
 		}
 	}
 }

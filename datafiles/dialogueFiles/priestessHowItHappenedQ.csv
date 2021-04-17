@@ -1,6 +1,6 @@
 Line,Type,Parent,Action,Subject,Talker,Emotion
 How it happened.,a,,,,,
-So.,,2,,,hero,sad
+So.,,2,SwitchBgm,audio_despairBgm,hero,sad
 Do you wanna -,,,,,hero,sad
 It was in the morning. ,,,,,priestess,neutral
 I was in the kitchen. This was after we put the food in the statues.,,,,,priestess,neutral
@@ -41,4 +41,4 @@ So please. Just drop it.,,,,,priestess,neutral
 ...,,,,,hero,suspicious
 I know this it's difficult to talk about but -,,,,,hero,suspicious
 No.,,,,,priestess,neutral
-...Alright.,,,,,hero,suspicious
+...Alright.,,,SwitchBgm,audio_investigationBgm,hero,suspicious

@@ -10,7 +10,7 @@ And the thing you stumbled upon must've been the brazier.,,,,,priestess,neutral
 Ah! How do I light it up?,,,,,hero,happy
 You do not.,,,,,priestess,neutral
 The brazier's purpose is symbolic. It is unlit and will remain that way...,,,,,priestess,neutral
-...Because the confessions are for no one but the goddess's eye to see.,,,Shake,200,priestess,pensive
+...Because the confessions are for no one but the goddess's eye to see.,,,,,priestess,pensive
 To bring light inside the cave would be extremely disrespectful.,,,,,priestess,angry
 But what if...,,,Shake,400,hero,thinking
 Extremely. Disrespectful.,,,,,priestess,neutral

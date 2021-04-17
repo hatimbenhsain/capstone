@@ -10,13 +10,15 @@ The tree only shows itself in its true form to those who have proven their devot
 "Otherwise, it appears merely as another tree.",,,,,priestess,pensive
 I see. So... did the other trees always look like this?,,,,,hero,thinking
 "No. Those, the humans burned.",,,,,priestess,neutral
-"But the spell works so that the tree's appearance blends with its surroundings. So before, it looked like a normal forest tree.",,,,,priestess,neutral
-"Thankfully it's still somewhat intact. It doesn't burn as easily as any other tree, and the humans couldn't have known better.",,,,,priestess,pensive
+But the spell works so that the tree's appearance blends with its surroundings. ,,,,,priestess,neutral
+"Which means that before, it looked like a normal forest tree.",,,,,priestess,neutral
+Thankfully it's still mostly intact.,,,,,priestess,pensive
+"It doesn't burn as easily as any other tree, and the humans couldn't have known better.",,,,,priestess,neutral
 Okay... Which one is it then?,,,,,hero,thinking
 Well I am... not sure.,,,FadeOutMusic,3000,priestess,neutral
 "I wasn't tasked with collecting the fruit, so I never had to prove myself to the tree.",,,,,priestess,neutral
-But aren't you devoted to your goddess?,,,,,hero,thinking
-Of course I am!,,,Shake,200,priestess,angry
+But aren't you devoted to your goddess?,,,Shake,50,hero,thinking
+Of course I am!,,,,,priestess,angry
 It's... more complicated than that.,,,,,priestess,neutral
 ...Care to elaborate?,,,,,hero,shocked
 No. My faith is not for you to question.,,,,,priestess,angry

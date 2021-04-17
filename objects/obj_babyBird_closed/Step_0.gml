@@ -8,9 +8,12 @@ switch(state){
 	case -1:
 		break;
 	case 0:
-		addInteractable(obj_knife);
+		AddInteractable(obj_knife);
 		ChangeInitHead("babyBirdKnifeless");
 		state=1;
+		break;
+	case 1:
+		if(ds_map_empty(interactableObjects)) AddInteractable(obj_knife);
 		break;
 	case 2:
 		sprite_index=sprite_babyBird_open;

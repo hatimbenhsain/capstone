@@ -122,6 +122,25 @@ switch(state){
 		
 		break;
 	case 10:
+		if(ds_map_size(interactableObjects)<3){
+			AddInteractable(obj_page1);
+			AddInteractable(obj_page11);
+			AddInteractable(obj_page2);
+			AddInteractable(obj_page3);
+			AddInteractable(obj_toy);
+			AddInteractable(obj_emptyLantern);
+			AddInteractable(obj_glowingLantern);
+			AddInteractable(obj_fruit);
+			AddInteractableByName(obj_statueArms,"priestessStatue Piece");
+			AddInteractableByName(obj_statueHooves,"priestessStatue Piece");
+			AddInteractableByName(obj_statueHead,"priestessStatue Piece");
+			AddInteractableByName(obj_statueHands,"priestessStatue Piece");
+			AddInteractableByName(obj_statueBody,"priestessStatue Piece");
+			AddInteractable(obj_knife);
+			AddInteractable(obj_birdStatueFood);
+			AddInteractable(obj_pendant);	
+		}
+		
 		ChangeInitHead("priestessQuestions");
 		with(obj_gate){
 			if(state<3)	state=3;
@@ -195,6 +214,7 @@ switch(state){
 		//how it happened
 		var q=AddAnswer(GetHead(initialHead),"What do you want to learn about?","priestessHowItHappenedQ.csv");
 		state=prevState;
+		SwitchBgm(audio_investigationBgm);
 		break;
 	case 20:
 		//after tree discussion
@@ -223,18 +243,28 @@ switch(state){
 		state=prevState;
 		break;
 	case 30:
-		if(alarm[5]==-1){
+		if(obj_dialogueManager.inDialogue){
+			alarm[5]+=1;	
+		}else if(alarm[5]==-1){
 			startDialogue("priestessTired");
 			state=31;
 			with(obj_priestessRoomManager){
 				alarm[1]=room_speed*2;
 			}
+			with(obj_hero){
+				state="grounded";	
+			}
+			with(obj_brasier){
+				if(state<2) state=2;	
+			}
 		}
 		break;
 	case 31:
-		
 		with(obj_gate){
-			if(state<3)	state=3;
+			if(state<3)	state=6;
+		}
+		with(obj_brasier){
+				if(state<2) state=2;	
 		}
 		for(var i=0;i<instance_number(obj_blackFog1);i++){
 			var fog=instance_find(obj_blackFog1,i);
@@ -261,7 +291,7 @@ switch(state){
 			}
 		}
 		with(obj_soundManager){
-			if(bgMusic==audio_manabgm && nextBgm==bgMusic){
+			if((bgMusic==audio_manabgm || bgMusic=audio_investigationBgm)&& nextBgm==bgMusic){
 				SwitchBgm(audio_tensionBgm);
 			}
 		}

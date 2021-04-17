@@ -13,6 +13,12 @@ function ChangeInitHead(name){
 	ChangeHead(name);
 }
 
+function ChangeInitHeadD(name){
+	with(interlocutor){
+		ChangeInitHead(name);
+	}
+}
+
 function useItem(obj){
 	//show_debug_message(object_get_name(object_index));
 	var inst=instance_create_depth(x,y,depth,obj);
@@ -25,13 +31,18 @@ function useItem(obj){
 	}else{
 		if(file_exists("dialogueFiles/"+name+"Confusion"+".csv")) head=name+"Confusion";	
 	}
+	with(inst){
+		instance_destroy(self);	
+	}
 	obj_inventory.lockedObject=-1;
 }
 
 function startDialogue(dialogueName){
-	var dialogue=GetHead(dialogueName);
-	obj_dialogueManager.inDialogue=true;
-	obj_dialogueManager.head=dialogue;
-	obj_dialogueManager.currentMessage=dialogue;
-	obj_dialogueManager.interlocutor="";
+	with(obj_hero){
+		var dialogue=GetHead(dialogueName);
+		obj_dialogueManager.inDialogue=true;
+		obj_dialogueManager.head=dialogue;
+		obj_dialogueManager.currentMessage=dialogue;
+		obj_dialogueManager.interlocutor=self;
+	}
 }

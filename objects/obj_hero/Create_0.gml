@@ -51,6 +51,7 @@ rightStep=true;
 timeToGetUp=0.5;
 
 heads=ds_map_create();
+initialHead="";
 
 sceneManager=obj_lilypadManager;
 

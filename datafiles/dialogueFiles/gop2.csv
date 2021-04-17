@@ -5,13 +5,17 @@ No...,a,2,,,,
 Not really.,,4,,,hero,sad
 Then why are you still here?,,,,,gop,neutral
 I did!,,3,,,hero,happy
-Good. Do you remember anything now?,,,,,gop,neutral
-Uhm.. I'm not sure.,,,,,hero,cringe
-That's fine. Here's something that might help:,,,,,gop,neutral
-"When you're done talking to me, open your inventory with the button I.",,,,,gop,neutral
+Can you show it to me?,,,,,gop,neutral
+Yeah!,,,,,hero,happy
+...,,,,,gop,neutral
+Do you know how to use items?,q,,,,gop,neutral
+Of course I do!,a,11,,,hero,cringe
+Not really...,a,11,,,hero,cringe
+Then what are you waiting for?,,12,,,gop,neutral
+"It's simple. When we're done talking, open your inventory with the button I.",,13,,,gop,neutral
 "Then, select the object with the arrow keys and Z, and close your inventory with I.",,,,,gop,neutral
 "With the object still selected, talk to me again to show it to me.",,,,,gop,neutral
 Do you need me to explain again?,q,,,,gop,neutral
-Yes.,a,14,LoopBack,11,hero,neutral
-No.,a,14,,,hero,neutral
-Good.,,16,,,gop,neutral
+Yes.,a,18,LoopBack,15,hero,neutral
+No.,a,18,,,,
+Good.,,20,,,gop,neutral

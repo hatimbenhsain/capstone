@@ -4,4 +4,4 @@ Line,Type,Parent,Action,Subject,Talker,Emotion
 Very well. I'll go back to looking for it.,,,,,noone,
 For my watch?,,,,,hero,shocked
 "No, the time!",,,,,noone,
-...Okay.,,,,,hero,cringe
+...Okay.,,,ChangeInitHeadD,shade42,hero,cringe

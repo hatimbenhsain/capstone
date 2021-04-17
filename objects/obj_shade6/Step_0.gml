@@ -4,14 +4,14 @@
 // Inherit the parent event
 event_inherited();
 
-if(obj_brasier.state==4 && (initHead=="cave1" || initHead=="caveInit")){
-	ChangeInitHead("caveSecret7");	
-}
-
 switch(state){
 	case 2:
-		with(obj_babyBird_closed){
-			if(state==-1) state=0;
+		image_alpha-=0.05;
+		if(image_alpha<0 && !obj_dialogueManager.inDialogue){
+			state=3;	
 		}
+		break;
+	case 3:
+		instance_deactivate_object(self);
 		break;
 }

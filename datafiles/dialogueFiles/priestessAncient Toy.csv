@@ -1,10 +1,10 @@
 Line,Type,Parent,Action,Subject,Talker,Emotion
 I found this toy over there.,,,,,hero,thinking
-What's it doing here?,,,,,hero,neutral
+What's it doing here?,,,FadeOutMusic,3000,hero,neutral
 ...,,,,,priestess,sad
 Are... Are you ok? I'm sorry! I didn't mean to overstep!,,,,,hero,shocked
 Is this some sort of representation of the goddess? I didn't mean to call it a toy!,,,,,hero,shocked
 "No, you're right.",,,,,priestess,sad
 It's a toy. The children played with it.,,,,,priestess,neutral
-The... children?,,,,,hero,shocked
+The... children?,,,FadeInMusic,3000,hero,shocked
 Yes. The children.,,,ChangeState,13,priestess,pensive

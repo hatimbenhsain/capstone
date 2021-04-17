@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "sprite_shade5",
-    "path": "sprites/sprite_shade5/sprite_shade5.yy",
+    "name": "sprite_shade6",
+    "path": "sprites/sprite_shade6/sprite_shade6.yy",
   },
   "solid": false,
   "visible": true,

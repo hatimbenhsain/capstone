@@ -4,4 +4,4 @@ Line,Type,Parent,Action,Subject,Talker,Emotion
 ...?,,,,,hero,shocked
 That's how dumb you sound.,,,Shake,50,noone,
 Now get out of my face. Can't you see I'm busy?!,,,,,noone,
-My bad.,,,,,hero,sad
+My bad.,,,ChangeInitHeadD,shade32,hero,sad

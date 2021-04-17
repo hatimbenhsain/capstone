@@ -2,8 +2,8 @@ if(obj_hero.state==-1){
 	obj_hero.state="falling";
 	obj_gui.blinkingText="PRESS Z TO LAND";
 	show_debug_message("start code");
-	obj_hero.startingX=672;
-	obj_hero.startingY=672;
+	obj_hero.startingX=1189;
+	obj_hero.startingY=875;
 	obj_gui.state="opening";
 }
 obj_hero.sceneManager=obj_lilypadManager;

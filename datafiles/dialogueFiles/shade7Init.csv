@@ -7,4 +7,4 @@ Your harsh words irritate the creature. It recoils from you.,,,,,noone,
 "Oh, sorry. I didn't mean to be rude. I just wanted to ask...",,,,,hero,shocked
 Do you know where we are? Or the way out of here?,,,,,hero,thinking
 "The creature shrugs. Even if it could help you, it wouldn't.",,,,,noone,
-....Alright then.,,,,,hero,suspicious
+....Alright then.,,,ChangeInitHeadD,shade72,hero,suspicious

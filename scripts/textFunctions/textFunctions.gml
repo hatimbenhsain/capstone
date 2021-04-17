@@ -83,7 +83,9 @@ global.Line=function(_message, _parent, _type, _action, _subject, _talker, _emot
 	greyed=false;
 	subject=_subject;
 	if(subject!=""){
-		if(string_digits(subject)!=subject){
+		if(action!=undefined && action=="ChangeInitHead"){
+			subject=subject;
+		}else if(string_digits(subject)!=subject){
 			if(asset_get_index(subject)!=-1) subject=asset_get_index(subject); 
 		}
 		else subject=real(subject);

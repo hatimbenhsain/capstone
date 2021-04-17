@@ -26,8 +26,8 @@ var y2=camera_get_view_y(view_camera[view_current])
 draw_rectangle(x2,y2,x2+camera_get_view_width(view_camera[view_current])*2,y2+camera_get_view_height(view_camera[view_current])*2,false)
 
 draw_sprite(ditherBG,0,dx,dy); 
-draw_sprite_ext(ditherBG,0,dx,dy+sprite_get_height(ditherBG)*2,1,-1,0,c_white,1); 
-draw_sprite_ext(ditherBG,0,dx,dy+sprite_get_height(ditherBG)*2,1,1,0,c_white,1); 
+draw_sprite_ext(ditherBG,0,dx,dy+sprite_get_height(ditherBG)*2,1,-1,0,c_white,1-tileAlpha); 
+draw_sprite_ext(ditherBG,0,dx,dy+sprite_get_height(ditherBG)*2,1,1,0,c_white,1-tileAlpha); 
 
 draw_set_alpha(1);
 draw_set_color(c_white);

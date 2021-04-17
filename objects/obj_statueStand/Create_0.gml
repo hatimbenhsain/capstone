@@ -6,5 +6,5 @@ event_inherited();
 
 ChangeInitHead("statueStandInit");
 
-state=3;
+state=0;
 

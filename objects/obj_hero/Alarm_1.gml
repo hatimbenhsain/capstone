@@ -48,6 +48,9 @@ switch(dir){
 		break;
 }
 
+if(room=room_priestess){
+	fs.depth=801;	
+}
 
 alarm[1]=(1/sprite_get_speed(sprite_index))*room_speed;
 rightStep=!rightStep

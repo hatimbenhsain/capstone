@@ -4,49 +4,18 @@ Uh...,,,,,hero,confused
 Have we met before?,,,,,hero,confused
 Not that I recall.,,,,,gop,neutral
 ...,,,,,hero,confused
-...,,,,,gop,neutral
 How can I help you?,,,,,gop,neutral
-"Ah, sorry. I'm not... sure.",,,,,hero,shocked
-You're not?,,,,,gop,neutral
-I mean... if you could tell me where I am... or why I'm here... that would be great.,,,,,hero,cringe
-What is the last thing you remember?,,,,,gop,neutral
-Uh...,q,,,,hero,confused
-A flash.,a,13,,,hero,confused
-Falling.,a,13,,,hero,
-A button.,a,13,,,hero,
-And that's it?,,14,,,gop,neutral
-"Yeah... And then I was here, and I found you.",,,,,hero,thinking
-Do you know who you are?,,,,,gop,neutral
-Sorry?,,,,,hero,shocked
-Who are you?,,,,,gop,neutral
-That's... a good question.,,,,,hero,cringe
-*sigh*  You're one of those.,,,,,gop,neutral
-One of what?,,,,,hero,shocked
-Forget it. I believe I saw something that belongs to you further behind me.,,,,,gop,neutral
-"If I were you, I'd go look for it. Once you find it, press Z to collect it.",,,,,gop,neutral
-"Then come back here. Hopefully, it will have jogged your memory.",,,,,gop,neutral
-Uh... sure.,,,,,hero,shocked
-And that's it?,,15,,,gop,neutral
-"Yeah... And then I was here, and I found you.",,,,,hero,thinking
-Do you know who you are?,,,,,gop,neutral
-Sorry?,,,,,hero,shocked
-Who are you?,,,,,gop,neutral
-That's... a good question.,,,,,hero,cringe
-*sigh*  You're one of those.,,,,,gop,neutral
-One of what?,,,,,hero,shocked
-Forget it. I believe I saw something that belongs to you north west of here.,,,,,gop,neutral
-"If I were you, I'd go look for it. Once you find it, press Z to collect it.",,,,,gop,neutral
-"Then come back here. Hopefully, it will have jogged your memory.",,,,,gop,neutral
-Uh... sure.,,,,,hero,shocked
-And that's it?,,16,,,gop,neutral
-"Yeah... And then I was here, and I found you.",,,,,hero,thinking
-Do you know who you are?,,,,,gop,neutral
-Sorry?,,,,,hero,shocked
-Who are you?,,,,,gop,neutral
-That's... a good question.,,,,,hero,cringe
-*sigh*  You're one of those.,,,,,gop,neutral
-One of what?,,,,,hero,shocked
-Forget it. I believe I saw something that belongs to you further behind me.,,,,,gop,neutral
-"If I were you, I'd go look for it. Once you find it, press Z to collect it.",,,,,gop,neutral
-"Then come back here. Hopefully, it will have jogged your memory.",,,,,gop,neutral
-Uh... sure.,,,,,hero,shocked
+"Hi, I'm... not sure how I got here. I woke up here and... ",,,,,hero,confused
+My memory is a bit fuzzy. Are you a hallucination?,,,,,hero,thinking
+A hallucination?,,,,,gop,neutral
+"You know, like, things that your mind makes you see, but they're not real.",,,,,hero,cringe
+Do I seem fake to you?,,,,,gop,neutral
+"No, but... Uh. Nevermind. Can you please tell me where we are?",,,,,hero,confused
+"And also, have you seen my sword? I think I lost it when I... got here.",,,,,hero,confused
+I sense there is something that belongs to you further south of here.,,,,,gop,neutral
+Oh! Really?,,,,,hero,shocked
+"Thanks, I'll go get it!",,,,,hero,happy
+"Once you find it, press Z to interact and collect it.",,,,,gop,neutral
+You can also use Z to talk to other creatures.,,,,,gop,neutral
+"Uh, yeah, I knew that...",,,,,hero,cringe
+Just making sure.,,,,,gop,neutral

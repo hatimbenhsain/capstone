@@ -19,6 +19,7 @@ switch(state){
 		state=2;
 		break;
 	case 2:
+		if(ds_map_empty(interactableObjects)) state=1;
 		break;
 	case 3:
 		with(obj_inventory) deleteInstanceOf(obj_pendant);

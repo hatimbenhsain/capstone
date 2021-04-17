@@ -1,7 +1,7 @@
 Line,Type,Parent,Action,Subject,Talker,Emotion
 The children.,a,,,,,
 You... mentioned children earlier.,,2,,,hero,confused
-I did.,,,,,priestess,neutral
+I did.,,,SwitchBgm,audio_despairBgm,priestess,neutral
 "As I mentioned earlier, our goddess is also the goddess of the outcasts.",,,,,priestess,neutral
 "It was therefore our duty to take in any... runaway, abandoned, or orphaned child who wandered here.",,,,,priestess,pensive
 "The same happened to you, right?",,,,,hero,thinking
@@ -33,11 +33,11 @@ Oh! I was wondering why some statues were smaller than others.,,,,,hero,shocked
 "Yes. We made them specifically for the kids, and we hid candy in them...",,,,,priestess,happy
 ...Along with the normal offerings every morning.,,,,,priestess,happy
 "The children stopped getting hurt, and the wanderers had their food back. It worked well.",,,,,priestess,serene
-That's pretty smart.,,,FadeOutMusic,3000,hero,happy
+That's pretty smart.,,,,,hero,happy
 ....,,,,,priestess,pensive
 It is... my greatest regret that I wasn't able to defend the children.,,,,,priestess,thinking
 Did you...,,,,,hero,sad
-"I didn't even see them. When the humans came, I was one of the first to go.",,,,,priestess,sad
+"I didn't even see them. When the humans came, I was one of the first to go.",,,FadeOutMusic,3000,priestess,sad
 ....,,,,,priestess,sad
 Where were you exactly? When it happened?,,,,,hero,sad
 ....,,,,,priestess,shocked

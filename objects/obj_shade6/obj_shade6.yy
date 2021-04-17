@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "sprite_shade6",
-    "path": "sprites/sprite_shade6/sprite_shade6.yy",
+    "name": "sprite_shade5",
+    "path": "sprites/sprite_shade5/sprite_shade5.yy",
   },
   "solid": false,
   "visible": true,
@@ -25,6 +25,7 @@
   "physicsShapePoints": [],
   "eventList": [
     {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"parent":{"name":"obj_shade6","path":"objects/obj_shade6/obj_shade6.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,"parent":{"name":"obj_shade6","path":"objects/obj_shade6/obj_shade6.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
   "properties": [],
   "overriddenProperties": [],

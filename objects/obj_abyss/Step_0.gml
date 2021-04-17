@@ -14,7 +14,7 @@ switch(state){
 	case 1:
 		image_alpha=1;
 		show_debug_message(distance_to_point(obj_hero.x,obj_hero.bbox_bottom));
-		if(point_distance(obj_hero.x,obj_hero.bbox_bottom,x,y)<5){
+		if(point_distance(obj_hero.x,obj_hero.bbox_bottom,x,y)<15){
 			with(obj_hero){
 				//instance_create_depth(x,y,depth-2,obj_sludge);
 				state="acting";

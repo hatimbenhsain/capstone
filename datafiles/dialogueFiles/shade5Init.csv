@@ -4,4 +4,4 @@ Line,Type,Parent,Action,Subject,Talker,Emotion
 Do you... know where we are?,,,,,hero,cringe
 Oh.,,,,,noone,
 I'm not taking questions if you're not ordering.,,,,,noone,
-Ah... maybe later then.,,,,,hero,neutral
+Ah... maybe later then.,,,ChangeInitHeadD,shade52,hero,neutral
