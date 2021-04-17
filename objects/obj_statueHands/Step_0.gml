@@ -5,9 +5,11 @@
 event_inherited();
 
 switch(state){
+	case -1:
+		sprite_index=noone;
 	case 0:
 		sprite_index=sprite_ow_statueHand;
-		show_debug_message("hands active");
+		//show_debug_message("hands active");
 		originalY=y;
 		var ty=0;
 		var d=0;

@@ -13,3 +13,5 @@ with(obj_soundManager){
 	audio_sound_gain(bgMusic,bgGain*masterGain,0);
 	
 }
+
+global.roomStartTime=current_time;

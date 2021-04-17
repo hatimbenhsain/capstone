@@ -1,15 +1,7 @@
 // Script assets have changed for v2.3.0 see
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function addItem(item){
-	show_debug_message(item);
-	with(item){
-		//show_debug_message(object_index);
-		ds_list_add(obj_inventory.items,id);
-		//obj_hero.frozen=false;
-
-		instance_deactivate_object(id);
-	}
-	obj_hero.pickedUp=true;
+	AddItemSilent(item);
 	with(obj_soundManager){
 		audio_sound_gain(bgMusic,0.05*bgGain*masterGain,50);
 		playSFX(sound_itemPickup4,1);
@@ -18,29 +10,35 @@ function addItem(item){
 }
 
 function AddItem(item){
-	show_debug_message(item.name);
+	AddItemSilent(item);
+	if(current_time-global.roomStartTime>1000){
+		with(obj_soundManager){
+			audio_sound_gain(bgMusic,0.05*bgGain*masterGain,50);
+			playSFX(sound_itemPickup4,1);
+			alarm[1]=audio_sound_length(sound_itemPickup4)*room_speed-room_speed*0.5;
+		}
+	}
+		
+}
+
+function AddItemSilent(item){
+	//show_debug_message(item.name);
 	with(item){
 		//show_debug_message(object_index);
 		ds_list_add(obj_inventory.items,id);
 		//obj_hero.frozen=false;
 	
 		instance_deactivate_object(id);
-		
+		break;
 	}
-	obj_hero.pickedUp=true;
-	with(obj_soundManager){
-		audio_sound_gain(bgMusic,0.05*bgGain*masterGain,50);
-		playSFX(sound_itemPickup4,1);
-		alarm[1]=audio_sound_length(sound_itemPickup4)*room_speed-room_speed*0.5;
-	}
-		
+	obj_hero.pickedUp=true;		
 }
 
 function combineObjects(){
 	show_debug_message(object_get_name(items[|lockedObject]));
 	if(ds_map_exists(items[|lockedObject].combinable,items[|lockedObject2].object_index)){
 		var inst=instance_create_depth(x,y,depth,ds_map_find_value(items[|lockedObject].combinable,items[|lockedObject2].object_index));
-		addItem(inst);
+		AddItemSilent(inst);
 		var itm1=min(lockedObject,lockedObject2);
 		var itm2=max(lockedObject,lockedObject2);
 		deleteIndex(itm2);

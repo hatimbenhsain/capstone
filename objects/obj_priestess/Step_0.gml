@@ -1,6 +1,11 @@
 /// @description Insert description here
 // You can write your code in this editor
 
+//var treeQ=conditions[0];
+//var howItHappenedQ=conditions[1];
+//var caveQ=conditions[2];
+//var diaryDiscussed=conditions[3];
+
 //if(state=="0"){
 //	if(alarm[11]==-1){
 //		alarm[11]=room_speed*16;
@@ -122,24 +127,26 @@ switch(state){
 		
 		break;
 	case 10:
-		if(ds_map_size(interactableObjects)<3){
-			AddInteractable(obj_page1);
-			AddInteractable(obj_page11);
-			AddInteractable(obj_page2);
-			AddInteractable(obj_page3);
-			AddInteractable(obj_toy);
-			AddInteractable(obj_emptyLantern);
-			AddInteractable(obj_glowingLantern);
-			AddInteractable(obj_fruit);
-			AddInteractableByName(obj_statueArms,"priestessStatue Piece");
-			AddInteractableByName(obj_statueHooves,"priestessStatue Piece");
-			AddInteractableByName(obj_statueHead,"priestessStatue Piece");
-			AddInteractableByName(obj_statueHands,"priestessStatue Piece");
-			AddInteractableByName(obj_statueBody,"priestessStatue Piece");
-			AddInteractable(obj_knife);
-			AddInteractable(obj_birdStatueFood);
-			AddInteractable(obj_pendant);	
-		}
+		//if(ds_map_size(interactableObjects)<3){
+		//	AddInteractable(obj_page1);
+		//	AddInteractable(obj_page11);
+		//	AddInteractable(obj_page2);
+		//	AddInteractable(obj_page3);
+		//	AddInteractable(obj_toy);
+		//	AddInteractable(obj_emptyLantern);
+		//	AddInteractable(obj_glowingLantern);
+		//	AddInteractable(obj_fruit);
+		//	AddInteractableByName(obj_statueArms,"priestessStatue Piece");
+		//	AddInteractableByName(obj_statueHooves,"priestessStatue Piece");
+		//	AddInteractableByName(obj_statueHead,"priestessStatue Piece");
+		//	AddInteractableByName(obj_statueHands,"priestessStatue Piece");
+		//	AddInteractableByName(obj_statueBody,"priestessStatue Piece");
+		//	AddInteractable(obj_knife);
+		//	AddInteractable(obj_birdStatueFood);
+		//	AddInteractable(obj_pendant);	
+		//}
+		
+		//will bring back if save code doesn't work
 		
 		ChangeInitHead("priestessQuestions");
 		with(obj_gate){
@@ -172,7 +179,7 @@ switch(state){
 			}
 		}
 		
-		if(howItHappenedQ && caveQ && treeQ){
+		if(howItHappenedQ && caveQ && treeQ && diaryDiscussed){
 			state=30;
 			alarm[5]=room_speed;
 			with(obj_hero){
@@ -508,3 +515,11 @@ switch(state){
 }
 
 prevState=state;
+
+if(state>=9){
+	with(obj_blackFog1){
+		if(vy==0 && vx==0 && (fogLayer==1 || fogLayer==2)){
+			instance_deactivate_object(self);	
+		}
+	}
+}

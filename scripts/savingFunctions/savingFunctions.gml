@@ -42,6 +42,13 @@ function Save(){
 		}
 		ds_map_add_list(map,"alarms",alarms);
 		SaveHeads(map);
+		var io=ds_map_create();
+		key=ds_map_find_first(io);
+		for(var i=0;i<ds_map_size(interactableObjects);i++){
+			ds_map_add(io,key,interactableObjects[?key]);
+			key=ds_map_find_next(interactableObjects,key);
+		}
+		ds_map_add_map(map,"interactableObjects",io);
 	}
 	
 	with(obj_inventory){
@@ -99,7 +106,6 @@ function SaveHeads(map){
 		show_debug_message("the key is "+key);
 		ds_map_add_list(headsMap,key,dialoguesToAdd);
 		for(var k=0;k<ds_list_size(messagesList);k++){
-			
 			var list=ds_list_create();
 			var mess=messagesList[|k];
 			show_debug_message(mess.text);
@@ -206,7 +212,6 @@ function Load(){
 		//show_debug_message(ds_list_size(list));
 		for(var i=0;i<ds_list_size(list)-1;i++){
 			standardLoad(list[|i]);
-			
 		}
 		
 		obj_hero.pickedUp=false;
@@ -303,6 +308,14 @@ function standardLoad(map){
 			
 				if(map[?"initialHead"]!=undefined && map[?"initialHead"]!=""){
 					initialHead=map[?"initialHead"];
+				}
+				interactableObjects=ds_map_create();
+				
+				var io=map[?"interactableObjects"];
+				var key=ds_map_find_first(io);
+				for(var i=0;i<ds_map_size(io);i++){
+					ds_map_add(interactableObjects,key,io[?key]);
+					key=ds_map_find_next(io,key);
 				}
 				//show_debug_message(map[?"initialHead"]);
 			}

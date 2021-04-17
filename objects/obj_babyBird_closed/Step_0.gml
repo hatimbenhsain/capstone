@@ -19,7 +19,7 @@ switch(state){
 		sprite_index=sprite_babyBird_open;
 		ChangeInitHead("babyBirdOpen");
 		ds_map_clear(interactableObjects);
-		addItem(obj_candy);
+		AddItem(obj_candy);
 		state=3;
 		break;
 	case 4:

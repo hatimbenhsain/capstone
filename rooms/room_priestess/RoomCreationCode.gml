@@ -119,3 +119,5 @@ layer_script_begin("tileLayer_stones",LayerTileBegin);
 layer_script_end("tileLayer_stones",LayerTileEnd);
 layer_script_begin("tileLayer_dirt",LayerTileBegin);
 layer_script_end("tileLayer_dirt",LayerTileEnd);
+
+global.roomStartTime=current_time;

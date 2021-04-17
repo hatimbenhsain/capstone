@@ -17,3 +17,7 @@ if(variable_instance_exists(id,"name") && !variable_instance_exists(id,"initialH
 head=initialHead;
 interactableObjects=ds_map_create();
 lockedSprite=false;
+
+//conditions=ds_list_create();
+
+//conditions to be implemented so that i can save/load boolean conditions in a list
