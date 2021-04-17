@@ -1,0 +1,14 @@
+Line,Type,Parent,Action,Subject,Talker,Emotion
+Have you changed your mind?,,,,,noone,
+"Uhm, sure. What can I order?",,,,,hero,confused
+Three durian slices.,,,,,noone,
+Why.. three?,,,,,hero,shocked
+Because they come in three?,,,,,noone,
+"What if I just want one, or if I want four?",,,,,hero,thinking
+That's... I don't think I can help you with that.,,,,,noone,
+"Ok, maybe another time.",,,,,hero,cringe
+"You don't have any money on you, do you?",,,,,noone,
+"No, it's just that -",,,,,hero,angry
+Huh. Where IS my money?,,,,,hero,thinking
+We don't do charity. Please leave.,,,,,noone,
+Fine then.,,,,,hero,angry

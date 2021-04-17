@@ -1,0 +1,12 @@
+Line,Type,Parent,Action,Subject,Talker,Emotion
+"What is it, young one?",,,,,noone,
+Have you seen my sword? I believe I had it before... I came here.,,,,,hero,confused
+What is a sword?,,,,,noone,
+Oh. Uh. A sword is like... what heroes use to defeat monsters and stuff.,,,,,hero,thinking
+It's usually long and made of metal.,,,,,hero,neutral
+Have you seen my sword?,,,,,noone,
+"Uh, I don't think so? What does it look like?",,,,,hero,thinking
+"It is long, and it is made of metal.",,,,,noone,
+Ah. I'll keep an eye out for it.,,,,,hero,pensive
+"Be careful. An eye are a precious gift, young one.",,,,,noone,
+...Sure.,,,,,hero,cringe

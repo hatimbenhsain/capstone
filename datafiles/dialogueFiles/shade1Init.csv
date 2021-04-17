@@ -1,0 +1,6 @@
+Line,Type,Parent,Action,Subject,Talker,Emotion
+"Greetings, young one!",,,,,noone,
+H..i?,,,,,hero,shocked
+"Sorry, can you tell me where I am? I'm a little lost?",,,,,hero,thinking
+I can not!,,,,,noone,
+Oh. Ok.,,,,,hero,sad

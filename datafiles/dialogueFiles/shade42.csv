@@ -1,0 +1,11 @@
+Line,Type,Parent,Action,Subject,Talker,Emotion
+Have you seen my sword around?,,,,,hero,thinking
+Is it related to the time?,,,,,noone,
+No. It's a normal sword.,,,,,hero,suspicious
+Fascinating. Where did you get it?,,,,,noone,
+"Uh. One of the sages gave it to me this morning, so that I could fight the rot.",,,,,hero,thinking
+"To be honest though, I can barely to use it.",,,,,hero,sad
+But I'm sure the gods will guide me. When the time is right.,,,,,hero,pensive
+This is a minor setback. I just have to find it.,,,,,hero,neutral
+Do you think this sage of yours has the time?,,,,,noone,
+Not... sure. I'll ask him when I get back.,,,,,hero,pensive

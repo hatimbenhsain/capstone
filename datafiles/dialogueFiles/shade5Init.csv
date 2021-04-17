@@ -1,0 +1,7 @@
+Line,Type,Parent,Action,Subject,Talker,Emotion
+"Welcome, welcome! Please, take a seat, I'll be back in a jiffy!",,,,,noone,
+"Oh, uh, I don't think I have time to sit, but...",,,,,hero,thinking
+Do you... know where we are?,,,,,hero,cringe
+Oh.,,,,,noone,
+I'm not taking questions if you're not ordering.,,,,,noone,
+Ah... maybe later then.,,,,,hero,neutral

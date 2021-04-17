@@ -27,5 +27,6 @@ if(open){
 	obj_hero.frozen=true;
 }else if (!open && !obj_dialogueManager.inDialogue && lockedObject!=-1){
 	var scale=min(lockedItemSize/sprite_get_width(items[|lockedObject].icon),lockedItemSize/sprite_get_height(items[|lockedObject].icon));
-	draw_sprite_ext(items[|lockedObject].icon,0,lockedItemX,lockedItemY,scale,scale,0,c_white,0.8);
+	draw_sprite_ext(sprite_itemBox,0,lockedItemX,lockedItemY,1,1,0,c_white,1);
+	draw_sprite_ext(items[|lockedObject].icon,0,lockedItemX,lockedItemY,scale,scale,0,c_white,1);
 }

@@ -1,0 +1,9 @@
+Line,Type,Parent,Action,Subject,Talker,Emotion
+"Wait, you can talk?",,,,,hero,shocked
+Press SHIFT to run.,,,,,noone,
+"Yeah, yeah, I got that that. I didn't realize you could talk.",,,,,hero,happy
+Of course I can talk. Why would you think otherwise?,,,,,noone,
+"Oh, this is such a relief. Hi, I've been -",,,,,hero,happy
+^%U#,,,,,noone,
+....Alright.,,,,,hero,cringe
+And press ESC. to pause.,,,,,noone,

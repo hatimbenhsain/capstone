@@ -1,0 +1,7 @@
+Line,Type,Parent,Action,Subject,Talker,Emotion
+"Gentleman, do you have the time?",,,,,noone,
+"No, sorry. My watch broke a while ago.",,,,,hero,thinking
+Very well. I'll go back to looking for it.,,,,,noone,
+For my watch?,,,,,hero,shocked
+"No, the time!",,,,,noone,
+...Okay.,,,,,hero,cringe

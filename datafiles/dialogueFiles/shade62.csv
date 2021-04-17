@@ -1,0 +1,15 @@
+Line,Type,Parent,Action,Subject,Talker,Emotion
+"Hey, uh...",,,,,hero,cringe
+Yes?,,,,,noone,
+I didn't mean to call you a hallucination earlier.,,,,,hero,cringe
+Oh. That's alright.,,,,,noone,
+Do tell me though... What is the rot? It sounds familiar.,,,FadeOutMusic,3000,noone,
+It's like... this really old and evil entity.,,,,,hero,thinking
+"Every few centuries or so, it comes back and it destroys... everything.",,,,,hero,sad
+Oh... I think I remember now.,,,,,noone,
+My family... My son... My husband... And everyone else... They were taken by the rot...,,,,,noone,
+I'm... so sorry for your loss.,,,,,hero,sad
+Thank you. But it's alright. I think I will join them now.,,,ChangeState,2,noone,
+N-no! You won't! I can defeat it! I'm the prophesized hero!,,,,,hero,shocked
+M...Mister? Hello...?,,,,,hero,sad
+....I gotta get back.,,,FadeInMusic,3000,hero,sad
