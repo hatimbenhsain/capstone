@@ -23,5 +23,46 @@ function ShakeText(){
 }
 
 function DialogueFade(t){
-	
+	if(is_undefined(t)) t=100;
+	with(obj_dialogueManager){
+		fade=!fade;
+		//fadeRate=t*0.001/room_speed;
+		fadeRate=1000/(room_speed*t)
+	}
+}
+
+function LayerGrassBegin(){
+	if(event_type==ev_draw && event_number == 0){
+		var a;
+		with(obj_priestess){
+			a=grassAlpha;	
+		}
+		shader_set(shader_opacity);
+		_uniAlpha=shader_get_uniform(shader_opacity,"opacity");
+		shader_set_uniform_f(_uniAlpha,a);
+	}
+}
+
+function LayerGrassEnd(){
+	if (event_type == ev_draw && event_number == 0){
+		shader_reset();
+	}
+}
+
+function LayerTileBegin(){
+	if(event_type==ev_draw && event_number == 0){
+		var a;
+		with(obj_brumeManager){
+			a=tileAlpha;	
+		}
+		shader_set(shader_opacity);
+		_uniAlpha=shader_get_uniform(shader_opacity,"opacity");
+		shader_set_uniform_f(_uniAlpha,a);
+	}
+}
+
+function LayerTileEnd(){
+	if (event_type == ev_draw && event_number == 0){
+		shader_reset();
+	}
 }

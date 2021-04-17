@@ -24,7 +24,17 @@ switch(state){
 			if(image_index<1) obj_brumeManager.state=0;	
 		}
 		break;
+	case 3:
+		if(tileAlpha>0) tileAlpha-=0.005;
+		break;
 }
 
 xx+=0.1;
 if(xx>=16) xx=0;
+
+yy-=0.5;
+yy=yy%(sprite_get_height(ditherBG)*2);
+dx=camera_get_view_x(view_camera[view_current])+camera_get_view_width(view_camera[view_current])/2;
+dy=camera_get_view_y(view_camera[view_current])+yy;
+
+background_color=merge_color($6E218A,$461D61,cos(get_timer()/2500000)*0.4+0.4);

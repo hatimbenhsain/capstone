@@ -1,7 +1,10 @@
 /// @description Insert description here
 // You can write your code in this editor
-name="Statue Stand"
+name="statueStand"
 
 event_inherited();
 
+ChangeInitHead("statueStandInit");
+
+state=3;
 

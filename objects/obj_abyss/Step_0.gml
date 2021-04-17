@@ -12,6 +12,7 @@ switch(state){
 		}
 		break;
 	case 1:
+		image_alpha=1;
 		show_debug_message(distance_to_point(obj_hero.x,obj_hero.bbox_bottom));
 		if(point_distance(obj_hero.x,obj_hero.bbox_bottom,x,y)<5){
 			with(obj_hero){
@@ -20,7 +21,9 @@ switch(state){
 				dir="F";
 				sprite_index=sprite_heroIdleF;
 			}
-			startDialogue("limboDialogue5");
+			if(room=room_limbo){
+				startDialogue("limboDialogue5");
+			}
 			state++;
 		}
 		break;
@@ -35,4 +38,7 @@ switch(state){
 			FadeToBlack(3,5);
 			alarm[0]=room_speed*5;
 		}
+	case 5:
+		image_alpha+=0.01;
+		break;
 }

@@ -1,0 +1,21 @@
+Line,Type,Parent,Action,Subject,Talker,Emotion
+Goddess.,,,SwitchBgm,audio_nicholeBgm,hero,neutral
+Human.,,,,,goh,angry
+Don't you have other things to attend to?,,,,,hero,thinking
+I do. But I sense a question still lingers.,,,,,goh,pensive
+What is it?,,,,,goh,shocked
+I...,,,,,hero,sad
+"Goddess, why did you come here?",,,,,hero,neutral
+"I mean... you didn't come any of those times your followers called you, so... why me?",,,,,hero,sad
+Is it because of...,,,,,hero,confused
+My destiny?,,,,,hero,suspicious
+"I'm afraid not, my dear.",,,,,goh,pensive
+You are quite inconsequential.,,,,,goh,shocked
+Wh-,,,,,hero,shocked
+I'm joking. You merely picked my curiosity.,,,,,goh,serene
+A dead human from the villages calling me. Doesn't happen very often.,,,,,goh,pensive
+Oh...,,,,,hero,cringe
+I do have one more question...,,,ChangeState,37,hero,pensive
+The God of Passage. They said that they would bring me back to life. Did they really mean it or -,,,,,hero,confused
+...Goddess?,,,FadeOutMusic,3000,hero,shocked
+Oh. I guess it really was just one question.,,,,,hero,pensive

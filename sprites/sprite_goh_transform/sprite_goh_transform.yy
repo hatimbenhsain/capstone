@@ -99,6 +99,9 @@
     {"compositeImage":{"FrameId":{"name":"af08acd7-2697-4771-9a2c-856bec39aa1c","path":"sprites/sprite_goh_transform/sprite_goh_transform.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
         {"FrameId":{"name":"af08acd7-2697-4771-9a2c-856bec39aa1c","path":"sprites/sprite_goh_transform/sprite_goh_transform.yy",},"LayerId":{"name":"b1d982bd-f178-4a65-8136-52ad07647690","path":"sprites/sprite_goh_transform/sprite_goh_transform.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
       ],"parent":{"name":"sprite_goh_transform","path":"sprites/sprite_goh_transform/sprite_goh_transform.yy",},"resourceVersion":"1.0","name":"af08acd7-2697-4771-9a2c-856bec39aa1c","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"8467ec88-4f9e-4e83-94d9-1a9d9760634d","path":"sprites/sprite_goh_transform/sprite_goh_transform.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"8467ec88-4f9e-4e83-94d9-1a9d9760634d","path":"sprites/sprite_goh_transform/sprite_goh_transform.yy",},"LayerId":{"name":"b1d982bd-f178-4a65-8136-52ad07647690","path":"sprites/sprite_goh_transform/sprite_goh_transform.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"sprite_goh_transform","path":"sprites/sprite_goh_transform/sprite_goh_transform.yy",},"resourceVersion":"1.0","name":"8467ec88-4f9e-4e83-94d9-1a9d9760634d","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
     "spriteId": {"name":"sprite_goh_transform","path":"sprites/sprite_goh_transform/sprite_goh_transform.yy",},
@@ -108,7 +111,7 @@
     "playbackSpeedType": 0,
     "autoRecord": true,
     "volume": 1.0,
-    "length": 25.0,
+    "length": 26.0,
     "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
@@ -138,6 +141,7 @@
             {"id":"d78bce61-7844-4953-9f9d-763f1409df44","Key":22.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"4249c9d3-5247-4f25-b1f4-f7352692b45b","path":"sprites/sprite_goh_transform/sprite_goh_transform.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"7ee822bc-2a57-40ea-b22b-8ce1c2247de1","Key":23.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"929176a3-9a60-46f1-a7b1-0ae42004a7b7","path":"sprites/sprite_goh_transform/sprite_goh_transform.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"6a7b4f5b-aa09-420c-8926-399dcd9bbe1c","Key":24.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"af08acd7-2697-4771-9a2c-856bec39aa1c","path":"sprites/sprite_goh_transform/sprite_goh_transform.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"33e1b5aa-8f4d-4d32-8ce9-2c32a7ee06ba","Key":25.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"8467ec88-4f9e-4e83-94d9-1a9d9760634d","path":"sprites/sprite_goh_transform/sprite_goh_transform.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"modifiers":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack",},
     ],
     "visibleRange": null,

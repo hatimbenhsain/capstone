@@ -1,8 +1,5 @@
 {
-  "spriteId": {
-    "name": "sprite_statueWhole",
-    "path": "sprites/sprite_statueWhole/sprite_statueWhole.yy",
-  },
+  "spriteId": null,
   "solid": false,
   "visible": true,
   "spriteMaskId": null,

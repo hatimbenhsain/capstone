@@ -140,6 +140,7 @@ switch(state){
 		var treeQ=false;
 		var howItHappenedQ=false;
 		var caveQ=false;
+		var diaryDiscussed=ds_map_exists(heads,"priestessFaded Page");
 		var h=GetHead(initialHead);
 		for(var i=0;i<ds_list_size(h.children);i++){
 			var c=h.children[|i];
@@ -151,6 +152,7 @@ switch(state){
 				treeQ=true;	
 			}
 		}
+		
 		if(howItHappenedQ && caveQ && treeQ){
 			state=30;
 			alarm[5]=room_speed;
@@ -230,6 +232,7 @@ switch(state){
 		}
 		break;
 	case 31:
+		
 		with(obj_gate){
 			if(state<3)	state=3;
 		}
@@ -245,8 +248,233 @@ switch(state){
 		}
 		break;
 	case 32:
+		image_alpha-=0.005;
+		initialHead="";
+		if(image_alpha<=0){
+			state=34;
+			x=room_width;
+			y=room_height;
+		}
+		with(obj_statueStand){
+			if(state==0){
+				state=1;
+			}
+		}
+		with(obj_soundManager){
+			if(bgMusic==audio_manabgm && nextBgm==bgMusic){
+				SwitchBgm(audio_tensionBgm);
+			}
+		}
 		//candy
 		break;
+	case 33:
+		//after statue q
+		with(obj_statueStand){
+			if(state==0){
+				state=1;
+			}
+		}
+		state=prevState;
+		break;
+	case 35:
+		walking=true;
+		dir="F";
+		lockedSprite=false;
+		image_alpha+=0.05;
+		obj_hero.cameraSubject=self;
+		if(y>253){
+			state=36;
+			walking=false;
+			vy=0;
+		}
+		break;
+	case 37:
+		walking=true;
+		if(y>263){
+			state=36;
+			walking=false;
+			vy=0;
+		}
+		break;
+	case 36:
+		walking=false;
+		break;
+	case 38:
+		walking=true;
+		if(y>273){
+			state=36;
+			walking=false;
+			vy=0;
+		}
+		break;
+	case 39:
+		walking=true;
+		dir="L";
+		if(x<=610){
+			state=36;
+			walking=false;
+			vx=0;
+		}
+		break;
+	case 40:
+		walking=false;
+		sprite_index=idleF;
+		dir="F";
+		break;
+	case 41:
+		walking=true;
+		dir="R";
+		if(x>=obj_statueStand.x){
+			state=36;
+			walking=false;
+			vx=0;
+			dir="F";
+			sprite_index=idleF;
+		}
+		break;
+	case 42:
+		walking=true;
+		if(y>283){
+			state=43;
+			walking=false;
+			vy=0;
+			ChangeInitHead("priestessFinal");
+			ds_map_clear(interactableObjects);
+		}
+		break;
+	case 43:
+		y=283;
+		x=obj_statueStand.x;
+		ChangeInitHead("priestessFinal");
+		break;
+	case 44:
+		grassAlpha-=0.001;
+		with(obj_soundManager){
+			if(bgMusic!=audio_hopeBgm && nextBgm==bgMusic){
+				SwitchBgm(audio_hopeBgm);
+			}
+		}
+		break;
+	case 46:
+		instance_activate_object(obj_gop);
+		instance_activate_object(obj_lilypad);
+		instance_activate_layer("layer_walls2");
+		instance_activate_object(obj_invisibleWall);
+		state=47;
+		grassAlpha=0;
+		break;
+	case 47:
+		with(obj_gop){
+			dir="F";
+			phantomMode=true;
+			if(y<185){
+				y+=maxSpeed/2;
+				obj_lilypad.y+=maxSpeed/2;	
+			}
+		}
+		break;
+	case 48:
+		with(obj_hero){
+			prevDir=dir;
+			dir="B";
+			sprite_index=sprite_heroIdleB;
+		}
+		state=47;
+		break;
+	case 49:
+		prevDir=dir;
+		dir="B";
+		sprite_index=idleB;
+		state=47;
+		break;
+	case 50:
+		dir=prevDir;
+		state=47;
+		break;
+	case 51:
+		with(obj_hero){
+			dir=prevDir;
+		}
+		state=47;
+		break;
+	case 52:
+		with(obj_gop){
+			phantomMode=true;
+			dir="F";
+			if(y<185){
+				obj_lilypad.y+=185-y;	
+				y=185;
+			}
+		}
+		obj_hero.state="acting";
+		obj_gui.state="cutscene";
+		obj_hero.dir="B";
+		obj_hero.sprite_index=sprite_heroIdleB;
+		obj_hero.cameraSubject=self;
+		phantomMode=true;
+		state=53;
+		walking=true;
+		dir="R";
+		
+		head="";
+		initHead="";
+		break;
+	case 53:
+		if(x>=657 && walking && dir=="R"){
+			dir="B";
+		}else if(y<=230 && walking && dir=="B"){
+			show_debug_message("going to 54");
+			walking=false;
+			vx=0;
+			vy=0;
+			state=54;
+			alarm[5]=room_speed*1;
+		}
+		break;
+	case 54:
+		walking=false;
+		if(alarm[5]==-1){
+			dir="F";
+			sprite_index=idleF;
+			state=55;
+			alarm[5]=room_speed*1;
+			
+		}
+		break;
+	case 55:
+		walking=false;
+		if(alarm[5]==-1){
+			if(obj_priestess.y<0){
+				state=56;
+				visible=false;
+				obj_hero.state="grounded";
+				obj_gui.state="ingame";
+				obj_goh.state=34;
+				obj_dialogueManager.interlocutor=noone;
+				obj_dialogueManager.currentMessage=noone;
+				obj_hero.talkingTo=noone;
+				talkingTo=noone;
+				with(obj_hero){
+					cameraSubject=self;
+				}
+			}else{
+				with(obj_gop){
+					dir="B";
+					y-=maxSpeed/2;
+					obj_lilypad.y-=maxSpeed/2;	
+				}
+				y-=maxSpeed/2;
+			}
+		}
+		break;
+	case 56:
+		y=room_height;
+		x=room_width;
+		visible=false;
+		head="";
+		initHead="";
+		break;
+		
 }
 
 prevState=state;

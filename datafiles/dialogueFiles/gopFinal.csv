@@ -1,0 +1,40 @@
+Line,Type,Parent,Action,Subject,Talker,Emotion
+I'm impressed.,,,SwitchBgm,audio_limboBgm,gop,neutral
+I honestly didn't expect you to succeed. Good job.,,,,,gop,neutral
+"I know you're busy, but... I have a few questions to ask, if you don't mind.",,,,,hero,sad
+Yes?,q,,,,gop,neutral
+What happens after?,a,5,,,hero,neutral
+Why couldn't you do it?,a,5,,,,
+Can I come back to life?,a,5,,,,
+That's it for now.,a,5,,,,
+What exactly... happens to the priestess now?,l,6,,,hero,sad
+What do you think happened?,,,,,gop,neutral
+Oh! Uh...,,,,,hero,shocked
+Well... I'm not so sure... My mom didn't talk a lot about the afterlife.,,,,,hero,thinking
+She did say something about eternal punishment or eternal rewards... but that's it.,,,,,hero,confused
+I guess that if the gods do exist... then that must be true as well?,,,,,hero,suspicious
+But then again there's a lot of things I believe that turned out not to be true.,,,,,hero,thinking
+So... I don't know.,,,,,hero,confused
+...,,,LoopBack,5,gop,neutral
+Why did you need my help with the priestess?,,7,,,hero,confused
+What do you mean?,,,,,gop,neutral
+My mom told me this one story once.,,,,,hero,neutral
+"Supposedly, the god of passage has a coat with teeth.",,,,,hero,thinking
+"And if spirits refuse to move on, then the coat just swallows them whole.",,,,,hero,pensive
+Couldn't you... just do that?,,,,,hero,confused
+Humans tell a lot of stories.,,,,,gop,neutral
+"Some are true, some are not. Does it matter which is which?",,,,,gop,neutral
+"Uh, yes?",,,,,hero,thinking
+"Well then, would you like to see my coat of teeth?",,,,,gop,neutral
+N-No thank you!,,,LoopBack,5,hero,shocked
+Of course not.,,8,,,gop,neutral
+Oh...,,,,,hero,sad
+"Yeah, you did say I have to help a few more spirits first...",,,,,hero,cringe
+...,,,LoopBack,5,gop,neutral
+"If we're done here, I'll send you to the next spirit.",,9,,,gop,neutral
+Are you sure there's nothing left?,q,,,,gop,neutral
+Yes.,a,35,,,hero,happy
+Actually...,a,35,LoopBack,5,hero,happy
+Yeah.,l,36,ChangeState,4,hero,happy
+Let's go.,,,,,hero,excited
+Very well. Good luck with this one.,,,ChangeState,6,gop,neutral

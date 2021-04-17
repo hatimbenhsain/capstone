@@ -61,12 +61,12 @@ vy=clamp(vy,-maxSpeed,maxSpeed);
 var canmove=true;
 for(i=1;i<=abs(vx);i++){
 	canmove=true;
-	if(place_meeting(x+sign(vx),y,obj_collidable)) canmove=false;
+	if(place_meeting(x+sign(vx),y,obj_collidable) && !phantomMode) canmove=false;
 	if(canmove) x+=sign(vx);
 }
 for(i=1;i<=abs(vy);i++){
 	canmove=true;
-	if(place_meeting(x,y+sign(vy),obj_collidable)) canmove=false;
+	if(place_meeting(x,y+sign(vy),obj_collidable) && !phantomMode) canmove=false;
 	if(canmove) y+=sign(vy);
 }
 
@@ -96,20 +96,25 @@ switch(dir){
 var inst=instance_place(x+xx,y+yy,obj_hero);
 if(talkingTo==noone && standby!=-1 && dir!=standby){
 	dir=standby;
-}else if(inst!=noone && standby==-1 && walking){
+}else if(inst!=noone && standby==-1 && walking && !phantomMode){
 	canmove=false;
-}else if(inst==noone && standby!=-1){
+}else if(inst==noone && standby!=-1 && !phantomMode){
 	walking=true;
 	standby=-1;
 }
 
 if(canmove==false || talkingTo!=noone || inst!=noone){
-	for(var i=0;i<=11;i++){
+	for(var i=0;i<=4;i++){
 		alarm[i]=alarm[i]+1;	
 	}
-	if(standby==-1 && walking){
+	if(standby==-1 && walking && !phantomMode){
 		standby=lastDir;
 		standbyState=state;
 		walking=false;
 	}
+}
+
+if(walking==false){
+	vx=0;
+	vy=0;
 }

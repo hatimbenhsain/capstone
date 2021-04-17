@@ -5,4 +5,9 @@ obj_soundManager.bgGain=1;
 with(obj_inventory){
 	instance_destroy(self);	
 }
-room_goto(room_priestess);
+if(room==room_limbo) room_goto(room_priestess);
+else{
+	instance_deactivate_all(true);
+	room_goto(room_prophecy);
+	
+}

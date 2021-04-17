@@ -49,6 +49,10 @@ var l9=new Line("statement c",l6);*/
 
 shake=false;
 
+fade=false;
+fadeA=0;
+fadeRate=0.1/room_speed
+
 currentMessage=noone;
 interactButton=obj_tuning.interactButton;
 downButton=obj_tuning.downButton;

@@ -39,3 +39,10 @@ pensiveSprite=sprite_priestess_pensive;
 
 clothShown=false;
 weaponShown=false;
+
+grassAlpha=1;
+
+instance_deactivate_layer("layer_walls2");
+
+
+

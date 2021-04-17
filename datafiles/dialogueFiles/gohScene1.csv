@@ -1,0 +1,89 @@
+Line,Type,Parent,Action,Subject,Talker,Emotion
+.....,,,,,goh,angry
+Hmm...,,,,,goh,angry
+This is interesting.,,,ChangeState,2,goh,angry
+"Hello, human.",,,,,goh,serene
+.....,,,,,hero,shocked
+"Goddess, I prostrate myself before you and I -",,,,,hero,shocked
+Aw. Don't be silly. ,,,,,goh,serene
+"You've never prayed to me before, no point in starting now.",,,,,goh,serene
+I... That is fair but I... didn't know about you before so...,,,,,hero,confused
+"Oh, that's true. Not a lot of mortals know about me these days, isn't that right?",,,,,goh,serene
+I guess that's why they call me the Goddess of the Hidden.,,,Shake,50,goh,serene
+Yeah! That's exactly what I said!,,,,,hero,excited
+.....,,,,,goh,pensive
+I didn't mean to interru-,,,ChangeState,3,hero,cringe
+"I also heard that there IS one of my followers around here, though.",,,,,goh,neutral
+"Well, why don't you come out then? Don't you think you've hidden for long enough?",,,ChangeState,5,goh,serene
+.....,,,,,priestess,shocked
+"Goddess, I -",,,ChangeState,7,priestess,shocked
+"Yes, yes, you prostrate yourself, I've heard it all before. How are you holding up?",,,,,goh,serene
+How... am I... holding up?,,,,,priestess,shocked
+Did I stutter?,,,,,goh,shocked
+Of... Of course not! I -,,,,,priestess,shocked
+"Don't worry, I'm only teasing you!",,,,,goh,serene
+"Surely, it must be all those decades by yourself that made you lose your social abilities.",,,,,goh,pensive
+"Not a lot of people besides dead humans to talk to, it seems?",,,,,goh,serene
+Dead humans?,,,,,hero,thinking
+I believe it was centuries.,,,,,priestess,neutral
+"Oh, centuries, decades, millenias, you know it's all the same to us.",,,,,goh,angry
+"Anyway, it's been a pleasure meeting you! Now, back to the human.",,,ChangeState,9,goh,serene
+"What was your name again, sweetheart?",,,,,goh,serene
+Uuuuh... One moment... I DID summon you but... don't you have... more to say to each other?,,,,,hero,cringe
+Me and whom?,,,ChangeState,11,goh,angry
+"I believe he means me, Goddess.",,,,,priestess,pensive
+You... Am I forgetting something?,,,,,goh,angry
+"Oh, right!",,,,,goh,shocked
+"Thank you for your service, etc. etc. ",,,,,goh,angry
+You've done a great job taking care of this... temple of mine. Keep it up!,,,,,goh,serene
+Keep it up...?,,,,,priestess,shocked
+There you go again with the repeating!,,,ChangeState,13,goh,serene
+"You sure there's nothing wrong with your little friend here, human?",,,,,goh,serene
+Goddess.,,,,,hero,neutral
+I didn't summon you here for myself. I summoned you here for the priestess to talk to you.,,,,,hero,neutral
+Hm? But that's not -,,,,,goh,angry
+And I think you should listen to what she has to say.,,,,,hero,suspicious
+.....,,,,,goh,angry
+What do I have to say?,,,,,priestess,neutral
+Oh! Don't you wanna ask her about the children and stuff?,,,,,hero,thinking
+Children? What children?,,,,,goh,angry
+"The children that we took care of at your temple, Goddess.",,,,,priestess,neutral
+Oh.,,,ChangeState,15,goh,pensive
+"Well, I can't exactly be expected to keep track of every little bastard that ends up here, can I now?",,,,,goh,angry
+Please don't talk about them like -,,,ChangeState,17,priestess,angry
+"I joke, I joke! Were all priests always this humorless?",,,,,goh,serene
+"They're fine, they left with that one... human, so they didn't get killed like you did",,,,,goh,pensive
+",,,Ah.",,,Shake,50,priestess,neutral
+That's great! Did you hear?,,,,,hero,happy
+"Well, I mean, the human already showed you the candy and everything...",,,,,goh,angry
+"So you already know this. Now, can you tell me the actual reason I'm here?",,,,,goh,shocked
+.....,,,,,priestess,neutral
+"Hey, it's -",,,FadeOutMusic,3000,hero,cringe
+"As I lay dying, I called your name, goddess.",,,,,priestess,pensive
+"I prayed that you would come, and I... believed that you would. I really did.",,,,,priestess,pensive
+"Did you hear my prayers then, goddess?",,,,,priestess,neutral
+Of course I did. I am all-hearing.,,,,,goh,serene
+Then why didn't you come?,,,ChangeState,19,priestess,neutral
+Why did you leave us all to die?,,,ChangeState,20,priestess,pensive
+"Why didn't you... warn us, one of the hundreds of times we tried to summon you?",,,ChangeState,21,priestess,angry
+"Oh, honey...",,,,,goh,angry
+"If I were to make a trip here for every petty mortal concern, it would never end.",,,,,goh,shocked
+Petty concern?,,,,,priestess,neutral
+"Well, yes. Mortals die all the time, don't they?",,,,,goh,serene
+"What difference does it make, ten, eighty, or two hundred years?",,,,,goh,angry
+But...,,,,,hero,shocked
+You could've just come? There was nothing stopping you like...,,,,,hero,thinking
+"Like a law, or like, a war between the gods or something?",,,ChangeState,23,hero,confused
+War? Of course not! Gods do not war.,,,,,goh,shocked
+Ah...,,,,,hero,sad
+"Anyway. If this is over, I -",,,ChangeState,25,goh,pensive
+"Thank you, human. You have helped me open my eyes.",,,,,priestess,pensive
+"Oh! Uh, so you...",,,,,hero,shocked
+"Yes, I will move on now.",,,ChangeState,27,priestess,neutral
+Move on?,,,,,goh,angry
+"You forget your duty, priestess.",,,ChangeState,29,goh,shocked
+And what if I did?,,,,,priestess,neutral
+What will you do? Will you punish me? I'm already dead.,,,,,priestess,neutral
+Mortal...,,,ChangeState,31,goh,shocked
+"This isn't your realm, goddess. I banish you.",,,ChangeState,33,priestess,neutral
+You wouldn't -,,,,,goh,shocked

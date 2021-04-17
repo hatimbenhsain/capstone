@@ -26,3 +26,5 @@ lastDir="F";
 shadowSprite=sprite_shadow;
 
 lockedSprite=false;
+
+phantomMode=false;

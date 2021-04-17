@@ -8,7 +8,10 @@ a=1;
 orgOffsetX=sprite_xoffset;
 orgOffsetY=sprite_yoffset;
 
-sprite_index=openSprite;
+if(room==room_limbo) sprite_index=openSprite;
 
 depth=197-y/10000;
+
+oy=0;
+index=image_index;
 

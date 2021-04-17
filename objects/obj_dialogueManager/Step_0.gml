@@ -13,8 +13,13 @@ if(inDialogue){
 		//playSFX(sound_textAdvance,0.15);
 		if(currentMessage.action!=undefined && currentMessage.type!="a"){
 				//script_execute(asset_get_index(currentMessage.parent.children[|answerSelected].action),interlocutor);
-				action=asset_get_index(currentMessage.parent.children[|answerSelected].action);
-				if(currentMessage.parent.children[|answerSelected].subject!="") subject=currentMessage.parent.children[|answerSelected].subject;
+				if(!currentMessage.isHead){
+					action=asset_get_index(currentMessage.parent.children[|answerSelected].action);
+					if(currentMessage.parent.children[|answerSelected].subject!="") subject=currentMessage.parent.children[|answerSelected].subject;
+				}else{
+					action=asset_get_index(currentMessage.action);
+					if(currentMessage.subject!="") subject=currentMessage.subject;
+				}
 		}
 			
 		if(currentMessage.type=="q"){
@@ -52,7 +57,7 @@ if(inDialogue){
 			inDialogue=false;
 			finished=true;
 			obj_hero.frozen=false;
-			if(interlocutor!=""){
+			if(interlocutor!="" && interlocutor!=noone){
 				interlocutor.head=interlocutor.initialHead;
 			}
 		}
@@ -87,4 +92,10 @@ if(inDialogue){
 		skipMode=false;
 	}
 	
+}
+
+if(fade && fadeA<1){
+	fadeA+=fadeRate;
+}else if(!fade && fadeA>0){
+	fadeA-=fadeRate;	
 }

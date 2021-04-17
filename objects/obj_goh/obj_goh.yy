@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "sprite_goh_idleF",
-    "path": "sprites/sprite_goh_idleF/sprite_goh_idleF.yy",
+    "name": "sprite_goh_transform",
+    "path": "sprites/sprite_goh_transform/sprite_goh_transform.yy",
   },
   "solid": false,
   "visible": true,
@@ -27,6 +27,7 @@
     {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"parent":{"name":"obj_goh","path":"objects/obj_goh/obj_goh.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
     {"isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,"parent":{"name":"obj_goh","path":"objects/obj_goh/obj_goh.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
     {"isDnD":false,"eventNum":0,"eventType":8,"collisionObjectId":null,"parent":{"name":"obj_goh","path":"objects/obj_goh/obj_goh.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":11,"eventType":2,"collisionObjectId":null,"parent":{"name":"obj_goh","path":"objects/obj_goh/obj_goh.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
   "properties": [],
   "overriddenProperties": [],

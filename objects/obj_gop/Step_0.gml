@@ -40,14 +40,53 @@ if(capeSprite==sprite_gop_cape_idle && capeImage<0.5){
 	capeImage=0.5;
 }
 
-switch(state){
-	case 0:
-		break;
-	case 1:
-		ds_list_clear(interactableObjects);
-		obj_lilypadManager.scene=9;
-		state++;
-		break;
+if(room=room_limbo){
+	switch(state){
+		case 0:
+			break;
+		case 1:
+			ds_list_clear(interactableObjects);
+			obj_lilypadManager.scene=9;
+			state++;
+			break;
+	}
+}else if(room=room_priestess){
+	switch(state){
+		case 3:
+			with(obj_collidable){
+				var n=object_get_name(object_index);
+				if(n!="obj_hero" && n!="obj_gop" && n!="obj_lilypad" && n!="obj_priestess"){
+					image_alpha-=0.005;
+					if(image_alpha<=0){
+						instance_deactivate_object(id);	
+					}
+				}
+			}
+			with(obj_brumeManager){
+				if(state<=2) state=3;
+			}	
+			x=obj_lilypad.x;
+			ChangeInitHead("gopFinal");
+			break;
+		case 4:
+			var inst=instance_create_depth(obj_hero.x,obj_hero.bbox_bottom,depth,obj_abyss);
+			state=5;
+			with(inst){
+				image_alpha=0;
+				state=5;
+			}
+			break;
+		case 6:
+			head="";
+			initHead="";
+			with(obj_abyss){
+				state=1;
+			}
+			state=7;
+			FadeOutMusic(3000);
+			break;
+			
+	}
 }
 
 prevState=state;

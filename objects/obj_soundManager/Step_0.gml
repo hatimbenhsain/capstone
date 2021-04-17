@@ -8,10 +8,10 @@ if(bgGain!=prevBgGain || masterGain!=prevMasterGain){
 
 switch(room){
 	case room_limbo:
-		bgMusic=audio_limboBgm;
+		if(bgMusic==audio_manabgm) bgMusic=audio_limboBgm;
 		break;
 	case room_priestess:
-		bgMusic=audio_manabgm;
+		if(bgMusic==audio_limboBgm) bgMusic=audio_manabgm;
 		break;
 }
 

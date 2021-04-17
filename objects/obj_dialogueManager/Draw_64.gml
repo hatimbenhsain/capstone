@@ -3,6 +3,11 @@
 //draw_self();
 
 if(inDialogue && currentMessage!=noone){
+	draw_set_color(c_black);
+	draw_set_alpha(fadeA);
+	draw_rectangle(0,0,display_get_gui_width(),display_get_gui_height(),false);
+	draw_set_color(c_white);
+	draw_set_alpha(1);
 	//if(ds_list_size(items)<rows*columns){
 	//	image_index=0;	
 	//}else if(firstObject>0 && firstObject+rows*columns<ds_list_size(items)){

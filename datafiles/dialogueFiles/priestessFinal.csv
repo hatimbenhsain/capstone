@@ -1,0 +1,37 @@
+Line,Type,Parent,Action,Subject,Talker,Emotion
+So.,,,,,hero,neutral
+"This is it, huh?",,,,,hero,pensive
+It seems like it.,,,,,priestess,serene
+"I'm sorry, for everything...",,,,,hero,sad
+"Please, don't be.",,,,,priestess,happy
+...,,,,,hero,sad
+About the whole thing with the children and the priest...,,,ChangeState,44,hero,sad
+I... understand their decision now.,,,,,priestess,pensive
+If they did come forward... with the news about... the humans...,,,,,priestess,thinking
+I can't say that we wouldn't have done anything about it. But -,,,,,priestess,sad
+"I understand. I see now how blinded I was by my devotion, and...",,,,,priestess,pensive
+I understand why they acted the way they did.,,,,,priestess,serene
+I hope you don't blame yourself...,,,,,hero,confused
+Of course I do.,,,,,priestess,happy
+But I choose now to forgive myself. And the human priest.,,,,,priestess,serene
+I still detest the invaders who killed us. But...,,,,,priestess,neutral
+There's no point in me staying here. All that's left to protect is old sticks and stones.,,,,,priestess,happy
+The temple... It was never about the goddess.,,,,,priestess,serene
+"Well, it was, but... It was mostly about the community.",,,,,priestess,happy
+And now that I know survivors are out there... Even if it's only a few...,,,,,priestess,happy
+I'm sure they wouldn't want me to stay here any longer.,,,,,priestess,serene
+Priestess...,,,,,hero,happy
+Please. Call me by my name.,,,,,priestess,happy
+"Ah, I never did get around telling you that, did I?",,,ChangeState,46,priestess,happy
+"Haha, I didn't tell you mine either, so no worries.",,,ChangeState,48,hero,cringe
+And... it appears your ride is here.,,,ChangeState,49,hero,happy
+It appears so.,,,,,priestess,serene
+...,,,,,gop,neutral
+"Thank you, human.",,,ChangeState,50,priestess,happy
+And I hope you also...,,,ChangeState,51,priestess,pensive
+Yes?,,,,,hero,happy
+Nevermind. I hope you do get to go back to life.,,,Shake,50,priestess,happy
+"I will! And I'll try to find your people, and I'll them everything I learnt here!",,,,,hero,excited
+...Yes.,,,,,priestess,serene
+Goodbye now.,,,,,priestess,happy
+See you around!,,,ChangeState,52,hero,happy
