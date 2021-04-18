@@ -134,30 +134,35 @@ switch(state){
 		if(image_alpha<=0){
 			x=room_width;
 			y=room_height;
-			with(obj_hero){
-				state="grounded";
-				obj_gui.state="ingame";
-				cameraSubject=self;
+			if(obj_gui.state=="cutscene"){
+				with(obj_hero){
+					state="grounded";
+					obj_gui.state="ingame";
+					cameraSubject=self;
+				}
 			}
 		}
 		
 		break;
 	case 34:
 		x=640;
-		y=310;
+		y=480;
+		phantomMode=true;
+		walking=true;
 		dir="B";
 		state=35;
 		head="";
 		initHead="";
-		sprite_index=sprite_goh_idleB;
+		sprite_index=idleB;
 		instance_deactivate_object(obj_statueStand);
-		
 		lockedSprite=false;
 		visible=true;
+		image_alpha=1;
 		break;
 	case 35:
-		image_alpha+=0.005;
-		if(image_alpha>=1){
+		//image_alpha+=0.05;
+		if(y<=310){
+			walking=false;
 			state=36;	
 			ChangeInitHead("goh2");	
 			obj_priestess.grassAlpha=0;

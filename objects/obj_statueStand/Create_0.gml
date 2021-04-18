@@ -8,3 +8,4 @@ ChangeInitHead("statueStandInit");
 
 state=0;
 
+AddInteractable(obj_statueWhole);

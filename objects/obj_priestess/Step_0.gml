@@ -113,6 +113,7 @@ switch(state){
 			AddInteractable(obj_knife);
 			AddInteractable(obj_birdStatueFood);
 			AddInteractable(obj_pendant);
+			AddInteractableByName(obj_candy,"priestessCandy");
 			image_alpha=10;
 			for(var i=0;i<instance_number(obj_blackFog1);i++){
 				var fog=instance_find(obj_blackFog1,i);
@@ -253,7 +254,7 @@ switch(state){
 		if(obj_dialogueManager.inDialogue){
 			alarm[5]+=1;	
 		}else if(alarm[5]==-1){
-			startDialogue("priestessTired");
+			startDialogue("priestessTired",self);
 			state=31;
 			with(obj_priestessRoomManager){
 				alarm[1]=room_speed*2;
@@ -273,6 +274,10 @@ switch(state){
 		with(obj_brasier){
 				if(state<2) state=2;	
 		}
+		
+		ChangeInitHead("priestessQuestions");
+		
+		if(!ds_map_exists(interactableObjects,"Old Candy"))	AddInteractableByName(obj_candy,"priestessCandy");
 		for(var i=0;i<instance_number(obj_blackFog1);i++){
 			var fog=instance_find(obj_blackFog1,i);
 			if (fog.fogLayer==1){
@@ -371,7 +376,9 @@ switch(state){
 		break;
 	case 42:
 		walking=true;
-		if(y>283){
+		if(y>283 || !obj_dialogueManager.inDialogue){
+			y=283;
+			x=obj_statueStand.x;
 			state=43;
 			walking=false;
 			vy=0;
@@ -467,6 +474,11 @@ switch(state){
 			state=54;
 			alarm[5]=room_speed*1;
 		}
+		obj_hero.state="acting";
+		obj_gui.state="cutscene";
+		obj_hero.dir="B";
+		obj_hero.sprite_index=sprite_heroIdleB;
+		obj_hero.cameraSubject=self;
 		break;
 	case 54:
 		walking=false;
@@ -477,16 +489,25 @@ switch(state){
 			alarm[5]=room_speed*1;
 			
 		}
+		obj_hero.state="acting";
+		obj_gui.state="cutscene";
+		obj_hero.dir="B";
+		obj_hero.sprite_index=sprite_heroIdleB;
+		obj_hero.cameraSubject=self;
 		break;
 	case 55:
 		walking=false;
+		obj_hero.state="acting";
+		obj_gui.state="cutscene";
+		obj_hero.dir="B";
+		obj_hero.sprite_index=sprite_heroIdleB;
+		obj_hero.cameraSubject=self;
 		if(alarm[5]==-1){
 			if(obj_priestess.y<0){
 				state=56;
 				visible=false;
 				obj_hero.state="grounded";
 				obj_gui.state="ingame";
-				obj_goh.state=34;
 				obj_dialogueManager.interlocutor=noone;
 				obj_dialogueManager.currentMessage=noone;
 				obj_hero.talkingTo=noone;
@@ -501,6 +522,9 @@ switch(state){
 					obj_lilypad.y-=maxSpeed/2;	
 				}
 				y-=maxSpeed/2;
+				if(y<50 && obj_goh.state<34){
+					obj_goh.state=34;	
+				}
 			}
 		}
 		break;

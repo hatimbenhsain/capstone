@@ -37,9 +37,12 @@ function useItem(obj){
 	obj_inventory.lockedObject=-1;
 }
 
-function startDialogue(dialogueName){
-	with(obj_hero){
+function startDialogue(dialogueName, inter){
+	if(is_undefined(inter)) inter=obj_hero;
+	with(inter){
 		var dialogue=GetHead(dialogueName);
+		talkingTo=obj_hero;
+		obj_hero.frozen=true;
 		obj_dialogueManager.inDialogue=true;
 		obj_dialogueManager.head=dialogue;
 		obj_dialogueManager.currentMessage=dialogue;

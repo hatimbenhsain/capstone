@@ -49,4 +49,3 @@ instance_deactivate_layer("layer_walls2");
 //}
 
 
-

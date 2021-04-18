@@ -5,7 +5,7 @@ sprite_index=sprite_ow_statueStand;
 
 with(obj_goh){
 	obj_goh.state=0;
-	startDialogue("gohScene1");
+	startDialogue("gohScene1",obj_goh);
 	obj_dialogueManager.interlocutor=obj_goh;
 }
 

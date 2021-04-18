@@ -43,7 +43,7 @@ function Save(){
 		ds_map_add_list(map,"alarms",alarms);
 		SaveHeads(map);
 		var io=ds_map_create();
-		key=ds_map_find_first(io);
+		key=ds_map_find_first(interactableObjects);
 		for(var i=0;i<ds_map_size(interactableObjects);i++){
 			ds_map_add(io,key,interactableObjects[?key]);
 			key=ds_map_find_next(interactableObjects,key);
@@ -301,7 +301,7 @@ function standardLoad(map){
 			}
 			if(object_is_ancestor(asset_get_index(obj),obj_interactable)){
 				for(var i=0;i<=11;i++){
-					alarm[i]=map[?"alarms"][|i];
+					//alarm[i]=map[?"alarms"][|i];
 				}
 				heads=LoadHeads(map[?"heads"]);
 				//show_debug_message("the heads "+name);

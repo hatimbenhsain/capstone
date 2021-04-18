@@ -13,6 +13,7 @@ switch(state){
 		with(obj_priestessRoomManager){
 			alarm[2]=room_speed;	
 		}
+		FadeInMusic(10000);
 		state=3;
 		break;
 	case 3:

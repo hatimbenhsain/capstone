@@ -17,7 +17,7 @@ Do you remember the diary page I showed you earlier?,,,,,hero,neutral
 Yes..?,,,,,priestess,shocked
 "It was that priest! They knew that the humans were coming, so they took the children away!",,,,,hero,happy
 Those are... merely conjectures. Nothing from what you read implied that they would do this...,,,,,priestess,shocked
-I...,,,SwitchBgm,,hero,confused
+I...,,,SwitchBgm,audio_tensionBgm,hero,confused
 "I lit a lantern in the cave, and I found something they wrote.",,,,,hero,confused
 They wrote that they were going to leave with the kids at dawn.,,,Shake,100,hero,pensive
 You did what?!,,,Shake,100,priestess,angry

@@ -9,12 +9,14 @@ Human.,,,,,priestess,neutral
 I don't mind telling you about life here.,,,,,priestess,neutral
 But it doesn't change anything. What is done is done. And I have a duty to my goddess.,,,,,priestess,pensive
 "It.. It does make a difference though! When I'm back, I can tell everyone your story!",,,Shake,50,hero,shocked
-"I'll tell the humans, and they'll realize what they did was wrong! We could even rebuild your temple! You don't have to linger anymore!",,,,,hero,excited
+"I'll tell the humans, and they'll realize what they did was wrong! ",,,,,hero,excited
+We could even rebuild your temple! You don't have to linger anymore!,,,,,hero,excited
 When you're back?,,,,,priestess,shocked
 Y...es.,,,,,hero,confused
 Human. You're dead. We both are. I thought we established that much.,,,,,priestess,shocked
 "Well, I mean, if you wanna get technical about it...",,,,,hero,confused
-"But... basically, I made a deal with a god, and... it's a long story, but if I help you move on, I can go back to life!",,,,,hero,excited
+"But... basically, I made a deal with a god, and... ",,,,,hero,excited
+"It's a long story, but if I help you move on, I can go back to life!",,,,,hero,excited
 ...,,,Shake,50,priestess,pensive
 "So please! If you just... If you just let them take you to the other side, I can do this for you!",,,,,hero,confused
 ...,,,,,priestess,pensive
@@ -30,7 +32,8 @@ Human...,,,,,priestess,sad
 "I'm sorry. I really am. If there was any other way I could help you, I would.",,,,,priestess,sad
 But you're asking for too much. I can't move on based on a dead man's promise.,,,,,priestess,neutral
 I... don't know what to say.,,,FadeOutMusic,3000,hero,sad
-"Then don't say anything. If you can't accept my answer, please do it out of respect for everyone who died at the temple.",,,,,priestess,neutral
+Then don't say anything. ,,,,,priestess,neutral
+"If you can't accept my answer, please do it out of respect for everyone who died at the temple.",,,,,priestess,neutral
 "If I were to go now, they would have died for nothing. And that I can't accept.",,,,,priestess,pensive
 ...,,,,,hero,sad
 "In any case... I'm happy to answer more of your questions. If you're still interested, that is.",,,,,priestess,neutral

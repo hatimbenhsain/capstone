@@ -1,12 +1,7 @@
 // Script assets have changed for v2.3.0 see
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function addItem(item){
-	AddItemSilent(item);
-	with(obj_soundManager){
-		audio_sound_gain(bgMusic,0.05*bgGain*masterGain,50);
-		playSFX(sound_itemPickup4,1);
-		alarm[1]=audio_sound_length(sound_itemPickup4)*room_speed-room_speed*0.5;
-	}
+	AddItem(item)
 }
 
 function AddItem(item){

@@ -83,7 +83,7 @@ if(room=room_limbo){
 				state=1;
 			}
 			state=7;
-			FadeOutMusic(3000);
+			FadeOutMusic(2000);
 			break;
 			
 	}

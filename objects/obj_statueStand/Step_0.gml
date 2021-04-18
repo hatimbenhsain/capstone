@@ -6,8 +6,7 @@ event_inherited();
 
 switch(state){
 	case 1:
-		if(ds_map_empty(interactableObjects)){
-			AddInteractable(obj_statueWhole);
+		if(ds_map_size(interactableObjects)<=1){
 			AddInteractableByName(obj_statueArms,"statueStandStatue Piece");
 			AddInteractableByName(obj_statueBits,"statueStandStatue Piece");
 			AddInteractableByName(obj_statueBody,"statueStandStatue Piece");
@@ -17,6 +16,7 @@ switch(state){
 			AddInteractableByName(obj_statueParts,"statueStandStatue Piece");
 			AddInteractableByName(obj_statuePieces,"statueStandStatue Piece");
 		}
+		if(!ds_map_exists(interactableObjects,"Statue")) AddInteractable(obj_statueWhole);
 		ChangeInitHead("statueStand2");
 		break;
 	case 3:
