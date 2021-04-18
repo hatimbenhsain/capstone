@@ -1,7 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 if(open){
-	if(ds_list_size(items)<rows*columns){
+	if(ds_list_size(items)<=rows*columns){
 		image_index=0;	
 	}else if(firstObject>0 && firstObject+rows*columns<ds_list_size(items)){
 		image_index=3;	

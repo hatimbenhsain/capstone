@@ -3,7 +3,7 @@
 ditherBG=sprite_ditherBG4;
 state=0;
 
-depth=layer_get_depth(layer_get_id("tileLayer_grass"))+1;
+depth=layer_get_depth(layer_get_id("tileLayer_grass"))+2;
 
 xx=0;
 

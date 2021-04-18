@@ -110,6 +110,10 @@ switch(state){
 			AddInteractableByName(obj_statueHead,"priestessStatue Piece");
 			AddInteractableByName(obj_statueHands,"priestessStatue Piece");
 			AddInteractableByName(obj_statueBody,"priestessStatue Piece");
+			AddInteractableByName(obj_statueBits,"priestessStatue Piece");
+			AddInteractableByName(obj_statueParts,"priestessStatue Piece");
+			AddInteractableByName(obj_statuePieces,"priestessStatue Piece");
+			AddInteractable(obj_statueWhole);
 			AddInteractable(obj_knife);
 			AddInteractable(obj_birdStatueFood);
 			AddInteractable(obj_pendant);
@@ -201,6 +205,7 @@ switch(state){
 	case 15:
 		state=prevState;
 		RemoveInteractable(obj_page2);
+		DeleteInstanceOf(obj_page2);
 		//faded page (diary)
 		break;
 	case 16:
@@ -308,7 +313,7 @@ switch(state){
 			}
 		}
 		//candy
-		break;
+		break;		
 	case 33:
 		//after statue q
 		with(obj_statueStand){

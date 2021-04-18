@@ -1,0 +1,9 @@
+Line,Type,Parent,Action,Subject,Talker,Emotion
+Can you tell me anything about this?,,,,,hero,neutral
+I'm not sure why but it feels... important.,,,,,hero,thinking
+Ah. I see you've found one of the statue's pieces.,,,,,priestess,pensive
+"Uh, yeah? What statue?",,,,,hero,thinking
+The statue representing our goddess.,,,,,priestess,neutral
+Ah... I'm sorry it was broken.,,,,,hero,cringe
+It wasn't. That's the way it's supposed to be.,,,,,priestess,neutral
+Huh?,,,ChangeState,17,hero,shocked

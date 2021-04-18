@@ -31,7 +31,7 @@ It appears so.,,,,,priestess,serene
 And I hope you also...,,,ChangeState,51,priestess,pensive
 Yes?,,,,,hero,happy
 Nevermind. I hope you do get to go back to life.,,,Shake,50,priestess,happy
-"I will! And I'll try to find your people, and I'll them everything I learnt here!",,,,,hero,excited
+"I will! And I'll try to find your people, and I'll tell them everything I learnt here!",,,,,hero,excited
 ...Yes.,,,,,priestess,serene
 Goodbye now.,,,,,priestess,happy
 See you around!,,,ChangeState,52,hero,happy

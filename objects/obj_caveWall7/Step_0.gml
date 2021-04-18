@@ -9,14 +9,16 @@ if(obj_brasier.state==4 && (initHead=="cave1" || initHead=="caveInit")){
 }
 
 switch(state){
-	case 2:
+	case 3:
+		ChangeInitHead("caveSecret72");
 		with(obj_priestessRoomManager){
 			alarm[2]=room_speed;	
 		}
 		FadeInMusic(10000);
 		state=3;
 		break;
-	case 3:
+	case 4:
+		ChangeInitHead("caveSecret72");
 		with(obj_babyBird_closed){
 			if(state==-1) state=0;
 		}

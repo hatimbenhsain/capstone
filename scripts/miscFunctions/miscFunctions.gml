@@ -60,6 +60,7 @@ function RemoveInteractable(obj){
 		name2=name;
 	}
 	ds_map_delete(interactableObjects,name2);
+	instance_destroy(inst);
 }
 
 function SitOnBench(){

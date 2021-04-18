@@ -1,0 +1,8 @@
+Line,Type,Parent,Action,Subject,Talker,Emotion
+You found all the statue pieces!,,,,,priestess,shocked
+I did!,,,,,hero,happy
+Are you going to ask the goddess something?,,,,,priestess,neutral
+Uh... Maybe?,,,,,hero,thinking
+I'm not sure what though.,,,,,hero,confused
+Make sure you think carefully about it. You don't want to bother her for trivialties.,,,,,priestess,neutral
+Will do.,,,,,hero,cringe

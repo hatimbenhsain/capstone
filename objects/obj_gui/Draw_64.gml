@@ -100,3 +100,11 @@ if(obj_gameManager.options!=obj_gameManager.soundOptions && obj_gameManager.opti
 	draw_text_ext(display_get_gui_width()*0.9,pY,entriestxt,display_get_gui_height()/10,display_get_gui_width()*0.75);
 }
 
+if(savedCounter>0){
+	draw_set_valign(fa_top);
+	draw_set_halign(fa_left);
+	draw_set_color(c_white);
+	draw_set_alpha(1);
+	draw_set_font(font_codersCrux);
+	draw_text(display_get_gui_width()*0.7,display_get_gui_height()*0.9,"Game Saved!");
+}

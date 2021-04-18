@@ -44,6 +44,8 @@ grassAlpha=1;
 
 instance_deactivate_layer("layer_walls2");
 
+instance_deactivate_layer("endFog");
+
 //for(var i=0;i<3;i++){
 //	ds_list_add(conditions,false);	
 //}

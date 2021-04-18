@@ -6,5 +6,5 @@ event_inherited();
 
 
 if(obj_brasier.state==4 && initHead=="caveInit"){
-	ChangeInitHead("cave1");	
+	ChangeInitHead("caveSecret1");	
 }

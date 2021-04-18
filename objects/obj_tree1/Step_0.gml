@@ -37,7 +37,7 @@ switch(state){
 		break;
 	case 6:
 		ChangeInitHead("treeOfLife3");
-		with(obj_statueHands) state=0;
+		with(obj_statueHands) state=1;
 		state=7;
 		break;
 	case 8:

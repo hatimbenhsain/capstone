@@ -49,31 +49,41 @@ function combineObjects(){
 }
 
 function deleteIndex(index){
-	ds_list_delete(items,index);
-	lockedObject=-1;
-	lockedObject2=-1;
-	selectedObject=0;
-}
-
-function deleteItem(itm){
-	if(ds_list_find_value(items,itm)){
-		ds_list_delete(items,ds_list_find_index(items,itm));
+	with(obj_inventory){
+		ds_list_delete(items,index);
 		lockedObject=-1;
 		lockedObject2=-1;
 		selectedObject=0;
 	}
 }
 
-function deleteInstanceOf(obj){
-	for(var i=0;i<ds_list_size(items);i++){
-		if(items[|i].object_index==obj){
-			ds_list_delete(items,i);
+function deleteItem(itm){
+	with(obj_inventory){
+		if(ds_list_find_value(items,itm)){
+			ds_list_delete(items,ds_list_find_index(items,itm));
 			lockedObject=-1;
 			lockedObject2=-1;
 			selectedObject=0;
-			break;
 		}
 	}
+}
+
+function deleteInstanceOf(obj){
+	with(obj_inventory){
+		for(var i=0;i<ds_list_size(items);i++){
+			if(items[|i].object_index==obj){
+				ds_list_delete(items,i);
+				lockedObject=-1;
+				lockedObject2=-1;
+				selectedObject=0;
+				break;
+			}
+		}
+	}
+}
+
+function DeleteInstanceOf(obj){
+	deleteInstanceOf(obj);
 }
 
 function ObjectInInventory(obj){

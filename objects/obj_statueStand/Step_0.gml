@@ -38,6 +38,8 @@ switch(state){
 		}
 		break;
 	case 5:
+		ChangeInitHead("statueStand5");
+		DeleteInstanceOf(obj_statueWhole);
 		sprite_index=sprite_ow_statueWhole;
 		break;
 	case 6:

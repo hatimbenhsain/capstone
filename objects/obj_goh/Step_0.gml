@@ -183,7 +183,16 @@ switch(state){
 			x=room_width;
 			y=room_height;
 			state=38;
+			instance_activate_object(obj_gop);
+			instance_activate_object(obj_lilypad);
 			obj_gop.state=3;
+			instance_activate_layer("endFog");
+			instance_activate_object(obj_blackFog1);
+			with(obj_blackFog1){
+				if(!object_is_ancestor(object_index,obj_brume1) && object_index!=obj_brume1){
+					image_alpha=0;	
+				}
+			}
 		}
 		break;
 		

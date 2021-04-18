@@ -33,5 +33,9 @@ switch(state){
 		with(obj_caveWall1){
 			ChangeInitHead("cave1")	
 		}
+		DeleteInstanceOf(obj_glowingLantern);
+		break;
+	case 4:
+		ChangeInitHead("brasier3");
 		break;
 }

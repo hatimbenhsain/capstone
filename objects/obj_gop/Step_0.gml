@@ -53,9 +53,14 @@ if(room=room_limbo){
 }else if(room=room_priestess){
 	switch(state){
 		case 3:
+			with(obj_blackFog1){
+				if(!object_is_ancestor(object_index,obj_brume1) && object_index!=obj_brume1){
+					image_alpha+=0.01;	
+				}
+			}
 			with(obj_collidable){
 				var n=object_get_name(object_index);
-				if(n!="obj_hero" && n!="obj_gop" && n!="obj_lilypad" && n!="obj_priestess"){
+				if(n!="obj_hero" && n!="obj_gop" && n!="obj_lilypad" && n!="obj_priestess" && string_delete(n,string_length(n)-1,1)!="obj_blackFog"){
 					image_alpha-=0.005;
 					if(image_alpha<=0){
 						instance_deactivate_object(id);	
@@ -65,6 +70,7 @@ if(room=room_limbo){
 			with(obj_brumeManager){
 				if(state<=2) state=3;
 			}	
+			
 			x=obj_lilypad.x;
 			ChangeInitHead("gopFinal");
 			break;

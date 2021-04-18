@@ -54,6 +54,8 @@ if(shakeCounter>0){
 	camera_set_view_pos(view_camera[0],xx,yy);
 }
 
-
+if(savedCounter>0){
+	savedCounter-=1;	
+}
 	
 camera_set_view_size(view_camera[0],obj_tuning.cameraWidth/zoom,obj_tuning.cameraHeight/zoom);

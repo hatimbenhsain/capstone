@@ -36,6 +36,11 @@ function Save(){
 			}
 			key=ds_map_find_next(heads,key);
 		}
+		if(!ds_map_exists(map,"initialHead")){
+			if(!is_undefined(initialHead)){
+				ds_map_add(map,"initialHead",initialHead);
+			}
+		}
 		var alarms=ds_list_create();
 		for(var i=0;i<=11;i++){
 			ds_list_add(alarms,alarm[i]);
@@ -87,6 +92,9 @@ function standardSave(rootList){
 	if(object_is_ancestor(asset_get_index(obj),obj_collidable)){
 		ds_map_add(map,"dir",dir);
 		ds_map_add(map,"state",state);
+	}
+	with(obj_gui){
+		savedCounter=room_speed;	
 	}
 	return map;
 }
@@ -306,7 +314,7 @@ function standardLoad(map){
 				heads=LoadHeads(map[?"heads"]);
 				//show_debug_message("the heads "+name);
 			
-				if(map[?"initialHead"]!=undefined && map[?"initialHead"]!=""){
+				if(map[?"initialHead"]!=undefined){
 					initialHead=map[?"initialHead"];
 				}
 				interactableObjects=ds_map_create();

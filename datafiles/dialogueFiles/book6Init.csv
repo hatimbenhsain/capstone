@@ -5,10 +5,10 @@ Line,Type,Parent,Action,Subject,Talker,Emotion
 "I'm a good person, so I should keep reading, right?",q,,,,hero,thinking
 Keep reading.,a,5,,,noone,
 Leave.,a,5,,,,
-"""From the bird that faces the forest, walk east.""",,6,,,hero,neutral
-"""Keep walking until you pass two trees, then turn to your right.""",,,,,hero,neutral
-"""After you pass three more trees, turn right again.""",,,,,hero,neutral
-"""The next tree you find is the important one!!""",,,,,hero,neutral
+"""Follow the gaze of the bird that faces the forest...""",,6,,,hero,neutral
+"""...until you bump into a tree. Then, turn to your right...""",,,,,hero,neutral
+"""...and walk until you bump into another tree.""",,,,,hero,neutral
+"""The tree closest to that one is the important one!!""",,,,,hero,neutral
 """Important"" is underlined three times.",,,,,hero,suspicious
 Guess it must be so.,,,,,hero,thinking
 Maybe I can prove I'm a good person by resisting the temptation to read this.,,7,,,hero,thinking
