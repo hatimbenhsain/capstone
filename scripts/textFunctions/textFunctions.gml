@@ -109,10 +109,10 @@ function connect(_child,_parent){
 
 function GetHead(fileName){
 	if(ds_map_exists(heads,fileName)){
-		show_debug_message("already exist "+fileName+" "+heads[?fileName].text);
+		//show_debug_message("already exist "+fileName+" "+heads[?fileName].text);
 		return heads[?fileName];
 	}else{
-		show_debug_message("not exist "+fileName);
+		//show_debug_message("not exist "+fileName);
 		var h=parseDialogue(fileName+".csv");
 		ds_map_add(heads,fileName,h);
 		return heads[?fileName];
@@ -163,16 +163,23 @@ function AddAnswer(node,_question,_answer){
 	if(node.text==_question){
 		var c1=node.children[|ds_list_size(node.children)-1];
 		var c2=parseDialogue(_answer);
+		var exists=false;
 		for(var i=0;i<ds_list_size(node.children);i++){
-			if(c2.text==node.children[|i]){
-				return true;	
+			if(c2.text==node.children[|i].text){
+				exists=true;	
+				break;
 			}
 		}
-		connect(c2,node);
-		ds_list_replace(node.children,ds_list_size(node.children)-1,c1);
-		ds_list_replace(node.children,ds_list_size(node.children)-2,c2);
-		show_debug_message(_answer+" added");
-		head=initialHead;
+		if(exists){
+			show_debug_message("answer already there.");
+			return true;	
+		}else{
+			connect(c2,node);
+			ds_list_replace(node.children,ds_list_size(node.children)-1,c1);
+			ds_list_replace(node.children,ds_list_size(node.children)-2,c2);
+			show_debug_message(_answer+" added");
+			head=initialHead;
+		}
 		return true;
 	}else{
 		for(var i=0;i<ds_list_size(node.children);i++){
