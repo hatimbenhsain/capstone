@@ -15,7 +15,7 @@ switch(state){
 			alarm[2]=room_speed;	
 		}
 		FadeInMusic(10000);
-		state=3;
+		state=4;
 		break;
 	case 4:
 		ChangeInitHead("caveSecret72");

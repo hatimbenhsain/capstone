@@ -1,12 +1,19 @@
 Line,Type,Parent,Action,Subject,Talker,Emotion
 The baby bird statue stares intently at you.,,,,,noone,
-What will you do?,q,,,,,
-Pet the bird.,a,3,,,,
-Keep on looking at it.,a,3,,,,
-Leave it alone.,a,3,,,,
-....,l,4,,,hero,neutral
+Its beak is tightly closed.,,,,,,
+"What are you keeping from me, little bird?",,,,,hero,suspicious
+What will you do?,q,,,,noone,
+Pet the bird.,a,5,,,,
+Keep on looking at it.,a,5,,,,
+Leave it alone.,a,5,,,,
+Try to pry it open.,a,5,,,,
+....,l,6,,,hero,neutral
 It doesn't seem to care for your pets.,,,,,noone,
-....,l,5,,,hero,angry
+....,l,7,,,hero,angry
 Ah... damn it.,,,,,hero,cringe
 You fail to match the statue's unwavering gaze.,,,,,noone,
-"The statue seems to say: ""good.""",l,6,,,noone,
+"The statue seems to say: ""good.""",l,8,,,noone,
+....,l,9,,,hero,angry
+I don't know if I wanna do it without a good reason.,,,,,hero,confused
+It looks.... so cute.,,,,,hero,suspicious
+Don't wanna accidentally break one of the few intact ones.,,,,,hero,pensive
