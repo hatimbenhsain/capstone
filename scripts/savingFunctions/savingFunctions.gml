@@ -19,16 +19,21 @@ function LoadJsonFromFile(name){
 }
 
 function Save(){
+	startTime=current_second;
+	errorStep=-1;
 	var rootList=ds_list_create();
 	
 	with(obj_hero){
+		if(!CheckTime(0)) break;
 		var map=standardSave(rootList);
 	}
 	
 	with(obj_interactable){
+		if(!CheckTime(1)) break;
 		var map=standardSave(rootList);
 		var key=ds_map_find_first(heads);
 		for(var i=0;i<ds_map_size(heads);i++){
+			if(!CheckTime(2)) break;
 			show_debug_message("checking key "+key);
 			if(key==initialHead){
 				ds_map_add(map,"initialHead",key);
@@ -43,6 +48,7 @@ function Save(){
 		}
 		var alarms=ds_list_create();
 		for(var i=0;i<=11;i++){
+			if(!CheckTime(3)) break;
 			ds_list_add(alarms,alarm[i]);
 		}
 		ds_map_add_list(map,"alarms",alarms);
@@ -50,6 +56,7 @@ function Save(){
 		var io=ds_map_create();
 		key=ds_map_find_first(interactableObjects);
 		for(var i=0;i<ds_map_size(interactableObjects);i++){
+			if(!CheckTime(4)) break;
 			ds_map_add(io,key,interactableObjects[?key]);
 			key=ds_map_find_next(interactableObjects,key);
 		}
@@ -57,27 +64,32 @@ function Save(){
 	}
 	
 	with(obj_inventory){
+		if(!CheckTime(5)) break;
 		var map=standardSave(rootList);	
 		var objList=ds_list_create();
 		for(var i=0;i<ds_list_size(items);i++){
+			if(!CheckTime(6)) break;
 			ds_list_add(objList,object_get_name(items[|i].object_index));	
 		}
 		ds_map_add_list(map,"objList",objList);
 	}
 	
 	with(obj_tuning){
+		if(!CheckTime(7)) break;
 		var map=SaveControls(rootList);
 	}
 	
-	var wrapper=ds_map_create();
-	ds_map_add_list(wrapper,"ROOT",rootList);
-	
-	var myString=json_encode(wrapper);
-	SaveStringToFile("save.sav",myString);
-	
-	ds_map_destroy(wrapper);
-	
-	show_debug_message("game saved");
+	if(CheckTime(11)){
+		var wrapper=ds_map_create();
+		ds_map_add_list(wrapper,"ROOT",rootList);
+		var myString=json_encode(wrapper);
+		SaveStringToFile("save.sav",myString);
+		ds_map_destroy(wrapper);
+		show_debug_message("game saved");
+		return true;
+	}else{
+		return false;
+	}
 }
 
 function standardSave(rootList){
@@ -105,6 +117,7 @@ function SaveHeads(map){
 	ds_map_add_map(map,"heads",headsMap);
 	var key=ds_map_find_first(heads);
 	for(var i=0;i<ds_map_size(heads);i++){
+		if(!CheckTime(8)) break;
 		var dialoguesToAdd=ds_list_create();
 		var messagesList=ds_list_create();
 		var m=heads[?key];
@@ -114,6 +127,7 @@ function SaveHeads(map){
 		show_debug_message("the key is "+key);
 		ds_map_add_list(headsMap,key,dialoguesToAdd);
 		for(var k=0;k<ds_list_size(messagesList);k++){
+			if(!CheckTime(9)) break;
 			var list=ds_list_create();
 			var mess=messagesList[|k];
 			show_debug_message(mess.text);
@@ -134,6 +148,7 @@ function SaveHeads(map){
 			ds_list_add(list,children);
 			ds_list_mark_as_list(list,ds_list_size(list)-1);
 			for(var p=0;p<ds_list_size(mess.children);p++){
+				if(!CheckTime(10)) break;
 				ds_list_add(children,ds_list_find_index(messagesList,mess.children[|p]));
 			}
 		}
@@ -327,6 +342,19 @@ function standardLoad(map){
 				}
 				//show_debug_message(map[?"initialHead"]);
 			}
+		}
+	}
+}
+
+function CheckTime(t){
+	with(obj_gameManager){
+		if(current_second-startTime>5){
+			if(errorStep==-1){
+				errorStep=t;	
+			}
+			return false;	
+		}else{
+			return true;	
 		}
 	}
 }

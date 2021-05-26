@@ -1,5 +1,9 @@
 /// @description Insert description here
 // You can write your code in this editor
+saved=false;
+startTime=current_second;
+errorStep=-1;
+
 global.cameraOverride=false;
 
 debugMode=false;

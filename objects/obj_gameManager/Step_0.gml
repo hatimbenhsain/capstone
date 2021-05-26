@@ -94,7 +94,7 @@ if(paused && keyboard_check_pressed(downButton)){
 		paused=false;
 		obj_hero.frozen=!obj_hero.frozen;
 	}else if(options[optionSelected]=="Save"){
-		Save();
+		saved=Save();
 	}else if(options[optionSelected]=="Exit Game"){
 		options=exitOptions;
 		optionSelected=0;
